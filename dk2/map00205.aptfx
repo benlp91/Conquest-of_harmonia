@@ -1,5 +1,5 @@
 [common]
-ActionPointsCount = 7
+ActionPointsCount = 8
 
 [actionpoint0]
 PointNumber = 1
@@ -15,9 +15,9 @@ SubtileY = [130, 128]
 
 [actionpoint2]
 PointNumber = 3
-PointRange = [13, 59]
+PointRange = [12, 0]
 SubtileX = [133, 128]
-SubtileY = [193, 128]
+SubtileY = [199, 128]
 
 [actionpoint3]
 PointNumber = 4
@@ -26,19 +26,25 @@ SubtileX = [124, 128]
 SubtileY = [70, 128]
 
 [actionpoint4]
-PointNumber = 5
-PointRange = [5, 0]
-SubtileX = [156, 128]
-SubtileY = [68, 128]
-
-[actionpoint5]
 PointNumber = 6
 PointRange = [6, 0]
 SubtileX = [56, 128]
 SubtileY = [131, 128]
 
-[actionpoint6]
+[actionpoint5]
 PointNumber = 7
 PointRange = [6, 0]
 SubtileX = [63, 128]
 SubtileY = [127, 128]
+
+[actionpoint6]
+PointNumber = 8
+PointRange = [6, 0]
+SubtileX = [194, 128]
+SubtileY = [134, 128]
+
+[actionpoint7]
+PointNumber = 9
+PointRange = [6, 0]
+SubtileX = [201, 128]
+SubtileY = [129, 128]
