@@ -28,7 +28,7 @@ ROOM_AVAILABLE(ALL_PLAYERS, LAIR, 1, 1)
 ROOM_AVAILABLE(ALL_PLAYERS, TRAINING, 1, 1)
 
 MAGIC_AVAILABLE(ALL_PLAYERS, POWER_HAND, 1, 1)
-MAGIC_AVAILABLE(ALL_PLAYERS, POWER_OBEY, 1, 1)
+MAGIC_AVAILABLE(ALL_PLAYERS, POWER_SIGHT, 1, 1)
 MAGIC_AVAILABLE(ALL_PLAYERS, POWER_SLAP, 1, 1)
 MAGIC_AVAILABLE(ALL_PLAYERS, POWER_IMP, 1, 0)
 MAGIC_AVAILABLE(ALL_PLAYERS, POWER_LIGHTNING, 1, 0)
@@ -43,11 +43,15 @@ CREATE_PARTY(LORD)
 ADD_TO_PARTY(LORD, TUNNELLER	, 1, 300, ATTACK_DUNGEON_HEART, 0)
 ADD_TO_PARTY(LORD, KNIGHT	, 1, 300, ATTACK_DUNGEON_HEART, 0)
 
+RUN_AFTER_VICTORY(1)
 
 REM START INTRO
 SET_TIMER(PLAYER0,TIMER0)
 USE_POWER_AT_LOCATION(PLAYER0,4,POWER_SIGHT,6,1)
-ADD_CREATURE_TO_LEVEL(PLAYER_GOOD,FAKELORD,4,1,1,0)
+
+IF(PLAYER0,TIMER0 >= 30)
+ADD_CREATURE_TO_LEVEL(PLAYER_GOOD,FAKELORD,-1,1,1,0)
+ENDIF
 
 IF(PLAYER0,TIMER0 >= 40)
     ZOOM_TO_LOCATION(PLAYER0,5)
@@ -85,53 +89,58 @@ ENDIF
 
 REM SETTINGS
 
-
-
-
-
-
-
-
-
-
-
-
 CONCEAL_MAP_RECT(Player0, 20, 20, 240, 240,1)
 
 REVEAL_MAP_LOCATION(PLAYER0,3,6)
 
-DISPLAY_OBJECTIVE(10,PLAYER0)
+IF(PLAYER0,TIMER0 >= 30)
+	QUICK_OBJECTIVE(11,"So forward unto arms against the good Lord Darius, a foe more worthy than feeble Lord Antonius.  But battle knowledge gained to claim the Smilesville Portal Gem has put your forces in good stead to build their strength and slay the Hero sickly sweet who now awaits your challenge to his Keep.")
+	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe04.ogg")
+ENDIF
 
 IF(PLAYER0, RESEARCH >= 1)
-	DISPLAY_OBJECTIVE(11,PLAYER0)
+	QUICK_INFORMATION(12,"The Library.  Where Warlocks wise can hone their evil craft perfecting spells for you to cast at goodly foes.")
+	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe05.ogg")
 ENDIF
 
 IF(PLAYER0, SORCEROR >= 1)
-	DISPLAY_OBJECTIVE(12,PLAYER0)
+	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe03.ogg")
+	QUICK_INFORMATION(13,"Hark now, a Warlock has arrived to study spells within your library. His research will serve your magic well. Restrict him not to his books for within combat he may prove formidable with fireballs.")
 ENDIF
 
 IF(PLAYER0, TRAINING >= 1)
-	DISPLAY_INFORMATION(13,PLAYER0)
+	QUICK_INFORMATION(14,"The Training Room's a place where fighting creatures hone their skills.")
+	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe06.ogg")
 ENDIF
+
+
 
 IF_AVAILABLE(PLAYER0,POWER_LIGHTNING >= 1)
-	DISPLAY_INFORMATION(14,PLAYER0)
+	QUICK_INFORMATION(15,"Thunderbolt.  This spell is yours to use to strike down enemies who dare to enter your domain.")
 ENDIF
 
-PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe00.ogg")
+
+
 
 IF_ACTION_POINT(1, PLAYER0)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe01.ogg")
+	QUICK_OBJECTIVE(16,"Keeper!  Dare not think that you will conquer me, you evil wretch.  My Dwarves and the power of good will drive you from this land.")
 ENDIF
 
 IF_ACTION_POINT(2, PLAYER0)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe02.ogg")
+	QUICK_OBJECTIVE(17,"You seek to defile my realm with your foul sorcery?  You will perish, Keeper!.")
 	ADD_PARTY_TO_LEVEL(PLAYER_GOOD, DWARVES, -1, 1)
 	SET_TIMER(PLAYER_GOOD, TIMER0)
 	IF(PLAYER_GOOD, TIMER0 >= 1500)
-		DISPLAY_OBJECTIVE(16,PLAYER0)
+
+
+
 		ADD_PARTY_TO_LEVEL(PLAYER_GOOD, DWARVES, -1, 1)
 		ADD_PARTY_TO_LEVEL(PLAYER_GOOD, LORD, -1, 1)
+    		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe08.ogg")
+		QUICK_OBJECTIVE(18,"Another righteous Lord attempts courageous taunts.  If words were food, I mark you, these few morsels will be his to choke on soon.  Go to it, Keeper!")
+    		ZOOM_TO_LOCATION(PLAYER0,5)
 		SET_FLAG(PLAYER_GOOD, FLAG0, 1)
 	ENDIF
 ENDIF
@@ -195,7 +204,9 @@ ENDIF
 
 IF(PLAYER_GOOD, FLAG0 == 1)
 	IF(PLAYER_GOOD, KNIGHT == 0)
-		DISPLAY_OBJECTIVE(17,PLAYER0)
+	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe07.ogg")
+	QUICK_OBJECTIVE(19,"Lord Darius lies dying.  Now comes Horny here to claim for you the Portal Gem.  Your progress is most pleasing..")
 		WIN_GAME
+	ADD_CREATURE_TO_LEVEL(PLAYER0,HORNY,-1,1,10,0)	
 	ENDIF
 ENDIF
