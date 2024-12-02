@@ -49,7 +49,7 @@ RUN_AFTER_VICTORY(1)
 REM START INTRO
 
 CREATE_PARTY(HORNY)
-    ADD_TO_PARTY(HORNY,EVILLORD,10,1000,SNIPE_DUNGEON_HEART,0)
+    ADD_TO_PARTY(HORNY,EVILLORD,10,1000,SNIPE_DUNGEON_HEART,-370)
 
 COMPUTER_PLAYER(PLAYER6,ROAMING)
 ALLY_PLAYERS(PLAYER0,PLAYER6,3)
@@ -134,12 +134,10 @@ ENDIF
 IF(PLAYER0,TIMER0 >= 250)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe02.ogg")
     QUICK_INFORMATION(2,"First, theres money to be made.  Click on the flashing seam of gold - your Imps will dig out the area you designate.")
-
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 400)
     QUICK_INFORMATION(3,"Welcome to Conquest of Harmonia for keeperfx. Special thanks goes to qqluqq and loobinex.")
-
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 800)
@@ -148,18 +146,18 @@ ENDIF
 
 IF(PLAYER0, GOBLIN >= 1)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe05.ogg")
-    QUICK_INFORMATION(5,"Look well.  A Goblin has entered your domain.  On his own he is a cowardly beast, but in a horde becomes a useful fighting force.")
+    QUICK_INFORMATION(5,"Look well. A Goblin has entered your domain. On his own he is a cowardly beast, but in a horde becomes a useful fighting force.")
 
 ENDIF
 
 IF(PLAYER0, FIREFLY >= 1)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe06.ogg")
-    QUICK_INFORMATION(6,"The swift light Firefly's essential as an airborne scout.  His eyes are yours to penetrate dark places and report.")
+    QUICK_INFORMATION(6,"The swift light Firefly is essential as an airborne scout. His eyes are yours to penetrate dark places and report.")
 ENDIF
 
 IF(PLAYER0,LAIR >= 8)
-        PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe07.ogg")
-    QUICK_INFORMATION(7,"Excellent work, Keeper.  You are ready to recruit more creatures to your cause.  See?  A Portal near your Dungeon Heart, to where your Imps must dig.  They’ll claim this Portal to be yours: you’ll see what beasts emerge.")
+    PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe07.ogg")
+    QUICK_INFORMATION(7,"Excellent work, Keeper. You are ready to recruit more creatures to your cause.  See?  A Portal near your Dungeon Heart, to where your Imps must dig.  They’ll claim this Portal to be yours: you’ll see what beasts emerge.")
 ENDIF
 
 IF(PLAYER0,TOTAL_CREATURES >= 1)
@@ -168,7 +166,6 @@ IF(PLAYER0,TOTAL_CREATURES >= 1)
                 SET_FLAG(PLAYER0,FLAG0,4)
         ENDIF
 ENDIF
-
 
 REM *** BUILT GARDEN ***
 IF(PLAYER0,FLAG0 == 4)
@@ -181,7 +178,6 @@ REM *** HAS SEVEN OR MORE CREATURES ***
 IF(PLAYER0,FLAG0 == 5)
     IF(PLAYER0,TIMER1 >= 600)
         REM CREATE_TEXT(30, 16)
-
         IF(PLAYER0,TIMER1 >= 800)
             PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe03.ogg")
             QUICK_INFORMATION(8,"I sense activity beyond your walls: Dwarfish foes approach, and you may track their path as white dots on your map.")
@@ -242,13 +238,13 @@ ENDIF
 SET_TIMER(PLAYER0,TIMER2)
 
 IF(PLAYER0,TIMER2 >= 250)
-           IF(PLAYER0,IMP <= 4)
-                NEXT_COMMAND_REUSABLE
-            ADD_CREATURE_TO_LEVEL(PLAYER0,IMP,PLAYER0,2,1,100)
-                NEXT_COMMAND_REUSABLE
-                SET_TIMER(PLAYER0,TIMER2)
-        ENDIF
-ENDIF 
+   IF(PLAYER0,IMP <= 4)
+        NEXT_COMMAND_REUSABLE
+        ADD_CREATURE_TO_LEVEL(PLAYER0,IMP,PLAYER0,2,1,100)
+        NEXT_COMMAND_REUSABLE
+        SET_TIMER(PLAYER0,TIMER2)
+    ENDIF
+ENDIF
 
 REM *** HAS WON FIRST BATTLE ***
 
