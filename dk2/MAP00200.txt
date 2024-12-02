@@ -266,9 +266,12 @@ IF(PLAYER0,FLAG0 == 7)
     IF(PLAYER_GOOD,TOTAL_CREATURES == 0)
         PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe08.ogg")
         QUICK_OBJECTIVE(10,"Bravo, Keeper.  Lord Antonius is fallen.  The Portal Gem lies aside his helpless form, in wait for Horny to collect it so it's yours - and comes he now!")
-        COMPUTER_PLAYER(PLAYER5,0)
+
         ALLY_PLAYERS(PLAYER0,PLAYER5,3)
         ADD_OBJECT_TO_LEVEL(FAKE_GEM,LAST_DEATH_EVENT[PLAYER_GOOD],1,PLAYER5)
+
+        COMPUTER_PLAYER(PLAYER5,0)
+
         SET_TIMER(PLAYER6,TIMER6)
         WIN_GAME
     ENDIF
