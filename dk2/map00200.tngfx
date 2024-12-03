@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 50
+ThingsCount = 51
 
 [thing0]
 ThingType = "Object"
@@ -439,11 +439,21 @@ Ownership = 0
 ParentTile = 65535
 HerogateNumber = 2
 Orientation = 0
-SubtileX = [40, 128]
-SubtileY = [34, 128]
+SubtileX = [34, 128]
+SubtileY = [61, 128]
 SubtileZ = [1, 0]
 
 [thing44]
+ThingType = "Object"
+Subtype = 1024
+Ownership = 0
+ParentTile = 65535
+Orientation = 0
+SubtileX = [25, 128]
+SubtileY = [70, 128]
+SubtileZ = [1, 0]
+
+[thing45]
 ThingType = "Creature"
 Subtype = 23
 Ownership = 0
@@ -455,7 +465,7 @@ SubtileX = [32, 128]
 SubtileY = [64, 128]
 SubtileZ = [1, 0]
 
-[thing45]
+[thing46]
 ThingType = "Creature"
 Subtype = 23
 Ownership = 0
@@ -467,7 +477,7 @@ SubtileX = [36, 128]
 SubtileY = [64, 128]
 SubtileZ = [1, 0]
 
-[thing46]
+[thing47]
 ThingType = "Creature"
 Subtype = 23
 Ownership = 0
@@ -479,7 +489,7 @@ SubtileX = [32, 128]
 SubtileY = [76, 128]
 SubtileZ = [1, 0]
 
-[thing47]
+[thing48]
 ThingType = "Creature"
 Subtype = 23
 Ownership = 0
@@ -491,7 +501,7 @@ SubtileX = [36, 128]
 SubtileY = [76, 128]
 SubtileZ = [1, 0]
 
-[thing48]
+[thing49]
 ThingType = "Creature"
 Subtype = 3
 Ownership = 4
@@ -503,7 +513,7 @@ SubtileX = [40, 128]
 SubtileY = [19, 128]
 SubtileZ = [1, 0]
 
-[thing49]
+[thing50]
 ThingType = "EffectGen"
 Subtype = 4
 Ownership = 4
