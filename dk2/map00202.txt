@@ -11,8 +11,8 @@ START_MONEY(PLAYER0, 2500)
 
 ADD_CREATURE_TO_POOL(SORCEROR, 5)
 ADD_CREATURE_TO_POOL(FIREFLY, 2)
-ADD_CREATURE_TO_POOL(GOBLIN, 10)
-ADD_CREATURE_TO_POOL(TROLL, 10)
+ADD_CREATURE_TO_POOL(GOBLIN, 6)
+ADD_CREATURE_TO_POOL(TROLL, 6)
 
 
 CREATURE_AVAILABLE(ALL_PLAYERS, SORCEROR, 1, 0)
@@ -62,7 +62,10 @@ CONCEAL_MAP_RECT(Player0, 25, 25, 240, 240,1)
 
 REVEAL_MAP_LOCATION(PLAYER0,5,6)
 
-DISPLAY_OBJECTIVE(18, PLAYER0)
+IF(PLAYER0,TIMER0 >= 40)
+    QUICK_OBJECTIVE(20,"Lord Avaricious hides within his fortress proud.  He's well defended but gold's his weakness.  To lure him from his stronghold, mine all the gold within this realm.")
+    PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe01.ogg")
+ENDIF
 
 REM START INTRO
 
@@ -147,40 +150,34 @@ ENDIF
 REM SETTINGS
 
 
-IF(PLAYER0, TREASURE >= 1)
-	DISPLAY_INFORMATION(20, PLAYER0)
+
+IF(PLAYER0,TIMER0 >= 400)
+        PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe02.ogg")
+    	QUICK_INFORMATION(21,"A Workshop should be built so Trolls will come and use it for their fabrication, benefiting you with Traps and Doors to help defend your underground creation.")
 ENDIF
 
-IF(PLAYER0, WORKSHOP >= 1)
-	DISPLAY_INFORMATION(21, PLAYER0)
+IF(PLAYER0, TREASURE >= 1)
+        PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe05.ogg")
+    	QUICK_INFORMATION(22,"A Treasury allows more gold to be amassed.  If placed near seams of gold, your Imps will not have far to carry it..")
 ENDIF
 
 IF(PLAYER0, TROLL >= 1)
-	DISPLAY_INFORMATION(23, PLAYER0)
+        PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe03.ogg")
+    	QUICK_INFORMATION(23,"A Troll arrives, attracted by the splendour of your Workshop.  His craftsman skills are set to serve you well as one whose toil will make both Traps and Doors for you to use in your defence.")
 ENDIF
 
 IF_AVAILABLE(PLAYER0, WOOD >= 1)
-	DISPLAY_INFORMATION(25, PLAYER0)
+        PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe06.ogg")
+    	QUICK_INFORMATION(24,"Place well your Wooden Doors in narrow tunnels to slow down hostile enemies as they invade.")
 ENDIF
 
-IF_AVAILABLE(PLAYER0, LIGHTNING >= 1)
-	DISPLAY_INFORMATION(26, PLAYER0)
+IF_AVAILABLE(PLAYER0, TURRET >= 1)
+        PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe07.ogg")
+    	QUICK_INFORMATION(25,"The Sentry Trap will fire magic bolts which damage any of your foes within its range.")
 ENDIF
+
 
 SET_FLAG(PLAYER_GOOD, FLAG2, 0)
-
-PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe01.ogg")
-
-	
-SET_TIMER(PLAYER3, TIMER2)
-
-IF(PLAYER3, TIMER2 >= 1020)
-PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe02.ogg")
-ENDIF
-
-IF(PLAYER0,TROLL ==1)
-PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe03.ogg")
-ENDIF
 
 IF_ACTION_POINT(4, PLAYER0)
 	SET_FLAG(PLAYER_GOOD, FLAG0, 0)
@@ -204,31 +201,110 @@ IF(PLAYER_GOOD, FLAG0 == 0)
 	ENDIF
 ENDIF
 
-IF_ACTION_POINT(1, PLAYER0)
-	SET_FLAG(PLAYER_GOOD, FLAG0, 1)
-	DISPLAY_INFORMATION(19, PLAYER0)
+IF_SLAB_OWNER(35,11,PLAYER0)
+	IF_SLAB_OWNER(36,11,PLAYER0)
+		IF_SLAB_OWNER(37,11,PLAYER0)
+			IF_SLAB_OWNER(38,11,PLAYER0)
+				IF_SLAB_OWNER(35,12,PLAYER0)
+					IF_SLAB_OWNER(35,13,PLAYER0)
+						IF_SLAB_OWNER(35,14,PLAYER0)
+							IF_SLAB_OWNER(36,14,PLAYER0)
+								IF_SLAB_OWNER(37,14,PLAYER0)
+									IF_SLAB_OWNER(38,14,PLAYER0)
+										IF_SLAB_OWNER(38,13,PLAYER0)
+											IF_SLAB_OWNER(38,12,PLAYER0)
+	                                            SET_FLAG(PLAYER_GOOD, FLAG0, 1)
+                                                PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe08.ogg")
+    	                                        QUICK_INFORMATION(26,"You've claimed the land around the Hero Gate and thus broken it.  No more thieving Heroes will invade your realm this way!")
+												CHANGE_SLAB_TYPE(36,12,BROKEN_ENTRANCE2x2,MATCH)
+                                                ZOOM_TO_LOCATION(PLAYER0,-1)
+												HIDE_HERO_GATE(-1,1)
+												CREATE_EFFECT(EFFECT_HARMLESS_GAS_1,-1)
+												USE_POWER_AT_LOCATION(PLAYER_GOOD,-1,POWER_CAVE_IN,6,1)
+												CREATE_EFFECT(EFFECT_HARMLESS_GAS_1,1)
+												USE_POWER_AT_LOCATION(PLAYER_GOOD,1,POWER_CAVE_IN,6,1)
+												CREATE_EFFECT(EFFECT_HARMLESS_GAS_1,8)
+												USE_POWER_AT_LOCATION(PLAYER_GOOD,8,POWER_CAVE_IN,6,1)
+												PLAY_MESSAGE(PLAYER0,SOUND,152)
+											ENDIF
+										ENDIF
+									ENDIF
+								ENDIF
+							ENDIF
+						ENDIF
+					ENDIF
+				ENDIF
+			ENDIF
+		ENDIF
+	ENDIF
+ENDIF
+
+IF_SLAB_OWNER(1,9,PLAYER0)
+	IF_SLAB_OWNER(2,9,PLAYER0)
+		IF_SLAB_OWNER(3,9,PLAYER0)
+			IF_SLAB_OWNER(4,9,PLAYER0)
+				IF_SLAB_OWNER(1,12,PLAYER0)
+					IF_SLAB_OWNER(2,12,PLAYER0)
+						IF_SLAB_OWNER(3,12,PLAYER0)
+							IF_SLAB_OWNER(4,12,PLAYER0)
+								IF_SLAB_OWNER(4,11,PLAYER0)
+									IF_SLAB_OWNER(4,10,PLAYER0)
+										IF_SLAB_OWNER(1,10,PLAYER0)
+											IF_SLAB_OWNER(1,11,PLAYER0)
+
+	                                            SET_FLAG(PLAYER_GOOD, FLAG1, 1)
+                                                PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe08.ogg")
+    	                                        QUICK_INFORMATION(26,"You've claimed the land around the Hero Gate and thus broken it.  No more thieving Heroes will invade your realm this way!")
+												CHANGE_SLAB_TYPE(2,10,BROKEN_ENTRANCE2x2,MATCH)
+                                                ZOOM_TO_LOCATION(PLAYER0,-2)
+												HIDE_HERO_GATE(-1,1)
+												CREATE_EFFECT(EFFECT_HARMLESS_GAS_1,-2)
+												USE_POWER_AT_LOCATION(PLAYER_GOOD,-2,POWER_CAVE_IN,6,1)
+												CREATE_EFFECT(EFFECT_HARMLESS_GAS_1,9)
+												USE_POWER_AT_LOCATION(PLAYER_GOOD,9,POWER_CAVE_IN,6,1)
+												CREATE_EFFECT(EFFECT_HARMLESS_GAS_1,10)
+												USE_POWER_AT_LOCATION(PLAYER_GOOD,10,POWER_CAVE_IN,6,1)
+												PLAY_MESSAGE(PLAYER0,SOUND,152)
+
+											ENDIF
+										ENDIF
+									ENDIF
+								ENDIF
+							ENDIF
+						ENDIF
+					ENDIF
+				ENDIF
+			ENDIF
+		ENDIF
+	ENDIF
 ENDIF
 
 IF(PLAYER_GOOD, FLAG1 == 0)
 	IF(PLAYER0, TIMER1 >= 1440)
 		NEXT_COMMAND_REUSABLE
 		ADD_PARTY_TO_LEVEL(PLAYER_GOOD, DOOR2, -2, 1)
-		
 		NEXT_COMMAND_REUSABLE
 		SET_TIMER(PLAYER0, TIMER1)
 	ENDIF
 ENDIF
 
-IF_ACTION_POINT(2, PLAYER0)
-	SET_FLAG(PLAYER_GOOD, FLAG1, 1)
-	DISPLAY_INFORMATION(19, PLAYER0)
+IF(PLAYER0,TOTAL_GOLD_MINED >= 20000)
+		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe09.ogg")
+            QUICK_OBJECTIVE(27,"To lure Lord Avaricious from his stronghold, mine all the gold within his realm.")
+ENDIF
+
+IF(PLAYER0,TOTAL_GOLD_MINED >= 40000)
+		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe10.ogg")
+            QUICK_OBJECTIVE(28,"You need more gold.  Explore and find it: send your Imps to mine it!")
 ENDIF
 
 IF(PLAYER0,TOTAL_GOLD_MINED >= 90000)
 		SET_FLAG(PLAYER_GOOD, FLAG2, 1)
 		DISPLAY_OBJECTIVE(22, PLAYER0)
+		ZOOM_TO_LOCATION(PLAYER0,-3)
 		ADD_PARTY_TO_LEVEL(PLAYER_GOOD, LORD, -3, 1)
 		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe04.ogg")
+        QUICK_OBJECTIVE(29,"You thieving Keeper!  I will punish you for daring to despoil my land.")
 ENDIF
 
 
@@ -287,11 +363,10 @@ IF(PLAYER0,TIMER2 >= 250)
 		ENDIF
 ENDIF 
 
-
 IF(PLAYER_GOOD, FLAG2 == 1)
 	IF(PLAYER_GOOD, KNIGHT == 0)
-		DISPLAY_OBJECTIVE(24, PLAYER0)
-
+        PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe11.ogg")
+        QUICK_OBJECTIVE(30,"Success, my evil friend, another Portal Gem is yours.  Your wickedness inspires us all, your sinful ways a glory to behold!")
         ALLY_PLAYERS(PLAYER0,PLAYER5,3)
         ADD_OBJECT_TO_LEVEL(FAKE_GEM,LAST_DEATH_EVENT[PLAYER_GOOD],1,PLAYER5)
         COMPUTER_PLAYER(PLAYER5,0)
