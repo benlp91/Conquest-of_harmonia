@@ -128,7 +128,7 @@ REM SETTINGS
 
 IF(PLAYER0,TIMER0 >= 45)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe01.ogg")
-    QUICK_OBJECTIVE(1,"Here walks the goodly Lord Antonius; tis he who holds the precious Portal Gem.  But only when youve mustered strength sufficient should you challenge him and claim your prize!")
+    QUICK_OBJECTIVE(1,"Here walks the goodly Lord Antonius, tis he who holds the precious Portal Gem.  But only when youve mustered strength sufficient should you challenge him and claim your prize!")
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 250)
@@ -141,7 +141,7 @@ IF(PLAYER0,TIMER0 >= 400)
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 800)
-    QUICK_INFORMATION(4,"Our time is now! The dark forces of the Underworld seek a figurehead, a powerful leader, whose banner they can gather under. To form a force that can, once and for all, end King Reginald- the-Just's sickeningly fair and goodly reign in the Sunlit Kingdom.")
+    QUICK_INFORMATION(4,"Our time is now! The dark forces of the Underworld seek a figurehead, a powerful leader, whose banner they can gather under. To form a force that can, once and for all, end King Reginald- the-Justs sickeningly fair and goodly reign in the Sunlit Kingdom.")
 ENDIF
 
 IF(PLAYER0, GOBLIN >= 1)
@@ -157,7 +157,7 @@ ENDIF
 
 IF(PLAYER0,LAIR >= 8)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe07.ogg")
-    QUICK_INFORMATION(7,"Excellent work, Keeper. You are ready to recruit more creatures to your cause.  See?  A Portal near your Dungeon Heart, to where your Imps must dig.  They’ll claim this Portal to be yours: you’ll see what beasts emerge.")
+    QUICK_INFORMATION(7,"Excellent work, Keeper. You are ready to recruit more creatures to your cause.  See?  A Portal near your Dungeon Heart, to where your Imps must dig.  Theyll claim this Portal to be yours: youll see what beasts emerge.")
 ENDIF
 
 IF(PLAYER0,TOTAL_CREATURES >= 1)
@@ -265,7 +265,7 @@ ENDIF
 IF(PLAYER0,FLAG0 == 7)
     IF(PLAYER_GOOD,TOTAL_CREATURES == 0)
         PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe08.ogg")
-        QUICK_OBJECTIVE(10,"Bravo, Keeper. Lord Antonius is fallen. The Portal Gem lies aside his helpless form, in wait for Horny to collect it so it's yours - and comes he now!")
+        QUICK_OBJECTIVE(10,"Bravo, Keeper. Lord Antonius is fallen. The Portal Gem lies aside his helpless form, in wait for Horny to collect it so its yours - and comes he now!")
         ALLY_PLAYERS(PLAYER0,PLAYER5,3)
         ADD_OBJECT_TO_LEVEL(FAKE_GEM,LAST_DEATH_EVENT[PLAYER_GOOD],1,PLAYER5)
         COMPUTER_PLAYER(PLAYER5,0)

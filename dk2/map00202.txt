@@ -63,7 +63,7 @@ CONCEAL_MAP_RECT(Player0, 25, 25, 240, 240,1)
 REVEAL_MAP_LOCATION(PLAYER0,5,6)
 
 IF(PLAYER0,TIMER0 >= 40)
-    QUICK_OBJECTIVE(20,"Lord Avaricious hides within his fortress proud.  He's well defended but gold's his weakness.  To lure him from his stronghold, mine all the gold within this realm.")
+    QUICK_OBJECTIVE(20,"Lord Avaricious hides within his fortress proud.  He is well defended but gold is his weakness.  To lure him from his stronghold, mine all the gold within this realm.")
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe01.ogg")
 ENDIF
 
@@ -158,7 +158,7 @@ ENDIF
 
 IF(PLAYER0, TREASURE >= 1)
         PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe05.ogg")
-    	QUICK_INFORMATION(22,"A Treasury allows more gold to be amassed.  If placed near seams of gold, your Imps will not have far to carry it..")
+    	QUICK_INFORMATION(22,"A Treasury allows more gold to be amassed.  If placed near seams of gold, your Imps will not have far to carry it.")
 ENDIF
 
 IF(PLAYER0, TROLL >= 1)
@@ -215,7 +215,7 @@ IF_SLAB_OWNER(35,11,PLAYER0)
 											IF_SLAB_OWNER(38,12,PLAYER0)
 	                                            SET_FLAG(PLAYER_GOOD, FLAG0, 1)
                                                 PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe08.ogg")
-    	                                        QUICK_INFORMATION(26,"You've claimed the land around the Hero Gate and thus broken it.  No more thieving Heroes will invade your realm this way!")
+    	                                        QUICK_INFORMATION(26,"Youve claimed the land around the Hero Gate and thus broken it.  No more thieving Heroes will invade your realm this way!")
 												CHANGE_SLAB_TYPE(36,12,BROKEN_ENTRANCE2x2,MATCH)
                                                 ZOOM_TO_LOCATION(PLAYER0,-1)
 												HIDE_HERO_GATE(-1,1)
@@ -253,7 +253,7 @@ IF_SLAB_OWNER(1,9,PLAYER0)
 											IF_SLAB_OWNER(1,11,PLAYER0)
 	                                            SET_FLAG(PLAYER_GOOD, FLAG1, 1)
                                                 PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe08.ogg")
-    	                                        QUICK_INFORMATION(26,"You've claimed the land around the Hero Gate and thus broken it.  No more thieving Heroes will invade your realm this way!")
+    	                                        QUICK_INFORMATION(26,"Youve claimed the land around the Hero Gate and thus broken it.  No more thieving Heroes will invade your realm this way!")
 												CHANGE_SLAB_TYPE(2,10,BROKEN_ENTRANCE2x2,MATCH)
                                                 ZOOM_TO_LOCATION(PLAYER0,-2)
 												HIDE_HERO_GATE(-1,1)

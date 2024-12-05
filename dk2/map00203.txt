@@ -189,7 +189,7 @@ ENDIF
 IF (PLAYER0, GUARD_POST >= 1)
 	DISPLAY_INFORMATION(28,PLAYER0)
 	    PLAY_MESSAGE(PLAYER0,SPEECH,"lvl4spe03.ogg")
-    QUICK_INFORMATION(33,"The Guardroom.  Drop your creatures here to keep them lively and alert, thence ready for the fight.  The flashing area which surrounds it marks the zone where any brush with trouble by your creatures will give cause for them to dash back and report, so reinforcements can be found.  Make sure there's adequate provision for your minions needs nearby, for though they are on guard, they still require their creature comforts, and it's wise to minimise the time they stray from duty.")
+    QUICK_INFORMATION(33,"The Guardroom.  Drop your creatures here to keep them lively and alert, thence ready for the fight.  The flashing area which surrounds it marks the zone where any brush with trouble by your creatures will give cause for them to dash back and report, so reinforcements can be found.  Make sure there's adequate provision for your minions needs nearby, for though they are on guard, they still require their creature comforts, and its wise to minimise the time they stray from duty.")
 ENDIF
 
 IF (PLAYER0, DARK_ELF >= 1)
@@ -234,7 +234,7 @@ ENDIF
 
 IF_ACTION_POINT(1, PLAYER0)
 	ROOM_AVAILABLE(PLAYER0, STONE_BRIDGE,1,1)
-    QUICK_INFORMATION(35,"The Stone Bridge.  You'll find these useful as you build your land locked creatures easy passage over water, even lava.")
+    QUICK_INFORMATION(35,"The Stone Bridge.  Youll find these useful as you build your land locked creatures easy passage over water, even lava.")
 ENDIF
 
 IF_ACTION_POINT(3, PLAYER0)
@@ -317,7 +317,7 @@ IF_ACTION_POINT(3, PLAYER0)
 		ADD_PARTY_TO_LEVEL(PLAYER_GOOD, DOOR2A, -4, 1)
 		ADD_PARTY_TO_LEVEL(PLAYER_GOOD, DOOR2B, -4, 1)
   		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl4spe05.ogg")
-   		QUICK_INFORMATION(37,"Your deeds impress me, Keeper - your new found skills are suitably employed.  But mark, you'll need both brain and brawn to overcome your foe, so keep your wits about you well and victory will be yours..")
+   		QUICK_INFORMATION(37,"Your deeds impress me, Keeper - your new found skills are suitably employed.  But mark, youll need both brain and brawn to overcome your foe, so keep your wits about you well and victory will be yours..")
 		WIN_GAME
         ALLY_PLAYERS(PLAYER0,PLAYER5,3)
         ADD_OBJECT_TO_LEVEL(FAKE_GEM,LAST_DEATH_EVENT[PLAYER_GOOD],1,PLAYER5)
