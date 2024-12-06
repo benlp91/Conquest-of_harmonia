@@ -136,17 +136,17 @@ ADD_TO_PARTY(LORD, ARCHER, 4, 300, DEFEND_PARTY, 0)
 
 IF(PLAYER0,TIMER4 >= 20)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl9spe01.ogg")
-	QUICK_OBJECTIVE(63,"Take this Gem, Sir Knight across this next domain.  You must approach the outpost Guards - alert them of your holy quest, and pray they listen.  For if their hearts are good they will abandon where they're posted and will rally to your cause.  Be swift and may the goodness of your mission give you strength.")
+	QUICK_OBJECTIVE(63,"Take this Gem, Sir Knight across this next domain. You must approach the outpost Guards - alert them of your holy quest, and pray they listen. For if their hearts are good they will abandon where they're posted and will rally to your cause. Be swift and may the goodness of your mission give you strength.")
 ENDIF
 
 IF(PLAYER0,TIMER4 >= 400)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl9spe02.ogg")
-	QUICK_OBJECTIVE(64,"Be wary of this Knight, brave Keeper for he'll strive for nothing other than the task he has been set and will avoid all battles if he can.  Your creatures must then corner him to do him any damage, else he put to flight.")
+	QUICK_OBJECTIVE(64,"Be wary of this Knight, brave Keeper for he'll strive for nothing other than the task he has been set and will avoid all battles if he can. Your creatures must then corner him to do him any damage, else he put to flight.")
 ENDIF
 
 IF(PLAYER0, BILE_DEMON >= 1)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl9spe03.ogg")
-	QUICK_INFORMATION(65,"Ah, the Bile Demon.  Acquaint yourself with him - a slovenly beast, whose girth impedes, but size and stubbornness bear him fruit in battle when it's needed.")
+	QUICK_INFORMATION(65,"Ah, the Bile Demon. Acquaint yourself with him - a slovenly beast, whose girth impedes, but size and stubbornness bear him fruit in battle when it's needed.")
 ENDIF
 
 REM INTRO
@@ -287,7 +287,7 @@ IF(PLAYER0, TIMER0 >= 18000)
 	SET_DOOR(UNLOCKED,67,23)
 	SET_DOOR(UNLOCKED,71,23)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl9spe05.ogg")
-	QUICK_OBJECTIVE(66,"Distraction is disaster, Keeper.  Keep your task in mind.  To kill the Knight who bears the Gem for only then can you taste victory sweet within this realm.")
+	QUICK_OBJECTIVE(66,"Distraction is disaster, Keeper. Keep your task in mind. To kill the Knight who bears the Gem for only then can you taste victory sweet within this realm.")
 	SET_FLAG(PLAYER0, FLAG0, 1)
 	ADD_TUNNELLER_PARTY_TO_LEVEL(PLAYER_GOOD, SCOUT1, -1, DUNGEON_HEART, 0, 4, 600)
 ENDIF
@@ -388,7 +388,7 @@ IF(PLAYER0, FLAG0 == 2)
 	IF(PLAYER_GOOD, KNIGHT == 0)
 			IF(PLAYER_GOOD, WIZARD == 0)
 				PLAY_MESSAGE(PLAYER0,SPEECH,"lvl9spe07.ogg")
-				QUICK_OBJECTIVE(68,"The Knight is slain, he could keep neither head nor Gem, a glorious and unholy setback to the King.  An evil deed well done!")
+				QUICK_OBJECTIVE(68,"The Knight is slain, he could keep neither head nor Gem, a glorious and unholy setback to the King. An evil deed well done!")
 				WIN_GAME
 				ALLY_PLAYERS(PLAYER0,PLAYER5,3)
   	 			ADD_OBJECT_TO_LEVEL(FAKE_GEM,LAST_DEATH_EVENT[PLAYER_GOOD],1,PLAYER5)
@@ -441,5 +441,5 @@ SET_FLAG(PLAYER_NEUTRAL,FLAG1,0)
 IF(PLAYER_NEUTRAL, FLAG1 > 0)
 	LOSE_GAME
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl9spe06.ogg")
-	QUICK_OBJECTIVE(69,"This unimpressive show does not become your evil cause.  For moves you make are slower than a lowly snail.  Next time this challenge face with faster pace more suited to your stature.")
+	QUICK_OBJECTIVE(69,"This unimpressive show does not become your evil cause. For moves you make are slower than a lowly snail. Next time this challenge face with faster pace more suited to your stature.")
 ENDIF

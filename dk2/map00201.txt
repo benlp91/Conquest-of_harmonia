@@ -130,12 +130,12 @@ CONCEAL_MAP_RECT(Player0, 20, 20, 240, 240,1)
 REVEAL_MAP_LOCATION(PLAYER0,3,6)
 
 IF(PLAYER0,TIMER0 >= 30)
-	QUICK_OBJECTIVE(11,"So forward unto arms against the good Lord Darius, a foe more worthy than feeble Lord Antonius.  But battle knowledge gained to claim the Smilesville Portal Gem has put your forces in good stead to build their strength and slay the Hero sickly sweet who now awaits your challenge to his Keep.")
+	QUICK_OBJECTIVE(11,"So forward unto arms against the good Lord Darius, a foe more worthy than feeble Lord Antonius. But battle knowledge gained to claim the Smilesville Portal Gem has put your forces in good stead to build their strength and slay the Hero sickly sweet who now awaits your challenge to his Keep.")
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe04.ogg")
 ENDIF
 
 IF(PLAYER0, RESEARCH >= 1)
-	QUICK_INFORMATION(12,"The Library.  Where Warlocks wise can hone their evil craft perfecting spells for you to cast at goodly foes.")
+	QUICK_INFORMATION(12,"The Library. Where Warlocks wise can hone their evil craft perfecting spells for you to cast at goodly foes.")
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe05.ogg")
 ENDIF
 
@@ -156,19 +156,19 @@ ENDIF
 
 IF_ACTION_POINT(1, PLAYER0)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe01.ogg")
-	QUICK_OBJECTIVE(16,"Keeper!  Dare not think that you will conquer me, you evil wretch.  My Dwarves and the power of good will drive you from this land.")
+	QUICK_OBJECTIVE(16,"Keeper!  Dare not think that you'll conquer me, you evil wretch. My Dwarves and the power of good will drive you from this land.")
 ENDIF
 
 IF_ACTION_POINT(2, PLAYER0)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe02.ogg")
-	QUICK_OBJECTIVE(17,"You seek to defile my realm with your foul sorcery?  You will perish, Keeper!.")
+	QUICK_OBJECTIVE(17,"You seek to defile my realm with your foul sorcery? You will perish, Keeper!.")
 	ADD_PARTY_TO_LEVEL(PLAYER_GOOD, DWARVES, -1, 1)
 	SET_TIMER(PLAYER_GOOD, TIMER0)
 	IF(PLAYER_GOOD, TIMER0 >= 1500)
 		ADD_PARTY_TO_LEVEL(PLAYER_GOOD, DWARVES, -1, 1)
 		ADD_PARTY_TO_LEVEL(PLAYER_GOOD, LORD, -1, 1)
     		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe08.ogg")
-		QUICK_OBJECTIVE(18,"Another righteous Lord attempts courageous taunts.  If words were food, I mark you, these few morsels will be his to choke on soon.  Go to it, Keeper!")
+		QUICK_OBJECTIVE(18,"Another righteous Lord attempts courageous taunts. If words were food, I mark you, these few morsels will be his to choke on soon.  Go to it, Keeper!")
     		ZOOM_TO_LOCATION(PLAYER0,5)
 		SET_FLAG(PLAYER_GOOD, FLAG0, 1)
 	ENDIF
@@ -234,7 +234,7 @@ ENDIF
 IF(PLAYER_GOOD, FLAG0 == 1)
 	IF(PLAYER_GOOD, KNIGHT == 0)
 		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl2spe07.ogg")
-		QUICK_OBJECTIVE(19,"Lord Darius lies dying.  Now comes Horny here to claim for you the Portal Gem. Your progress is most pleasing...")
+		QUICK_OBJECTIVE(19,"Lord Darius lies dying. Now comes Horny here to claim for you the Portal Gem. Your progress is most pleasing...")
         ALLY_PLAYERS(PLAYER0,PLAYER5,3)
         ADD_OBJECT_TO_LEVEL(FAKE_GEM,LAST_DEATH_EVENT[PLAYER_GOOD],1,PLAYER5)
         COMPUTER_PLAYER(PLAYER5,0)

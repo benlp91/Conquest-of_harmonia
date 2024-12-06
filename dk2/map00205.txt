@@ -54,7 +54,7 @@ REVEAL_MAP_LOCATION(PLAYER0,4,70)
 
 IF(PLAYER0,TIMER4 >= 30)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl6spe01.ogg")
-	QUICK_OBJECTIVE(43,"Hungry for battle and thirsty for blood, foul creatures await their Keepers command.  Lord Ironhelms good Castle is under their siege, but the method is yours for the choosing.")
+	QUICK_OBJECTIVE(43,"Hungry for battle and thirsty for blood, foul creatures await their Keepers command. Lord Ironhelms good Castle is under their siege, but the method is yours for the choosing.")
 ENDIF
 
 if(player0,ENTRANCE == 9)
@@ -226,7 +226,7 @@ IF_SLAB_OWNER(18,41,PLAYER0)
 												HIDE_HERO_GATE(-1,1)
 				                                ZOOM_TO_LOCATION(PLAYER0,-1)
 												PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe08.ogg")
-    	                                        QUICK_INFORMATION(26,"Youve claimed the land around the Hero Gate and thus broken it.  No more thieving Heroes will invade your realm this way!")
+    	                                        QUICK_INFORMATION(26,"You've claimed the land around the Hero Gate and thus broken it. No more thieving Heroes will invade your realm this way!")
 												CREATE_EFFECT(EFFECT_HARMLESS_GAS_1,1)
 												USE_POWER_AT_LOCATION(PLAYER_GOOD,1,POWER_CAVE_IN,6,1)
 												CREATE_EFFECT(EFFECT_HARMLESS_GAS_1,6)
@@ -264,7 +264,7 @@ IF_SLAB_OWNER(64,42,PLAYER0)
 												HIDE_HERO_GATE(-2,1)
 												ZOOM_TO_LOCATION(PLAYER0,-2)
 												PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe08.ogg")
-    	                                        QUICK_INFORMATION(26,"Youve claimed the land around the Hero Gate and thus broken it.  No more thieving Heroes will invade your realm this way!")
+    	                                        QUICK_INFORMATION(26,"You've claimed the land around the Hero Gate and thus broken it. No more thieving Heroes will invade your realm this way!")
 												CREATE_EFFECT(EFFECT_HARMLESS_GAS_1,2)
 												USE_POWER_AT_LOCATION(PLAYER_GOOD,2,POWER_CAVE_IN,6,1)
 												CREATE_EFFECT(EFFECT_HARMLESS_GAS_1,8)
@@ -287,23 +287,23 @@ ENDIF
 
 IF(PLAYER0,TIMER4 >= 1200)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl6spe03.ogg")
-	QUICK_INFORMATION(44,"Your creatures are outnumbered: a trouble, since no Portal provides entry to this realm.  They are indeed in danger, unless you find a clever way to make their numbers swell.")
+	QUICK_INFORMATION(44,"Your creatures are outnumbered: a trouble, since no Portal provides entry to this realm. They are indeed in danger, unless you find a clever way to make their numbers swell.")
 ENDIF
 
 IF(PLAYER0,TIMER4 >= 2000)
 	ROOM_AVAILABLE(ALL_PLAYERS, TORTURE, 1, 1)
 	TUTORIAL_FLASH_BUTTON(10,1)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl6spe04.ogg")
-	QUICK_INFORMATION(45,"Behold the Torture Chamber.  A paradise of pain.  To use it pick your captives from the Prison and then drop them there on those machines and watch them scream out secrets to their captors.  Finally the spineless scum amongst them beg for mercy then betray their goodly comrades switching sides to yours.  Your Evil Hand can cast this spell to heal the wounds and scars and broken bones of battle-weary warriors whose fight is in your name.")
+	QUICK_INFORMATION(45,"Behold the Torture Chamber. A paradise of pain. To use it pick your captives from the Prison and then drop them there on those machines and watch them scream out secrets to their captors. Finally the spineless scum amongst them beg for mercy then betray their goodly comrades switching sides to yours. Your Evil Hand can cast this spell to heal the wounds and scars and broken bones of battle-weary warriors whose fight is in your name.")
 ENDIF
 
 IF(PLAYER0,TIMER4 >= 500)
-	QUICK_INFORMATION(46,"But one warrior within your ranks excels: the Mistress, she who swings her scything blades most swiftly causing deadly damage fast, but use her wisely, for youll find shes easily slain.")
+	QUICK_INFORMATION(46,"But one warrior within your ranks excels: the Mistress, she who swings her scything blades most swiftly causing deadly damage fast, but use her wisely, for you'll find shes easily slain.")
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl6spe05.ogg")
 ENDIF
 
 IF(PLAYER0, GHOST >= 1)
-	QUICK_INFORMATION(47,"A fragile Hero has died in your Torture Chamber.  Heal them if you can to prolong their suffering, and allow them time to convert to your cause.")
+	QUICK_INFORMATION(47,"A fragile Hero has died in your Torture Chamber. Heal them if you can to prolong their suffering, and allow them time to convert to your cause.")
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl6spe06.ogg")
 ENDIF
 
@@ -454,7 +454,7 @@ ENDIF
 IF(PLAYER4,FLAG6 == 2)
 	IF(PLAYER_GOOD, KNIGHT == 0)
 		WIN_GAME
-		QUICK_OBJECTIVE(49,"I see with satisfaction the slaughtered beast that once was called Lord Ironhelm.  Sad?  For him maybe, but yours is not to pity.  His path was sickly righteous, its disposal served our needs.  And you must bask in reputation well deserved - pure evil are your deeds.")
+		QUICK_OBJECTIVE(49,"I see with satisfaction the slaughtered beast that once was called Lord Ironhelm. Sad? For him maybe, but yours is not to pity. His path was sickly righteous, its disposal served our needs. And you must bask in reputation well deserved - pure evil are your deeds.")
 		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl6spe08.ogg")
 		ALLY_PLAYERS(PLAYER0,PLAYER5,3)
   	  ADD_OBJECT_TO_LEVEL(FAKE_GEM,LAST_DEATH_EVENT[PLAYER_GOOD],1,PLAYER5)

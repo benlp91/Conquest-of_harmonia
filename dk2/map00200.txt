@@ -128,20 +128,20 @@ REM SETTINGS
 
 IF(PLAYER0,TIMER0 >= 45)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe01.ogg")
-    QUICK_OBJECTIVE(1,"Here walks the goodly Lord Antonius, tis he who holds the precious Portal Gem.  But only when youve mustered strength sufficient should you challenge him and claim your prize!")
+    QUICK_OBJECTIVE(1,"Here walks the goodly Lord Antonius,'tis he who holds the precious Portal Gem. But only when you've mustered strength sufficient should you challenge him and claim your prize!")
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 250)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe02.ogg")
-    QUICK_INFORMATION(2,"First, theres money to be made.  Click on the flashing seam of gold - your Imps will dig out the area you designate.")
+    QUICK_INFORMATION(2,"First, there's money to be made. Click on the flashing seam of gold - your Imps will dig out the area you designate.")
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 400)
-    QUICK_INFORMATION(3,"Welcome to Conquest of Harmonia for keeperfx. Special thanks goes to qqluqq and loobinex.")
+    QUICK_INFORMATION(3,"Welcome to Conquest of Harmonia for keeperfx. Special thanks goes to Qqluqq and Loobinex; they made this possible.")
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 800)
-    QUICK_INFORMATION(4,"Our time is now! The dark forces of the Underworld seek a figurehead, a powerful leader, whose banner they can gather under. To form a force that can, once and for all, end King Reginald- the-Justs sickeningly fair and goodly reign in the Sunlit Kingdom.")
+    QUICK_INFORMATION(4,"Our time is now! The dark forces of the Underworld seek a figurehead, a powerful leader, whose banner they can gather under. To form a force that can, once and for all, end King Reginald- the-Just's sickeningly fair and goodly reign in the Sunlit Kingdom.")
 ENDIF
 
 IF(PLAYER0, GOBLIN >= 1)
@@ -157,7 +157,7 @@ ENDIF
 
 IF(PLAYER0,LAIR >= 8)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe07.ogg")
-    QUICK_INFORMATION(7,"Excellent work, Keeper. You are ready to recruit more creatures to your cause.  See?  A Portal near your Dungeon Heart, to where your Imps must dig.  Theyll claim this Portal to be yours: youll see what beasts emerge.")
+    QUICK_INFORMATION(7,"Excellent work, Keeper. You are ready to recruit more creatures to your cause. See?  A Portal near your Dungeon Heart, to where your Imps must dig. They'll claim this Portal to be yours: you'll see what beasts emerge.")
 ENDIF
 
 IF(PLAYER0,TOTAL_CREATURES >= 1)
