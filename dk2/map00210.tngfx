@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 480
+ThingsCount = 482
 
 [thing0]
 ThingType = "Door"
@@ -3068,8 +3068,8 @@ Subtype = 4
 Ownership = 1
 ParentTile = 65535
 Orientation = 1536
-SubtileX = [97, 128]
-SubtileY = [103, 128]
+SubtileX = [103, 128]
+SubtileY = [100, 128]
 SubtileZ = [1, 0]
 
 [thing305]
@@ -3078,7 +3078,7 @@ Subtype = 4
 Ownership = 1
 ParentTile = 65535
 Orientation = 1536
-SubtileX = [115, 128]
+SubtileX = [112, 128]
 SubtileY = [103, 128]
 SubtileZ = [1, 0]
 
@@ -3786,7 +3786,7 @@ Index = 7
 CreatureLevel = 4
 CreatureGold = 0
 CreatureInitialHealth = 100
-SubtileX = [83, 128]
+SubtileX = [87, 128]
 SubtileY = [110, 128]
 SubtileZ = [0, 0]
 
@@ -3822,7 +3822,7 @@ Index = 10
 CreatureLevel = 4
 CreatureGold = 0
 CreatureInitialHealth = 100
-SubtileX = [87, 128]
+SubtileX = [84, 128]
 SubtileY = [110, 128]
 SubtileZ = [0, 0]
 
@@ -3858,8 +3858,8 @@ Index = 13
 CreatureLevel = 4
 CreatureGold = 0
 CreatureInitialHealth = 100
-SubtileX = [90, 128]
-SubtileY = [107, 128]
+SubtileX = [89, 128]
+SubtileY = [108, 128]
 SubtileZ = [0, 0]
 
 [thing379]
@@ -5009,4 +5009,24 @@ Index = 88
 Orientation = 512
 SubtileX = [145, 128]
 SubtileY = [58, 128]
+SubtileZ = [1, 0]
+
+[thing480]
+ThingType = "Trap"
+Subtype = 1
+Ownership = 1
+Index = 77
+Orientation = 1024
+SubtileX = [115, 128]
+SubtileY = [103, 128]
+SubtileZ = [1, 0]
+
+[thing481]
+ThingType = "Trap"
+Subtype = 1
+Ownership = 1
+Index = 102
+Orientation = 1024
+SubtileX = [97, 128]
+SubtileY = [121, 128]
 SubtileZ = [1, 0]
