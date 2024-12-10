@@ -86,6 +86,7 @@ REVEAL_MAP_LOCATION(PLAYER0,11,6)
 
 SET_GAME_RULE(MaxThingsInHand,30)
 SET_HAND_RULE(PLAYER0,ANY_CREATURE,RULE1,DENY,DROPPED_TIME_LOWER,60)
+REVEAL_MAP_LOCATION(PLAYER0,PLAYER0,-1)
 
 DISPLAY_OBJECTIVE(117, PLAYER0)
 
@@ -129,6 +130,109 @@ if(player0,ENTRANCE == 27)
   max_creatures(Player0,25)
 ENDIF
 
+REM START INTRO
+
+RUN_AFTER_VICTORY(1)
+
+CREATE_PARTY(HORNY)
+    ADD_TO_PARTY(HORNY,EVILLORD,10,0,SNIPE_DUNGEON_HEART,-370)
+
+COMPUTER_PLAYER(PLAYER6,ROAMING)
+ALLY_PLAYERS(PLAYER0,PLAYER6,3)
+SET_PLAYER_COLOR(PLAYER6,RED)
+
+SET_TIMER(PLAYER0,TIMER0)
+
+IF(PLAYER0,TIMER0 >= 30)
+    SET_POWER_CONFIGURATION(POWER_SIGHT,SoundPlayed,0)
+    USE_POWER_AT_LOCATION(PLAYER0,5,POWER_SIGHT,6,1)
+ENDIF
+
+IF(PLAYER0,TIMER0 >= 40)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 50)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 60)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 70)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 80)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 90)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 100)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 110)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 120)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 130)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 140)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 150)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 160)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 170)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 180)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+IF(PLAYER0,TIMER0 >= 190)
+    ZOOM_TO_LOCATION(PLAYER0,5)
+ENDIF
+
+IF(PLAYER0,TIMER0 >= 200)
+    ZOOM_TO_LOCATION(PLAYER0,PLAYER0)
+    SET_POWER_CONFIGURATION(POWER_SIGHT,POWER,10,6)
+    USE_POWER_AT_LOCATION(PLAYER0,5,POWER_SIGHT,6,1)
+ENDIF
+
+IF(PLAYER0,TIMER0 >= 220)
+    SET_POWER_CONFIGURATION(POWER_SIGHT,SoundPlayed,51)
+    SET_POWER_CONFIGURATION(POWER_SIGHT,POWER,896,6)
+ENDIF
+
+IF(PLAYER0,TIMER0 >= 45)
+    PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe01.ogg")
+    QUICK_OBJECTIVE(130,"Tristran, Felix, Balder - my beloved sons, I must send you on a mission to the neighbouring land. Patrol there and be sure to bring me word if evil Keeper stalks. And hold most precious all you three the secret of the Gem - if any one of you is threatened, you must return to safety by my side.")
+ENDIF
+
+IF(PLAYER0,TIMER0 >= 2000)
+    PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe02.ogg")
+    QUICK_OBJECTIVE(131,"Your mission is to capture and convert all three Princes to your side. They must neither die nor be allowed to flee through Hero Gates, which they'll attempt once one of them is injured. So to work!")
+ENDIF
+
+IF(PLAYER0, KNIGHT >= 1)
+    PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe03.ogg")
+    QUICK_OBJECTIVE(132,"I yield, Keeper. I, Tristran, will serve you well.")
+ENDIF
+
+IF(PLAYER0, KNIGHT >= 2)
+    PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe04.ogg")
+    QUICK_OBJECTIVE(133,"You are my master, Keeper. I, Balder will share with you my secret knowledge.")
+ENDIF
+IF(PLAYER0, KNIGHT >= 3)
+    PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe05.ogg")
+    QUICK_OBJECTIVE(134,"Your torments have broken me. I, Felix, will fight for you against my father's land.")
+ENDIF
+
+REM SETTINGS
 REM timer for prince 1 enter
 SET_TIMER(PLAYER0, TIMER0)
 IF(PLAYER0, TIMER0 >= 1450)
@@ -237,29 +341,72 @@ SET_FLAG(PLAYER_NEUTRAL,FLAG1,0)
 IF(PLAYER_NEUTRAL, FLAG1 > 0)
 	LOSE_GAME
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe06.ogg")
-	QUICK_OBJECTIVE(69,"Fool. You allow this Prince to flee despite my warning. Now the Gem will always lie beyond your reach.")
+	QUICK_OBJECTIVE(135,"Fool. You allow this Prince to flee despite my warning. Now the Gem will always lie beyond your reach.")
 ENDIF
 
 IF(PLAYER_GOOD, KNIGHT == 0)
 	IF(PLAYER0, KNIGHT == 2)
-		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe06.ogg")
-		QUICK_OBJECTIVE(69,"Fool. You allow this Prince to die despite my warning. Now your hands will never hold the Portal Gem.")
+		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe07.ogg")
+		QUICK_OBJECTIVE(136,"Fool. You allow this Prince to die despite my warning. Now your hands will never hold the Portal Gem.")
 		LOSE_GAME
 	ENDIF
 ENDIF
 
 IF(PLAYER_GOOD, KNIGHT == 1)
 	IF(PLAYER0, KNIGHT == 1)
-	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe06.ogg")
-		QUICK_OBJECTIVE(69,"Fool. You allow this Prince to die despite my warning. Now your hands will never hold the Portal Gem.")
+	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe07.ogg")
+		QUICK_OBJECTIVE(136,"Fool. You allow this Prince to die despite my warning. Now your hands will never hold the Portal Gem.")
 		LOSE_GAME
 	ENDIF
 ENDIF
 
 IF(PLAYER_GOOD, KNIGHT == 0)
 	IF(PLAYER0, KNIGHT == 3)
-		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe06.ogg")
-		QUICK_OBJECTIVE(69,"At last, you've turned the King's three spineless sons against him with your evil cunning. So they lead you to the Gem. Your pleasure is my satisfaction Keeper; journey on.")
-		WIN_GAME
+		SET_TIMER(PLAYER2,TIMER6)
 	ENDIF
+ENDIF
+
+IF(PLAYER2,TIMER6 >= 250)
+	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe08.ogg")
+	QUICK_OBJECTIVE(137,"At last, you've turned the King's three spineless sons against him with your evil cunning. So they lead you to the Gem. Your pleasure is my satisfaction Keeper; journey on.")
+	WIN_GAME
+ 	ALLY_PLAYERS(PLAYER0,PLAYER5,3)
+	ADD_OBJECT_TO_LEVEL(FAKE_GEM,12,1,PLAYER5)
+	ZOOM_TO_LOCATION(PLAYER0,12)
+  	COMPUTER_PLAYER(PLAYER5,0)
+  	SET_TIMER(PLAYER6,TIMER6) 
+ENDIF
+
+HIDE_HERO_GATE(1,1)
+
+IF(PLAYER6,TIMER6 >= 20)
+    MAGIC_AVAILABLE(PLAYER0,POWER_POSSESS,0,0)
+ENDIF
+
+IF(PLAYER6,TIMER6 >= 60)
+        ADD_OBJECT_TO_LEVEL(HORNY_STATUE,-1,1,PLAYER0)
+        ZOOM_TO_LOCATION(PLAYER0,-1)
+        CREATE_EFFECT(EFFECT_FLASH,PLAYER0)
+        CREATE_EFFECT(EFFECT_EXPLOSION_5,-1)
+        CREATE_EFFECT(EFFECT_SPANGLE_RED,-1)
+        CREATE_EFFECT(EFFECT_WORD_OF_POWER,-1)
+ENDIF
+
+IF(PLAYER6,TIMER6 >= 100)
+	ADD_PARTY_TO_LEVEL(PLAYER6,HORNY,-1,1)
+    SET_OBJECT_CONFIGURATION(HORNY_STATUE,MaximumSize,0)
+ENDIF
+
+IF(PLAYER5,HEART_HEALTH > 0)
+    SET_FLAG(PLAYER0,FLAG0,8)
+ENDIF
+
+IF(PLAYER0,FLAG0 == 8)
+    IF(PLAYER5,HEART_HEALTH < 3)
+        SET_OBJECT_CONFIGURATION(FAKE_GEM,UpdateFunction,UPDATE_POWER_LIGHTNING)
+        SET_TIMER(PLAYER6,TIMER7)
+    ENDIF
+    IF(PLAYER6,TIMER7 > 50)
+        KILL_CREATURE(PLAYER6,EVILLORD,ANYWHERE,1)
+    ENDIF
 ENDIF
