@@ -19,6 +19,7 @@ CREATURE_AVAILABLE(PLAYER0,GOBLIN,1,0)
 MAGIC_AVAILABLE(PLAYER0,POWER_HAND,1,1)
 MAGIC_AVAILABLE(PLAYER0,POWER_SLAP,1,1)
 MAGIC_AVAILABLE(PLAYER0,POWER_SIGHT,1,1)
+MAGIC_AVAILABLE(PLAYER0,POWER_IMP,1,1)
 
 SET_CREATURE_FEAR_WOUNDED(TUNNELLER,0)
 SET_CREATURE_FEAR_WOUNDED(KNIGHT,0)
@@ -134,7 +135,7 @@ ENDIF
 
 IF(PLAYER0,TIMER0 >= 250)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe02.ogg")
-    QUICK_INFORMATION(2,"First, there's money to be made. Click on the flashing seam of gold - your Imps will dig out the area you designate.")
+    QUICK_OBJECTIVE(2,"First, there's money to be made. Click on the flashing seam of gold - your Imps will dig out the area you designate.")
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 400)
@@ -142,7 +143,7 @@ IF(PLAYER0,TIMER0 >= 400)
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 800)
-    QUICK_INFORMATION(4,"Our time is now! The dark forces of the Underworld seek a figurehead, a powerful leader, whose banner they can gather under. To form a force that can, once and for all, end King Reginald- the-Just's sickeningly fair and goodly reign in the Sunlit Kingdom.")
+    QUICK_OBJECTIVE(4,"Our time is now! The dark forces of the Underworld seek a figurehead, a powerful leader, whose banner they can gather under. To form a force that can, once and for all, end King Reginald- the-Just's sickeningly fair and goodly reign in the Sunlit Kingdom.")
 ENDIF
 
 IF(PLAYER0, GOBLIN >= 1)
@@ -158,7 +159,7 @@ ENDIF
 
 IF(PLAYER0,LAIR >= 8)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe07.ogg")
-    QUICK_INFORMATION(7,"Excellent work, Keeper. You are ready to recruit more creatures to your cause. See?  A Portal near your Dungeon Heart, to where your Imps must dig. They'll claim this Portal to be yours: you'll see what beasts emerge.")
+    QUICK_OBJECTIVE(7,"Excellent work, Keeper. You are ready to recruit more creatures to your cause. See?  A Portal near your Dungeon Heart, to where your Imps must dig. They'll claim this Portal to be yours: you'll see what beasts emerge.")
 ENDIF
 
 IF(PLAYER0,TOTAL_CREATURES >= 1)
@@ -181,7 +182,7 @@ IF(PLAYER0,FLAG0 == 5)
         REM CREATE_TEXT(30, 16)
         IF(PLAYER0,TIMER1 >= 800)
             PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe03.ogg")
-            QUICK_INFORMATION(8,"I sense activity beyond your walls: Dwarfish foes approach, and you may track their path as white dots on your map.")
+            QUICK_OBJECTIVE(8,"I sense activity beyond your walls: Dwarfish foes approach, and you may track their path as white dots on your map.")
             ADD_TUNNELLER_TO_LEVEL(PLAYER_GOOD,1,DUNGEON,0,1,300)
             ADD_TUNNELLER_TO_LEVEL(PLAYER_GOOD,1,DUNGEON,0,1,300)
             TUTORIAL_FLASH_BUTTON(37,-1)
