@@ -3437,7 +3437,7 @@ Objects = []
 
 [slab53]
 [slab53.S]
-Columns = [1127, 1127, 1127, 1127, 1127, 1127, 1127, 1127, 1127]
+Columns = [1339, 1338, 1339, 1339, 1338, 1338, 1338, 1338, 1339]
 
 [[slab53.S_objects]]
 IsLight = 0
@@ -3512,8 +3512,15 @@ Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 Objects = []
 
 [slab53.ALL_LAVA]
-Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
-Objects = []
+Columns = [1127, 1127, 1127, 1127, 1127, 1127, 1127, 1127, 1127]
+
+[[slab53.ALL_LAVA_objects]]
+IsLight = 0
+Subtile = 4
+RelativePosition = [160, 128, 512]
+ThingType = 1
+Subtype = 115
+EffectRange = 0
 
 [slab53.S_WATER]
 Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -3548,7 +3555,7 @@ Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 Objects = []
 
 [slab53.ALL_WATER]
-Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Columns = [1125, 1125, 1125, 1125, 1125, 1125, 1125, 1125, 1125]
 Objects = []
 
 [slab53.CENTER]
