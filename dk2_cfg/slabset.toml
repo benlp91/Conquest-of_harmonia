@@ -1526,19 +1526,19 @@ Objects = []
 
 [slab32]
 [slab32.S]
-Columns = [880, 880, 880, 879, 879, 879, 879, 879, 879]
+Columns = [880, 880, 880, 879, 880, 879, 879, 879, 879]
 Objects = []
 
 [slab32.W]
-Columns = [879, 879, 880, 879, 879, 880, 879, 879, 880]
+Columns = [879, 879, 880, 879, 880, 880, 879, 879, 880]
 Objects = []
 
 [slab32.N]
-Columns = [879, 879, 879, 879, 879, 879, 880, 880, 880]
+Columns = [879, 879, 879, 879, 880, 879, 880, 880, 880]
 Objects = []
 
 [slab32.E]
-Columns = [880, 879, 879, 880, 879, 879, 880, 879, 879]
+Columns = [880, 879, 879, 880, 880, 879, 880, 879, 879]
 Objects = []
 
 [slab32.SW]
@@ -1606,7 +1606,7 @@ Columns = [880, 879, 304, 880, 879, 304, 880, 879, 304]
 Objects = []
 
 [slab32.SW_LAVA]
-Columns = [304, 879, 305, 304, 303, 879, 304, 304, 304]
+Columns = [304, 879, 305, 304, 304, 879, 304, 304, 304]
 
 [[slab32.SW_LAVA_objects]]
 IsLight = 0
@@ -1617,7 +1617,7 @@ Subtype = 4
 EffectRange = 0
 
 [slab32.NW_LAVA]
-Columns = [304, 304, 304, 304, 303, 879, 304, 879, 305]
+Columns = [304, 304, 304, 304, 304, 879, 304, 879, 305]
 
 [[slab32.NW_LAVA_objects]]
 IsLight = 0
@@ -1628,7 +1628,7 @@ Subtype = 4
 EffectRange = 0
 
 [slab32.NE_LAVA]
-Columns = [304, 304, 304, 879, 303, 304, 305, 879, 304]
+Columns = [304, 304, 304, 879, 304, 304, 305, 879, 304]
 
 [[slab32.NE_LAVA_objects]]
 IsLight = 0
@@ -1639,7 +1639,7 @@ Subtype = 4
 EffectRange = 0
 
 [slab32.SE_LAVA]
-Columns = [305, 879, 304, 879, 303, 304, 304, 304, 304]
+Columns = [305, 879, 304, 879, 304, 304, 304, 304, 304]
 
 [[slab32.SE_LAVA_objects]]
 IsLight = 0
@@ -1681,7 +1681,7 @@ Subtype = 4
 EffectRange = 0
 
 [slab32.NW_WATER]
-Columns = [302, 302, 302, 302, 303, 879, 302, 879, 305]
+Columns = [302, 302, 302, 302, 304, 879, 302, 879, 305]
 
 [[slab32.NW_WATER_objects]]
 IsLight = 0
@@ -1692,7 +1692,7 @@ Subtype = 4
 EffectRange = 0
 
 [slab32.NE_WATER]
-Columns = [302, 302, 302, 879, 303, 302, 305, 879, 302]
+Columns = [302, 302, 302, 879, 304, 302, 305, 879, 302]
 
 [[slab32.NE_WATER_objects]]
 IsLight = 0
@@ -1703,7 +1703,7 @@ Subtype = 4
 EffectRange = 0
 
 [slab32.SE_WATER]
-Columns = [305, 879, 302, 879, 303, 302, 302, 302, 302]
+Columns = [305, 879, 302, 879, 304, 302, 302, 302, 302]
 
 [[slab32.SE_WATER_objects]]
 IsLight = 0
@@ -1714,7 +1714,7 @@ Subtype = 4
 EffectRange = 0
 
 [slab32.ALL_WATER]
-Columns = [302, 302, 302, 302, 879, 302, 302, 302, 302]
+Columns = [302, 302, 302, 302, 880, 302, 302, 302, 302]
 Objects = []
 
 [slab32.CENTER]
