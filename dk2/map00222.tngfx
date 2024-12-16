@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 129
+ThingsCount = 130
 
 [thing0]
 ThingType = "Door"
@@ -1345,5 +1345,15 @@ Ownership = 4
 Index = 80
 Orientation = 512
 SubtileX = [46, 128]
+SubtileY = [91, 128]
+SubtileZ = [1, 0]
+
+[thing129]
+ThingType = "Trap"
+Subtype = 1
+Ownership = 4
+Index = 82
+Orientation = 512
+SubtileX = [10, 128]
 SubtileY = [91, 128]
 SubtileZ = [1, 0]
