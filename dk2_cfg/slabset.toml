@@ -3549,6 +3549,120 @@ Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 Objects = []
 
 
+[slab51]
+[slab51.S]
+Columns = [1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323]
+Objects = []
+
+[slab51.W]
+Columns = [1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323]
+Objects = []
+
+[slab51.N]
+Columns = [365, 365, 365, 365, 365, 365, 365, 365, 365]
+Objects = []
+
+[slab51.E]
+Columns = [365, 365, 365, 365, 365, 365, 365, 365, 365]
+Objects = []
+
+[slab51.SW]
+Columns = [365, 365, 365, 365, 365, 365, 365, 365, 365]
+Objects = []
+
+[slab51.NW]
+Columns = [365, 365, 365, 365, 365, 365, 365, 365, 365]
+Objects = []
+
+[slab51.NE]
+Columns = [365, 365, 365, 365, 365, 365, 365, 365, 365]
+Objects = []
+
+[slab51.SE]
+Columns = [365, 365, 365, 365, 365, 365, 365, 365, 365]
+Objects = []
+
+[slab51.ALL]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.S_LAVA]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.W_LAVA]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.N_LAVA]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.E_LAVA]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.SW_LAVA]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.NW_LAVA]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.NE_LAVA]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.SE_LAVA]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.ALL_LAVA]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.S_WATER]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.W_WATER]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.N_WATER]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.E_WATER]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.SW_WATER]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.NW_WATER]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.NE_WATER]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.SE_WATER]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.ALL_WATER]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+[slab51.CENTER]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Objects = []
+
+
 [slab53]
 [slab53.S]
 Columns = [1339, 1338, 1339, 1339, 1338, 1338, 1338, 1338, 1339]
@@ -6559,7 +6673,7 @@ Columns = [1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323]
 Objects = []
 
 [slab81.CENTER]
-Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Columns = [1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323]
 Objects = []
 
 
@@ -6578,7 +6692,14 @@ Objects = []
 
 [slab82.E]
 Columns = [1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189]
-Objects = []
+
+[[slab82.E_objects]]
+IsLight = 0
+Subtile = 4
+RelativePosition = [128, 128, 256]
+ThingType = 1
+Subtype = 28
+EffectRange = 0
 
 [slab82.SW]
 Columns = [1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189]
@@ -6615,8 +6736,28 @@ EffectRange = 0
 
 [slab82.SE]
 Columns = [1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189]
+Objects = []
 
-[[slab82.SE_objects]]
+[slab82.ALL]
+Columns = [1189, 1189, 1189, 1189, 1189, 1189, 1192, 1192, 1192]
+Objects = []
+
+[slab82.S_LAVA]
+Columns = [1192, 1189, 1189, 1192, 1189, 1189, 1192, 1189, 1189]
+Objects = []
+
+[slab82.W_LAVA]
+Columns = [1192, 1192, 1192, 1189, 1189, 1189, 1189, 1189, 1189]
+Objects = []
+
+[slab82.N_LAVA]
+Columns = [1189, 1189, 1192, 1189, 1189, 1192, 1189, 1189, 1192]
+Objects = []
+
+[slab82.E_LAVA]
+Columns = [1192, 1189, 1189, 1192, 1189, 1189, 1192, 1192, 1192]
+
+[[slab82.E_LAVA_objects]]
 IsLight = 0
 Subtile = 4
 RelativePosition = [128, 128, 256]
@@ -6624,28 +6765,8 @@ ThingType = 1
 Subtype = 28
 EffectRange = 0
 
-[slab82.ALL]
-Columns = [1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189]
-Objects = []
-
-[slab82.S_LAVA]
-Columns = [1189, 1189, 1189, 1189, 1189, 1189, 1192, 1192, 1192]
-Objects = []
-
-[slab82.W_LAVA]
-Columns = [1192, 1189, 1189, 1192, 1189, 1189, 1192, 1189, 1189]
-Objects = []
-
-[slab82.N_LAVA]
-Columns = [1192, 1192, 1192, 1189, 1189, 1189, 1189, 1189, 1189]
-Objects = []
-
-[slab82.E_LAVA]
-Columns = [1189, 1189, 1192, 1189, 1189, 1192, 1189, 1189, 1192]
-Objects = []
-
 [slab82.SW_LAVA]
-Columns = [1192, 1189, 1189, 1192, 1189, 1189, 1192, 1192, 1192]
+Columns = [1192, 1192, 1192, 1192, 1189, 1189, 1192, 1189, 1189]
 
 [[slab82.SW_LAVA_objects]]
 IsLight = 0
@@ -6656,7 +6777,7 @@ Subtype = 28
 EffectRange = 0
 
 [slab82.NW_LAVA]
-Columns = [1192, 1192, 1192, 1192, 1189, 1189, 1192, 1189, 1189]
+Columns = [1192, 1192, 1192, 1189, 1189, 1192, 1189, 1189, 1192]
 
 [[slab82.NW_LAVA_objects]]
 IsLight = 0
@@ -6667,7 +6788,7 @@ Subtype = 28
 EffectRange = 0
 
 [slab82.NE_LAVA]
-Columns = [1192, 1192, 1192, 1189, 1189, 1192, 1189, 1189, 1192]
+Columns = [1189, 1189, 1192, 1189, 1189, 1192, 1192, 1192, 1192]
 
 [[slab82.NE_LAVA_objects]]
 IsLight = 0
@@ -6678,9 +6799,29 @@ Subtype = 28
 EffectRange = 0
 
 [slab82.SE_LAVA]
-Columns = [1189, 1189, 1192, 1189, 1189, 1192, 1192, 1192, 1192]
+Columns = [1192, 1192, 1192, 1192, 1189, 1192, 1192, 1192, 1192]
+Objects = []
 
-[[slab82.SE_LAVA_objects]]
+[slab82.ALL_LAVA]
+Columns = [1189, 1189, 1189, 1189, 1189, 1189, 1193, 1193, 1193]
+Objects = []
+
+[slab82.S_WATER]
+Columns = [1193, 1189, 1189, 1193, 1189, 1189, 1193, 1189, 1189]
+Objects = []
+
+[slab82.W_WATER]
+Columns = [1193, 1193, 1193, 1189, 1189, 1189, 1189, 1189, 1189]
+Objects = []
+
+[slab82.N_WATER]
+Columns = [1189, 1189, 1193, 1189, 1189, 1193, 1189, 1189, 1193]
+Objects = []
+
+[slab82.E_WATER]
+Columns = [1193, 1189, 1189, 1193, 1189, 1189, 1193, 1193, 1193]
+
+[[slab82.E_WATER_objects]]
 IsLight = 0
 Subtile = 4
 RelativePosition = [128, 128, 256]
@@ -6688,28 +6829,8 @@ ThingType = 1
 Subtype = 28
 EffectRange = 0
 
-[slab82.ALL_LAVA]
-Columns = [1192, 1192, 1192, 1192, 1189, 1192, 1192, 1192, 1192]
-Objects = []
-
-[slab82.S_WATER]
-Columns = [1189, 1189, 1189, 1189, 1189, 1189, 1193, 1193, 1193]
-Objects = []
-
-[slab82.W_WATER]
-Columns = [1193, 1189, 1189, 1193, 1189, 1189, 1193, 1189, 1189]
-Objects = []
-
-[slab82.N_WATER]
-Columns = [1193, 1193, 1193, 1189, 1189, 1189, 1189, 1189, 1189]
-Objects = []
-
-[slab82.E_WATER]
-Columns = [1189, 1189, 1193, 1189, 1189, 1193, 1189, 1189, 1193]
-Objects = []
-
 [slab82.SW_WATER]
-Columns = [1193, 1189, 1189, 1193, 1189, 1189, 1193, 1193, 1193]
+Columns = [1193, 1193, 1193, 1193, 1189, 1189, 1193, 1189, 1189]
 
 [[slab82.SW_WATER_objects]]
 IsLight = 0
@@ -6720,7 +6841,7 @@ Subtype = 28
 EffectRange = 0
 
 [slab82.NW_WATER]
-Columns = [1193, 1193, 1193, 1193, 1189, 1189, 1193, 1189, 1189]
+Columns = [1193, 1193, 1193, 1189, 1189, 1193, 1189, 1189, 1193]
 
 [[slab82.NW_WATER_objects]]
 IsLight = 0
@@ -6731,7 +6852,7 @@ Subtype = 28
 EffectRange = 0
 
 [slab82.NE_WATER]
-Columns = [1193, 1193, 1193, 1189, 1189, 1193, 1189, 1189, 1193]
+Columns = [1189, 1189, 1193, 1189, 1189, 1193, 1193, 1193, 1193]
 
 [[slab82.NE_WATER_objects]]
 IsLight = 0
@@ -6742,142 +6863,135 @@ Subtype = 28
 EffectRange = 0
 
 [slab82.SE_WATER]
-Columns = [1189, 1189, 1193, 1189, 1189, 1193, 1193, 1193, 1193]
-
-[[slab82.SE_WATER_objects]]
-IsLight = 0
-Subtile = 4
-RelativePosition = [128, 128, 256]
-ThingType = 1
-Subtype = 28
-EffectRange = 0
-
-[slab82.ALL_WATER]
 Columns = [1193, 1193, 1193, 1193, 1189, 1193, 1193, 1193, 1193]
 Objects = []
 
-[slab82.CENTER]
+[slab82.ALL_WATER]
 Columns = [1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189]
+Objects = []
+
+[slab82.CENTER]
+Columns = [2, 2, 2, 2, 817, 2, 219, 221, 229]
 Objects = []
 
 
 [slab83]
 [slab83.S]
-Columns = [2, 2, 2, 2, 817, 2, 219, 221, 229]
-Objects = []
-
-[slab83.W]
 Columns = [219, 2, 2, 221, 817, 2, 229, 2, 2]
 Objects = []
 
-[slab83.N]
+[slab83.W]
 Columns = [219, 221, 229, 2, 817, 2, 2, 2, 2]
 Objects = []
 
-[slab83.E]
+[slab83.N]
 Columns = [2, 2, 219, 2, 817, 221, 2, 2, 229]
 Objects = []
 
-[slab83.SW]
+[slab83.E]
 Columns = [8, 2, 2, 9, 817, 2, 5, 6, 8]
+Objects = []
+
+[slab83.SW]
+Columns = [5, 6, 8, 6, 817, 2, 8, 2, 2]
 Objects = []
 
 [slab83.NW]
-Columns = [5, 6, 8, 6, 817, 2, 8, 2, 2]
+Columns = [8, 9, 5, 2, 817, 6, 2, 2, 8]
 Objects = []
 
 [slab83.NE]
-Columns = [8, 9, 5, 2, 817, 6, 2, 2, 8]
+Columns = [2, 2, 8, 2, 817, 9, 8, 9, 5]
 Objects = []
 
 [slab83.SE]
-Columns = [2, 2, 8, 2, 817, 9, 8, 9, 5]
+Columns = [5, 8, 5, 8, 817, 8, 5, 8, 5]
 Objects = []
 
 [slab83.ALL]
-Columns = [5, 8, 5, 8, 817, 8, 5, 8, 5]
-Objects = []
-
-[slab83.S_LAVA]
 Columns = [2, 2, 2, 2, 817, 2, 85, 86, 125]
 Objects = []
 
-[slab83.W_LAVA]
+[slab83.S_LAVA]
 Columns = [85, 2, 2, 86, 817, 2, 125, 2, 2]
 Objects = []
 
-[slab83.N_LAVA]
+[slab83.W_LAVA]
 Columns = [85, 86, 125, 2, 817, 2, 2, 2, 2]
 Objects = []
 
-[slab83.E_LAVA]
+[slab83.N_LAVA]
 Columns = [2, 2, 85, 2, 817, 86, 2, 2, 125]
 Objects = []
 
-[slab83.SW_LAVA]
+[slab83.E_LAVA]
 Columns = [8, 2, 2, 9, 817, 2, 5, 6, 8]
 Objects = []
 
-[slab83.NW_LAVA]
+[slab83.SW_LAVA]
 Columns = [5, 6, 8, 6, 817, 2, 8, 2, 2]
 Objects = []
 
-[slab83.NE_LAVA]
+[slab83.NW_LAVA]
 Columns = [8, 9, 5, 2, 817, 6, 2, 2, 8]
 Objects = []
 
-[slab83.SE_LAVA]
+[slab83.NE_LAVA]
 Columns = [2, 2, 8, 2, 817, 9, 8, 9, 5]
 Objects = []
 
-[slab83.ALL_LAVA]
+[slab83.SE_LAVA]
 Columns = [5, 8, 5, 8, 817, 8, 5, 8, 5]
 Objects = []
 
-[slab83.S_WATER]
+[slab83.ALL_LAVA]
 Columns = [2, 2, 2, 2, 2, 2, 58, 58, 58]
 Objects = []
 
-[slab83.W_WATER]
+[slab83.S_WATER]
 Columns = [58, 2, 2, 58, 2, 2, 58, 2, 2]
 Objects = []
 
-[slab83.N_WATER]
+[slab83.W_WATER]
 Columns = [58, 58, 58, 2, 2, 2, 2, 2, 2]
 Objects = []
 
-[slab83.E_WATER]
+[slab83.N_WATER]
 Columns = [2, 2, 58, 2, 2, 58, 2, 2, 58]
 Objects = []
 
-[slab83.SW_WATER]
+[slab83.E_WATER]
 Columns = [31, 2, 2, 32, 35, 2, 38, 33, 31]
 Objects = []
 
-[slab83.NW_WATER]
+[slab83.SW_WATER]
 Columns = [38, 33, 31, 33, 2, 2, 31, 2, 2]
 Objects = []
 
-[slab83.NE_WATER]
+[slab83.NW_WATER]
 Columns = [31, 32, 38, 2, 2, 33, 2, 2, 31]
 Objects = []
 
-[slab83.SE_WATER]
+[slab83.NE_WATER]
 Columns = [2, 2, 31, 2, 2, 32, 31, 32, 38]
 Objects = []
 
-[slab83.ALL_WATER]
+[slab83.SE_WATER]
 Columns = [38, 31, 38, 31, 2, 31, 38, 31, 38]
 Objects = []
 
-[slab83.CENTER]
+[slab83.ALL_WATER]
 Columns = [365, 365, 365, 365, 365, 365, 365, 365, 365]
+Objects = []
+
+[slab83.CENTER]
+Columns = [1174, 1177, 1178, 1174, 1176, 1177, 1175, 1175, 1175]
 Objects = []
 
 
 [slab84]
 [slab84.S]
-Columns = [1174, 1177, 1178, 1174, 1176, 1177, 1175, 1175, 1175]
+Columns = [365, 365, 365, 365, 365, 365, 365, 365, 365]
 Objects = []
 
 [slab84.W]
@@ -6905,7 +7019,7 @@ Columns = [365, 365, 365, 365, 365, 365, 365, 365, 365]
 Objects = []
 
 [slab84.SE]
-Columns = [365, 365, 365, 365, 365, 365, 365, 365, 365]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 Objects = []
 
 [slab84.ALL]
@@ -6985,120 +7099,120 @@ Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 Objects = []
 
 [slab84.CENTER]
-Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
+Columns = [1174, 1177, 1178, 1174, 1176, 1177, 1175, 1175, 1175]
 Objects = []
 
 
 [slab85]
 [slab85.S]
-Columns = [1174, 1177, 1178, 1174, 1176, 1177, 1175, 1175, 1175]
-Objects = []
-
-[slab85.W]
 Columns = [1179, 1177, 1174, 1179, 1176, 1178, 1179, 1177, 1177]
 Objects = []
 
-[slab85.N]
+[slab85.W]
 Columns = [1180, 1180, 1180, 1178, 1176, 1177, 1177, 1178, 1178]
 Objects = []
 
-[slab85.E]
+[slab85.N]
 Columns = [1178, 1174, 1181, 1178, 1176, 1181, 1177, 1177, 1181]
 Objects = []
 
-[slab85.SW]
+[slab85.E]
 Columns = [1179, 1174, 1174, 1179, 1176, 1174, 1182, 1175, 1175]
 Objects = []
 
-[slab85.NW]
+[slab85.SW]
 Columns = [1183, 1180, 1180, 1179, 1176, 1174, 1179, 1177, 1177]
 Objects = []
 
-[slab85.NE]
+[slab85.NW]
 Columns = [1180, 1180, 1184, 1178, 1176, 1181, 1178, 1174, 1181]
 Objects = []
 
-[slab85.SE]
+[slab85.NE]
 Columns = [1178, 1178, 1181, 1177, 1176, 1181, 1175, 1175, 1185]
 Objects = []
 
-[slab85.ALL]
+[slab85.SE]
 Columns = [1183, 1180, 1184, 1179, 1176, 1181, 1182, 1175, 1185]
 Objects = []
 
-[slab85.S_LAVA]
+[slab85.ALL]
 Columns = [1174, 1178, 1178, 1177, 1176, 1174, 1186, 1186, 1186]
 Objects = []
 
-[slab85.W_LAVA]
+[slab85.S_LAVA]
 Columns = [1186, 1174, 1174, 1186, 1176, 1174, 1186, 1177, 1174]
 Objects = []
 
-[slab85.N_LAVA]
+[slab85.W_LAVA]
 Columns = [1186, 1186, 1186, 1177, 1176, 1174, 1178, 1174, 1174]
 Objects = []
 
-[slab85.E_LAVA]
+[slab85.N_LAVA]
 Columns = [1177, 1178, 1186, 1178, 1176, 1186, 1174, 1178, 1186]
 Objects = []
 
-[slab85.SW_LAVA]
+[slab85.E_LAVA]
 Columns = [1186, 1174, 1174, 1186, 1176, 1178, 1186, 1186, 1186]
 Objects = []
 
-[slab85.NW_LAVA]
+[slab85.SW_LAVA]
 Columns = [1186, 1186, 1186, 1186, 1176, 1177, 1186, 1178, 1174]
 Objects = []
 
-[slab85.NE_LAVA]
+[slab85.NW_LAVA]
 Columns = [1186, 1186, 1186, 1178, 1176, 1186, 1174, 1177, 1186]
 Objects = []
 
-[slab85.SE_LAVA]
+[slab85.NE_LAVA]
 Columns = [1177, 1177, 1186, 1177, 1176, 1186, 1186, 1186, 1186]
 Objects = []
 
-[slab85.ALL_LAVA]
+[slab85.SE_LAVA]
 Columns = [1186, 1186, 1186, 1186, 1176, 1186, 1186, 1186, 1186]
 Objects = []
 
-[slab85.S_WATER]
+[slab85.ALL_LAVA]
 Columns = [1177, 1178, 1178, 1177, 1176, 1174, 1187, 1187, 1187]
 Objects = []
 
-[slab85.W_WATER]
+[slab85.S_WATER]
 Columns = [1187, 1177, 1177, 1187, 1176, 1174, 1187, 1174, 1177]
 Objects = []
 
-[slab85.N_WATER]
+[slab85.W_WATER]
 Columns = [1187, 1187, 1187, 1174, 1176, 1174, 1178, 1174, 1177]
 Objects = []
 
-[slab85.E_WATER]
+[slab85.N_WATER]
 Columns = [1177, 1174, 1187, 1174, 1176, 1187, 1177, 1177, 1187]
 Objects = []
 
-[slab85.SW_WATER]
+[slab85.E_WATER]
 Columns = [1187, 1178, 1174, 1187, 1176, 1177, 1187, 1187, 1187]
 Objects = []
 
-[slab85.NW_WATER]
+[slab85.SW_WATER]
 Columns = [1187, 1187, 1187, 1187, 1176, 1174, 1187, 1178, 1178]
 Objects = []
 
-[slab85.NE_WATER]
+[slab85.NW_WATER]
 Columns = [1187, 1187, 1187, 1177, 1176, 1187, 1174, 1178, 1187]
 Objects = []
 
-[slab85.SE_WATER]
+[slab85.NE_WATER]
 Columns = [1177, 1178, 1187, 1178, 1176, 1187, 1187, 1187, 1187]
 Objects = []
 
-[slab85.ALL_WATER]
+[slab85.SE_WATER]
 Columns = [1187, 1187, 1187, 1187, 1176, 1187, 1187, 1187, 1187]
 Objects = []
 
-[slab85.CENTER]
+[slab85.ALL_WATER]
 Columns = [1174, 1177, 1178, 1174, 1176, 1177, 1178, 1178, 1178]
+Objects = []
+
+[slab85.CENTER]
+Columns = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 Objects = []
 
