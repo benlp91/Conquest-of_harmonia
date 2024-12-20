@@ -537,6 +537,10 @@ IF(PLAYER1,FLAG4 == 1)
   ENDIF
 ENDIF
 
+IF(PLAYER_GOOD,MONK == 0)
+  	SET_TIMER(PLAYER0, TIMER1)
+ENDIF
+
 IF(PLAYER0, TIMER1 >= 100)
   PLAY_MESSAGE(PLAYER0,SPEECH,"lvl13spe04.ogg")
   QUICK_OBJECTIVE(84,"Here's the realm of Maleus. Look alert, he sends his Vampires out to crush you first, I hope you are prepared.")
