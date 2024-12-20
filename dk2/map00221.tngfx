@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 36
+ThingsCount = 40
 
 [thing0]
 ThingType = "Door"
@@ -337,6 +337,46 @@ SubtileY = [76, 128]
 SubtileZ = [2, 224]
 
 [thing33]
+ThingType = "Object"
+Subtype = 28
+Ownership = 5
+ParentTile = 65535
+Orientation = 512
+SubtileX = [39, 128]
+SubtileY = [72, 128]
+SubtileZ = [1, 0]
+
+[thing34]
+ThingType = "Object"
+Subtype = 28
+Ownership = 5
+ParentTile = 65535
+Orientation = 512
+SubtileX = [50, 128]
+SubtileY = [72, 128]
+SubtileZ = [1, 0]
+
+[thing35]
+ThingType = "Object"
+Subtype = 28
+Ownership = 5
+ParentTile = 65535
+Orientation = 512
+SubtileX = [36, 128]
+SubtileY = [78, 128]
+SubtileZ = [1, 0]
+
+[thing36]
+ThingType = "Object"
+Subtype = 28
+Ownership = 5
+ParentTile = 65535
+Orientation = 512
+SubtileX = [53, 128]
+SubtileY = [78, 128]
+SubtileZ = [1, 0]
+
+[thing37]
 ThingType = "Creature"
 Subtype = 45
 Ownership = 0
@@ -348,7 +388,7 @@ SubtileX = [44, 128]
 SubtileY = [73, 128]
 SubtileZ = [1, 0]
 
-[thing34]
+[thing38]
 ThingType = "EffectGen"
 Subtype = 1
 Ownership = 5
@@ -359,7 +399,7 @@ SubtileX = [52, 128]
 SubtileY = [69, 128]
 SubtileZ = [0, 0]
 
-[thing35]
+[thing39]
 ThingType = "EffectGen"
 Subtype = 1
 Ownership = 5
