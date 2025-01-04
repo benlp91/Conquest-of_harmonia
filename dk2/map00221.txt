@@ -66,6 +66,8 @@ SET_OBJECT_CONFIGURATION(FAKE_GEM,MaximumSize,0)
 SET_GAME_RULE(FriendlyFightAreaDamagePercent,10)
 SET_GAME_RULE(FriendlyFightAreaRangePercent,40)
 
+SET_CREATURE_FEAR_STRONGER(FAIRY,0)
+
 PLAY_MESSAGE(PLAYER0,SPEECH,"lvl22spe01.ogg")
 QUICK_OBJECTIVE(140,"Destroy the Heroes within the time allotted as they pass by you in this macabre duck-shoot. I devised this game for you, Keeper, so enjoy it. However, be very wary of 'ducks' that strike back.")
 
@@ -150,6 +152,8 @@ ENDIF
 SET_MUSIC("0")
 
 IF(PLAYER0,TIMER0 >= 150)
+REM   SET_MUSIC("easter_egg.ogg")
+
 	SET_MUSIC("dk1finale.mp3")
 ENDIF
 

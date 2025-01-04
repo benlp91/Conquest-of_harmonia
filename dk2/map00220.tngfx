@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 170
+ThingsCount = 173
 
 [thing0]
 ThingType = "Object"
@@ -1642,6 +1642,39 @@ SubtileY = [92, 128]
 SubtileZ = [1, 0]
 
 [thing164]
+ThingType = "Object"
+Subtype = 91
+Ownership = 5
+ParentTile = 65535
+Orientation = 1536
+SubtileX = [10, 128]
+SubtileY = [133, 128]
+SubtileZ = [1, 0]
+
+[thing165]
+ThingType = "Object"
+Subtype = 91
+Ownership = 5
+ParentTile = 65535
+Orientation = 1536
+SubtileX = [13, 128]
+SubtileY = [133, 128]
+SubtileZ = [1, 0]
+
+[thing166]
+ThingType = "Creature"
+Subtype = 47
+Ownership = 0
+Index = 4
+CreatureLevel = 1
+CreatureName = "Gloob in ex"
+CreatureGold = 0
+CreatureInitialHealth = 100
+SubtileX = [10, 128]
+SubtileY = [139, 128]
+SubtileZ = [1, 0]
+
+[thing167]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1652,7 +1685,7 @@ SubtileX = [83, 128]
 SubtileY = [32, 128]
 SubtileZ = [0, 0]
 
-[thing165]
+[thing168]
 ThingType = "EffectGen"
 Subtype = 1
 Ownership = 5
@@ -1663,7 +1696,7 @@ SubtileX = [101, 128]
 SubtileY = [111, 128]
 SubtileZ = [0, 0]
 
-[thing166]
+[thing169]
 ThingType = "EffectGen"
 Subtype = 1
 Ownership = 5
@@ -1674,7 +1707,7 @@ SubtileX = [125, 128]
 SubtileY = [105, 128]
 SubtileZ = [0, 0]
 
-[thing167]
+[thing170]
 ThingType = "Trap"
 Subtype = 1011
 Ownership = 0
@@ -1684,7 +1717,7 @@ SubtileX = [49, 128]
 SubtileY = [136, 128]
 SubtileZ = [1, 0]
 
-[thing168]
+[thing171]
 ThingType = "Trap"
 Subtype = 1011
 Ownership = 0
@@ -1694,7 +1727,7 @@ SubtileX = [25, 128]
 SubtileY = [55, 128]
 SubtileZ = [1, 0]
 
-[thing169]
+[thing172]
 ThingType = "Trap"
 Subtype = 1011
 Ownership = 0

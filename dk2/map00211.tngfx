@@ -4048,17 +4048,6 @@ SubtileZ = [0, 0]
 
 [thing388]
 ThingType = "EffectGen"
-Subtype = 4
-Ownership = 1
-EffectRange = [5, 0]
-ParentTile = 1313
-Orientation = 0
-SubtileX = [160, 128]
-SubtileY = [55, 128]
-SubtileZ = [0, 0]
-
-[thing389]
-ThingType = "EffectGen"
 Subtype = 5
 Ownership = 5
 EffectRange = [5, 0]
@@ -4067,6 +4056,17 @@ Orientation = 1024
 SubtileX = [44, 128]
 SubtileY = [132, 128]
 SubtileZ = [1, 0]
+
+[thing389]
+ThingType = "EffectGen"
+Subtype = 4
+Ownership = 1
+EffectRange = [5, 0]
+ParentTile = 1313
+Orientation = 0
+SubtileX = [160, 128]
+SubtileY = [55, 128]
+SubtileZ = [0, 0]
 
 [thing390]
 ThingType = "Trap"
