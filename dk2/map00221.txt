@@ -136,22 +136,18 @@ IF(PLAYER0,TIMER0 >= 70)
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 60)
-	QUICK_MESSAGE(151,"a high damage dealer against single targets.",SORCEROR)
-	QUICK_MESSAGE(150,"Attack 1: Fireball;",SORCEROR)
+	QUICK_MESSAGE(151,"Attack 1: Fireball, your basic attack single target.",SORCEROR)
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 50)
-	QUICK_MESSAGE(153,"effective against multiple enemies.",SORCEROR)
-	QUICK_MESSAGE(152,"Attack 2: Meteor;",SORCEROR)
+	QUICK_MESSAGE(153,"Attack 2: Meteor, effective against multiple.",SORCEROR)
 ENDIF
 IF(PLAYER0,TIMER0 >= 40)
-	QUICK_MESSAGE(155,"clears an entire area.",SORCEROR)
-	QUICK_MESSAGE(154,"Attack 3: Stage Clearer;",SORCEROR)		
+	QUICK_MESSAGE(155,"Attack 3: Stage clearer, clears entire area.",SORCEROR)	
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 30)
-	QUICK_MESSAGE(157,"A spread attack.",SORCEROR)
-	QUICK_MESSAGE(158,"Attack 4: Spreader;",SORCEROR)
+	QUICK_MESSAGE(158,"Attack 4: Spreader, a spread attack.",SORCEROR)
 ENDIF
 
 SET_MUSIC("0")
