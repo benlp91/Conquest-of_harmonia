@@ -22,7 +22,12 @@ MAGIC_AVAILABLE(ALL_PLAYERS,POWER_LIGHTNING,1,1)
 
 CONCEAL_MAP_RECT(Player0, 70, 70, 250, 250,1)
 
+IF(PLAYER0, TIMER0 >= 55)
+QUICK_INFORMATION(123,"Turn on the low walls mode in your options to play this level!")
+ENDIF
+
 RUN_AFTER_VICTORY(1)
+
 IF(PLAYER0, TIMER0 >= 20)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl21spe01.ogg")
 	QUICK_OBJECTIVE(121,"Even malignant overlords need a little rest and recuperation from time to time Keeper. Use the boulders to negotiate your way through these three courses. Be warned though. You have a limited amount of slaps to remain under par, and an even more limited amount of time.")
