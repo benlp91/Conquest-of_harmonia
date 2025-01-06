@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 41
+ThingsCount = 45
 
 [thing0]
 ThingType = "Object"
@@ -345,22 +345,22 @@ SubtileZ = [3, 0]
 
 [thing34]
 ThingType = "Object"
-Subtype = 28
+Subtype = 1036
 Ownership = 0
-ParentTile = 513
+ParentTile = 65535
 Orientation = 0
-SubtileX = [28, 128]
-SubtileY = [64, 128]
+SubtileX = [34, 128]
+SubtileY = [79, 128]
 SubtileZ = [1, 0]
 
 [thing35]
 ThingType = "Object"
 Subtype = 28
 Ownership = 0
-ParentTile = 609
+ParentTile = 513
 Orientation = 0
 SubtileX = [28, 128]
-SubtileY = [76, 128]
+SubtileY = [64, 128]
 SubtileZ = [1, 0]
 
 [thing36]
@@ -375,15 +375,55 @@ SubtileZ = [1, 0]
 
 [thing37]
 ThingType = "Object"
-Subtype = 1036
+Subtype = 111
 Ownership = 0
-ParentTile = 65535
+ParentTile = 540
 Orientation = 0
-SubtileX = [34, 128]
-SubtileY = [73, 128]
-SubtileZ = [1, 0]
+SubtileX = [37, 128]
+SubtileY = [67, 128]
+SubtileZ = [2, 0]
 
 [thing38]
+ThingType = "Object"
+Subtype = 111
+Ownership = 0
+ParentTile = 538
+Orientation = 0
+SubtileX = [31, 128]
+SubtileY = [67, 128]
+SubtileZ = [2, 0]
+
+[thing39]
+ThingType = "Object"
+Subtype = 28
+Ownership = 0
+ParentTile = 609
+Orientation = 0
+SubtileX = [28, 128]
+SubtileY = [76, 128]
+SubtileZ = [1, 0]
+
+[thing40]
+ThingType = "Object"
+Subtype = 111
+Ownership = 0
+ParentTile = 586
+Orientation = 0
+SubtileX = [31, 128]
+SubtileY = [73, 128]
+SubtileZ = [2, 0]
+
+[thing41]
+ThingType = "Object"
+Subtype = 111
+Ownership = 0
+ParentTile = 588
+Orientation = 0
+SubtileX = [37, 128]
+SubtileY = [73, 128]
+SubtileZ = [2, 0]
+
+[thing42]
 ThingType = "Creature"
 Subtype = 3
 Ownership = 4
@@ -395,7 +435,7 @@ SubtileX = [37, 128]
 SubtileY = [16, 128]
 SubtileZ = [1, 0]
 
-[thing39]
+[thing43]
 ThingType = "EffectGen"
 Subtype = 5
 Ownership = 4
@@ -406,7 +446,7 @@ SubtileX = [37, 128]
 SubtileY = [7, 128]
 SubtileZ = [2, 0]
 
-[thing40]
+[thing44]
 ThingType = "EffectGen"
 Subtype = 4
 Ownership = 5
