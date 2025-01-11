@@ -153,9 +153,9 @@ ENDIF
 SET_MUSIC("0")
 
 IF(PLAYER0,TIMER0 >= 150)
-   SET_MUSIC("easter_egg.ogg")
+REM   SET_MUSIC("easter_egg.ogg")
 
-REM 	SET_MUSIC("dk1finale.mp3")
+ 	SET_MUSIC("dk1finale.mp3")
 ENDIF
 
 SET_TIMER(PLAYER2, TIMER1)
