@@ -36,6 +36,44 @@ LightFlags = 0
 ElementsCount = 8
 AlwaysGenerate = 0
 
+[effect82]
+Name = "EFFECT_WORD_OF_POWER_NO_SOUND"
+Health = 10
+GenerationType = 1
+GenerationAccelXYRange = [100,100]
+GenerationAccelZRange = [1,1]
+GenerationKindRange = [10,10]
+AreaAffectType = 4
+HitType = 3
+SpellEffect = 0
+Sound = 0
+AffectedByWind = 1
+LightRadius = 10
+LightIntensity = 52
+LightFlags = 0
+ElementsCount = 20
+AlwaysGenerate = 0
+
+[effect83]
+Name = "EFFECT_EXPLOSION_CUSTOM"
+Health = 20
+GenerationType = 1
+GenerationAccelXYRange = [256,256]
+GenerationAccelZRange = [-256,256]
+GenerationKindRange = [1,1]
+AreaAffectType = 0
+HitType = 0
+SpellEffect = 0
+Sound = 0
+AffectedByWind = 1
+LightRadius = 10
+LightIntensity = 45
+LightFlags = 1
+ElementsCount = 10
+AlwaysGenerate = 0
+
+
+
 [effectElement123]
 Name = "EFFECTELEMENT_CHICKENS"
 DrawClass = 2
