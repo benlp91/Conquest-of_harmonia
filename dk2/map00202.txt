@@ -293,12 +293,12 @@ ENDIF
 
 IF(PLAYER0,TOTAL_GOLD_MINED >= 20000)
 		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe09.ogg")
-            QUICK_OBJECTIVE(27,"To lure Lord Avaricious from his stronghold, mine all the gold within his realm.")
+        QUICK_OBJECTIVE(27,"To lure Lord Avaricious from his stronghold, mine all the gold within his realm.")
 ENDIF
 
 IF(PLAYER0,TOTAL_GOLD_MINED >= 40000)
 		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe10.ogg")
-            QUICK_OBJECTIVE(28,"You need more gold.  Explore and find it: send your Imps to mine it!")
+        QUICK_OBJECTIVE(28,"You need more gold.  Explore and find it: send your Imps to mine it!")
 ENDIF
 
 IF(PLAYER0,TOTAL_GOLD_MINED >= 90000)
