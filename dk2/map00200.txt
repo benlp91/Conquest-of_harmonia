@@ -43,15 +43,16 @@ SET_GAME_RULE(TrainingRoomMaxLevel,4)
 
 SET_TIMER(PLAYER3,TIMER3)
 
-SET_TEXTURE(PLAYER_GOOD,18)
-
 IF(PLAYER3,TIMER3 >= 40)
-    ZOOM_TO_LOCATION(PLAYER0,5)
+    	ZOOM_TO_LOCATION(PLAYER0,5)
 ENDIF
+
+
+SET_TEXTURE(PLAYER_GOOD,18)
 
 REM START INTRO FOR CHOOSING THE REVEAL/CONCEAL
 
-QUICK_OBJECTIVE(0,"Please pick the box you prefer. You can choose between the DK1 or DK2 Map concealment option, and it will remain for the rest of the campaign.")
+QUICK_OBJECTIVE(0,"Please choose between the boxes. Try both to see what you prefer and then continue, it will remain for the rest of the campaign.")
 
 ADD_OBJECT_TO_LEVEL(SPECBOX_CUSTOM_A,7,1,PLAYER0)
 ADD_OBJECT_TO_LEVEL(SPECBOX_CUSTOM_B,8,2,PLAYER0)
@@ -172,59 +173,14 @@ IF(PLAYER0,TIMER0 >= 1)
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 10)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 30)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 50)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 60)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 70)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 80)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 90)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 100)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 110)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 120)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 130)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 140)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 150)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 160)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 170)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 180)
-    ZOOM_TO_LOCATION(PLAYER0,4)
-ENDIF
-IF(PLAYER0,TIMER0 >= 190)
-    ZOOM_TO_LOCATION(PLAYER0,4)
+	IF(PLAYER0,TIMER0 <= 209)
+		NEXT_COMMAND_REUSABLE
+    	ZOOM_TO_LOCATION(PLAYER0,4)
+	ENDIF
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 200)
-    ZOOM_TO_LOCATION(PLAYER0,PLAYER0)
+
     SET_POWER_CONFIGURATION(POWER_SIGHT,POWER,10,6)
     USE_POWER_AT_LOCATION(PLAYER0,3,POWER_SIGHT,6,1)
 ENDIF
@@ -237,22 +193,46 @@ ENDIF
 
 REM SETTINGS
 
-IF(PLAYER0,TIMER0 >= 45)
+IF(PLAYER0,TIMER0 >= 25)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe01.ogg")
     QUICK_OBJECTIVE(1,"Here walks the goodly Lord Antonius,'tis he who holds the precious Portal Gem. But only when you've mustered strength sufficient should you challenge him and claim your prize!")
 ENDIF
 
-IF(PLAYER0,TIMER0 >= 250)
+IF(PLAYER0,TIMER0 >= 210)
+    ZOOM_TO_LOCATION(PLAYER0,10)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe02.ogg")
     QUICK_OBJECTIVE(2,"First, there's money to be made. Click on the flashing seam of gold - your Imps will dig out the area you designate.")
+    SET_TIMER(PLAYER4,TIMER3)
+ENDIF
+
+IF(PLAYER4,TIMER3 >= 40)
+    	CHANGE_SLAB_TYPE(11,19,DIRT)
+ENDIF
+
+IF(PLAYER4,TIMER3 >= 50)
+    	CHANGE_SLAB_TYPE(11,19,GOLD)
+ENDIF
+
+IF(PLAYER4,TIMER3 >= 60)
+    	CHANGE_SLAB_TYPE(11,19,DIRT)
+ENDIF
+
+IF(PLAYER4,TIMER3 >= 70)
+    	CHANGE_SLAB_TYPE(11,19,GOLD)
+ENDIF
+
+IF(PLAYER4,TIMER3 >= 80)
+    	CHANGE_SLAB_TYPE(11,19,DIRT)
+ENDIF
+
+IF(PLAYER4,TIMER3 >= 90)
+    	CHANGE_SLAB_TYPE(11,19,GOLD)
 ENDIF
 
 IF(PLAYER0,TIMER0 >= 400)
-    QUICK_INFORMATION(3,"Welcome to Conquest of Harmonia for keeperfx. Special thanks goes to Qqluqq and Loobinex; they made this possible.")
-ENDIF
-
-IF(PLAYER0,TIMER0 >= 800)
-    QUICK_OBJECTIVE(4,"Our time is now! The dark forces of the Underworld seek a figurehead, a powerful leader, whose banner they can gather under. To form a force that can, once and for all, end King Reginald- the-Just's sickeningly fair and goodly reign in the Sunlit Kingdom.")
+    PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe09.ogg")
+    TUTORIAL_FLASH_BUTTON(LAIR,-1)
+    QUICK_INFORMATION(3,"Welcome to Conquest of Harmonia for Keeperfx. Special thanks goes to Qqluqq and Loobinex; they made this possible. Also thanks to Erminio Lucento for his Artwork.")
 ENDIF
 
 IF(PLAYER0, GOBLIN >= 1)
@@ -266,7 +246,7 @@ IF(PLAYER0, FIREFLY >= 1)
     QUICK_INFORMATION(6,"The swift light Firefly is essential as an airborne scout. His eyes are yours to penetrate dark places and report.")
 ENDIF
 
-IF(PLAYER0,LAIR >= 8)
+IF(PLAYER0,LAIR >= 3)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe07.ogg")
     QUICK_OBJECTIVE(7,"Excellent work, Keeper. You are ready to recruit more creatures to your cause. See?  A Portal near your Dungeon Heart, to where your Imps must dig. They'll claim this Portal to be yours: you'll see what beasts emerge.")
 ENDIF
@@ -419,12 +399,11 @@ ENDIF
 IF(PLAYER6,TIMER6 >= 110)
     CREATE_EFFECT(EFFECT_WORD_OF_POWER_NO_SOUND,-2)
         CREATE_EFFECT(EFFECT_EXPLOSION_CUSTOM,-2)
-ENDIF
+ENDIF 
 
 IF(PLAYER6,TIMER6 >= 125)
-REM    ADD_PARTY_TO_LEVEL(PLAYER6,HORNY,-2,1)
-    RUN_LUA_CODE(SpawnHorny)
-    RUN_LUA_CODE(Zoom)
+    ADD_PARTY_TO_LEVEL(PLAYER6,HORNY,-2,1)
+    RUN_LUA_CODE("HideHornyFlower()")
     SET_OBJECT_CONFIGURATION(HORNY_STATUE,MaximumSize,0)
 ENDIF
 
@@ -439,4 +418,8 @@ IF(PLAYER0,FLAG0 == 8)
     IF(PLAYER6,TIMER7 > 50)
         KILL_CREATURE(PLAYER6,EVILLORD,ANYWHERE,1)
     ENDIF
+ENDIF
+
+IF(PLAYER6,TIMER7 > 5)
+        PLAY_MESSAGE(PLAYER0,SOUND,116)
 ENDIF
