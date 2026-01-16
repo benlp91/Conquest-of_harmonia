@@ -232,7 +232,7 @@ ENDIF
 IF(PLAYER0,TIMER0 >= 400)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe09.ogg")
     TUTORIAL_FLASH_BUTTON(LAIR,-1)
-    QUICK_INFORMATION(3,"Welcome to Conquest of Harmonia for Keeperfx. Special thanks goes to Qqluqq and Loobinex; they made this possible. Also thanks to Erminio Lucento for his Artwork.")
+    QUICK_INFORMATION(3,"Welcome to Conquest of Harmonia for Keeperfx. Special thanks goes to Qqluqq and Loobinex; they made this possible. Also thanks to Erminio Lucente for his Artwork.")
 ENDIF
 
 IF(PLAYER0, GOBLIN >= 1)
