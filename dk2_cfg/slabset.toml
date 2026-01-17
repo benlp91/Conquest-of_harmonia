@@ -751,23 +751,67 @@ Objects = []
 [slab26]
 
 [slab26.S]
-Columns = [345, 345, 345, 346, 346, 346, 496, 496, 496]
+Columns = [1374, 1374, 1374, 1373, 1373, 1373, 350, 350, 350]
 Objects = []
 
 [slab26.W]
-Columns = [496, 346, 345, 496, 346, 345, 496, 346, 345]
+Columns = [350, 1373, 1374, 350, 1373, 1374, 350, 1373, 1374]
 Objects = []
 
 [slab26.N]
-Columns = [496, 496, 496, 346, 346, 346, 345, 345, 345]
+Columns = [350, 350, 350, 1373, 1373, 1373, 1374, 1374, 1374]
 Objects = []
 
 [slab26.E]
-Columns = [345, 346, 496, 345, 346, 496, 345, 346, 496]
+Columns = [1374, 1373, 350, 1374, 1373, 350, 1374, 1373, 350]
 Objects = []
 
+[slab26.SW]
+Columns = [350, 350, 1373, 350, 304, 350, 797, 350, 350]
+
+[[slab26.SW_objects]]
+IsLight = 0
+Subtile = 4
+RelativePosition = [128, 128, 512]
+ThingType = 1
+Subtype = 111
+EffectRange = 0
+
+[slab26.NW]
+Columns = [797, 350, 350, 350, 304, 350, 350, 350, 1373]
+
+[[slab26.NW_objects]]
+IsLight = 0
+Subtile = 4
+RelativePosition = [128, 128, 512]
+ThingType = 1
+Subtype = 111
+EffectRange = 0
+
+[slab26.NE]
+Columns = [350, 350, 797, 350, 304, 350, 1373, 350, 350]
+
+[[slab26.NE_objects]]
+IsLight = 0
+Subtile = 4
+RelativePosition = [128, 128, 512]
+ThingType = 1
+Subtype = 111
+EffectRange = 0
+
+[slab26.SE]
+Columns = [1373, 350, 350, 350, 304, 350, 350, 350, 797]
+
+[[slab26.SE_objects]]
+IsLight = 0
+Subtile = 4
+RelativePosition = [128, 128, 512]
+ThingType = 1
+Subtype = 111
+EffectRange = 0
+
 [slab26.CENTER]
-Columns = [345, 345, 345, 345, 345, 345, 345, 345, 345]
+Columns = [1374, 1374, 1374, 1374, 1374, 1374, 1374, 1374, 1374]
 Objects = []
 
 
@@ -1437,7 +1481,7 @@ IsLight = 0
 Subtile = 4
 RelativePosition = [128, 128, 0]
 ThingType = 1
-Subtype = 1
+Subtype = 1053
 EffectRange = 0
 
 
