@@ -178,16 +178,16 @@ IF(PLAYER0,TIMER0 >= 2000)
     QUICK_OBJECTIVE(131,"Your mission is to capture and convert all three Princes to your side. They must neither die nor be allowed to flee through Hero Gates, which they'll attempt once one of them is injured. So to work!")
 ENDIF
 
-IF(PLAYER0, KNIGHT >= 1)
+IF(PLAYER0, TRISTAN >= 0)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe03.ogg")
     QUICK_OBJECTIVE(132,"I yield, Keeper. I, Tristran, will serve you well.")
 ENDIF
 
-IF(PLAYER0, KNIGHT >= 2)
+IF(PLAYER0, BALDER >= 0)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe04.ogg")
     QUICK_OBJECTIVE(133,"You are my master, Keeper. I, Balder will share with you my secret knowledge.")
 ENDIF
-IF(PLAYER0, KNIGHT >= 3)
+IF(PLAYER0, FELIX >= 0)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl19spe05.ogg")
     QUICK_OBJECTIVE(134,"Your torments have broken me. I, Felix, will fight for you against my father's land.")
 ENDIF
@@ -400,11 +400,12 @@ ENDIF
 
 IF(PLAYER6,TIMER6 >= 110)
     CREATE_EFFECT(EFFECT_WORD_OF_POWER_NO_SOUND,-1)
-        CREATE_EFFECT(EFFECT_EXPLOSION_CUSTOM,-1)
+    CREATE_EFFECT(EFFECT_EXPLOSION_CUSTOM,-1)
+    ADD_PARTY_TO_LEVEL(PLAYER6,HORNY,13,1)
 ENDIF
 
 IF(PLAYER6,TIMER6 >= 125)
-    ADD_PARTY_TO_LEVEL(PLAYER6,HORNY,-1,1)
+    MOVE_CREATURE(PLAYER6,EVILLORD,ANYWHERE,1,-1,NULL)
     RUN_LUA_CODE("HideHornyFlower()")
     SET_OBJECT_CONFIGURATION(HORNY_STATUE,MaximumSize,0)
 ENDIF

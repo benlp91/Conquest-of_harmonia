@@ -6,6 +6,7 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 1165
+CustomBox = -1
 Orientation = 0
 SubtileX = [52, 128]
 SubtileY = [85, 128]
@@ -13,22 +14,24 @@ SubtileZ = [1, 0]
 
 [thing1]
 ThingType = "Object"
-Subtype = 5
-Ownership = 0
-ParentTile = 1249
-Orientation = 0
-SubtileX = [58, 128]
-SubtileY = [91, 128]
-SubtileZ = [3, 0]
-
-[thing2]
-ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 1169
+CustomBox = -1
 Orientation = 0
 SubtileX = [64, 128]
 SubtileY = [85, 128]
+SubtileZ = [1, 0]
+
+[thing2]
+ThingType = "Object"
+Subtype = 149
+Ownership = 0
+ParentTile = 65535
+CustomBox = -1
+Orientation = 512
+SubtileX = [55, 128]
+SubtileY = [73, 128]
 SubtileZ = [1, 0]
 
 [thing3]
@@ -36,8 +39,9 @@ ThingType = "Object"
 Subtype = 149
 Ownership = 0
 ParentTile = 65535
-Orientation = 512
-SubtileX = [55, 128]
+CustomBox = -1
+Orientation = 1536
+SubtileX = [61, 128]
 SubtileY = [73, 128]
 SubtileZ = [1, 0]
 
@@ -46,9 +50,10 @@ ThingType = "Object"
 Subtype = 149
 Ownership = 0
 ParentTile = 65535
-Orientation = 1536
-SubtileX = [61, 128]
-SubtileY = [73, 128]
+CustomBox = -1
+Orientation = 256
+SubtileX = [22, 128]
+SubtileY = [61, 128]
 SubtileZ = [1, 0]
 
 [thing5]
@@ -56,9 +61,10 @@ ThingType = "Object"
 Subtype = 149
 Ownership = 0
 ParentTile = 65535
-Orientation = 256
-SubtileX = [22, 128]
-SubtileY = [61, 128]
+CustomBox = -1
+Orientation = 1792
+SubtileX = [94, 128]
+SubtileY = [58, 128]
 SubtileZ = [1, 0]
 
 [thing6]
@@ -66,9 +72,10 @@ ThingType = "Object"
 Subtype = 149
 Ownership = 0
 ParentTile = 65535
-Orientation = 1792
-SubtileX = [94, 128]
-SubtileY = [58, 128]
+CustomBox = -1
+Orientation = 768
+SubtileX = [19, 128]
+SubtileY = [13, 128]
 SubtileZ = [1, 0]
 
 [thing7]
@@ -76,8 +83,9 @@ ThingType = "Object"
 Subtype = 149
 Ownership = 0
 ParentTile = 65535
-Orientation = 768
-SubtileX = [19, 128]
+CustomBox = -1
+Orientation = 1280
+SubtileX = [103, 128]
 SubtileY = [13, 128]
 SubtileZ = [1, 0]
 
@@ -86,9 +94,10 @@ ThingType = "Object"
 Subtype = 149
 Ownership = 0
 ParentTile = 65535
-Orientation = 1280
-SubtileX = [103, 128]
-SubtileY = [13, 128]
+CustomBox = -1
+Orientation = 1536
+SubtileX = [115, 128]
+SubtileY = [34, 128]
 SubtileZ = [1, 0]
 
 [thing9]
@@ -96,9 +105,10 @@ ThingType = "Object"
 Subtype = 149
 Ownership = 0
 ParentTile = 65535
-Orientation = 1536
-SubtileX = [115, 128]
-SubtileY = [34, 128]
+CustomBox = -1
+Orientation = 1024
+SubtileX = [61, 128]
+SubtileY = [7, 128]
 SubtileZ = [1, 0]
 
 [thing10]
@@ -106,9 +116,10 @@ ThingType = "Object"
 Subtype = 149
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [61, 128]
-SubtileY = [7, 128]
+SubtileX = [40, 128]
+SubtileY = [10, 128]
 SubtileZ = [1, 0]
 
 [thing11]
@@ -116,19 +127,21 @@ ThingType = "Object"
 Subtype = 149
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [40, 128]
-SubtileY = [10, 128]
+SubtileX = [85, 128]
+SubtileY = [7, 128]
 SubtileZ = [1, 0]
 
 [thing12]
 ThingType = "Object"
-Subtype = 149
+Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [85, 128]
-SubtileY = [7, 128]
+SubtileX = [60, 128]
+SubtileY = [39, 128]
 SubtileZ = [1, 0]
 
 [thing13]
@@ -136,9 +149,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [60, 128]
-SubtileY = [39, 128]
+SubtileY = [41, 128]
 SubtileZ = [1, 0]
 
 [thing14]
@@ -146,8 +160,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [60, 128]
+SubtileX = [62, 128]
 SubtileY = [41, 128]
 SubtileZ = [1, 0]
 
@@ -156,9 +171,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [62, 128]
-SubtileY = [41, 128]
+SubtileY = [39, 128]
 SubtileZ = [1, 0]
 
 [thing16]
@@ -166,9 +182,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [62, 128]
-SubtileY = [39, 128]
+SubtileX = [9, 128]
+SubtileY = [41, 128]
 SubtileZ = [1, 0]
 
 [thing17]
@@ -176,8 +193,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [9, 128]
+SubtileX = [11, 128]
 SubtileY = [41, 128]
 SubtileZ = [1, 0]
 
@@ -186,9 +204,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [11, 128]
-SubtileY = [41, 128]
+SubtileY = [39, 128]
 SubtileZ = [1, 0]
 
 [thing19]
@@ -196,8 +215,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [11, 128]
+SubtileX = [9, 128]
 SubtileY = [39, 128]
 SubtileZ = [1, 0]
 
@@ -206,9 +226,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [9, 128]
-SubtileY = [39, 128]
+SubtileX = [30, 128]
+SubtileY = [33, 128]
 SubtileZ = [1, 0]
 
 [thing21]
@@ -216,9 +237,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [30, 128]
-SubtileY = [33, 128]
+SubtileY = [35, 128]
 SubtileZ = [1, 0]
 
 [thing22]
@@ -226,8 +248,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [30, 128]
+SubtileX = [32, 128]
 SubtileY = [35, 128]
 SubtileZ = [1, 0]
 
@@ -236,9 +259,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [32, 128]
-SubtileY = [35, 128]
+SubtileY = [33, 128]
 SubtileZ = [1, 0]
 
 [thing24]
@@ -246,9 +270,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [32, 128]
-SubtileY = [33, 128]
+SubtileX = [42, 128]
+SubtileY = [21, 128]
 SubtileZ = [1, 0]
 
 [thing25]
@@ -256,8 +281,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [42, 128]
+SubtileX = [44, 128]
 SubtileY = [21, 128]
 SubtileZ = [1, 0]
 
@@ -266,9 +292,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [44, 128]
-SubtileY = [21, 128]
+SubtileY = [23, 128]
 SubtileZ = [1, 0]
 
 [thing27]
@@ -276,8 +303,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [44, 128]
+SubtileX = [42, 128]
 SubtileY = [23, 128]
 SubtileZ = [1, 0]
 
@@ -286,9 +314,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [42, 128]
-SubtileY = [23, 128]
+SubtileX = [57, 128]
+SubtileY = [15, 128]
 SubtileZ = [1, 0]
 
 [thing29]
@@ -296,8 +325,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [57, 128]
+SubtileX = [59, 128]
 SubtileY = [15, 128]
 SubtileZ = [1, 0]
 
@@ -306,9 +336,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [59, 128]
-SubtileY = [15, 128]
+SubtileY = [17, 128]
 SubtileZ = [1, 0]
 
 [thing31]
@@ -316,8 +347,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [59, 128]
+SubtileX = [57, 128]
 SubtileY = [17, 128]
 SubtileZ = [1, 0]
 
@@ -326,9 +358,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [57, 128]
-SubtileY = [17, 128]
+SubtileX = [69, 128]
+SubtileY = [21, 128]
 SubtileZ = [1, 0]
 
 [thing33]
@@ -336,8 +369,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [69, 128]
+SubtileX = [71, 128]
 SubtileY = [21, 128]
 SubtileZ = [1, 0]
 
@@ -346,9 +380,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [71, 128]
-SubtileY = [21, 128]
+SubtileY = [23, 128]
 SubtileZ = [1, 0]
 
 [thing35]
@@ -356,8 +391,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [71, 128]
+SubtileX = [69, 128]
 SubtileY = [23, 128]
 SubtileZ = [1, 0]
 
@@ -366,9 +402,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [69, 128]
-SubtileY = [23, 128]
+SubtileX = [84, 128]
+SubtileY = [26, 128]
 SubtileZ = [1, 0]
 
 [thing37]
@@ -376,9 +413,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [84, 128]
-SubtileY = [26, 128]
+SubtileY = [24, 128]
 SubtileZ = [1, 0]
 
 [thing38]
@@ -386,9 +424,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [84, 128]
-SubtileY = [24, 128]
+SubtileX = [86, 128]
+SubtileY = [26, 128]
 SubtileZ = [1, 0]
 
 [thing39]
@@ -396,9 +435,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [86, 128]
-SubtileY = [26, 128]
+SubtileY = [24, 128]
 SubtileZ = [1, 0]
 
 [thing40]
@@ -406,9 +446,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [86, 128]
-SubtileY = [24, 128]
+SubtileX = [99, 128]
+SubtileY = [30, 128]
 SubtileZ = [1, 0]
 
 [thing41]
@@ -416,8 +457,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [99, 128]
+SubtileX = [101, 128]
 SubtileY = [30, 128]
 SubtileZ = [1, 0]
 
@@ -426,9 +468,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [101, 128]
-SubtileY = [30, 128]
+SubtileY = [32, 128]
 SubtileZ = [1, 0]
 
 [thing43]
@@ -436,8 +479,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [101, 128]
+SubtileX = [99, 128]
 SubtileY = [32, 128]
 SubtileZ = [1, 0]
 
@@ -446,9 +490,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [99, 128]
-SubtileY = [32, 128]
+SubtileX = [108, 128]
+SubtileY = [48, 128]
 SubtileZ = [1, 0]
 
 [thing45]
@@ -456,9 +501,10 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [108, 128]
-SubtileY = [48, 128]
+SubtileY = [50, 128]
 SubtileZ = [1, 0]
 
 [thing46]
@@ -466,8 +512,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [108, 128]
+SubtileX = [110, 128]
 SubtileY = [50, 128]
 SubtileZ = [1, 0]
 
@@ -476,49 +523,54 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
-Orientation = 1024
-SubtileX = [110, 128]
-SubtileY = [50, 128]
-SubtileZ = [1, 0]
-
-[thing48]
-ThingType = "Object"
-Subtype = 28
-Ownership = 0
-ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [110, 128]
 SubtileY = [48, 128]
 SubtileZ = [1, 0]
+
+[thing48]
+ThingType = "Object"
+Subtype = 146
+Ownership = 0
+ParentTile = 65535
+CustomBox = -1
+Orientation = 1024
+SubtileX = [59, 128]
+SubtileY = [45, 128]
+SubtileZ = [0, 0]
 
 [thing49]
 ThingType = "Object"
 Subtype = 146
 Ownership = 0
 ParentTile = 65535
-Orientation = 1024
-SubtileX = [59, 128]
-SubtileY = [45, 128]
-SubtileZ = [0, 0]
-
-[thing50]
-ThingType = "Object"
-Subtype = 146
-Ownership = 0
-ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [60, 128]
 SubtileY = [44, 128]
 SubtileZ = [0, 0]
 
-[thing51]
+[thing50]
 ThingType = "Object"
 Subtype = 138
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [59, 128]
 SubtileY = [44, 128]
+SubtileZ = [0, 0]
+
+[thing51]
+ThingType = "Object"
+Subtype = 147
+Ownership = 0
+ParentTile = 65535
+CustomBox = -1
+Orientation = 1024
+SubtileX = [33, 128]
+SubtileY = [39, 128]
 SubtileZ = [0, 0]
 
 [thing52]
@@ -526,9 +578,10 @@ ThingType = "Object"
 Subtype = 147
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [33, 128]
-SubtileY = [39, 128]
+SubtileX = [32, 128]
+SubtileY = [38, 128]
 SubtileZ = [0, 0]
 
 [thing53]
@@ -536,9 +589,10 @@ ThingType = "Object"
 Subtype = 147
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [32, 128]
-SubtileY = [38, 128]
+SubtileX = [48, 128]
+SubtileY = [22, 128]
 SubtileZ = [0, 0]
 
 [thing54]
@@ -546,9 +600,10 @@ ThingType = "Object"
 Subtype = 147
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [48, 128]
-SubtileY = [22, 128]
+SubtileX = [17, 128]
+SubtileY = [41, 128]
 SubtileZ = [0, 0]
 
 [thing55]
@@ -556,9 +611,10 @@ ThingType = "Object"
 Subtype = 147
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [17, 128]
-SubtileY = [41, 128]
+SubtileX = [18, 128]
+SubtileY = [43, 128]
 SubtileZ = [0, 0]
 
 [thing56]
@@ -566,9 +622,10 @@ ThingType = "Object"
 Subtype = 147
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [18, 128]
-SubtileY = [43, 128]
+SubtileX = [80, 128]
+SubtileY = [34, 128]
 SubtileZ = [0, 0]
 
 [thing57]
@@ -576,9 +633,10 @@ ThingType = "Object"
 Subtype = 147
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [80, 128]
-SubtileY = [34, 128]
+SubtileX = [94, 128]
+SubtileY = [39, 128]
 SubtileZ = [0, 0]
 
 [thing58]
@@ -586,19 +644,21 @@ ThingType = "Object"
 Subtype = 147
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [94, 128]
-SubtileY = [39, 128]
+SubtileX = [95, 128]
+SubtileY = [38, 128]
 SubtileZ = [0, 0]
 
 [thing59]
 ThingType = "Object"
-Subtype = 147
+Subtype = 146
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [95, 128]
-SubtileY = [38, 128]
+SubtileX = [101, 128]
+SubtileY = [50, 128]
 SubtileZ = [0, 0]
 
 [thing60]
@@ -606,58 +666,64 @@ ThingType = "Object"
 Subtype = 146
 Ownership = 0
 ParentTile = 65535
-Orientation = 1024
-SubtileX = [101, 128]
-SubtileY = [50, 128]
-SubtileZ = [0, 0]
-
-[thing61]
-ThingType = "Object"
-Subtype = 146
-Ownership = 0
-ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [102, 128]
 SubtileY = [49, 128]
 SubtileZ = [0, 0]
 
-[thing62]
+[thing61]
 ThingType = "Object"
 Subtype = 138
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [101, 128]
 SubtileY = [49, 128]
 SubtileZ = [0, 0]
 
-[thing63]
+[thing62]
 ThingType = "Object"
 Subtype = 147
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [59, 128]
 SubtileY = [12, 128]
 SubtileZ = [0, 0]
 
-[thing64]
+[thing63]
 ThingType = "Object"
 Subtype = 142
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [43, 128]
 SubtileY = [48, 128]
 SubtileZ = [0, 0]
+
+[thing64]
+ThingType = "Object"
+Subtype = 28
+Ownership = 0
+ParentTile = 65535
+CustomBox = -1
+Orientation = 1024
+SubtileX = [89, 128]
+SubtileY = [68, 128]
+SubtileZ = [1, 0]
 
 [thing65]
 ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [89, 128]
+SubtileX = [87, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -666,8 +732,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [87, 128]
+SubtileX = [83, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -676,8 +743,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [83, 128]
+SubtileX = [81, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -686,8 +754,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [81, 128]
+SubtileX = [77, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -696,8 +765,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [77, 128]
+SubtileX = [75, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -706,8 +776,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [75, 128]
+SubtileX = [71, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -716,8 +787,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [71, 128]
+SubtileX = [69, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -726,8 +798,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [69, 128]
+SubtileX = [65, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -736,8 +809,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [65, 128]
+SubtileX = [63, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -746,8 +820,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [63, 128]
+SubtileX = [59, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -756,8 +831,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [59, 128]
+SubtileX = [57, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -766,8 +842,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [57, 128]
+SubtileX = [53, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -776,8 +853,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [53, 128]
+SubtileX = [51, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -786,8 +864,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [51, 128]
+SubtileX = [47, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -796,8 +875,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [47, 128]
+SubtileX = [45, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -806,8 +886,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [45, 128]
+SubtileX = [41, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -816,8 +897,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [41, 128]
+SubtileX = [39, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -826,8 +908,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [39, 128]
+SubtileX = [35, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -836,8 +919,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [35, 128]
+SubtileX = [33, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -846,8 +930,9 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
-SubtileX = [33, 128]
+SubtileX = [29, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
@@ -856,28 +941,31 @@ ThingType = "Object"
 Subtype = 28
 Ownership = 0
 ParentTile = 65535
-Orientation = 1024
-SubtileX = [29, 128]
-SubtileY = [68, 128]
-SubtileZ = [1, 0]
-
-[thing86]
-ThingType = "Object"
-Subtype = 28
-Ownership = 0
-ParentTile = 65535
+CustomBox = -1
 Orientation = 1024
 SubtileX = [27, 128]
 SubtileY = [68, 128]
 SubtileZ = [1, 0]
 
-[thing87]
+[thing86]
 ThingType = "Object"
 Subtype = 2
 Ownership = 0
 ParentTile = 1124
+CustomBox = -1
 Orientation = 1024
 SubtileX = [52, 128]
+SubtileY = [80, 192]
+SubtileZ = [2, 224]
+
+[thing87]
+ThingType = "Object"
+Subtype = 2
+Ownership = 0
+ParentTile = 1128
+CustomBox = -1
+Orientation = 1024
+SubtileX = [64, 128]
 SubtileY = [80, 192]
 SubtileZ = [2, 224]
 
@@ -885,19 +973,21 @@ SubtileZ = [2, 224]
 ThingType = "Object"
 Subtype = 2
 Ownership = 0
-ParentTile = 1128
+ParentTile = 1164
+CustomBox = -1
 Orientation = 1024
-SubtileX = [64, 128]
-SubtileY = [80, 192]
+SubtileX = [47, 192]
+SubtileY = [85, 128]
 SubtileZ = [2, 224]
 
 [thing89]
 ThingType = "Object"
 Subtype = 2
 Ownership = 0
-ParentTile = 1164
+ParentTile = 1170
+CustomBox = -1
 Orientation = 1024
-SubtileX = [47, 192]
+SubtileX = [69, 64]
 SubtileY = [85, 128]
 SubtileZ = [2, 224]
 
@@ -905,53 +995,46 @@ SubtileZ = [2, 224]
 ThingType = "Object"
 Subtype = 2
 Ownership = 0
-ParentTile = 1170
-Orientation = 1024
-SubtileX = [69, 64]
-SubtileY = [85, 128]
-SubtileZ = [2, 224]
-
-[thing91]
-ThingType = "Object"
-Subtype = 2
-Ownership = 0
 ParentTile = 1125
+CustomBox = -1
 Orientation = 1024
 SubtileX = [57, 64]
 SubtileY = [83, 128]
 SubtileZ = [2, 224]
+
+[thing91]
+ThingType = "Object"
+Subtype = 149
+Ownership = 0
+ParentTile = 65535
+CustomBox = -1
+Orientation = 512
+SubtileX = [7, 128]
+SubtileY = [31, 128]
+SubtileZ = [1, 0]
 
 [thing92]
 ThingType = "Object"
 Subtype = 149
 Ownership = 0
 ParentTile = 65535
-Orientation = 512
-SubtileX = [7, 128]
-SubtileY = [31, 128]
-SubtileZ = [1, 0]
-
-[thing93]
-ThingType = "Object"
-Subtype = 149
-Ownership = 0
-ParentTile = 65535
+CustomBox = -1
 Orientation = 1536
 SubtileX = [115, 128]
 SubtileY = [22, 128]
 SubtileZ = [1, 0]
 
-[thing94]
+[thing93]
 ThingType = "Object"
 Subtype = 111
 Ownership = 0
-ParentTile = 1289
+ParentTile = 1291
 Orientation = 0
-SubtileX = [55, 128]
+SubtileX = [61, 128]
 SubtileY = [94, 128]
 SubtileZ = [2, 0]
 
-[thing95]
+[thing94]
 ThingType = "Object"
 Subtype = 111
 Ownership = 0
@@ -959,6 +1042,16 @@ ParentTile = 1207
 Orientation = 0
 SubtileX = [55, 128]
 SubtileY = [88, 128]
+SubtileZ = [2, 0]
+
+[thing95]
+ThingType = "Object"
+Subtype = 111
+Ownership = 0
+ParentTile = 1289
+Orientation = 0
+SubtileX = [55, 128]
+SubtileY = [94, 128]
 SubtileZ = [2, 0]
 
 [thing96]
@@ -973,13 +1066,13 @@ SubtileZ = [2, 0]
 
 [thing97]
 ThingType = "Object"
-Subtype = 111
+Subtype = 5
 Ownership = 0
-ParentTile = 1291
+ParentTile = 65535
 Orientation = 0
-SubtileX = [61, 128]
-SubtileY = [94, 128]
-SubtileZ = [2, 0]
+SubtileX = [58, 128]
+SubtileY = [91, 128]
+SubtileZ = [0, 0]
 
 [thing98]
 ThingType = "Creature"
