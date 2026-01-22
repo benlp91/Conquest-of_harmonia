@@ -27,7 +27,21 @@ end
 
 -- end of the first function
 
--- second function for the hatchery
+-- second function for fainted creatures
+
+function OnGameStart()
+    RegisterTimerEvent(CheckForStunDeaths, 1, true)             -- Repeat each frame
+end
+
+function CheckForStunDeaths()
+    for _, creature in ipairs(GetThingsOfClass("Creature")) do  -- Get all creatures
+        if creature.conscious_back_turns == 1 then              -- If one will wake up next turn
+            creature:kill()                                     -- Kill it
+        end
+    end
+end
+
+-- third function for the hatchery
 
 Game.AllCoops = {}
 Game.AllEggs = {}
