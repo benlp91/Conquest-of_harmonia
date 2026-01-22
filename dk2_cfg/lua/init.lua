@@ -1,5 +1,6 @@
-function RunDK2Scripts()
+function OnCampaignGameStart()
     RegisterTimerEvent(CheckForStunDeaths, 1, true)             -- Repeat each frame
+    Game.AllEggs = {}
 end
 
 -- Function that kills all creatures that are close to waking up from stun
@@ -25,8 +26,6 @@ function HideHornyFlower()
 end
 
 -- function that makes hatcheries function like DK2 Hatcheries
-Game.AllEggs = {}
-
 function CheckForEggs(coop)
     local coopPos = coop.pos
     for _, object in ipairs(GetThingsOfClass("Object")) do
