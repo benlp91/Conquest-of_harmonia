@@ -6,6 +6,8 @@ REM
 REM ********************************************
 
 LEVEL_VERSION(1)
+RUN_LUA_CODE("RunDK2Scripts()")
+
 SET_GENERATE_SPEED(200)
 MAX_CREATURES(PLAYER0,10)
 START_MONEY(PLAYER0,5000)

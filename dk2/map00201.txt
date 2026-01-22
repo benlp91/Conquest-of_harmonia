@@ -4,6 +4,7 @@ REM			 Script for Level 201
 REM
 REM ********************************************
 LEVEL_VERSION(1)
+RUN_LUA_CODE("RunDK2Scripts()")
 SET_GENERATE_SPEED(400)
 
 SET_TEXTURE(PLAYER_GOOD,18)
