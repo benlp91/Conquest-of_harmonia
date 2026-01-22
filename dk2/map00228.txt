@@ -274,6 +274,9 @@ IF(PLAYER0, ALL_DUNGEONS_DESTROYED == 1)
   PLAY_MESSAGE(PLAYER0,SPEECH,"lvl11spe04.ogg")
   QUICK_OBJECTIVE(80,"Well done. The contest now is won. For all your rivals are defeated. Rest and celebrate!")
 	WIN_GAME
+  HIDE_BONUS_LEVEL(227)
+  HIDE_BONUS_LEVEL(228)
+  SET_NEXT_LEVEL(211)
 ENDIF
 
 

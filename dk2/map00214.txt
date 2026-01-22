@@ -328,6 +328,8 @@ IF(PLAYER_GOOD, KNIGHT == 0)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl15spe04.ogg")
 	QUICK_OBJECTIVE(93,"Oh so fine, I must admit my joy to see such Fairy folk destroyed. With style and spectacle you play, yours will be fame on Judgement Day.")
 	WIN_GAME
+	HIDE_BONUS_LEVEL(229)
+	SET_NEXT_LEVEL(215)
 	ALLY_PLAYERS(PLAYER0,PLAYER5,3)
 	ADD_OBJECT_TO_LEVEL(FAKE_GEM,LAST_DEATH_EVENT[PLAYER_GOOD],1,PLAYER5)
  	COMPUTER_PLAYER(PLAYER5,0)

@@ -50,7 +50,6 @@ TRAP_AVAILABLE(ALL_PLAYERS, FEAR_TRAP, 1, 0)
 SET_HAND_RULE(PLAYER0,ANY_CREATURE,RULE1,DENY,DROPPED_TIME_LOWER,60)
 SET_GAME_RULE(MaxThingsInHand,30)
 
-
 IF(PLAYER1,CAMPAIGN_FLAG1 == 1)
 	CONCEAL_MAP_RECT(Player0, 127, 127, 250, 250,1)
 ENDIF
@@ -407,6 +406,8 @@ ENDIF
 IF(PLAYER4,FLAG6 == 2)
 	IF(PLAYER_GOOD, KNIGHT == 0)
 		WIN_GAME
+		HIDE_BONUS_LEVEL(226)
+		SET_NEXT_LEVEL(206)
 		QUICK_OBJECTIVE(49,"I see with satisfaction the slaughtered beast that once was called Lord Ironhelm. Sad? For him maybe, but yours is not to pity. His path was sickly righteous, its disposal served our needs. And you must bask in reputation well deserved - pure evil are your deeds.")
 		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl6spe08.ogg")
 		ALLY_PLAYERS(PLAYER0,PLAYER5,3)

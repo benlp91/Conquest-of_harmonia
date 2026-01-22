@@ -362,6 +362,8 @@ IF(PLAYER_GOOD, KNIGHT == 0)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl14spe05.ogg")
 	QUICK_OBJECTIVE(86,"A bold and gutsy show, my evil friend. But more's to come as Horny joins us to display the awesome power of his scythe and ruthless want for killing.")
 	WIN_GAME
+	SHOW_BONUS_LEVEL(229)
+	SET_NEXT_LEVEL(214)
 	ALLY_PLAYERS(PLAYER0,PLAYER5,3)
 	ADD_OBJECT_TO_LEVEL(FAKE_GEM,12,1,PLAYER5)
  	COMPUTER_PLAYER(PLAYER5,0)

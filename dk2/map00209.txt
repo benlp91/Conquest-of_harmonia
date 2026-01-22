@@ -776,6 +776,9 @@ ENDIF
 
 IF(PLAYER0,KEEPERS_DESTROYED ==1)
 	WIN_GAME
+	SHOW_BONUS_LEVEL(227)
+	SHOW_BONUS_LEVEL(228)
+	SET_NEXT_LEVEL(210)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl10spe07.ogg")
 	QUICK_OBJECTIVE(76,"Impressive, truly Keeper. Formidable opponents here you've slain and then with stealth and cunning stole the Gem from Asmodeus. Rejoice. These bold courageous deeds do mark you well - a champion in the making.")
 	ALLY_PLAYERS(PLAYER0,PLAYER5,3)

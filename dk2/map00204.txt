@@ -255,6 +255,8 @@ IF_ACTION_POINT(3, PLAYER0)
 		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl5spe04.ogg")
 		QUICK_OBJECTIVE(42,"Sweet victory is yours, brave Keeper. Outsmarting and outfighting dull Lord Constantine, you've proved both wise and valiant. Go forth and celebrate your spoils.")
 		WIN_GAME
+		SHOW_BONUS_LEVEL(226)
+		SET_NEXT_LEVEL(205)
 		ALLY_PLAYERS(PLAYER0,PLAYER5,3)
         ADD_OBJECT_TO_LEVEL(FAKE_GEM,LAST_DEATH_EVENT[PLAYER_GOOD],1,PLAYER5)
         COMPUTER_PLAYER(PLAYER5,0)
