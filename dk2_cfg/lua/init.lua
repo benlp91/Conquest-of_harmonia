@@ -1,6 +1,8 @@
+require "hatchery"
+
 function OnCampaignGameStart()
     RegisterTimerEvent(CheckForStunDeaths, 1, true)             -- Repeat each frame
-    Game.AllEggs = {}
+    Game.CoopRange = 2                                          -- Coop range in subtiles
 end
 
 -- Function that kills all creatures that are close to waking up from stun
