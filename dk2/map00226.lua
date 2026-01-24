@@ -15,28 +15,20 @@ function SpawnPatrols()
     Game.blue1NextPos = 2
     Game.redNextPos = 2
 
-
-
+    StartPatrols()
 end
 
+function StartPatrols()
+    ActivatePatrol(Game.bluepos, Game.blue1NextPos)
+    ActivatePatrol(Game.redpos, Game.redNextPos)
+end
 
-function  MoveBlue()
-
-    if Game.blue1NextPos== 1 and Game.blue1.pos.stl_y<161 then
-            Game.blue1NextPos=2
-    elseif Game.blue1NextPos== 2 and Game.blue1.pos.stl_y>189 then
-        Game.blue1NextPos=3 
-    elseif Game.blue1NextPos== 3 and Game.blue1.pos.stl_x<116 then
-            Game.blue1NextPos=4
-    elseif Game.blue1NextPos== 4 and Game.blue1.pos.stl_y>237 then
-            Game.blue1NextPos=5
-    elseif Game.blue1NextPos== 5 and Game.blue1.pos.stl_y<191 then
-            Game.blue1NextPos=6
-    elseif Game.blue1NextPos== 6 and Game.blue1.pos.stl_x>177 then
-            Game.blue1NextPos=1
+function  ActivatePatrol(Patrol,NextPost)
+    if Patrol.pos.stl_y < Patrol.pos.stl_y+1 and Patrol.pos.stl_y > Patrol.pos.stl_y+1 and Patrol.pos.stl_x < Patrol.pos.stl_x+1 and Patrol.pos.stl_x > Patrol.pos.stl_x-1  then
+            MextPost=NextPost+1
     end
 
-    Game.blue1:walk_to(Game.bluepos[Game.blue1NextPos].x,Game.bluepos[Game.blue1NextPos].y)
+    Patrol:walk_to(Patrol[NextPost].x,Patrol[NextPost].y)
 end
 
 function  SetPatrolPoints()
@@ -50,17 +42,6 @@ function  SetPatrolPoints()
 
     Game.redpos={}
     Game.redpos[1]={x=178, y=190}
-
-
-
-
-
-
-
-
-
-
-    
 end
 
 function MoveRed()
