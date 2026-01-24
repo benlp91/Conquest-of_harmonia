@@ -8154,39 +8154,53 @@ EffectRange = 5
 [slab204]
 
 [slab204.S]
-Columns = [1120, 1120, 1119, 225, 225, 225, 171, 171, 171]
+Columns = [171, 225, 1120, 171, 225, 1120, 171, 225, 1119]
 Objects = []
 
 [slab204.W]
-Columns = [171, 225, 1120, 171, 225, 1120, 171, 225, 1120]
-Objects = []
-
-[slab204.N]
 Columns = [171, 171, 171, 225, 225, 225, 1120, 1120, 1120]
 Objects = []
 
+[slab204.N]
+Columns = [237, 238, 1306, 239, 239, 876, 238, 237, 1306]
+Objects = []
+
 [slab204.E]
-Columns = [1120, 225, 171, 1120, 225, 171, 1120, 225, 171]
+Columns = [1120, 1120, 1120, 225, 225, 225, 171, 171, 171]
 Objects = []
 
 [slab204.SW]
-Columns = [239, 238, 239, 238, 238, 238, 1305, 237, 237]
-Objects = []
+Columns = [239, 239, 239, 239, 239, 239, 1365, 239, 239]
+
+[[slab204.SW_objects]]
+IsLight = 0
+Subtile = 6
+RelativePosition = [128, 128, 768]
+ThingType = 1
+Subtype = 2
+EffectRange = 0
 
 [slab204.NW]
-Columns = [1305, 238, 239, 237, 238, 238, 237, 238, 239]
-Objects = []
+Columns = [1365, 239, 239, 239, 239, 239, 239, 239, 239]
+
+[[slab204.NW_objects]]
+IsLight = 0
+Subtile = 0
+RelativePosition = [128, 128, 768]
+ThingType = 1
+Subtype = 2
+EffectRange = 0
 
 [slab204.NE]
-Columns = [237, 239, 5, 239, 239, 855, 237, 238, 1313]
+Columns = [237, 239, 1364, 239, 239, 865, 237, 238, 1363]
 Objects = []
 
 [slab204.SE]
-Columns = [237, 239, 5, 239, 239, 855, 237, 238, 1313]
+Columns = [237, 239, 1363, 239, 239, 865, 237, 238, 1364]
 Objects = []
 
 [slab204.ALL]
-Columns = [583, 1304, 583, 583, 239, 1293, 583, 1304, 1293]
+Columns = [583, 855, 583, 583, 239, 1293, 583, 855, 1293]
 
 [[slab204.ALL_objects]]
 IsLight = 0
@@ -8197,27 +8211,27 @@ Subtype = 28
 EffectRange = 0
 
 [slab204.S_LAVA]
-Columns = [1120, 1120, 1120, 225, 225, 225, 583, 583, 583]
-Objects = []
-
-[slab204.W_LAVA]
 Columns = [583, 225, 1120, 583, 225, 1120, 583, 225, 1120]
 Objects = []
 
-[slab204.N_LAVA]
+[slab204.W_LAVA]
 Columns = [583, 583, 583, 225, 225, 225, 1120, 1120, 1120]
 Objects = []
 
-[slab204.E_LAVA]
+[slab204.N_LAVA]
 Columns = [1120, 225, 583, 1120, 225, 583, 1120, 225, 583]
 Objects = []
 
+[slab204.E_LAVA]
+Columns = [1120, 1120, 1120, 225, 225, 225, 583, 583, 583]
+Objects = []
+
 [slab204.SW_LAVA]
-Columns = [583, 225, 1121, 583, 225, 225, 583, 583, 583]
+Columns = [583, 583, 583, 583, 225, 225, 583, 225, 1121]
 Objects = []
 
 [slab204.NW_LAVA]
-Columns = [583, 583, 583, 583, 225, 225, 583, 225, 1121]
+Columns = [583, 583, 583, 225, 225, 583, 1121, 225, 583]
 Objects = []
 
 [slab204.NE_LAVA]
@@ -8291,7 +8305,7 @@ Columns = [171, 225, 1120, 171, 225, 1120, 171, 225, 1120]
 Objects = []
 
 [slab205.N]
-Columns = [171, 171, 171, 225, 225, 225, 1120, 1120, 1120]
+Columns = [1306, 876, 1306, 238, 239, 237, 237, 239, 238]
 Objects = []
 
 [slab205.E]
@@ -8299,23 +8313,37 @@ Columns = [1120, 225, 171, 1120, 225, 171, 1120, 225, 171]
 Objects = []
 
 [slab205.SW]
-Columns = [1313, 238, 237, 855, 239, 239, 5, 239, 237]
+Columns = [1363, 237, 239, 865, 239, 239, 1364, 238, 239]
 Objects = []
 
 [slab205.NW]
-Columns = [1313, 238, 237, 855, 239, 239, 5, 239, 237]
+Columns = [1364, 237, 239, 865, 239, 239, 1363, 238, 239]
 Objects = []
 
 [slab205.NE]
-Columns = [237, 237, 1305, 238, 238, 238, 239, 238, 239]
-Objects = []
+Columns = [239, 239, 1365, 239, 239, 239, 239, 239, 239]
+
+[[slab205.NE_objects]]
+IsLight = 0
+Subtile = 2
+RelativePosition = [128, 128, 774]
+ThingType = 1
+Subtype = 2
+EffectRange = 0
 
 [slab205.SE]
-Columns = [239, 238, 237, 238, 238, 237, 239, 238, 1305]
-Objects = []
+Columns = [239, 239, 239, 239, 239, 239, 239, 239, 1365]
+
+[[slab205.SE_objects]]
+IsLight = 0
+Subtile = 8
+RelativePosition = [128, 128, 774]
+ThingType = 1
+Subtype = 2
+EffectRange = 0
 
 [slab205.ALL]
-Columns = [583, 1304, 583, 583, 239, 1293, 583, 1304, 1293]
+Columns = [583, 855, 583, 583, 239, 1293, 583, 855, 1293]
 
 [[slab205.ALL_objects]]
 IsLight = 0
@@ -8420,7 +8448,7 @@ Columns = [171, 225, 1120, 171, 225, 1120, 171, 225, 1120]
 Objects = []
 
 [slab206.N]
-Columns = [171, 171, 171, 225, 225, 225, 1120, 1120, 1120]
+Columns = [1306, 876, 1306, 238, 239, 237, 237, 239, 238]
 Objects = []
 
 [slab206.E]
@@ -8428,23 +8456,37 @@ Columns = [1120, 225, 171, 1120, 225, 171, 1120, 225, 171]
 Objects = []
 
 [slab206.SW]
-Columns = [237, 239, 237, 238, 239, 239, 5, 855, 1313]
+Columns = [239, 239, 239, 237, 239, 238, 1364, 865, 1363]
 Objects = []
 
 [slab206.NW]
-Columns = [1305, 238, 239, 237, 238, 238, 237, 238, 239]
-Objects = []
+Columns = [1365, 239, 239, 239, 239, 239, 239, 239, 239]
+
+[[slab206.NW_objects]]
+IsLight = 0
+Subtile = 0
+RelativePosition = [128, 128, 774]
+ThingType = 1
+Subtype = 2
+EffectRange = 0
 
 [slab206.NE]
-Columns = [237, 237, 1305, 238, 238, 238, 239, 238, 239]
-Objects = []
+Columns = [239, 239, 1365, 239, 239, 239, 239, 239, 239]
+
+[[slab206.NE_objects]]
+IsLight = 0
+Subtile = 2
+RelativePosition = [128, 128, 774]
+ThingType = 1
+Subtype = 2
+EffectRange = 0
 
 [slab206.SE]
-Columns = [237, 239, 237, 238, 239, 239, 5, 855, 1313]
+Columns = [239, 239, 239, 237, 239, 238, 1363, 865, 1364]
 Objects = []
 
 [slab206.ALL]
-Columns = [583, 1293, 1293, 1304, 239, 1304, 583, 583, 583]
+Columns = [583, 1293, 1293, 855, 239, 855, 583, 583, 583]
 
 [[slab206.ALL_objects]]
 IsLight = 0
@@ -9145,7 +9187,7 @@ Subtype = 2
 EffectRange = 0
 
 [slab211.W]
-Columns = [168, 168, 168, 168, 168, 168, 168, 168, 168]
+Columns = [168, 1359, 168, 168, 1359, 168, 168, 1359, 168]
 
 [[slab211.W_objects]]
 IsLight = 0
@@ -9171,7 +9213,7 @@ Columns = [1359, 1359, 1359, 1359, 1359, 1359, 1359, 1359, 1359]
 Objects = []
 
 [slab211.SW]
-Columns = [168, 168, 168, 168, 168, 168, 168, 168, 168]
+Columns = [168, 1359, 168, 168, 168, 168, 168, 168, 168]
 
 [[slab211.SW_objects]]
 IsLight = 0
@@ -9182,7 +9224,7 @@ Subtype = 2
 EffectRange = 0
 
 [slab211.NW]
-Columns = [168, 168, 168, 168, 168, 168, 168, 168, 168]
+Columns = [168, 168, 168, 168, 168, 168, 168, 1359, 168]
 
 [[slab211.NW_objects]]
 IsLight = 0
@@ -9610,7 +9652,7 @@ Columns = [168, 168, 168, 168, 168, 168, 168, 168, 168]
 Objects = []
 
 [slab213.N]
-Columns = [168, 168, 168, 168, 168, 168, 168, 168, 168]
+Columns = [168, 168, 168, 1359, 1359, 1359, 168, 168, 168]
 
 [[slab213.N_objects]]
 IsLight = 0
@@ -9636,7 +9678,7 @@ Columns = [168, 168, 168, 168, 1359, 1359, 1359, 1359, 76]
 Objects = []
 
 [slab213.NW]
-Columns = [168, 168, 168, 168, 168, 168, 168, 168, 168]
+Columns = [168, 168, 168, 168, 168, 1359, 168, 168, 1359]
 
 [[slab213.NW_objects]]
 IsLight = 0
@@ -9647,7 +9689,7 @@ Subtype = 2
 EffectRange = 0
 
 [slab213.NE]
-Columns = [168, 168, 168, 168, 168, 168, 168, 168, 168]
+Columns = [168, 168, 168, 1359, 168, 168, 168, 168, 168]
 
 [[slab213.NE_objects]]
 IsLight = 0
@@ -9662,7 +9704,7 @@ Columns = [168, 168, 168, 1359, 1359, 168, 76, 1359, 1359]
 Objects = []
 
 [slab213.ALL]
-Columns = [1316, 1316, 1316, 1316, 1316, 1316, 1316, 1316, 1316]
+Columns = [168, 168, 168, 168, 168, 168, 168, 168, 168]
 Objects = []
 
 [slab213.S_LAVA]
