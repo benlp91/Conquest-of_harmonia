@@ -10779,14 +10779,7 @@ Objects = []
 
 [slab222.E]
 Columns = [1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189]
-
-[[slab222.E_objects]]
-IsLight = 0
-Subtile = 4
-RelativePosition = [128, 128, 256]
-ThingType = 1
-Subtype = 28
-EffectRange = 0
+Objects = []
 
 [slab222.SW]
 Columns = [1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189]
@@ -10823,7 +10816,14 @@ EffectRange = 0
 
 [slab222.SE]
 Columns = [1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189, 1189]
-Objects = []
+
+[[slab222.SE_objects]]
+IsLight = 0
+Subtile = 4
+RelativePosition = [128, 128, 256]
+ThingType = 1
+Subtype = 28
+EffectRange = 0
 
 [slab222.ALL]
 Columns = [1189, 1189, 1189, 1189, 1189, 1189, 1192, 1192, 1192]
