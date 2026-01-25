@@ -17,7 +17,7 @@ local function  UpdatePatrol(patrol)
         print("Patrol "..patrol.name.." has no leader, skipping update.")
         return
     end
-    if patrol.leader.state ~= "MoveToPosition" then
+    if patrol.leader.state ~= "MoveToPosition" and patrol.leader.state ~= "GoodDoingNothing" and patrol.leader.state ~= "CreatureDoingNothing" then
         return
     end
     
@@ -30,6 +30,7 @@ local function  UpdatePatrol(patrol)
     if (patrol.leader.moveto_pos.stl_x ~= target.stl_x or patrol.leader.moveto_pos.stl_y ~= target.stl_y) then
         patrol.leader:walk_to(target.stl_x,target.stl_y)
         patrol.leader.state = "MoveToPosition"
+        patrol.leader.continue_state = "GoodDoingNothing"
     end
 end
 
@@ -159,8 +160,8 @@ function SpawnPatrols()
     local partyred    =  AddPartyToLevel(PLAYER_GOOD             ,"red"                      ,1)                -- walk to 2
     local partygreen  =  AddPartyToLevel(PLAYER_GOOD             ,"green"                    ,7)                -- walk to 8
     local partyyellow =  AddPartyToLevel(PLAYER_GOOD             ,"yellow"                   ,6)                -- walk to 5
-    local blue1 =    AddCreatureToLevel(PLAYER_GOOD              ,"BARBARIAN"                ,3,8,200)          -- walk to 4
-    local blue2 =    AddCreatureToLevel(PLAYER_GOOD              ,"BARBARIAN"                ,3,1,200)          -- walk to 4
+    local blue1 =    AddCreatureToLevel(PLAYER_GOOD              ,"BARBARIAN"                ,3,3,200)          -- walk to 4
+    local blue2 =    AddCreatureToLevel(PLAYER_GOOD              ,"BARBARIAN"                ,3,2,200)          -- walk to 4
     local blue3 =    AddCreatureToLevel(PLAYER_GOOD              ,"WIZARD"                   ,3,1,200)          -- walk to 4
 
     RegisterPatrol(partyred[1], redpatrol, 1, "Red Patrol")
