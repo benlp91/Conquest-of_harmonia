@@ -15,12 +15,13 @@ function SetPatrolPoints()
     Game.bluepatrol[6] =  { stl_x = 178, stl_y = 190 }
 
     Game.redpatrol = {}
-    Game.redpatrol[1]  =  { stl_x = 178, stl_y = 190 }
+    Game.redpatrol[1]  =  { stl_x = 116, stl_y =  95 }
+    Game.redpatrol[2]  =  { stl_x = 180, stl_y = 153 }
 end
 
 function SpawnPatrols()
-    Game.partyred =     AddPartyToLevel(PLAYER_GOOD             ,"red"                      ,1)                -- walk to 2
-    Game.partygreen =   AddPartyToLevel(PLAYER_GOOD             ,"green"                    ,7)                -- walk to 8
+    Game.partyred    =  AddPartyToLevel(PLAYER_GOOD             ,"red"                      ,1)                -- walk to 2
+    Game.partygreen  =  AddPartyToLevel(PLAYER_GOOD             ,"green"                    ,7)                -- walk to 8
     Game.partyyellow =  AddPartyToLevel(PLAYER_GOOD             ,"yellow"                   ,6)                -- walk to 5
     Game.blue1 =    AddCreatureToLevel(PLAYER_GOOD              ,"BARBARIAN"                ,3,8,200)          -- walk to 4
     Game.blue2 =    AddCreatureToLevel(PLAYER_GOOD              ,"BARBARIAN"                ,3,1,200)          -- walk to 4
