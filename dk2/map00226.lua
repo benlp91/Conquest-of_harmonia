@@ -24,7 +24,7 @@ local function  UpdatePatrol(patrol)
         patrol.next_post = (patrol.next_post % #patrol.positions) + 1
     end
     patrol.leader:walk_to(target.stl_x,target.stl_y)
-    patrol.leader.state = "GoodWanderToCreatureCombat"
+    patrol.leader.state = "MoveToPosition"
 end
 
 function UpdatePatrols()
