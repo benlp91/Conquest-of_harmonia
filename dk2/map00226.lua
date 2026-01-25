@@ -16,8 +16,6 @@ function SetPatrolPoints()
 
     Game.redpatrol = {}
     Game.redpatrol[1]  =  { stl_x = 178, stl_y = 190 }
-    Game.redpatrol[2] =  { stl_x = 178, stl_y = 190 }
-    Game.redpatrol[3] =  { stl_x = 178, stl_y = 190 }
 end
 
 function SpawnPatrols()
@@ -29,12 +27,14 @@ function SpawnPatrols()
     Game.blue3 =    AddCreatureToLevel(PLAYER_GOOD              ,"WIZARD"                   ,3,1,200)          -- walk to 4
     Game.blue1NextPos = 2
     Game.blue2NextPos = 3
+    Game.blue3NextPos = 4
     Game.redNextPos = 2
 end
 
 function StartPatrols()
     Game.blue1NextPos = ActivatePatrol(Game.blue1, Game.bluepatrol, Game.blue1NextPos)
-    Game.blue1NextPos = ActivatePatrol(Game.blue2, Game.bluepatrol, Game.blue2NextPos)
+    Game.blue2NextPos = ActivatePatrol(Game.blue2, Game.bluepatrol, Game.blue2NextPos)
+    Game.blue3NextPos = ActivatePatrol(Game.blue3, Game.bluepatrol, Game.blue3NextPos)
     Game.redNextPos = ActivatePatrol(Game.partyred[1], Game.redpatrol, Game.redNextPos)
 end
 
@@ -45,14 +45,13 @@ function  ActivatePatrol(PatrolingCreature,Patrol,NextPost)
        PatrolingCreature.pos.stl_x < target.stl_x+1 and 
        PatrolingCreature.pos.stl_x > target.stl_x-1  
     then
-       print(PatrolingCreature.name .. " reached destination " .. NextPost )
-       NextPost=NextPost+1  --todo fix that it goes back to 1 and does not crash at 7
+        NextPost = NextPost + 1
+        if NextPost > #Patrol then
+            NextPost = 1
+        end
     end
     PatrolingCreature:walk_to(target.stl_x,target.stl_y)
-    PatrolingCreature.state = "Patrolling"
-    PatrolingCreature.gold_held = 666 --this should be removed, it's just to test we are targetting the correct creature (look with query mode)
-    PatrolingCreature.continue_state = "GoodWanderToCreatureCombat"
-    print(PatrolingCreature.name .. " walks to " .. target.stl_x .."," .. target.stl_y) -- todo remove, log spam
+    PatrolingCreature.state = "GoodWanderToCreatureCombat"
     return NextPost
 end
 
