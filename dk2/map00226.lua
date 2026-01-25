@@ -6,10 +6,10 @@
 -- next_post is index of next patrol point
 
 local function is_close_enough(creature, target)
-    return creature.pos.stl_y < target.stl_y+1 and 
-           creature.pos.stl_y > target.stl_y-1 and 
-           creature.pos.stl_x < target.stl_x+1 and 
-           creature.pos.stl_x > target.stl_x-1  
+    return creature.pos.stl_y < target.stl_y+2 and 
+           creature.pos.stl_y > target.stl_y-2 and 
+           creature.pos.stl_x < target.stl_x+2 and 
+           creature.pos.stl_x > target.stl_x-2  
 end
 
 local function  UpdatePatrol(patrol)
@@ -42,7 +42,7 @@ end
 
 
 local function InitializePatrols()
-    RegisterTimerEvent(UpdatePatrols, 20, true)
+    RegisterTimerEvent(UpdatePatrols, 17, true)
     Game.patrols = {}
 end
 
