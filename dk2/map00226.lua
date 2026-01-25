@@ -17,14 +17,20 @@ local function  UpdatePatrol(patrol)
         print("Patrol "..patrol.name.." has no leader, skipping update.")
         return
     end
+    if patrol.leader.state ~= "MoveToPosition" then
+        return
+    end
     
     local target = patrol.positions[patrol.next_post]
     
     if is_close_enough(patrol.leader, target) then
         patrol.next_post = (patrol.next_post % #patrol.positions) + 1
+        target = patrol.positions[patrol.next_post]
     end
-    patrol.leader:walk_to(target.stl_x,target.stl_y)
-    patrol.leader.state = "MoveToPosition"
+    if (patrol.leader.moveto_pos.stl_x ~= target.stl_x or patrol.leader.moveto_pos.stl_y ~= target.stl_y) then
+        patrol.leader:walk_to(target.stl_x,target.stl_y)
+        patrol.leader.state = "MoveToPosition"
+    end
 end
 
 function UpdatePatrols()
