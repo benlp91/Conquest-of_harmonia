@@ -54,7 +54,10 @@ function LeaderDeath(eventData,triggerData)
     end
 
     if patrol.partybackup then
-        patrol.leader = patrol.partybackup
+        patrol.leader = patrol.partybackup.party[1]
+        if patrol.leader == nil then
+            patrol.leader = patrol.partybackup
+        end
         local trigger = RegisterCreatureDeathEvent(LeaderDeath, patrol.leader)
         trigger.triggerData.patrol_idx = triggerData.patrol_idx
         print(patrol.name .. " leader has died, new leader assigned.")
