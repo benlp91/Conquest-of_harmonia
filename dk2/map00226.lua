@@ -162,13 +162,13 @@ function SpawnPatrols()
     redpatrol[2]  =  { stl_x = 180, stl_y = 153 }
 
     local greenpatrol = {}
-    greenpatrol[1]  =  { stl_x = 13, stl_y =  145 }
+    greenpatrol[1]  =  { stl_x = 13, stl_y = 145 }
     greenpatrol[2]  =  { stl_x = 73, stl_y = 133 }
     greenpatrol[3]  =  { stl_x = 52, stl_y = 181 }
 
 
     local yellowpatrol = {}
-    yellowpatrol[1]  =  { stl_x = 10, stl_y =  211 }
+    yellowpatrol[1]  =  { stl_x = 10, stl_y = 211 }
     yellowpatrol[2]  =  { stl_x = 57, stl_y = 242 }
 
     local partyred    =  AddPartyToLevel(PLAYER_GOOD             ,"red"                      ,6)
@@ -182,7 +182,7 @@ function SpawnPatrols()
 
     RegisterPatrol(partyred[1], redpatrol, 1, "Red Patrol")
     RegisterPatrol(partygreen[1], greenpatrol, 1, "Green Patrol")
-    RegisterPatrol(partyyellow[1], yellowpatrol, 1, "Yelllow Patrol")
+    RegisterPatrol(partyyellow[1], yellowpatrol, 1, "Yellow Patrol")
 
     RegisterPatrol(blue1, bluepatrol, 1, "Blue Patrol 1")
     RegisterPatrol(blue2, bluepatrol, 2, "Blue Patrol 2")
@@ -192,54 +192,52 @@ end
 
 function MyHeroParties()
     CreateParty("red")
-    AddToParty("red", "GIANT", 4, 500, "ATTACK_DUNGEON_HEART", 0)
-    AddToParty("red", "BARBARIAN", 3, 500, "ATTACK_DUNGEON_HEART", 0)
-    AddToParty("red", "MONK", 2, 250, "ATTACK_DUNGEON_HEART", 0)
-    AddToParty("red", "WIZARD", 1, 250, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("red", "GIANT", 4, 500, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("red", "BARBARIAN", 3, 500, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("red", "MONK", 2, 250, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("red", "WIZARD", 1, 250, "ATTACK_DUNGEON_HEART", 0)
 
     CreateParty("green")
-    AddToParty("green", "THIEF", 1, 500, "ATTACK_DUNGEON_HEART", 0)    
-    AddToParty("green", "THIEF", 1, 500, "ATTACK_DUNGEON_HEART", 0)
-    AddToParty("green", "BARBARIAN", 1, 500, "ATTACK_DUNGEON_HEART", 0)
-    AddToParty("green", "BARBARIAN", 1, 250, "ATTACK_DUNGEON_HEART", 0)
-    AddToParty("green", "WIZARD", 1, 250, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("green", "THIEF", 1, 500, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("green", "THIEF", 1, 500, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("green", "BARBARIAN", 1, 500, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("green", "BARBARIAN", 1, 250, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("green", "WIZARD", 1, 250, "ATTACK_DUNGEON_HEART", 0)
 
     CreateParty("yellow")
-    AddToParty("yellow", "THIEF", 1, 500, "ATTACK_DUNGEON_HEART", 0)
-    AddToParty("yellow", "BARBARIAN", 1, 500, "ATTACK_DUNGEON_HEART", 0)
-    AddToParty("yellow", "BARBARIAN", 1, 250, "ATTACK_DUNGEON_HEART", 0)
-    AddToParty("yellow", "WIZARD", 1, 250, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("yellow", "THIEF", 1, 500, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("yellow", "BARBARIAN", 1, 500, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("yellow", "BARBARIAN", 1, 250, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("yellow", "WIZARD", 1, 250, "ATTACK_DUNGEON_HEART", 0)
 
 
 -- those are not patrouling but defending rooms
 
-
     CreateParty("DEFEND")
-    AddToParty("DEFEND", "WIZARD", 4, 500, "DEFEND_ROOM", 0)
-    AddToParty("DEFEND", "BARBARIAN", 3, 500, "DEFEND_ROOM", 0)
-    AddToParty("DEFEND", "BARBARIAN", 2, 250, "DEFEND_ROOM", 0)
+        AddToParty("DEFEND", "WIZARD", 4, 500, "DEFEND_ROOMS", 0)
+        AddToParty("DEFEND", "BARBARIAN", 3, 500, "DEFEND_ROOMS", 0)
+        AddToParty("DEFEND", "BARBARIAN", 2, 250, "DEFEND_ROOMS", 0)
 
     CreateParty("DEFEND2")
-    AddToParty("DEFEND2", "THIEF", 3, 500, "DEFEND_ROOM", 0)    
-    AddToParty("DEFEND2", "THIEF", 4, 500, "DEFEND_ROOM", 0)
-    AddToParty("DEFEND2", "THIEF", 4, 500, "DEFEND_ROOM", 0)
+        AddToParty("DEFEND2", "THIEF", 3, 500, "DEFEND_ROOMS", 0)
+        AddToParty("DEFEND2", "THIEF", 4, 500, "DEFEND_ROOMS", 0)
+        AddToParty("DEFEND2", "THIEF", 4, 500, "DEFEND_ROOMS", 0)
 
     CreateParty("DEFEND3")
-    AddToParty("DEFEND3", "BARBARIAN", 3, 500, "DEFEND_ROOM", 0)
-    AddToParty("DEFEND3", "BARBARIAN", 3, 250, "DEFEND_ROOM", 0)
+        AddToParty("DEFEND3", "BARBARIAN", 3, 500, "DEFEND_ROOMS", 0)
+        AddToParty("DEFEND3", "BARBARIAN", 3, 250, "DEFEND_ROOMS", 0)
 
     CreateParty("DEFEND4")
-    AddToParty("DEFEND4", "DWARFA", 4, 500, "DEFEND_ROOM", 0)
-    AddToParty("DEFEND4", "DWARFA", 5, 250, "DEFEND_ROOM", 0)
+        AddToParty("DEFEND4", "DWARFA", 4, 500, "DEFEND_ROOMS", 0)
+        AddToParty("DEFEND4", "DWARFA", 5, 250, "DEFEND_ROOMS", 0)
 
 end
 
 
 -- no patrolling :
 
-
 function SpawnGuards()
-    AddPartyToLevel(PLAYER_GOOD             ,"DEFEND"                      ,1)
+    AddPartyToLevel(PLAYER_GOOD             ,"DEFEND"                       ,1)
     AddPartyToLevel(PLAYER_GOOD             ,"DEFEND2"                      ,2)
     AddPartyToLevel(PLAYER_GOOD             ,"DEFEND3"                      ,3)
     AddPartyToLevel(PLAYER_GOOD             ,"DEFEND4"                      ,4)
