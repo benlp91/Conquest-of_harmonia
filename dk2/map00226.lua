@@ -143,6 +143,7 @@ end
 function OnGameStart()
     MyHeroParties()
     SpawnPatrols()
+    SpawnGuards()
 end
 
 
@@ -160,19 +161,35 @@ function SpawnPatrols()
     redpatrol[1]  =  { stl_x = 116, stl_y =  95 }
     redpatrol[2]  =  { stl_x = 180, stl_y = 153 }
 
-    local partyred    =  AddPartyToLevel(PLAYER_GOOD             ,"red"                      ,1)                -- walk to 2
-    local partygreen  =  AddPartyToLevel(PLAYER_GOOD             ,"green"                    ,7)                -- walk to 8
-    local partyyellow =  AddPartyToLevel(PLAYER_GOOD             ,"yellow"                   ,6)                -- walk to 5
-    local blue1 =    AddCreatureToLevel(PLAYER_GOOD              ,"BARBARIAN"                ,3,3,200)          -- walk to 4
-    local blue2 =    AddCreatureToLevel(PLAYER_GOOD              ,"BARBARIAN"                ,3,2,200)          -- walk to 4
-    local blue3 =    AddCreatureToLevel(PLAYER_GOOD              ,"WIZARD"                   ,3,1,200)          -- walk to 4
+    local greenpatrol = {}
+    greenpatrol[1]  =  { stl_x = 13, stl_y =  145 }
+    greenpatrol[2]  =  { stl_x = 73, stl_y = 133 }
+    greenpatrol[3]  =  { stl_x = 52, stl_y = 181 }
+
+
+    local yellowpatrol = {}
+    yellowpatrol[1]  =  { stl_x = 10, stl_y =  211 }
+    yellowpatrol[2]  =  { stl_x = 57, stl_y = 242 }
+
+    local partyred    =  AddPartyToLevel(PLAYER_GOOD             ,"red"                      ,6)
+    local partygreen  =  AddPartyToLevel(PLAYER_GOOD             ,"green"                    ,3)
+    local partyyellow =  AddPartyToLevel(PLAYER_GOOD             ,"yellow"                   ,7)
+    local blue1 =    AddCreatureToLevel(PLAYER_GOOD              ,"BARBARIAN"                ,5,3,200)
+    local blue2 =    AddCreatureToLevel(PLAYER_GOOD              ,"BARBARIAN"                ,5,2,200)
+    local blue3 =    AddCreatureToLevel(PLAYER_GOOD              ,"WIZARD"                   ,5,1,200)
+
+
 
     RegisterPatrol(partyred[1], redpatrol, 1, "Red Patrol")
+    RegisterPatrol(partygreen[1], greenpatrol, 1, "Green Patrol")
+    RegisterPatrol(partyyellow[1], yellowpatrol, 1, "Yelllow Patrol")
+
     RegisterPatrol(blue1, bluepatrol, 1, "Blue Patrol 1")
     RegisterPatrol(blue2, bluepatrol, 2, "Blue Patrol 2")
     RegisterPatrol(blue3, bluepatrol, 4, "Blue Patrol 3")
 
 end
+
 function MyHeroParties()
     CreateParty("red")
     AddToParty("red", "GIANT", 4, 500, "ATTACK_DUNGEON_HEART", 0)
@@ -192,4 +209,38 @@ function MyHeroParties()
     AddToParty("yellow", "BARBARIAN", 1, 500, "ATTACK_DUNGEON_HEART", 0)
     AddToParty("yellow", "BARBARIAN", 1, 250, "ATTACK_DUNGEON_HEART", 0)
     AddToParty("yellow", "WIZARD", 1, 250, "ATTACK_DUNGEON_HEART", 0)
+
+
+-- those are not patrouling but defending rooms
+
+
+    CreateParty("DEFEND")
+    AddToParty("DEFEND", "WIZARD", 4, 500, "DEFEND_ROOM", 0)
+    AddToParty("DEFEND", "BARBARIAN", 3, 500, "DEFEND_ROOM", 0)
+    AddToParty("DEFEND", "BARBARIAN", 2, 250, "DEFEND_ROOM", 0)
+
+    CreateParty("DEFEND2")
+    AddToParty("DEFEND2", "THIEF", 3, 500, "DEFEND_ROOM", 0)    
+    AddToParty("DEFEND2", "THIEF", 4, 500, "DEFEND_ROOM", 0)
+    AddToParty("DEFEND2", "THIEF", 4, 500, "DEFEND_ROOM", 0)
+
+    CreateParty("DEFEND3")
+    AddToParty("DEFEND3", "BARBARIAN", 3, 500, "DEFEND_ROOM", 0)
+    AddToParty("DEFEND3", "BARBARIAN", 3, 250, "DEFEND_ROOM", 0)
+
+    CreateParty("DEFEND4")
+    AddToParty("DEFEND4", "DWARFA", 4, 500, "DEFEND_ROOM", 0)
+    AddToParty("DEFEND4", "DWARFA", 5, 250, "DEFEND_ROOM", 0)
+
+end
+
+
+-- no patrolling :
+
+
+function SpawnGuards()
+    AddPartyToLevel(PLAYER_GOOD             ,"DEFEND"                      ,1)
+    AddPartyToLevel(PLAYER_GOOD             ,"DEFEND2"                      ,2)
+    AddPartyToLevel(PLAYER_GOOD             ,"DEFEND3"                      ,3)
+    AddPartyToLevel(PLAYER_GOOD             ,"DEFEND4"                      ,4)
 end

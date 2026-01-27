@@ -56,7 +56,6 @@ IF(PLAYER1,CAMPAIGN_FLAG1 == 1)
 ENDIF
 
 REVEAL_MAP_LOCATION(PLAYER0,PLAYER0,-1)
-REVEAL_MAP_LOCATION(PLAYER0,4,70)
 
 IF(PLAYER0,TIMER4 >= 30)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl6spe01.ogg")
@@ -142,6 +141,9 @@ IF(PLAYER0, GHOST >= 1)
 	QUICK_INFORMATION(47,"A fragile Hero has died in your Torture Chamber. Heal them if you can to prolong their suffering, and allow them time to convert to your cause.")
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl6spe06.ogg")
 ENDIF
+
+
+
 
 REM PL3,FLAG5 active music track
 rem value 2: dk2track02.mp3
