@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 134
+ThingsCount = 144
 
 [thing0]
 ThingType = "Object"
@@ -1026,55 +1026,162 @@ SubtileZ = [1, 0]
 
 [thing93]
 ThingType = "Object"
-Subtype = 111
-Ownership = 0
-ParentTile = 1291
-Orientation = 0
-SubtileX = [61, 128]
-SubtileY = [94, 128]
-SubtileZ = [2, 0]
-
-[thing94]
-ThingType = "Object"
-Subtype = 111
-Ownership = 0
-ParentTile = 1207
-Orientation = 0
-SubtileX = [55, 128]
-SubtileY = [88, 128]
-SubtileZ = [2, 0]
-
-[thing95]
-ThingType = "Object"
-Subtype = 111
-Ownership = 0
-ParentTile = 1289
-Orientation = 0
-SubtileX = [55, 128]
-SubtileY = [94, 128]
-SubtileZ = [2, 0]
-
-[thing96]
-ThingType = "Object"
-Subtype = 111
-Ownership = 0
-ParentTile = 1209
-Orientation = 0
-SubtileX = [61, 128]
-SubtileY = [88, 128]
-SubtileZ = [2, 0]
-
-[thing97]
-ThingType = "Object"
 Subtype = 5
 Ownership = 0
 ParentTile = 65535
+CustomBox = -1
 Orientation = 0
 SubtileX = [58, 128]
 SubtileY = [91, 128]
 SubtileZ = [0, 0]
 
+[thing94]
+ThingType = "Object"
+Subtype = 2
+Ownership = 0
+ParentTile = 1329
+CustomBox = -1
+Orientation = 0
+SubtileX = [51, 128]
+SubtileY = [98, 128]
+SubtileZ = [3, 0]
+
+[thing95]
+ThingType = "Object"
+Subtype = 2
+Ownership = 0
+ParentTile = 1329
+CustomBox = -1
+Orientation = 0
+SubtileX = [53, 128]
+SubtileY = [98, 128]
+SubtileZ = [3, 0]
+
+[thing96]
+ThingType = "Object"
+Subtype = 2
+Ownership = 0
+ParentTile = 1288
+CustomBox = -1
+Orientation = 0
+SubtileX = [51, 128]
+SubtileY = [93, 128]
+SubtileZ = [3, 0]
+
+[thing97]
+ThingType = "Object"
+Subtype = 2
+Ownership = 0
+ParentTile = 1333
+CustomBox = -1
+Orientation = 0
+SubtileX = [63, 128]
+SubtileY = [98, 128]
+SubtileZ = [3, 0]
+
 [thing98]
+ThingType = "Object"
+Subtype = 2
+Ownership = 0
+ParentTile = 1333
+CustomBox = -1
+Orientation = 0
+SubtileX = [65, 128]
+SubtileY = [98, 128]
+SubtileZ = [3, 0]
+
+[thing99]
+ThingType = "Object"
+Subtype = 2
+Ownership = 0
+ParentTile = 1292
+CustomBox = -1
+Orientation = 0
+SubtileX = [65, 128]
+SubtileY = [93, 128]
+SubtileZ = [3, 0]
+
+[thing100]
+ThingType = "Object"
+Subtype = 1021
+Ownership = 0
+ParentTile = 1291
+Orientation = 0
+SubtileX = [62, 128]
+SubtileY = [94, 128]
+SubtileZ = [2, 0]
+
+[thing101]
+ThingType = "Object"
+Subtype = 1021
+Ownership = 0
+ParentTile = 1291
+Orientation = 0
+SubtileX = [61, 128]
+SubtileY = [95, 128]
+SubtileZ = [2, 0]
+
+[thing102]
+ThingType = "Object"
+Subtype = 1021
+Ownership = 0
+ParentTile = 1207
+Orientation = 0
+SubtileX = [55, 128]
+SubtileY = [87, 128]
+SubtileZ = [2, 0]
+
+[thing103]
+ThingType = "Object"
+Subtype = 1021
+Ownership = 0
+ParentTile = 1207
+Orientation = 0
+SubtileX = [54, 128]
+SubtileY = [88, 128]
+SubtileZ = [2, 0]
+
+[thing104]
+ThingType = "Object"
+Subtype = 1021
+Ownership = 0
+ParentTile = 1289
+Orientation = 0
+SubtileX = [54, 128]
+SubtileY = [94, 128]
+SubtileZ = [2, 0]
+
+[thing105]
+ThingType = "Object"
+Subtype = 1021
+Ownership = 0
+ParentTile = 1289
+Orientation = 0
+SubtileX = [55, 128]
+SubtileY = [95, 128]
+SubtileZ = [2, 0]
+
+[thing106]
+ThingType = "Object"
+Subtype = 1021
+Ownership = 0
+ParentTile = 1209
+Orientation = 0
+SubtileX = [61, 128]
+SubtileY = [87, 128]
+SubtileZ = [2, 0]
+
+[thing107]
+ThingType = "Object"
+Subtype = 1021
+Ownership = 0
+ParentTile = 1209
+Orientation = 0
+SubtileX = [62, 128]
+SubtileY = [88, 128]
+SubtileZ = [2, 0]
+
+[thing108]
 ThingType = "Creature"
 Subtype = 46
 Ownership = 4
@@ -1086,7 +1193,7 @@ SubtileX = [10, 128]
 SubtileY = [40, 128]
 SubtileZ = [1, 0]
 
-[thing99]
+[thing109]
 ThingType = "Creature"
 Subtype = 46
 Ownership = 4
@@ -1098,7 +1205,7 @@ SubtileX = [31, 128]
 SubtileY = [34, 128]
 SubtileZ = [1, 0]
 
-[thing100]
+[thing110]
 ThingType = "Creature"
 Subtype = 46
 Ownership = 4
@@ -1110,7 +1217,7 @@ SubtileX = [43, 128]
 SubtileY = [22, 128]
 SubtileZ = [1, 0]
 
-[thing101]
+[thing111]
 ThingType = "Creature"
 Subtype = 46
 Ownership = 4
@@ -1122,7 +1229,7 @@ SubtileX = [58, 128]
 SubtileY = [16, 128]
 SubtileZ = [1, 0]
 
-[thing102]
+[thing112]
 ThingType = "Creature"
 Subtype = 46
 Ownership = 4
@@ -1134,7 +1241,7 @@ SubtileX = [61, 128]
 SubtileY = [40, 128]
 SubtileZ = [1, 0]
 
-[thing103]
+[thing113]
 ThingType = "Creature"
 Subtype = 46
 Ownership = 4
@@ -1146,7 +1253,7 @@ SubtileX = [70, 128]
 SubtileY = [22, 128]
 SubtileZ = [1, 0]
 
-[thing104]
+[thing114]
 ThingType = "Creature"
 Subtype = 46
 Ownership = 4
@@ -1158,7 +1265,7 @@ SubtileX = [85, 128]
 SubtileY = [25, 128]
 SubtileZ = [1, 0]
 
-[thing105]
+[thing115]
 ThingType = "Creature"
 Subtype = 46
 Ownership = 4
@@ -1170,7 +1277,7 @@ SubtileX = [100, 128]
 SubtileY = [31, 128]
 SubtileZ = [1, 0]
 
-[thing106]
+[thing116]
 ThingType = "Creature"
 Subtype = 46
 Ownership = 4
@@ -1182,7 +1289,7 @@ SubtileX = [109, 128]
 SubtileY = [49, 128]
 SubtileZ = [1, 0]
 
-[thing107]
+[thing117]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1193,7 +1300,7 @@ SubtileX = [75, 128]
 SubtileY = [92, 128]
 SubtileZ = [0, 0]
 
-[thing108]
+[thing118]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1204,7 +1311,7 @@ SubtileX = [114, 128]
 SubtileY = [101, 128]
 SubtileZ = [0, 0]
 
-[thing109]
+[thing119]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1215,7 +1322,7 @@ SubtileX = [111, 128]
 SubtileY = [99, 128]
 SubtileZ = [0, 0]
 
-[thing110]
+[thing120]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1226,7 +1333,7 @@ SubtileX = [102, 128]
 SubtileY = [106, 128]
 SubtileZ = [0, 0]
 
-[thing111]
+[thing121]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1237,7 +1344,7 @@ SubtileX = [27, 128]
 SubtileY = [104, 128]
 SubtileZ = [0, 0]
 
-[thing112]
+[thing122]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1248,7 +1355,7 @@ SubtileX = [37, 128]
 SubtileY = [103, 128]
 SubtileZ = [0, 0]
 
-[thing113]
+[thing123]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1259,7 +1366,7 @@ SubtileX = [3, 128]
 SubtileY = [94, 128]
 SubtileZ = [0, 0]
 
-[thing114]
+[thing124]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1270,7 +1377,7 @@ SubtileX = [5, 128]
 SubtileY = [88, 128]
 SubtileZ = [0, 0]
 
-[thing115]
+[thing125]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1281,7 +1388,7 @@ SubtileX = [32, 128]
 SubtileY = [82, 128]
 SubtileZ = [0, 0]
 
-[thing116]
+[thing126]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1292,7 +1399,7 @@ SubtileX = [20, 128]
 SubtileY = [82, 128]
 SubtileZ = [0, 0]
 
-[thing117]
+[thing127]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1303,7 +1410,7 @@ SubtileX = [98, 128]
 SubtileY = [109, 128]
 SubtileZ = [0, 0]
 
-[thing118]
+[thing128]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1314,7 +1421,7 @@ SubtileX = [47, 128]
 SubtileY = [116, 128]
 SubtileZ = [0, 0]
 
-[thing119]
+[thing129]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1325,7 +1432,7 @@ SubtileX = [73, 128]
 SubtileY = [70, 128]
 SubtileZ = [0, 0]
 
-[thing120]
+[thing130]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1336,7 +1443,7 @@ SubtileX = [47, 128]
 SubtileY = [3, 128]
 SubtileZ = [0, 0]
 
-[thing121]
+[thing131]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1347,7 +1454,7 @@ SubtileX = [78, 128]
 SubtileY = [22, 128]
 SubtileZ = [0, 0]
 
-[thing122]
+[thing132]
 ThingType = "EffectGen"
 Subtype = 2
 Ownership = 5
@@ -1358,7 +1465,7 @@ SubtileX = [91, 128]
 SubtileY = [54, 128]
 SubtileZ = [0, 0]
 
-[thing123]
+[thing133]
 ThingType = "Trap"
 Subtype = 1
 Ownership = 0
@@ -1368,7 +1475,7 @@ SubtileX = [28, 128]
 SubtileY = [67, 128]
 SubtileZ = [1, 0]
 
-[thing124]
+[thing134]
 ThingType = "Trap"
 Subtype = 1
 Ownership = 0
@@ -1378,7 +1485,7 @@ SubtileX = [34, 128]
 SubtileY = [67, 128]
 SubtileZ = [1, 0]
 
-[thing125]
+[thing135]
 ThingType = "Trap"
 Subtype = 1
 Ownership = 0
@@ -1388,7 +1495,7 @@ SubtileX = [40, 128]
 SubtileY = [67, 128]
 SubtileZ = [1, 0]
 
-[thing126]
+[thing136]
 ThingType = "Trap"
 Subtype = 1
 Ownership = 0
@@ -1398,7 +1505,7 @@ SubtileX = [46, 128]
 SubtileY = [67, 128]
 SubtileZ = [1, 0]
 
-[thing127]
+[thing137]
 ThingType = "Trap"
 Subtype = 1
 Ownership = 0
@@ -1408,7 +1515,7 @@ SubtileX = [52, 128]
 SubtileY = [67, 128]
 SubtileZ = [1, 0]
 
-[thing128]
+[thing138]
 ThingType = "Trap"
 Subtype = 1
 Ownership = 0
@@ -1418,7 +1525,7 @@ SubtileX = [64, 128]
 SubtileY = [67, 128]
 SubtileZ = [1, 0]
 
-[thing129]
+[thing139]
 ThingType = "Trap"
 Subtype = 1
 Ownership = 0
@@ -1428,7 +1535,7 @@ SubtileX = [70, 128]
 SubtileY = [67, 128]
 SubtileZ = [1, 0]
 
-[thing130]
+[thing140]
 ThingType = "Trap"
 Subtype = 1
 Ownership = 0
@@ -1438,7 +1545,7 @@ SubtileX = [76, 128]
 SubtileY = [67, 128]
 SubtileZ = [1, 0]
 
-[thing131]
+[thing141]
 ThingType = "Trap"
 Subtype = 1
 Ownership = 0
@@ -1448,7 +1555,7 @@ SubtileX = [82, 128]
 SubtileY = [67, 128]
 SubtileZ = [1, 0]
 
-[thing132]
+[thing142]
 ThingType = "Trap"
 Subtype = 1
 Ownership = 0
@@ -1458,7 +1565,7 @@ SubtileX = [88, 128]
 SubtileY = [67, 128]
 SubtileZ = [1, 0]
 
-[thing133]
+[thing143]
 ThingType = "Trap"
 Subtype = 1
 Ownership = 0
