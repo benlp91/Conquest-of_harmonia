@@ -135,7 +135,7 @@ function SpawnPatrols()
 end
 
     -- the Lord AFTER the intro
-    -- TODO this party is supposed to stop patrolling after keeper good has 0 wizards anymore from the 5 parties that are spawned in  
+    -- TODO this party is supposed to stop patrolling after keeper good has 0 wizards anymore from the 5 parties that are spawned in  HERE!
 
 function SpawnLord()
 
@@ -148,6 +148,7 @@ function SpawnLord()
 end
 
     -- only keeper creatures (spawning in later because otherwise they fight and disturb the intro)
+    -- TODO they are patrouling but it makes no sense
 
 function SpawnCRTRS()
     AddPartyToLevel(PLAYER0       ,"KEEPERCRTS"                , 21)
