@@ -8,8 +8,8 @@
 function OnGameStart()
     MyHeroParties()
     SpawnPatrols()
-    RegisterTimerEvent(SpawnLord, 1500, false)
-    RegisterTimerEvent(SpawnCRTRS, 500, false)
+    RegisterTimerEvent(SpawnLord, 500, false)
+    RegisterTimerEvent(SpawnCRTRS, 305, false)
 end
 
 -- Define the hero parties that can be spawned
@@ -68,18 +68,6 @@ function MyHeroParties()
         AddToParty("LORD", "BARBARIAN", 5, 250, "ATTACK_DUNGEON_HEART", 0)        
         AddToParty("LORD", "GIANT"   , 5, 250, "ATTACK_DUNGEON_HEART", 0)
 
--- Party for the keeper
-
-    CreateParty("KEEPERCRTS")
-        AddToParty("KEEPERCRTS", "MISTRESS"   , 4, 500, "ATTACK_ENEMIES", 0)
-        AddToParty("KEEPERCRTS", "MISTRESS"   , 3, 500, "ATTACK_ENEMIES", 0)
-        AddToParty("KEEPERCRTS", "GOBLIN"   , 4, 500, "ATTACK_ENEMIES", 0)
-        AddToParty("KEEPERCRTS", "GOBLIN"   , 3, 500, "ATTACK_ENEMIES", 0)
-        AddToParty("KEEPERCRTS", "SALAMANDER"   , 4, 500, "ATTACK_ENEMIES", 0)
-        AddToParty("KEEPERCRTS", "SALAMANDER"   , 3, 500, "ATTACK_ENEMIES", 0)
-        AddToParty("KEEPERCRTS", "DARK_ELF"   , 4, 500, "ATTACK_ENEMIES", 0)
-        AddToParty("KEEPERCRTS", "DARK_ELF"   , 3, 500, "ATTACK_ENEMIES", 0)
-
 end
 
 -- Function to define routes, spawn patrolling heroes and initialize their patrolling
@@ -125,24 +113,26 @@ function SpawnPatrols()
     local PatrolPartyWiz5   =  AddPartyToLevel(PLAYER_GOOD       ,"WIZARD5"            , 5)
 
     -- Calling Library function to activate patrols
-    RegisterPatrol(PatrolPartyRed[1]    , Lairroute , 1, "Red Patrol")
+    RegisterPatrol(PatrolPartyRed[1]    , Lairroute     , 1, "Red Patrol")
     RegisterPatrol(PatrolPartyGreen[1]  , westwaterway  , 1, "Green Patrol")
-    RegisterPatrol(PatrolPartyWiz1[1] , eastside     , 1, "WIZARD1 Patrol")
-    RegisterPatrol(PatrolPartyWiz2[1] , RouteWiz2     , 1, "WIZARD2 Patrol")
-    RegisterPatrol(PatrolPartyWiz3[1] , RouteWiz3     , 1, "WIZARD3 Patrol")
-    RegisterPatrol(PatrolPartyWiz4[1] , RouteWiz4     , 1, "WIZARD4 Patrol")
-    RegisterPatrol(PatrolPartyWiz5[1] , RouteWiz5     , 1, "WIZARD5 Patrol")
+    RegisterPatrol(PatrolPartyWiz1[1]   , eastside      , 1, "WIZARD1 Patrol")
+    RegisterPatrol(PatrolPartyWiz2[1]   , RouteWiz2     , 1, "WIZARD2 Patrol")
+    RegisterPatrol(PatrolPartyWiz3[1]   , RouteWiz3     , 1, "WIZARD3 Patrol")
+    RegisterPatrol(PatrolPartyWiz4[1]   , RouteWiz4     , 1, "WIZARD4 Patrol")
+    RegisterPatrol(PatrolPartyWiz5[1]   , RouteWiz5     , 1, "WIZARD5 Patrol")
 end
 
     -- the Lord AFTER the intro
-    -- TODO this party is supposed to stop patrolling after keeper good has 0 wizards anymore from the 5 parties that are spawned in  HERE!
+    -- TODO this party is supposed to stop patrolling after keeper good has 0 wizards anymore from the 5 parties that are spawned in  
 
 function SpawnLord()
 
     local RouteLord = {}
         RouteLord[1]  =      { stl_x = 97, stl_y = 13 }
         RouteLord[2]  =      { stl_x = 85, stl_y = 13 }
+
     local PatrolPartyLord   =      AddPartyToLevel(PLAYER_GOOD       ,"LORD"            , 6)
+
     RegisterPatrol(PatrolPartyLord[1] , RouteLord     , 1, "LORD Patrol")
 
 end
@@ -150,7 +140,15 @@ end
     -- only keeper creatures (spawning in later because otherwise they fight and disturb the intro)
     -- TODO they are patrouling but it makes no sense
 
+
 function SpawnCRTRS()
-    AddPartyToLevel(PLAYER0       ,"KEEPERCRTS"                , 21)
+
+    AddCreatureToLevel(PLAYER0    ,"SALAMANDER"          , 21, 1, 200)
+    AddCreatureToLevel(PLAYER0    ,"SALAMANDER"          , 21, 1, 200)
+    AddCreatureToLevel(PLAYER0    ,"SALAMANDER"          , 21, 2, 200)
+    AddCreatureToLevel(PLAYER0    ,"MISTRESS"            , 21, 1, 200)
+    AddCreatureToLevel(PLAYER0    ,"MISTRESS"            , 21, 2, 200)
+    AddCreatureToLevel(PLAYER0    ,"TROLL"               , 21, 1, 200)
+
 end
 
