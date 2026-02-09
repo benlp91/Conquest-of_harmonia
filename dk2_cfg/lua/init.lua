@@ -1,5 +1,6 @@
 require "hatchery"
 require "patrols"
+require "helper"
 
 function OnCampaignGameStart()
     RegisterTimerEvent(CheckForStunDeaths, 1, true)             -- Repeat each frame
