@@ -11,10 +11,8 @@ SET_GENERATE_SPEED(200)
 MAX_CREATURES(PLAYER0,10)
 START_MONEY(PLAYER0,5000)
 
-ADD_CREATURE_TO_POOL(FIREFLY,2)
 ADD_CREATURE_TO_POOL(GOBLIN,10)
 
-CREATURE_AVAILABLE(PLAYER0,FIREFLY,1,0)
 CREATURE_AVAILABLE(PLAYER0,GOBLIN,1,0)
 
 MAGIC_AVAILABLE(PLAYER0,POWER_HAND,1,1)
@@ -39,7 +37,7 @@ ROOM_AVAILABLE(PLAYER0,GARDEN,1,1)
 
 SET_GAME_RULE(TrainingRoomMaxLevel,4)
 
-REM Every 5 turns set PLAYER_GOOD,FLAG0 to the amount of awake creatures PLAYER_GOOD has
+REM Every 5 turns set PLAYER_GOOD,FLAG0 to the amount of awake creatures PLAYER_GOOD has  ;    PLAYER_GOOD,FLAG0 is now the same as PLAYER_GOOD,TOTAL_CREATURES
 RUN_LUA_CODE("RegisterTimerEvent(CountAwakeHeroes,5,true)")
 
 SET_TIMER(PLAYER3,TIMER3)
@@ -243,11 +241,6 @@ IF(PLAYER0, GOBLIN >= 1)
 
 ENDIF
 
-IF(PLAYER0, FIREFLY >= 1)
-    PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe06.ogg")
-    QUICK_INFORMATION(6,"The swift light Firefly is essential as an airborne scout. His eyes are yours to penetrate dark places and report.")
-ENDIF
-
 IF(PLAYER0,LAIR >= 3)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe07.ogg")
     QUICK_OBJECTIVE(7,"Excellent work, Keeper. You are ready to recruit more creatures to your cause. See?  A Portal near your Dungeon Heart, to where your Imps must dig. They'll claim this Portal to be yours: you'll see what beasts emerge.")
@@ -379,7 +372,7 @@ IF(PLAYER6,TIMER6 >= 70)
     CREATE_EFFECT(EFFECT_WORD_OF_POWER,-2)
     CREATE_EFFECT(EFFECT_EXPLOSION_5,-2)
     CREATE_EFFECT(EFFECT_SPANGLE_RED,-2)
-    ADD_OBJECT_TO_LEVEL(HORNY_SPAWN,-2,1,PLAYER0)
+    ADD_OBJECT_TO_LEVEL(HORNY_SPAWN,-2,1,PLAYER0,South)
 ENDIF
 
 IF(PLAYER6,TIMER6 >= 120)
@@ -399,8 +392,6 @@ IF(PLAYER0,FLAG0 == 8)
     IF(PLAYER5,HEART_HEALTH < 3)
         SET_OBJECT_CONFIGURATION(FAKE_GEM,UpdateFunction,UPDATE_POWER_LIGHTNING)
         SET_TIMER(PLAYER6,TIMER7)
-    ENDIF
-    IF(PLAYER6,TIMER7 > 50)
         KILL_CREATURE(PLAYER6,EVILLORD,ANYWHERE,1)
     ENDIF
 ENDIF

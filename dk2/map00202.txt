@@ -72,6 +72,11 @@ IF(PLAYER0,TIMER0 >= 40)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl3spe01.ogg")
 ENDIF
 
+IF(PLAYER0, FIREFLY >= 1)
+    PLAY_MESSAGE(PLAYER0,SPEECH,"lvl1spe06.ogg")
+    QUICK_INFORMATION(6,"The swift light Firefly is essential as an airborne scout. His eyes are yours to penetrate dark places and report.")
+ENDIF
+
 REM START INTRO
 
 RUN_AFTER_VICTORY(1)
