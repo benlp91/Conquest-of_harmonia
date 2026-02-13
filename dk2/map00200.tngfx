@@ -360,17 +360,6 @@ SubtileZ = [2, 224]
 [thing32]
 ThingType = "Object"
 Subtype = 2
-Ownership = 0
-ParentTile = 608
-CustomBox = -1
-Orientation = 0
-SubtileX = [27, 64]
-SubtileY = [76, 128]
-SubtileZ = [2, 224]
-
-[thing33]
-ThingType = "Object"
-Subtype = 2
 Ownership = 5
 ParentTile = 594
 CustomBox = -1
@@ -379,7 +368,7 @@ SubtileX = [56, 0]
 SubtileY = [73, 0]
 SubtileZ = [4, 0]
 
-[thing34]
+[thing33]
 ThingType = "Object"
 Subtype = 2
 Ownership = 5
@@ -390,7 +379,7 @@ SubtileX = [61, 0]
 SubtileY = [73, 0]
 SubtileZ = [4, 0]
 
-[thing35]
+[thing34]
 ThingType = "Object"
 Subtype = 2
 Ownership = 5
@@ -401,7 +390,7 @@ SubtileX = [61, 0]
 SubtileY = [68, 0]
 SubtileZ = [4, 0]
 
-[thing36]
+[thing35]
 ThingType = "Object"
 Subtype = 2
 Ownership = 5
@@ -411,6 +400,16 @@ Orientation = 0
 SubtileX = [56, 0]
 SubtileY = [68, 0]
 SubtileZ = [4, 0]
+
+[thing36]
+ThingType = "Object"
+Subtype = 2
+Ownership = 0
+ParentTile = 608
+Orientation = 0
+SubtileX = [27, 64]
+SubtileY = [76, 128]
+SubtileZ = [2, 224]
 
 [thing37]
 ThingType = "Creature"
