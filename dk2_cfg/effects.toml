@@ -36,7 +36,7 @@ LightFlags = 0
 ElementsCount = 8
 AlwaysGenerate = 0
 
-[effect82]
+[effect83]
 Name = "EFFECT_WORD_OF_POWER_NO_SOUND"
 Health = 10
 GenerationType = 1
@@ -54,7 +54,7 @@ LightFlags = 0
 ElementsCount = 20
 AlwaysGenerate = 0
 
-[effect83]
+[effect84]
 Name = "EFFECT_EXPLOSION_CUSTOM"
 Health = 20
 GenerationType = 1
@@ -72,11 +72,23 @@ LightFlags = 1
 ElementsCount = 10
 AlwaysGenerate = 0
 
-
-
-
-
-
+[effect85]
+Name = "EFFECT_SPAWN"
+Health = 5
+GenerationType = 1
+GenerationAccelXYRange = [50,120]
+GenerationAccelZRange = [-136,136]
+GenerationKindRange = [125,125]
+AreaAffectType = 0
+HitType = 0
+SpellEffect = 0
+Sound = 0
+AffectedByWind = 1
+LightRadius = 16
+LightIntensity = 16
+LightFlags = 0
+ElementsCount = 14
+AlwaysGenerate = 0
 
 
 [effectElement124]
@@ -104,5 +116,45 @@ Impacts = false
 TransformModel = 0
 LightRadius = 0
 LightIntensity = 0
+LightFlags = 0
+AffectedByWind = 1
+
+[effectElement125]
+Name = "EFFECTELEMENT_SPAWN"
+DrawClass = 2
+MoveType = 1
+Unanimated = 0
+Lifespan = [20,120]
+AnimationId = 823
+SpriteSize = [120,250]
+AnimateOnce = 0
+SpriteSpeed = [20,120]
+AnimateOnFloor = false
+Unshaded = false
+Transparent = 3
+ThroughWalls = 0
+SizeChange = 0
+FallAcceleration = 10
+InertiaFloor = 16
+InertiaAir = 0
+SubeffectModel = 32
+SubeffectDelay = 1
+Movable = true
+Impacts = true
+SolidGroundEffmodel = 0
+SolidGroundSoundId = 0
+SolidGroundLoudness = 256
+SolidGroundDestroyOnImpact = false
+WaterEffmodel = 19
+WaterSoundId = 36
+WaterLoudness = 80
+WaterDestroyOnImpact = true
+LavaEffmodel = 0
+LavaSoundId = 0
+LavaLoudness = 256
+LavaDestroyOnImpact = true
+TransformModel = 0
+LightRadius = 5
+LightIntensity = 52
 LightFlags = 0
 AffectedByWind = 1

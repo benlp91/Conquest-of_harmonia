@@ -18,7 +18,7 @@ function MyHeroParties()
     CreateParty("RED")
         AddToParty("RED", "BARBARIAN"       , 2, 500, "ATTACK_DUNGEON_HEART", 0)
         AddToParty("RED", "BARBARIAN"   , 2, 500, "ATTACK_DUNGEON_HEART", 0)
-        AddToParty("RED", "KNIGHT"        , 3, 250, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("RED", "KNIGHT"        , 3, 0, "ATTACK_DUNGEON_HEART", 0)
 
 end
 

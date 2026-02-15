@@ -61,7 +61,7 @@ function MyHeroParties()
         AddToParty("WIZARD5", "WIZARD"   , 5, 250, "ATTACK_DUNGEON_HEART", 0)
 
     CreateParty("LORD")
-        AddToParty("LORD", "KNIGHT"    , 5, 500, "ATTACK_DUNGEON_HEART", 0)    
+        AddToParty("LORD", "KNIGHT"    , 5, 0, "ATTACK_DUNGEON_HEART", 0)    
         AddToParty("LORD", "DWARFA"    , 5, 500, "ATTACK_DUNGEON_HEART", 0)
         AddToParty("LORD", "BARBARIAN", 5, 500, "ATTACK_DUNGEON_HEART", 0)
         AddToParty("LORD", "BARBARIAN", 5, 250, "ATTACK_DUNGEON_HEART", 0)
