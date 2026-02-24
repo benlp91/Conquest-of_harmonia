@@ -50,7 +50,7 @@ function LeaderDeath(eventData,triggerData)
 
     if patrol.partybackup then
         patrol.leader = patrol.partybackup.party[1]
-        if patrol.leader == nil or patrol.leader.state == "CreatureUnconscious" then
+        if patrol.leader == nil then
             patrol.leader = patrol.partybackup
         end
         local trigger = RegisterCreatureDeathEvent(LeaderDeath, patrol.leader)
