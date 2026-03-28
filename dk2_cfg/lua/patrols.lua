@@ -1,3 +1,5 @@
+
+
 -- patrols.lua
 -- Contains functions to assign individual heroes or parties to patrol locations
 
@@ -37,7 +39,7 @@ end
 
 
 local function InitializePatrols()
-    RegisterTimerEvent(UpdatePatrols, 17, true)
+    RegisterTimerEvent(UpdatePatrols, 50, true)
     Game.patrols = {}
 end
 
