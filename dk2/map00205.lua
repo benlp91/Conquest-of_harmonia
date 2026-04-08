@@ -8,7 +8,6 @@
 function OnGameStart()
     MyHeroParties()
     SpawnPatrols()
-    SpawnGuards()
 end
 
 -- Define the hero parties that can be spawned
@@ -69,8 +68,6 @@ function SpawnPatrols()
         westside[3]  =      { stl_x = 70, stl_y = 139 }  
         westside[4]  =      { stl_x = 49, stl_y = 139 }         
 
-
-        
     local southside = {}
         southside[1]  =   { stl_x = 127, stl_y = 193 }
         southside[2]  =   { stl_x = 139, stl_y = 193 }
