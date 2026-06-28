@@ -1,25 +1,60 @@
-
-
 -- patrols.lua
 -- Contains functions to assign individual heroes or parties to patrol locations
 
 local function is_close_enough(creature, target)
-    return creature.pos.stl_y < target.stl_y+2 and 
-           creature.pos.stl_y > target.stl_y-2 and 
-           creature.pos.stl_x < target.stl_x+2 and 
-           creature.pos.stl_x > target.stl_x-2  
+    return creature.pos.stl_y < target.stl_y+2 and
+           creature.pos.stl_y > target.stl_y-2 and
+           creature.pos.stl_x < target.stl_x+2 and
+           creature.pos.stl_x > target.stl_x-2
 end
 
-local function  UpdatePatrol(patrol)
-    if patrol.leader == nil then
+local function UpdatePatrol(patrol)
+
+    -- Reassign leader if the current one is knocked out, nil or invalid
+    local reassignLeader = patrol.leader == nil or (not patrol.leader:isValid()) or patrol.leader.state == "CreatureUnconscious" or patrol.leader.continue_state == "CreatureInPrison"
+    if (reassignLeader) then
+        print("Reassigning leader")
+        local newLeader = GetNextPotentialLeader(patrol.party)
+
+        -- No new leader could be found. Prevent further updates to this patrol
+        if (newLeader == nil) then
+            print("NoNewLeaderFound")
+            print(patrol.patrolId)
+            patrol.patrolDead = true
+            return
+        end
+
+        patrol.leader = newLeader
+
+        print("SetNewLeader")
+        print(patrol.leader.name)
+        print(patrol.leader.model)
+
+        local trigger = RegisterCreatureDeathEvent(ChangeLeader, patrol.leader)
+        trigger.triggerData.patrol_idx = patrol.patrolId
+        patrol.partybackup = nil
         return
     end
+
+    -- Correct the state of the leader if necessary
+    if (patrol.leader.state == "CreatureFollowLeader") then
+        local creatureIsDigger = patrol.leader.model == "TUNNELLER" or patrol.leader.model == "IMP"
+        if (creatureIsDigger) then
+            print("SettingLeaderStateToTunnelling")
+            patrol.leader.state = "Tunnelling"
+        else
+            print("SettingLeaderStateToMoveToPosition")
+            patrol.leader.state = "MoveToPosition"
+        end
+    end
+
     if patrol.leader.state ~= "MoveToPosition" and patrol.leader.state ~= "GoodDoingNothing" and patrol.leader.state ~= "CreatureDoingNothing" then
+        print("LeaderInUnknownState:" .. patrol.leader.state)
         return
     end
-    
+
     local target = patrol.positions[patrol.next_post]
-    
+
     if is_close_enough(patrol.leader, target) then
         patrol.next_post = (patrol.next_post % #patrol.positions) + 1
         target = patrol.positions[patrol.next_post]
@@ -31,48 +66,124 @@ local function  UpdatePatrol(patrol)
     end
 end
 
+function GetNextPotentialLeader(party)
+    -- Loop party and find viable leader
+    local nextLeader = nil
+    local leaderFound = false
+
+    for _, partyMember in ipairs(party) do
+        -- skip invalid members
+        if (partyMember == nil or not partyMember:isValid()) then
+            goto continue
+        end
+
+        -- Skip if leader already found
+        if (leaderFound) then
+			goto continue
+		end
+
+        -- if creature in actionable state, set that one and set variable
+        if (CreatureStateIsActionable(partyMember.state)) then
+            print("StateIsActionable")
+            nextLeader = partyMember
+            leaderFound = true
+            return partyMember
+        end
+
+        -- check state and return later
+        ::continue::
+    end
+
+    return nextLeader
+end
+
+-- Determines if the creature's state allows the creature to become party leader
+function CreatureStateIsActionable(creatureState)
+
+    print("CheckingState: " .. creatureState)
+
+    -- States considered definitely valid
+    if creatureState == "MoveToPosition" then return true end
+    if creatureState == "GoodDoingNothing" then return true end
+    if creatureState == "CreatureDoingNothing" then return true end
+    if creatureState == "CreatureInCombat" then return true end
+    if creatureState == "CreatureFollowLeader" then return true end
+    if creatureState == "CreatureCombatFlee" then return true end
+
+    -- States considered definitely invalid
+    if creatureState == "CreatureInPrison" then return false end
+    if creatureState == "CreatureUnconscious" then return false end
+
+    -- If in doubt, the creature is not valid
+    return false
+end
+
 function UpdatePatrols()
     for _, patrol in ipairs(Game.patrols) do
-        UpdatePatrol(patrol)
+        -- Only update if there are still units alive in the patrol
+        if (not patrol.patrolDead) then
+            UpdatePatrol(patrol)
+        end
     end
 end
 
-
 local function InitializePatrols()
-    RegisterTimerEvent(UpdatePatrols, 50, true)
+    RegisterTimerEvent(UpdatePatrols, 17, true)
     Game.patrols = {}
 end
 
+function ChangeLeader(_,triggerData)
 
-function LeaderDeath(eventData,triggerData)
+    print("TriggeredChangeLeader")
+
     local patrol = Game.patrols[triggerData.patrol_idx]
     if patrol == nil then
         return
     end
 
-    if patrol.partybackup then
+    if (patrol.partybackup ~= nil and Tablelength(patrol.partybackup) > 0) then
+
+        -- No backup available.
+        if (not patrol.partybackup:isValid()) then
+            RemoveTrigger(triggerData.trigger)
+            return
+        end
+
         patrol.leader = patrol.partybackup.party[1]
-        if patrol.leader == nil or patrol.leader.state == "CreatureUnconscious" then
+        if patrol.leader == nil then
+            print("LeaderIsNil")
             patrol.leader = patrol.partybackup
         end
-        local trigger = RegisterCreatureDeathEvent(LeaderDeath, patrol.leader)
+
+        local trigger = RegisterCreatureDeathEvent(ChangeLeader, patrol.leader)
         trigger.triggerData.patrol_idx = triggerData.patrol_idx
-        
+
         -- Update backup to the next party member
         if patrol.leader.party[2] then
             patrol.partybackup = patrol.leader.party[2]
+
             local trigger2 = RegisterCreatureDeathEvent(BackupDeath, patrol.partybackup)
             trigger2.triggerData.patrol_idx = triggerData.patrol_idx
         else
             patrol.partybackup = nil
         end
     else
-
         RemoveTrigger(triggerData.trigger)
     end
 end
 
-function BackupDeath(eventData,triggerData)
+function Tablelength(T)
+
+    if (T == nil or type(T) ~= "table") then
+        return 0
+    end
+
+  local count = 0
+  for _ in pairs(T) do count = count + 1 end
+  return count
+end
+
+function BackupDeath(_,triggerData)
     local patrol = Game.patrols[triggerData.patrol_idx]
     if patrol == nil then
         return
@@ -82,15 +193,13 @@ function BackupDeath(eventData,triggerData)
         -- Leader died, ignore backup death
         return
     end
-    
+
     if patrol.leader and patrol.leader.party[2] then
         patrol.partybackup = patrol.leader.party[2]
-        local trigger2 = RegisterCreatureDeathEvent(BackupDeath, patrol.partybackup)
-        trigger2.triggerData.patrol_idx = triggerData.patrol_idx
+
     else
         patrol.partybackup = nil
     end
-
 end
 
 ---makes a party patrol between given points
@@ -111,9 +220,9 @@ function RegisterPatrol(leader, patrolPoints,next_post,patrol_name)
         patrol_name = "Patrol "..tostring(#Game.patrols + 1)
     end
 
-    table.insert(Game.patrols, { leader = leader, positions = patrolPoints, next_post = next_post, name = patrol_name } )
+    table.insert(Game.patrols, { leader = leader, positions = patrolPoints, next_post = next_post, name = patrol_name, patrolId = #Game.patrols, party = leader.party, patrolDead = false } )
 
-    local trigger = RegisterCreatureDeathEvent(LeaderDeath, leader)
+    local trigger = RegisterCreatureDeathEvent(ChangeLeader, leader)
     trigger.triggerData.patrol_idx = #Game.patrols
 
     if leader.party[2] ~= nil then

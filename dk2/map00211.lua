@@ -8,6 +8,7 @@
 function OnGameStart()
     MyHeroParties()
     SpawnGuards()
+    SpawnPatrols()
 end
 
 -- Define the hero parties that can be spawned
@@ -47,14 +48,6 @@ function SpawnGuards()
     AddPartyToLevel(PLAYER_GOOD    ,"DEFEND3"           , 10)
 end
 
-
-
-
-
-
-
-
-
 -- Function to define routes, spawn patrolling heroes and initialize their patrolling
 function SpawnPatrols()
 
@@ -71,8 +64,6 @@ function SpawnPatrols()
         Middlecircler[4]  =      { stl_x = 100, stl_y = 109 }
 
 
-
-
     -- Patrolling parties and individual heroes added to level.
 
     local PatrolFirst  =    AddCreatureToLevel(PLAYER_GOOD    ,"DWARFA"             , 12, 1, 200)
@@ -87,12 +78,22 @@ function SpawnPatrols()
     local PatrolMiddle3 =    AddCreatureToLevel(PLAYER_GOOD    ,"BARBARIAN"             , 13, 2, 200)
     local PatrolMiddle4 =    AddCreatureToLevel(PLAYER_GOOD    ,"BARBARIAN"             , 13, 2, 200)
 
+    PatrolFirst.health = 25
+    PatrolFirst2.health = 25
+    PatrolFirst3.health = 25
+    PatrolFirst4.health = 25
+    PatrolFirst5.health = 25
+    PatrolFirst6.health = 25
 
+    PatrolMiddle.health = 25
+    PatrolMiddle2.health = 25
+    PatrolMiddle3.health = 25
+    PatrolMiddle4.health = 25
+
+    
+    Game.Party.Creature.health = 25
 
     -- local PatrolPartyRed    =  AddPartyToLevel(PLAYER_GOOD       ,"RED"                , 9)
-
-
-
 
     -- Calling Library function to activate patrols
 

@@ -8,6 +8,12 @@
 function OnGameStart()
     MyHeroParties()
     SpawnPatrols()
+    RegisterTimerEvent(StopPatrol, 5000, false)
+
+end
+
+function StopPatrol()
+    Game.patrols = {}
 end
 
 -- Define the hero parties that can be spawned
@@ -53,28 +59,28 @@ function SpawnPatrols()
     -- Define routes to be patrolled
 
     local Bridgeroute = {}
-        Bridgeroute[1]  =  { stl_x = 121, stl_y = 133 }
-        Bridgeroute[2]  =  { stl_x = 175, stl_y = 133 }
+        Bridgeroute[1]  =  { stl_x = 76, stl_y = 133 }
+        Bridgeroute[2]  =  { stl_x = 130, stl_y = 133 }
 
     local westwaterway = {}
-        westwaterway[1]  =   { stl_x = 112, stl_y = 145 }
-        westwaterway[2]  =   { stl_x = 112, stl_y = 121 }
+        westwaterway[1]  =   { stl_x = 67, stl_y = 145 }
+        westwaterway[2]  =   { stl_x = 67, stl_y = 121 }
 
     local eastside = {}
-        eastside[1]  =      { stl_x = 184, stl_y = 121 }
-        eastside[2]  =      { stl_x = 184, stl_y = 145 }
+        eastside[1]  =      { stl_x = 139, stl_y = 121 }
+        eastside[2]  =      { stl_x = 139, stl_y = 145 }
 
     local leftcircler = {}
-        leftcircler[1]  =      { stl_x = 100, stl_y = 127 }
-        leftcircler[2]  =      { stl_x = 112, stl_y = 127 }
-        leftcircler[3]  =      { stl_x = 112, stl_y = 139 }
-        leftcircler[4]  =      { stl_x = 100, stl_y = 139 }
+        leftcircler[1]  =      { stl_x = 52, stl_y = 127 }
+        leftcircler[2]  =      { stl_x = 67, stl_y = 127 }
+        leftcircler[3]  =      { stl_x = 67, stl_y = 139 }
+        leftcircler[4]  =      { stl_x = 52, stl_y = 139 }
 
     local rightcircler = {}
-        rightcircler[1]  =      { stl_x = 184, stl_y = 127 }
-        rightcircler[2]  =      { stl_x = 196, stl_y = 127 }
-        rightcircler[3]  =      { stl_x = 196, stl_y = 139 }
-        rightcircler[4]  =      { stl_x = 184, stl_y = 139 }
+        rightcircler[1]  =      { stl_x = 139, stl_y = 127 }
+        rightcircler[2]  =      { stl_x = 154, stl_y = 127 }
+        rightcircler[3]  =      { stl_x = 154, stl_y = 139 }
+        rightcircler[4]  =      { stl_x = 139, stl_y = 139 }
 
     -- Patrolling parties and individual heroes added to level.
     local PatrolPartyRed    =  AddPartyToLevel(PLAYER_GOOD       ,"RED"                , 9)
