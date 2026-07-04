@@ -8,8 +8,7 @@
 function OnGameStart()
     MyHeroParties()
     SpawnPatrols()
-    RegisterTimerEvent(StopPatrol, 5000, false)
-
+    RegisterTimerEvent(StopPatrol, 45000, false)
 end
 
 function StopPatrol()
