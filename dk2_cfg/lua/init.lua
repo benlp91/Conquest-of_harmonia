@@ -15,16 +15,3 @@ function CheckForStunDeaths()
         end
     end
 end
-
--- function to hide the health flower of horny when he collects the gem
-function HideHornyFlower()
-    local creatures = GetCreatures()
-
-    for _, creature in ipairs(creatures) do
-
-        if creature.model == "EVILLORD" then
-            creature.force_health_flower_hidden = true
-        end
-
-    end
-end

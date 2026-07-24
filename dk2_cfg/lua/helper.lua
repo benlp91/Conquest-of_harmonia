@@ -17,5 +17,4 @@ function SpawnHorny(location)
     Game.Horny = AddCreatureToLevel(PLAYER6,"EVILLORD",location,10,0,0)
     Game.Horny.party_objective = 5
     Game.Horny.party_target_player = 7
-    HideHornyFlower()
 end
