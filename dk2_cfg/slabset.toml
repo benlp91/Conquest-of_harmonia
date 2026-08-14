@@ -974,87 +974,59 @@ Objects = []
 
 [slab28.S]
 Columns = [1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323]
-
-[[slab28.S_objects]]
-IsLight = 0
-Subtile = 4
-RelativePosition = [128, 128, 256]
-ThingType = 1
-Subtype = 114
-EffectRange = 0
+Objects = []
 
 [slab28.W]
 Columns = [1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323]
-
-[[slab28.W_objects]]
-IsLight = 0
-Subtile = 4
-RelativePosition = [128, 128, 256]
-ThingType = 1
-Subtype = 114
-EffectRange = 0
+Objects = []
 
 [slab28.N]
 Columns = [1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323]
-
-[[slab28.N_objects]]
-IsLight = 0
-Subtile = 4
-RelativePosition = [128, 128, 256]
-ThingType = 1
-Subtype = 114
-EffectRange = 0
+Objects = []
 
 [slab28.E]
 Columns = [1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323]
-
-[[slab28.E_objects]]
-IsLight = 0
-Subtile = 4
-RelativePosition = [128, 128, 256]
-ThingType = 1
-Subtype = 114
-EffectRange = 0
+Objects = []
 
 [slab28.SW]
-Columns = [1323, 1323, 1323, 1323, 81, 1323, 1323, 1323, 1323]
+Columns = [1323, 1323, 81, 1323, 1323, 1323, 1323, 1323, 1323]
 
 [[slab28.SW_objects]]
 IsLight = 0
-Subtile = 2
-RelativePosition = [0, 256, 768]
+Subtile = 5
+RelativePosition = [0, 0, 768]
 ThingType = 1
 Subtype = 2
 EffectRange = 0
 
 [slab28.NW]
-Columns = [1323, 1323, 1323, 1323, 81, 1323, 1323, 1323, 1323]
+Columns = [1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323, 81]
 
 [[slab28.NW_objects]]
 IsLight = 0
-Subtile = 6
+Subtile = 7
 RelativePosition = [256, 0, 768]
 ThingType = 1
 Subtype = 2
 EffectRange = 0
 
 [slab28.NE]
-Columns = [1323, 1323, 1323, 1323, 81, 1323, 1323, 1323, 1323]
+Columns = [1323, 1323, 1323, 1323, 1323, 1323, 81, 1323, 1323]
 
 [[slab28.NE_objects]]
 IsLight = 0
-Subtile = 0
+Subtile = 3
 RelativePosition = [256, 256, 768]
 ThingType = 1
 Subtype = 2
 EffectRange = 0
 
 [slab28.SE]
-Columns = [1323, 1323, 1323, 1323, 81, 1323, 1323, 1323, 1323]
+Columns = [81, 1323, 1323, 1323, 1323, 1323, 1323, 1323, 1323]
 
 [[slab28.SE_objects]]
 IsLight = 0
-Subtile = 2
+Subtile = 1
 RelativePosition = [0, 256, 768]
 ThingType = 1
 Subtype = 2

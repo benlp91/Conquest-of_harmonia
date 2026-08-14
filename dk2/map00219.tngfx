@@ -3,7 +3,7 @@ ThingsCount = 190
 
 [thing0]
 ThingType = "Door"
-Subtype = 4
+Subtype = "MAGIC"
 Ownership = 4
 Index = 3
 DoorOrientation = 0
@@ -14,7 +14,7 @@ SubtileZ = [5, 0]
 
 [thing1]
 ThingType = "Door"
-Subtype = 4
+Subtype = "MAGIC"
 Ownership = 4
 Index = 4
 DoorOrientation = 1
@@ -25,7 +25,7 @@ SubtileZ = [5, 0]
 
 [thing2]
 ThingType = "Door"
-Subtype = 4
+Subtype = "MAGIC"
 Ownership = 4
 Index = 5
 DoorOrientation = 1
@@ -36,7 +36,7 @@ SubtileZ = [5, 0]
 
 [thing3]
 ThingType = "Object"
-Subtype = 49
+Subtype = "HERO_GATE"
 Ownership = 4
 ParentTile = 65535
 HerogateNumber = 1
@@ -48,7 +48,7 @@ SubtileZ = [1, 0]
 
 [thing4]
 ThingType = "Object"
-Subtype = 49
+Subtype = "HERO_GATE"
 Ownership = 5
 ParentTile = 65535
 HerogateNumber = 2
@@ -60,7 +60,7 @@ SubtileZ = [1, 0]
 
 [thing5]
 ThingType = "Object"
-Subtype = 49
+Subtype = "HERO_GATE"
 Ownership = 5
 ParentTile = 65535
 HerogateNumber = 3
@@ -72,7 +72,7 @@ SubtileZ = [1, 0]
 
 [thing6]
 ThingType = "Object"
-Subtype = 49
+Subtype = "HERO_GATE"
 Ownership = 5
 ParentTile = 65535
 HerogateNumber = 4
@@ -84,7 +84,7 @@ SubtileZ = [1, 0]
 
 [thing7]
 ThingType = "Object"
-Subtype = 49
+Subtype = "HERO_GATE"
 Ownership = 4
 ParentTile = 65535
 HerogateNumber = 5
@@ -96,7 +96,7 @@ SubtileZ = [2, 0]
 
 [thing8]
 ThingType = "Object"
-Subtype = 49
+Subtype = "HERO_GATE"
 Ownership = 4
 ParentTile = 65535
 HerogateNumber = 6
@@ -108,7 +108,7 @@ SubtileZ = [1, 0]
 
 [thing9]
 ThingType = "Object"
-Subtype = 49
+Subtype = "HERO_GATE"
 Ownership = 4
 ParentTile = 65535
 HerogateNumber = 7
@@ -120,7 +120,7 @@ SubtileZ = [1, 0]
 
 [thing10]
 ThingType = "Object"
-Subtype = 49
+Subtype = "HERO_GATE"
 Ownership = 4
 ParentTile = 65535
 HerogateNumber = 8
@@ -132,7 +132,7 @@ SubtileZ = [1, 0]
 
 [thing11]
 ThingType = "Object"
-Subtype = 49
+Subtype = "HERO_GATE"
 Ownership = 4
 ParentTile = 65535
 HerogateNumber = 9
@@ -144,7 +144,7 @@ SubtileZ = [1, 0]
 
 [thing12]
 ThingType = "Object"
-Subtype = 49
+Subtype = "HERO_GATE"
 Ownership = 4
 ParentTile = 65535
 HerogateNumber = 10
@@ -156,7 +156,7 @@ SubtileZ = [1, 0]
 
 [thing13]
 ThingType = "Object"
-Subtype = 49
+Subtype = "HERO_GATE"
 Ownership = 4
 ParentTile = 65535
 HerogateNumber = 11
@@ -168,7 +168,7 @@ SubtileZ = [1, 0]
 
 [thing14]
 ThingType = "Object"
-Subtype = 49
+Subtype = "HERO_GATE"
 Ownership = 4
 ParentTile = 65535
 HerogateNumber = 12
@@ -180,7 +180,7 @@ SubtileZ = [1, 0]
 
 [thing15]
 ThingType = "Object"
-Subtype = 49
+Subtype = "HERO_GATE"
 Ownership = 4
 ParentTile = 65535
 HerogateNumber = 13
@@ -192,7 +192,7 @@ SubtileZ = [1, 0]
 
 [thing16]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 223
 CustomBox = -1
@@ -203,7 +203,7 @@ SubtileZ = [1, 0]
 
 [thing17]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 224
 CustomBox = -1
@@ -214,7 +214,7 @@ SubtileZ = [1, 0]
 
 [thing18]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 322
 CustomBox = -1
@@ -225,7 +225,7 @@ SubtileZ = [1, 0]
 
 [thing19]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 323
 CustomBox = -1
@@ -236,7 +236,7 @@ SubtileZ = [1, 0]
 
 [thing20]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 1026
 CustomBox = -1
@@ -247,7 +247,7 @@ SubtileZ = [2, 224]
 
 [thing21]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 1035
 CustomBox = -1
@@ -258,7 +258,7 @@ SubtileZ = [2, 224]
 
 [thing22]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 1332
 CustomBox = -1
@@ -269,7 +269,7 @@ SubtileZ = [2, 224]
 
 [thing23]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 1342
 CustomBox = -1
@@ -280,7 +280,7 @@ SubtileZ = [2, 224]
 
 [thing24]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 1517
 CustomBox = -1
@@ -291,7 +291,7 @@ SubtileZ = [2, 224]
 
 [thing25]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 1520
 CustomBox = -1
@@ -302,7 +302,7 @@ SubtileZ = [2, 224]
 
 [thing26]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 1521
 CustomBox = -1
@@ -313,7 +313,7 @@ SubtileZ = [2, 224]
 
 [thing27]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 1549
 CustomBox = -1
@@ -324,7 +324,7 @@ SubtileZ = [2, 224]
 
 [thing28]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 1723
 CustomBox = -1
@@ -335,7 +335,7 @@ SubtileZ = [2, 224]
 
 [thing29]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 1996
 CustomBox = -1
@@ -346,7 +346,7 @@ SubtileZ = [2, 224]
 
 [thing30]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2014
 CustomBox = -1
@@ -357,7 +357,7 @@ SubtileZ = [2, 224]
 
 [thing31]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2020
 CustomBox = -1
@@ -368,7 +368,7 @@ SubtileZ = [2, 224]
 
 [thing32]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2021
 CustomBox = -1
@@ -379,7 +379,7 @@ SubtileZ = [2, 224]
 
 [thing33]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2044
 CustomBox = -1
@@ -390,7 +390,7 @@ SubtileZ = [2, 224]
 
 [thing34]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2046
 CustomBox = -1
@@ -401,7 +401,7 @@ SubtileZ = [2, 224]
 
 [thing35]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2317
 CustomBox = -1
@@ -412,7 +412,7 @@ SubtileZ = [2, 224]
 
 [thing36]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2386
 CustomBox = -1
@@ -423,7 +423,7 @@ SubtileZ = [2, 224]
 
 [thing37]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2483
 CustomBox = -1
@@ -434,7 +434,7 @@ SubtileZ = [2, 224]
 
 [thing38]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2507
 CustomBox = -1
@@ -445,7 +445,7 @@ SubtileZ = [2, 224]
 
 [thing39]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2510
 CustomBox = -1
@@ -456,7 +456,7 @@ SubtileZ = [2, 224]
 
 [thing40]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2511
 CustomBox = -1
@@ -467,7 +467,7 @@ SubtileZ = [2, 224]
 
 [thing41]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2539
 CustomBox = -1
@@ -478,7 +478,7 @@ SubtileZ = [2, 224]
 
 [thing42]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2718
 CustomBox = -1
@@ -489,7 +489,7 @@ SubtileZ = [2, 224]
 
 [thing43]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2723
 CustomBox = -1
@@ -500,7 +500,7 @@ SubtileZ = [2, 224]
 
 [thing44]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2728
 CustomBox = -1
@@ -511,7 +511,7 @@ SubtileZ = [2, 224]
 
 [thing45]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2733
 CustomBox = -1
@@ -522,7 +522,7 @@ SubtileZ = [2, 224]
 
 [thing46]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2916
 CustomBox = -1
@@ -533,7 +533,7 @@ SubtileZ = [2, 224]
 
 [thing47]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2980
 CustomBox = -1
@@ -544,7 +544,7 @@ SubtileZ = [2, 224]
 
 [thing48]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2982
 CustomBox = -1
@@ -555,7 +555,7 @@ SubtileZ = [2, 224]
 
 [thing49]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 3005
 CustomBox = -1
@@ -566,7 +566,7 @@ SubtileZ = [2, 224]
 
 [thing50]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 3015
 CustomBox = -1
@@ -577,7 +577,7 @@ SubtileZ = [2, 224]
 
 [thing51]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 3023
 CustomBox = -1
@@ -588,7 +588,7 @@ SubtileZ = [2, 224]
 
 [thing52]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 3035
 CustomBox = -1
@@ -599,7 +599,7 @@ SubtileZ = [2, 224]
 
 [thing53]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 3178
 CustomBox = -1
@@ -610,7 +610,7 @@ SubtileZ = [2, 224]
 
 [thing54]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 3213
 CustomBox = -1
@@ -621,7 +621,7 @@ SubtileZ = [2, 224]
 
 [thing55]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 3223
 CustomBox = -1
@@ -632,7 +632,7 @@ SubtileZ = [2, 224]
 
 [thing56]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 3277
 CustomBox = -1
@@ -643,7 +643,7 @@ SubtileZ = [2, 224]
 
 [thing57]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 3473
 CustomBox = -1
@@ -654,7 +654,7 @@ SubtileZ = [2, 224]
 
 [thing58]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 3945
 CustomBox = -1
@@ -665,7 +665,7 @@ SubtileZ = [1, 0]
 
 [thing59]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 3947
 CustomBox = -1
@@ -676,7 +676,7 @@ SubtileZ = [1, 0]
 
 [thing60]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 3970
 CustomBox = -1
@@ -687,7 +687,7 @@ SubtileZ = [2, 224]
 
 [thing61]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 4044
 CustomBox = -1
@@ -698,7 +698,7 @@ SubtileZ = [1, 0]
 
 [thing62]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 4046
 CustomBox = -1
@@ -709,7 +709,7 @@ SubtileZ = [1, 0]
 
 [thing63]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 4068
 CustomBox = -1
@@ -720,7 +720,7 @@ SubtileZ = [1, 0]
 
 [thing64]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 4070
 CustomBox = -1
@@ -731,7 +731,7 @@ SubtileZ = [1, 0]
 
 [thing65]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 4167
 CustomBox = -1
@@ -742,7 +742,7 @@ SubtileZ = [1, 0]
 
 [thing66]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 4169
 CustomBox = -1
@@ -753,7 +753,7 @@ SubtileZ = [1, 0]
 
 [thing67]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 5527
 CustomBox = -1
@@ -764,7 +764,7 @@ SubtileZ = [1, 0]
 
 [thing68]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 5528
 CustomBox = -1
@@ -775,7 +775,7 @@ SubtileZ = [1, 0]
 
 [thing69]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 5725
 CustomBox = -1
@@ -786,7 +786,7 @@ SubtileZ = [1, 0]
 
 [thing70]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 5726
 CustomBox = -1
@@ -797,7 +797,7 @@ SubtileZ = [1, 0]
 
 [thing71]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 5822
 CustomBox = -1
@@ -808,7 +808,7 @@ SubtileZ = [2, 224]
 
 [thing72]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 0
 ParentTile = 6967
 CustomBox = -1
@@ -819,7 +819,7 @@ SubtileZ = [2, 224]
 
 [thing73]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 0
 ParentTile = 7257
 CustomBox = -1
@@ -830,7 +830,7 @@ SubtileZ = [2, 224]
 
 [thing74]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 0
 ParentTile = 7277
 CustomBox = -1
@@ -841,7 +841,7 @@ SubtileZ = [2, 224]
 
 [thing75]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 0
 ParentTile = 7460
 CustomBox = -1
@@ -852,7 +852,7 @@ SubtileZ = [2, 224]
 
 [thing76]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 0
 ParentTile = 7470
 CustomBox = -1
@@ -863,7 +863,7 @@ SubtileZ = [2, 224]
 
 [thing77]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 0
 ParentTile = 7476
 CustomBox = -1
@@ -874,7 +874,7 @@ SubtileZ = [2, 224]
 
 [thing78]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 0
 ParentTile = 7658
 CustomBox = -1
@@ -885,7 +885,7 @@ SubtileZ = [2, 224]
 
 [thing79]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 0
 ParentTile = 7668
 CustomBox = -1
@@ -896,7 +896,7 @@ SubtileZ = [2, 224]
 
 [thing80]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 0
 ParentTile = 7859
 CustomBox = -1
@@ -907,7 +907,7 @@ SubtileZ = [1, 0]
 
 [thing81]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 0
 ParentTile = 7863
 CustomBox = -1
@@ -918,7 +918,7 @@ SubtileZ = [1, 0]
 
 [thing82]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 8128
 CustomBox = -1
@@ -929,7 +929,7 @@ SubtileZ = [2, 224]
 
 [thing83]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 0
 ParentTile = 8255
 CustomBox = -1
@@ -940,7 +940,7 @@ SubtileZ = [1, 0]
 
 [thing84]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 0
 ParentTile = 8259
 CustomBox = -1
@@ -951,7 +951,7 @@ SubtileZ = [1, 0]
 
 [thing85]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2228
 CustomBox = -1
@@ -962,7 +962,7 @@ SubtileZ = [2, 224]
 
 [thing86]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2034
 CustomBox = -1
@@ -973,7 +973,7 @@ SubtileZ = [2, 224]
 
 [thing87]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 2035
 CustomBox = -1
@@ -984,7 +984,7 @@ SubtileZ = [2, 224]
 
 [thing88]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 4988
 CustomBox = -1
@@ -995,7 +995,7 @@ SubtileZ = [2, 224]
 
 [thing89]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 4
 ParentTile = 4992
 CustomBox = -1
@@ -1006,7 +1006,7 @@ SubtileZ = [2, 224]
 
 [thing90]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 65535
 CustomBox = -1
@@ -1017,7 +1017,7 @@ SubtileZ = [2, 0]
 
 [thing91]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 65535
 CustomBox = -1
@@ -1028,7 +1028,7 @@ SubtileZ = [2, 0]
 
 [thing92]
 ThingType = "Object"
-Subtype = 1021
+Subtype = "CANDLESTCK_MINI"
 Ownership = 4
 ParentTile = 65535
 CustomBox = -1
@@ -1039,7 +1039,7 @@ SubtileZ = [2, 0]
 
 [thing93]
 ThingType = "Object"
-Subtype = 1021
+Subtype = "CANDLESTCK_MINI"
 Ownership = 4
 ParentTile = 65535
 CustomBox = -1
@@ -1050,7 +1050,7 @@ SubtileZ = [2, 0]
 
 [thing94]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 65535
 CustomBox = -1
@@ -1061,7 +1061,7 @@ SubtileZ = [1, 0]
 
 [thing95]
 ThingType = "Object"
-Subtype = 28
+Subtype = "CANDLESTCK"
 Ownership = 4
 ParentTile = 65535
 CustomBox = -1
@@ -1072,7 +1072,7 @@ SubtileZ = [1, 0]
 
 [thing96]
 ThingType = "Object"
-Subtype = 5
+Subtype = "SOUL_CONTAINER"
 Ownership = 0
 ParentTile = 65535
 CustomBox = -1
@@ -1083,7 +1083,7 @@ SubtileZ = [0, 0]
 
 [thing97]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 0
 ParentTile = 7664
 CustomBox = -1
@@ -1094,7 +1094,7 @@ SubtileZ = [4, 0]
 
 [thing98]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 0
 ParentTile = 7464
 CustomBox = -1
@@ -1105,7 +1105,7 @@ SubtileZ = [4, 0]
 
 [thing99]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 0
 ParentTile = 7662
 CustomBox = -1
@@ -1116,7 +1116,7 @@ SubtileZ = [4, 0]
 
 [thing100]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 0
 ParentTile = 7466
 CustomBox = -1
@@ -1127,7 +1127,7 @@ SubtileZ = [4, 0]
 
 [thing101]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 5
 ParentTile = 7606
 CustomBox = -1
@@ -1138,7 +1138,7 @@ SubtileZ = [4, 0]
 
 [thing102]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 5
 ParentTile = 7406
 CustomBox = -1
@@ -1149,7 +1149,7 @@ SubtileZ = [4, 0]
 
 [thing103]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 5
 ParentTile = 7604
 CustomBox = -1
@@ -1160,7 +1160,7 @@ SubtileZ = [4, 0]
 
 [thing104]
 ThingType = "Object"
-Subtype = 2
+Subtype = "TORCH"
 Ownership = 5
 ParentTile = 7408
 CustomBox = -1
@@ -1171,7 +1171,7 @@ SubtileZ = [4, 0]
 
 [thing105]
 ThingType = "Object"
-Subtype = 1021
+Subtype = "CANDLESTCK_MINI"
 Ownership = 0
 ParentTile = 8159
 CustomBox = -1
@@ -1182,7 +1182,7 @@ SubtileZ = [2, 0]
 
 [thing106]
 ThingType = "Object"
-Subtype = 1021
+Subtype = "CANDLESTCK_MINI"
 Ownership = 0
 ParentTile = 8159
 CustomBox = -1
@@ -1193,7 +1193,7 @@ SubtileZ = [2, 0]
 
 [thing107]
 ThingType = "Object"
-Subtype = 1021
+Subtype = "CANDLESTCK_MINI"
 Ownership = 0
 ParentTile = 7959
 CustomBox = -1
@@ -1204,7 +1204,7 @@ SubtileZ = [2, 0]
 
 [thing108]
 ThingType = "Object"
-Subtype = 1021
+Subtype = "CANDLESTCK_MINI"
 Ownership = 0
 ParentTile = 7959
 CustomBox = -1
@@ -1215,7 +1215,7 @@ SubtileZ = [2, 0]
 
 [thing109]
 ThingType = "Object"
-Subtype = 1021
+Subtype = "CANDLESTCK_MINI"
 Ownership = 0
 ParentTile = 8157
 CustomBox = -1
@@ -1226,7 +1226,7 @@ SubtileZ = [2, 0]
 
 [thing110]
 ThingType = "Object"
-Subtype = 1021
+Subtype = "CANDLESTCK_MINI"
 Ownership = 0
 ParentTile = 8157
 CustomBox = -1
@@ -1237,7 +1237,7 @@ SubtileZ = [2, 0]
 
 [thing111]
 ThingType = "Object"
-Subtype = 1021
+Subtype = "CANDLESTCK_MINI"
 Ownership = 0
 ParentTile = 7961
 CustomBox = -1
@@ -1248,7 +1248,7 @@ SubtileZ = [2, 0]
 
 [thing112]
 ThingType = "Object"
-Subtype = 1021
+Subtype = "CANDLESTCK_MINI"
 Ownership = 0
 ParentTile = 7961
 CustomBox = -1
@@ -1259,7 +1259,7 @@ SubtileZ = [2, 0]
 
 [thing113]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 5
@@ -1271,7 +1271,7 @@ SubtileZ = [1, 0]
 
 [thing114]
 ThingType = "Creature"
-Subtype = 11
+Subtype = "FAIRY"
 Ownership = 4
 Index = 0
 CreatureLevel = 7
@@ -1283,7 +1283,7 @@ SubtileZ = [1, 0]
 
 [thing115]
 ThingType = "Creature"
-Subtype = 3
+Subtype = "ARCHER"
 Ownership = 4
 Index = 0
 CreatureLevel = 8
@@ -1295,7 +1295,7 @@ SubtileZ = [1, 0]
 
 [thing116]
 ThingType = "Creature"
-Subtype = 3
+Subtype = "ARCHER"
 Ownership = 4
 Index = 0
 CreatureLevel = 8
@@ -1307,7 +1307,7 @@ SubtileZ = [1, 0]
 
 [thing117]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 5
@@ -1319,7 +1319,7 @@ SubtileZ = [1, 0]
 
 [thing118]
 ThingType = "Creature"
-Subtype = 1
+Subtype = "WIZARD"
 Ownership = 4
 Index = 0
 CreatureLevel = 8
@@ -1331,7 +1331,7 @@ SubtileZ = [1, 0]
 
 [thing119]
 ThingType = "Creature"
-Subtype = 4
+Subtype = "MONK"
 Ownership = 4
 Index = 0
 CreatureLevel = 8
@@ -1343,7 +1343,7 @@ SubtileZ = [1, 0]
 
 [thing120]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 10
@@ -1355,7 +1355,7 @@ SubtileZ = [1, 0]
 
 [thing121]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 10
@@ -1367,7 +1367,7 @@ SubtileZ = [1, 0]
 
 [thing122]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 10
@@ -1379,7 +1379,7 @@ SubtileZ = [1, 0]
 
 [thing123]
 ThingType = "Creature"
-Subtype = 1
+Subtype = "WIZARD"
 Ownership = 4
 Index = 0
 CreatureLevel = 10
@@ -1391,7 +1391,7 @@ SubtileZ = [1, 0]
 
 [thing124]
 ThingType = "Creature"
-Subtype = 1
+Subtype = "WIZARD"
 Ownership = 4
 Index = 0
 CreatureLevel = 10
@@ -1403,7 +1403,7 @@ SubtileZ = [1, 0]
 
 [thing125]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 10
@@ -1415,7 +1415,7 @@ SubtileZ = [1, 0]
 
 [thing126]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 10
@@ -1427,7 +1427,7 @@ SubtileZ = [1, 0]
 
 [thing127]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 10
@@ -1439,7 +1439,7 @@ SubtileZ = [1, 0]
 
 [thing128]
 ThingType = "Creature"
-Subtype = 7
+Subtype = "AVATAR"
 Ownership = 4
 Index = 0
 CreatureLevel = 10
@@ -1451,7 +1451,7 @@ SubtileZ = [1, 0]
 
 [thing129]
 ThingType = "Creature"
-Subtype = 1
+Subtype = "WIZARD"
 Ownership = 4
 Index = 0
 CreatureLevel = 10
@@ -1463,7 +1463,7 @@ SubtileZ = [1, 0]
 
 [thing130]
 ThingType = "Creature"
-Subtype = 1
+Subtype = "WIZARD"
 Ownership = 4
 Index = 0
 CreatureLevel = 10
@@ -1475,7 +1475,7 @@ SubtileZ = [1, 0]
 
 [thing131]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 5
@@ -1487,7 +1487,7 @@ SubtileZ = [1, 0]
 
 [thing132]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 5
@@ -1499,7 +1499,7 @@ SubtileZ = [1, 0]
 
 [thing133]
 ThingType = "Creature"
-Subtype = 11
+Subtype = "FAIRY"
 Ownership = 4
 Index = 0
 CreatureLevel = 7
@@ -1511,7 +1511,7 @@ SubtileZ = [1, 0]
 
 [thing134]
 ThingType = "Creature"
-Subtype = 11
+Subtype = "FAIRY"
 Ownership = 4
 Index = 0
 CreatureLevel = 7
@@ -1523,7 +1523,7 @@ SubtileZ = [1, 0]
 
 [thing135]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 5
@@ -1535,7 +1535,7 @@ SubtileZ = [1, 0]
 
 [thing136]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 5
@@ -1547,7 +1547,7 @@ SubtileZ = [1, 0]
 
 [thing137]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 5
@@ -1559,7 +1559,7 @@ SubtileZ = [1, 0]
 
 [thing138]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 5
@@ -1571,7 +1571,7 @@ SubtileZ = [1, 0]
 
 [thing139]
 ThingType = "Creature"
-Subtype = 6
+Subtype = "KNIGHT"
 Ownership = 4
 Index = 0
 CreatureLevel = 3
@@ -1583,7 +1583,7 @@ SubtileZ = [1, 0]
 
 [thing140]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 2
@@ -1595,7 +1595,7 @@ SubtileZ = [1, 0]
 
 [thing141]
 ThingType = "Creature"
-Subtype = 1
+Subtype = "WIZARD"
 Ownership = 4
 Index = 0
 CreatureLevel = 3
@@ -1607,7 +1607,7 @@ SubtileZ = [1, 0]
 
 [thing142]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 2
@@ -1619,7 +1619,7 @@ SubtileZ = [1, 0]
 
 [thing143]
 ThingType = "Creature"
-Subtype = 6
+Subtype = "KNIGHT"
 Ownership = 4
 Index = 0
 CreatureLevel = 3
@@ -1631,7 +1631,7 @@ SubtileZ = [1, 0]
 
 [thing144]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 3
@@ -1643,7 +1643,7 @@ SubtileZ = [1, 0]
 
 [thing145]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 1
@@ -1655,7 +1655,7 @@ SubtileZ = [1, 0]
 
 [thing146]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 1
@@ -1667,7 +1667,7 @@ SubtileZ = [1, 0]
 
 [thing147]
 ThingType = "Creature"
-Subtype = 2
+Subtype = "BARBARIAN"
 Ownership = 4
 Index = 0
 CreatureLevel = 1
@@ -1679,7 +1679,7 @@ SubtileZ = [1, 0]
 
 [thing148]
 ThingType = "Creature"
-Subtype = 23
+Subtype = "IMP"
 Ownership = 0
 Index = 0
 CreatureLevel = 1
@@ -1691,7 +1691,7 @@ SubtileZ = [1, 0]
 
 [thing149]
 ThingType = "Creature"
-Subtype = 23
+Subtype = "IMP"
 Ownership = 0
 Index = 0
 CreatureLevel = 1
@@ -1703,7 +1703,7 @@ SubtileZ = [1, 0]
 
 [thing150]
 ThingType = "Creature"
-Subtype = 23
+Subtype = "IMP"
 Ownership = 0
 Index = 0
 CreatureLevel = 1
@@ -1715,7 +1715,7 @@ SubtileZ = [1, 0]
 
 [thing151]
 ThingType = "Creature"
-Subtype = 23
+Subtype = "IMP"
 Ownership = 0
 Index = 0
 CreatureLevel = 1
@@ -1727,7 +1727,7 @@ SubtileZ = [1, 0]
 
 [thing152]
 ThingType = "Creature"
-Subtype = 23
+Subtype = "IMP"
 Ownership = 0
 Index = 0
 CreatureLevel = 1
@@ -1739,7 +1739,7 @@ SubtileZ = [1, 0]
 
 [thing153]
 ThingType = "Creature"
-Subtype = 35
+Subtype = "GEMSTONE_KNIGHT"
 Ownership = 4
 Index = 1
 CreatureLevel = 10
@@ -1751,7 +1751,7 @@ SubtileZ = [0, 0]
 
 [thing154]
 ThingType = "Creature"
-Subtype = 35
+Subtype = "GEMSTONE_KNIGHT"
 Ownership = 4
 Index = 2
 CreatureLevel = 10
@@ -1763,7 +1763,7 @@ SubtileZ = [0, 0]
 
 [thing155]
 ThingType = "Creature"
-Subtype = 13
+Subtype = "SAMURAI"
 Ownership = 4
 Index = 6
 CreatureLevel = 10
@@ -1775,7 +1775,7 @@ SubtileZ = [1, 0]
 
 [thing156]
 ThingType = "Creature"
-Subtype = 13
+Subtype = "SAMURAI"
 Ownership = 4
 Index = 7
 CreatureLevel = 10
@@ -1787,7 +1787,7 @@ SubtileZ = [1, 0]
 
 [thing157]
 ThingType = "Creature"
-Subtype = 13
+Subtype = "SAMURAI"
 Ownership = 4
 Index = 8
 CreatureLevel = 10
@@ -1799,7 +1799,7 @@ SubtileZ = [1, 0]
 
 [thing158]
 ThingType = "Creature"
-Subtype = 13
+Subtype = "SAMURAI"
 Ownership = 4
 Index = 9
 CreatureLevel = 10
@@ -1811,7 +1811,7 @@ SubtileZ = [1, 0]
 
 [thing159]
 ThingType = "Creature"
-Subtype = 39
+Subtype = "ANGEL"
 Ownership = 5
 Index = 10
 CreatureLevel = 10
@@ -1823,7 +1823,7 @@ SubtileZ = [1, 0]
 
 [thing160]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 1613
@@ -1834,7 +1834,7 @@ SubtileZ = [0, 0]
 
 [thing161]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 1777
@@ -1845,7 +1845,7 @@ SubtileZ = [0, 0]
 
 [thing162]
 ThingType = "EffectGen"
-Subtype = 2
+Subtype = "EFFECTGENERATOR_DRIPPING_WATER"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 2315
@@ -1856,7 +1856,7 @@ SubtileZ = [0, 0]
 
 [thing163]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 2407
@@ -1867,7 +1867,7 @@ SubtileZ = [0, 0]
 
 [thing164]
 ThingType = "EffectGen"
-Subtype = 2
+Subtype = "EFFECTGENERATOR_DRIPPING_WATER"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 2429
@@ -1878,7 +1878,7 @@ SubtileZ = [0, 0]
 
 [thing165]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 2457
@@ -1889,7 +1889,7 @@ SubtileZ = [0, 0]
 
 [thing166]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 2467
@@ -1900,7 +1900,7 @@ SubtileZ = [0, 0]
 
 [thing167]
 ThingType = "EffectGen"
-Subtype = 2
+Subtype = "EFFECTGENERATOR_DRIPPING_WATER"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 2529
@@ -1911,7 +1911,7 @@ SubtileZ = [0, 0]
 
 [thing168]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 2556
@@ -1922,7 +1922,7 @@ SubtileZ = [0, 0]
 
 [thing169]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 2560
@@ -1933,7 +1933,7 @@ SubtileZ = [0, 0]
 
 [thing170]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 2801
@@ -1944,7 +1944,7 @@ SubtileZ = [0, 0]
 
 [thing171]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 3046
@@ -1955,7 +1955,7 @@ SubtileZ = [0, 0]
 
 [thing172]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 3054
@@ -1966,7 +1966,7 @@ SubtileZ = [0, 0]
 
 [thing173]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 3201
@@ -1977,7 +1977,7 @@ SubtileZ = [0, 0]
 
 [thing174]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 3333
@@ -1988,7 +1988,7 @@ SubtileZ = [0, 0]
 
 [thing175]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 3501
@@ -1999,7 +1999,7 @@ SubtileZ = [0, 0]
 
 [thing176]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 3600
@@ -2010,7 +2010,7 @@ SubtileZ = [0, 0]
 
 [thing177]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 3603
@@ -2021,7 +2021,7 @@ SubtileZ = [0, 0]
 
 [thing178]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 3718
@@ -2032,7 +2032,7 @@ SubtileZ = [0, 0]
 
 [thing179]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 3726
@@ -2043,7 +2043,7 @@ SubtileZ = [0, 0]
 
 [thing180]
 ThingType = "EffectGen"
-Subtype = 4
+Subtype = "EFFECTGENERATOR_ENTRANCE_ICE"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 5075
@@ -2054,7 +2054,7 @@ SubtileZ = [0, 0]
 
 [thing181]
 ThingType = "EffectGen"
-Subtype = 2
+Subtype = "EFFECTGENERATOR_DRIPPING_WATER"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 5298
@@ -2065,7 +2065,7 @@ SubtileZ = [0, 0]
 
 [thing182]
 ThingType = "EffectGen"
-Subtype = 2
+Subtype = "EFFECTGENERATOR_DRIPPING_WATER"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 5303
@@ -2076,7 +2076,7 @@ SubtileZ = [0, 0]
 
 [thing183]
 ThingType = "EffectGen"
-Subtype = 2
+Subtype = "EFFECTGENERATOR_DRIPPING_WATER"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 5369
@@ -2087,7 +2087,7 @@ SubtileZ = [0, 0]
 
 [thing184]
 ThingType = "EffectGen"
-Subtype = 2
+Subtype = "EFFECTGENERATOR_DRIPPING_WATER"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 5392
@@ -2098,7 +2098,7 @@ SubtileZ = [0, 0]
 
 [thing185]
 ThingType = "EffectGen"
-Subtype = 2
+Subtype = "EFFECTGENERATOR_DRIPPING_WATER"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 7837
@@ -2109,7 +2109,7 @@ SubtileZ = [0, 0]
 
 [thing186]
 ThingType = "EffectGen"
-Subtype = 1
+Subtype = "EFFECTGENERATOR_LAVA"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 9042
@@ -2120,7 +2120,7 @@ SubtileZ = [0, 0]
 
 [thing187]
 ThingType = "EffectGen"
-Subtype = 5
+Subtype = "EFFECTGENERATOR_DRY_ICE"
 Ownership = 4
 EffectRange = [5, 0]
 ParentTile = 4891
@@ -2131,7 +2131,7 @@ SubtileZ = [2, 0]
 
 [thing188]
 ThingType = "EffectGen"
-Subtype = 4
+Subtype = "EFFECTGENERATOR_ENTRANCE_ICE"
 Ownership = 0
 EffectRange = [5, 0]
 ParentTile = 7564
@@ -2142,7 +2142,7 @@ SubtileZ = [0, 0]
 
 [thing189]
 ThingType = "EffectGen"
-Subtype = 4
+Subtype = "EFFECTGENERATOR_ENTRANCE_ICE"
 Ownership = 5
 EffectRange = [5, 0]
 ParentTile = 7506
