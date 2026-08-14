@@ -16,11 +16,19 @@ local function UpdatePatrol(patrol)
         print("Reassigning leader")
         local newLeader = GetNextPotentialLeader(patrol.party)
 
-        -- No new leader could be found. Prevent further updates to this patrol
+        -- No new leader candidate could be found. Prevent further updates to this patrol
         if (newLeader == nil) then
             print("NoNewLeaderFound")
             print(patrol.patrolId)
-            patrol.patrolDead = true
+            patrol.stopPatrol = true
+            return
+        end
+
+        -- Check if the new leader candidate is the same as the existing leader to ensure the same creature doesn't get multiple death events
+        if (NewLeaderIsDifferentCreature(patrol.leader, newLeader)) then
+            -- No new leader could be found
+            print("OnlyLeaderCandidateIsOldLeader")
+            patrol.stopPatrol = true
             return
         end
 
@@ -66,6 +74,15 @@ local function UpdatePatrol(patrol)
     end
 end
 
+function NewLeaderIsDifferentCreature(oldLeader, newLeader)
+    if (oldLeader ~= nil and oldLeader:isValid() and newLeader ~= nil and newLeader:isValid()) then
+        return ((oldLeader.ThingIndex ~= newLeader.ThingIndex) and (oldLeader.creation_turn ~= newLeader.creation_turn))
+    end
+
+    -- Cannot compare, both need to be valid
+    return false
+end
+
 function GetNextPotentialLeader(party)
     -- Loop party and find viable leader
     local nextLeader = nil
@@ -81,6 +98,11 @@ function GetNextPotentialLeader(party)
         if (leaderFound) then
 			goto continue
 		end
+
+        -- Skip if the current creature is imprisoned
+        if (partyMember.continue_state == "CreatureInPrison") then
+            goto continue
+        end
 
         -- if creature in actionable state, set that one and set variable
         if (CreatureStateIsActionable(partyMember.state)) then
@@ -121,7 +143,7 @@ end
 function UpdatePatrols()
     for _, patrol in ipairs(Game.patrols) do
         -- Only update if there are still units alive in the patrol
-        if (not patrol.patrolDead) then
+        if (not patrol.stopPatrol) then
             UpdatePatrol(patrol)
         end
     end
@@ -151,7 +173,6 @@ function ChangeLeader(_,triggerData)
 
         patrol.leader = patrol.partybackup.party[1]
         if patrol.leader == nil then
-            print("LeaderIsNil")
             patrol.leader = patrol.partybackup
         end
 
@@ -173,7 +194,6 @@ function ChangeLeader(_,triggerData)
 end
 
 function Tablelength(T)
-
     if (T == nil or type(T) ~= "table") then
         return 0
     end
@@ -220,7 +240,7 @@ function RegisterPatrol(leader, patrolPoints,next_post,patrol_name)
         patrol_name = "Patrol "..tostring(#Game.patrols + 1)
     end
 
-    table.insert(Game.patrols, { leader = leader, positions = patrolPoints, next_post = next_post, name = patrol_name, patrolId = #Game.patrols, party = leader.party, patrolDead = false } )
+    table.insert(Game.patrols, { leader = leader, positions = patrolPoints, next_post = next_post, name = patrol_name, patrolId = #Game.patrols, party = leader.party, stopPatrol = false } )
 
     local trigger = RegisterCreatureDeathEvent(ChangeLeader, leader)
     trigger.triggerData.patrol_idx = #Game.patrols
