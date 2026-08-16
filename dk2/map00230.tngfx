@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 509
+ThingsCount = 510
 
 [thing0]
 ThingType = "Door"
@@ -6133,4 +6133,15 @@ Index = 37
 Orientation = 512
 SubtileX = [28, 128]
 SubtileY = [175, 128]
+SubtileZ = [1, 0]
+
+[thing509]
+ThingType = "Trap"
+SubtypeStringID = "BOULDER"
+Subtype = 1
+Ownership = 4
+Index = 27
+Orientation = 0
+SubtileX = [70, 128]
+SubtileY = [109, 128]
 SubtileZ = [1, 0]
