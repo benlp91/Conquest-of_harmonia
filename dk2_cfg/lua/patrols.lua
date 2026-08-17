@@ -72,11 +72,6 @@ local function UpdatePatrol(patrol)
         patrol.leader.state = "MoveToPosition"
         patrol.leader.continue_state = "GoodDoingNothing"  
     end
-
-    if (patrol.leader.state ~= "MoveToPosition" and patrol.leader.state ~= "GoodDoingNothing" and patrol.leader.state ~= "CreatureDoingNothing") then
-        print("LeaderInUnknownState:" .. patrol.leader.state)
-    return
-    end
 end
 
 

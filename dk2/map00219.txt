@@ -204,6 +204,58 @@ ENDIF
 
 REM SETTINGS
 
+IF_SLAB_TYPE(28,41,TEMPLE_POOL)
+	IF_SLAB_TYPE(29,41,TEMPLE_POOL)
+		IF_SLAB_TYPE(30,41,TEMPLE_POOL)
+			IF_SLAB_TYPE(31,41,TEMPLE_POOL)
+				IF_SLAB_TYPE(32,41,TEMPLE_POOL)
+					IF_SLAB_TYPE(28,42,TEMPLE_POOL)
+						IF_SLAB_TYPE(29,42,TEMPLE_POOL)
+							IF_SLAB_TYPE(30,42,TEMPLE_POOL)
+								IF_SLAB_TYPE(31,42,TEMPLE_POOL)
+									IF_SLAB_TYPE(32,42,TEMPLE_POOL)
+										IF_SLAB_TYPE(28,43,TEMPLE_POOL)
+											IF_SLAB_TYPE(29,43,TEMPLE_POOL)
+												IF_SLAB_TYPE(30,43,TEMPLE_POOL)
+													IF_SLAB_TYPE(31,43,TEMPLE_POOL)
+														IF_SLAB_TYPE(32,43,TEMPLE_POOL)
+															IF_SLAB_TYPE(28,44,TEMPLE_POOL)
+																IF_SLAB_TYPE(29,44,TEMPLE_POOL)
+																	IF_SLAB_TYPE(30,44,TEMPLE_POOL)
+																		IF_SLAB_TYPE(31,44,TEMPLE_POOL)
+																			IF_SLAB_TYPE(32,44,TEMPLE_POOL)
+																				IF_SLAB_TYPE(28,45,TEMPLE_POOL)
+																					IF_SLAB_TYPE(29,45,TEMPLE_POOL)
+																						IF_SLAB_TYPE(30,45,TEMPLE_POOL)
+																							IF_SLAB_TYPE(31,45,TEMPLE_POOL)
+																								IF_SLAB_TYPE(32,45,TEMPLE_POOL)
+																									CHANGE_SLAB_TYPE(27,43,PRETTY_PATH)
+																								ENDIF
+																							ENDIF
+																						ENDIF
+																					ENDIF
+																				ENDIF
+																			ENDIF
+																		ENDIF
+																	ENDIF
+																ENDIF
+															ENDIF
+														ENDIF
+													ENDIF
+												ENDIF
+											ENDIF
+										ENDIF
+									ENDIF
+								ENDIF
+							ENDIF
+						ENDIF
+					ENDIF
+				ENDIF
+			ENDIF
+		ENDIF
+	ENDIF
+ENDIF
+
 REM SINGLE SPAWNS
 
 IF(player0,ENTRANCE == 9)
@@ -745,4 +797,3 @@ ENDIF
 IF(PLAYER6,TIMER7 > 100)
     KILL_CREATURE(PLAYER6,EVILLORD,ANYWHERE,1)
 ENDIF
-

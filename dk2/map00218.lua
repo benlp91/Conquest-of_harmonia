@@ -4,7 +4,7 @@ function OnGameStart()
     RegisterTimerEvent(MyHeroParties, 900, false)
     RegisterTimerEvent(SpawnPatrols, 1010, false)
     PrinceTookDamage()
-    InitPrinces()
+    RegisterTimerEvent(InitPrinces, 1020, false)
 end
 
 function SetupTriggers()
@@ -69,23 +69,26 @@ end
 function PrinceTookDamage(princeNumber)
     if not Game.IsFleeing then
         if princeNumber == 1 then
-            StartFleeSequence(1)
+
             StopPatrol()
+            UseSpellOnCreature(Game.PG1[1], "SPELL_SPEED",0)
+            UseSpellOnCreature(Game.PG2[1], "SPELL_SPEED",0)
+            UseSpellOnCreature(Game.PG3[1], "SPELL_SPEED",0)
         elseif princeNumber == 2 then
-            StartFleeSequence(1)
+
             StopPatrol()
+            UseSpellOnCreature(Game.PG1[1], "SPELL_SPEED",0)
+            UseSpellOnCreature(Game.PG2[1], "SPELL_SPEED",0)
+            UseSpellOnCreature(Game.PG3[1], "SPELL_SPEED",0)
         elseif princeNumber == 3 then
-            StartFleeSequence(1)
+
             StopPatrol()
+            UseSpellOnCreature(Game.PG1[1], "SPELL_SPEED",0)
+            UseSpellOnCreature(Game.PG2[1], "SPELL_SPEED",0)
+            UseSpellOnCreature(Game.PG3[1], "SPELL_SPEED",0)
         end
         Game.IsFleeing = true
     end
-end
-
-function StartFleeSequence()
-        UseSpellOnCreature(Game.PG1[1], "SPELL_FEARING", 6)
-        UseSpellOnCreature(Game.PG2[1], "SPELL_FEARING", 6)
-        UseSpellOnCreature(Game.PG3[1], "SPELL_FEARING", 6)
 end
 
 function StopPatrol()
