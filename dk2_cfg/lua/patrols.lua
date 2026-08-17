@@ -70,9 +70,15 @@ local function UpdatePatrol(patrol)
     if (patrol.leader.moveto_pos.stl_x ~= target.stl_x or patrol.leader.moveto_pos.stl_y ~= target.stl_y) then
         patrol.leader:walk_to(target.stl_x,target.stl_y)
         patrol.leader.state = "MoveToPosition"
-        patrol.leader.continue_state = "GoodDoingNothing"
+        patrol.leader.continue_state = "GoodDoingNothing"  
+    end
+
+    if (patrol.leader.state ~= "MoveToPosition" and patrol.leader.state ~= "GoodDoingNothing" and patrol.leader.state ~= "CreatureDoingNothing") then
+        print("LeaderInUnknownState:" .. patrol.leader.state)
+    return
     end
 end
+
 
 function NewLeaderIsDifferentCreature(oldLeader, newLeader)
     if (oldLeader ~= nil and oldLeader:isValid() and newLeader ~= nil and newLeader:isValid()) then

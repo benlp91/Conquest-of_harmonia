@@ -83,9 +83,9 @@ function PrinceTookDamage(princeNumber)
 end
 
 function StartFleeSequence()
-        UseSpellOnCreature(Game.PG1[1], "SPELL_SPEED", 6)
-        UseSpellOnCreature(Game.PG2[1], "SPELL_SPEED", 6)
-        UseSpellOnCreature(Game.PG3[1], "SPELL_SPEED", 6)
+        UseSpellOnCreature(Game.PG1[1], "SPELL_FEARING", 6)
+        UseSpellOnCreature(Game.PG2[1], "SPELL_FEARING", 6)
+        UseSpellOnCreature(Game.PG3[1], "SPELL_FEARING", 6)
 end
 
 function StopPatrol()
@@ -112,6 +112,7 @@ function MyHeroParties()
         AddToParty("GREEN", "GIANT"       , 5, 500, "ATTACK_DUNGEON_HEART", 0)
         AddToParty("GREEN", "GIANT"       , 5, 500, "ATTACK_DUNGEON_HEART", 0)
 end
+
 
 -- Function to define routes, spawn patrolling heroes and initialize their patrolling
 function SpawnPatrols()
