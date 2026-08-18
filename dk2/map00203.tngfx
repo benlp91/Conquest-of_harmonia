@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 334
+ThingsCount = 339
 
 [thing0]
 ThingType = "Door"
@@ -3663,6 +3663,63 @@ SubtileY = [29, 128]
 SubtileZ = [2, 224]
 
 [thing304]
+ThingType = "Object"
+SubtypeStringID = "GOLD_CHEST"
+Subtype = 3
+Ownership = 5
+ParentTile = 65535
+Orientation = 0
+GoldValue = 500
+SubtileX = [77, 128]
+SubtileY = [78, 128]
+SubtileZ = [1, 0]
+
+[thing305]
+ThingType = "Object"
+SubtypeStringID = "GOLD_CHEST"
+Subtype = 3
+Ownership = 5
+ParentTile = 65535
+Orientation = 0
+GoldValue = 500
+SubtileX = [78, 128]
+SubtileY = [78, 128]
+SubtileZ = [1, 0]
+
+[thing306]
+ThingType = "Object"
+SubtypeStringID = "POTION_RED"
+Subtype = 150
+Ownership = 4
+ParentTile = 65535
+Orientation = 1536
+SubtileX = [88, 128]
+SubtileY = [78, 128]
+SubtileZ = [1, 0]
+
+[thing307]
+ThingType = "Object"
+SubtypeStringID = "RAG"
+Subtype = 1050
+Ownership = 4
+ParentTile = 65535
+Orientation = 1536
+SubtileX = [64, 128]
+SubtileY = [22, 128]
+SubtileZ = [1, 0]
+
+[thing308]
+ThingType = "Object"
+SubtypeStringID = "RAG"
+Subtype = 1050
+Ownership = 4
+ParentTile = 65535
+Orientation = 1536
+SubtileX = [100, 128]
+SubtileY = [22, 128]
+SubtileZ = [1, 0]
+
+[thing309]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3675,7 +3732,7 @@ SubtileX = [63, 128]
 SubtileY = [25, 128]
 SubtileZ = [2, 0]
 
-[thing305]
+[thing310]
 ThingType = "Creature"
 SubtypeStringID = "DWARFA"
 Subtype = 5
@@ -3688,7 +3745,7 @@ SubtileX = [82, 128]
 SubtileY = [57, 128]
 SubtileZ = [1, 0]
 
-[thing306]
+[thing311]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3701,7 +3758,7 @@ SubtileX = [75, 128]
 SubtileY = [85, 128]
 SubtileZ = [1, 0]
 
-[thing307]
+[thing312]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3714,7 +3771,7 @@ SubtileX = [85, 128]
 SubtileY = [91, 128]
 SubtileZ = [1, 0]
 
-[thing308]
+[thing313]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3727,7 +3784,7 @@ SubtileX = [89, 128]
 SubtileY = [84, 128]
 SubtileZ = [1, 0]
 
-[thing309]
+[thing314]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -3740,7 +3797,7 @@ SubtileX = [79, 128]
 SubtileY = [181, 128]
 SubtileZ = [1, 0]
 
-[thing310]
+[thing315]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -3753,7 +3810,7 @@ SubtileX = [84, 128]
 SubtileY = [181, 128]
 SubtileZ = [1, 0]
 
-[thing311]
+[thing316]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -3766,7 +3823,7 @@ SubtileX = [79, 128]
 SubtileY = [192, 128]
 SubtileZ = [1, 0]
 
-[thing312]
+[thing317]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -3779,7 +3836,7 @@ SubtileX = [83, 128]
 SubtileY = [193, 128]
 SubtileZ = [1, 0]
 
-[thing313]
+[thing318]
 ThingType = "Creature"
 SubtypeStringID = "THIEF"
 Subtype = 12
@@ -3792,7 +3849,7 @@ SubtileX = [94, 128]
 SubtileY = [27, 128]
 SubtileZ = [1, 0]
 
-[thing314]
+[thing319]
 ThingType = "Creature"
 SubtypeStringID = "THIEF"
 Subtype = 12
@@ -3805,7 +3862,7 @@ SubtileX = [94, 128]
 SubtileY = [25, 128]
 SubtileZ = [1, 0]
 
-[thing315]
+[thing320]
 ThingType = "Creature"
 SubtypeStringID = "THIEF"
 Subtype = 12
@@ -3818,7 +3875,7 @@ SubtileX = [99, 128]
 SubtileY = [25, 128]
 SubtileZ = [1, 0]
 
-[thing316]
+[thing321]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -3830,7 +3887,7 @@ SubtileX = [49, 128]
 SubtileY = [29, 128]
 SubtileZ = [0, 0]
 
-[thing317]
+[thing322]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -3842,7 +3899,7 @@ SubtileX = [109, 128]
 SubtileY = [33, 128]
 SubtileZ = [0, 0]
 
-[thing318]
+[thing323]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -3854,7 +3911,7 @@ SubtileX = [107, 128]
 SubtileY = [41, 128]
 SubtileZ = [0, 0]
 
-[thing319]
+[thing324]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -3866,7 +3923,7 @@ SubtileX = [65, 128]
 SubtileY = [46, 128]
 SubtileZ = [0, 0]
 
-[thing320]
+[thing325]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -3878,7 +3935,7 @@ SubtileX = [52, 128]
 SubtileY = [76, 128]
 SubtileZ = [0, 0]
 
-[thing321]
+[thing326]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -3890,7 +3947,7 @@ SubtileX = [87, 128]
 SubtileY = [99, 128]
 SubtileZ = [0, 0]
 
-[thing322]
+[thing327]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -3902,7 +3959,7 @@ SubtileX = [100, 128]
 SubtileY = [106, 128]
 SubtileZ = [0, 0]
 
-[thing323]
+[thing328]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -3914,7 +3971,7 @@ SubtileX = [55, 128]
 SubtileY = [108, 128]
 SubtileZ = [0, 0]
 
-[thing324]
+[thing329]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -3926,7 +3983,7 @@ SubtileX = [98, 128]
 SubtileY = [109, 128]
 SubtileZ = [0, 0]
 
-[thing325]
+[thing330]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -3938,7 +3995,7 @@ SubtileX = [146, 128]
 SubtileY = [190, 128]
 SubtileZ = [0, 0]
 
-[thing326]
+[thing331]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -3950,7 +4007,7 @@ SubtileX = [110, 128]
 SubtileY = [106, 128]
 SubtileZ = [0, 0]
 
-[thing327]
+[thing332]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRY_ICE"
 Subtype = 5
@@ -3962,7 +4019,7 @@ SubtileX = [51, 128]
 SubtileY = [102, 128]
 SubtileZ = [1, 0]
 
-[thing328]
+[thing333]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRY_ICE"
 Subtype = 5
@@ -3974,7 +4031,7 @@ SubtileX = [113, 128]
 SubtileY = [102, 128]
 SubtileZ = [1, 0]
 
-[thing329]
+[thing334]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -3986,7 +4043,7 @@ SubtileX = [151, 128]
 SubtileY = [176, 128]
 SubtileZ = [0, 0]
 
-[thing330]
+[thing335]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_ENTRANCE_ICE"
 Subtype = 4
@@ -3998,7 +4055,7 @@ SubtileX = [82, 128]
 SubtileY = [85, 128]
 SubtileZ = [0, 0]
 
-[thing331]
+[thing336]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_ENTRANCE_ICE"
 Subtype = 4
@@ -4010,7 +4067,7 @@ SubtileX = [82, 128]
 SubtileY = [151, 128]
 SubtileZ = [0, 0]
 
-[thing332]
+[thing337]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_EVIL"
 Subtype = 1001
@@ -4021,7 +4078,7 @@ SubtileX = [73, 128]
 SubtileY = [58, 128]
 SubtileZ = [1, 0]
 
-[thing333]
+[thing338]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_EVIL"
 Subtype = 1001

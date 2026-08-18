@@ -226,11 +226,8 @@ CREATE_PARTY(HERO)
   ADD_TO_PARTY(HERO, MONK, 8, 300, ATTACK_DUNGEON_HEART, 0)
   ADD_TO_PARTY(HERO, BARBARIAN, 8, 300, ATTACK_DUNGEON_HEART, 0)
 
-SET_FLAG(PLAYER2,FLAG1,0)
-
 IF(PLAYER3,TIMER2 >= 1000)
   ADD_PARTY_TO_LEVEL(PLAYER_GOOD,HERO,-1,1)
-  SET_FLAG(PLAYER2,FLAG1,1)
 ENDIF
 
 IF(PLAYER0,DUNGEON_DESTROYED== 1)
@@ -347,24 +344,24 @@ ENDIF
 
 REM WIN CONDITION
 
+SET_FLAG(PLAYER2,FLAG1,0)
+
+IF(PLAYER1,DUNGEON_DESTROYED==1)
+  IF(PLAYER2,DUNGEON_DESTROYED==1)
+    SET_FLAG(PLAYER2,FLAG1,1)
+  ENDIF
+ENDIF
+
 IF(PLAYER2,FLAG0==1)
   IF(PLAYER_GOOD, KNIGHT == 0)
     IF(PLAYER2,FLAG1==1)
       PLAY_MESSAGE(PLAYER0,SPEECH,"lvl17spe06.ogg")
-      QUICK_OBJECTIVE(115,"Dark Angels answer only to the Hierarchs of Hell.  'Tis purely for their higher purpose that they side with you, so careful in their treatment - do not anger them, unless you wish them turn on you, with grave and horrid consequence.")
+      QUICK_OBJECTIVE(115,"Dark Angels answer only to the Hierarchs of Hell. 'Tis purely for their higher purpose that they side with you, so careful in their treatment - do not anger them, unless you wish them turn on you, with grave and horrid consequence.")
       ALLY_PLAYERS(PLAYER0,PLAYER5,3)
       ADD_OBJECT_TO_LEVEL(FAKE_GEM,LAST_DEATH_EVENT[PLAYER_GOOD],1,PLAYER5)
       COMPUTER_PLAYER(PLAYER5,0)
       SET_TIMER(PLAYER6,TIMER6) 
       WIN_GAME
-    ENDIF
-  ENDIF
-ENDIF
-
-IF(PLAYER2,FLAG0==0)
-  IF(PLAYER_GOOD, KNIGHT == 0)
-    IF(PLAYER2,FLAG1==1)
-      LOSE_GAME
     ENDIF
   ENDIF
 ENDIF
