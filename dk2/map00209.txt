@@ -214,6 +214,10 @@ IF(PLAYER0,TIMER4 >= 270)
 	QUICK_OBJECTIVE(72,"...who though not yet alerted of your presence will be most displeased by any interference. You must find some way to break the siege and destroy the beating heart of Asmodeus. Hurry now for sure there's much work to be done.")
 ENDIF
 
+IF(PLAYER0,DUNGEON_DESTROYED== 1)
+  CHANGE_SLAB_TYPE(32,83,PATH,MATCH)
+ENDIF
+
 REM INTRO
 
 NEXT_COMMAND_REUSABLE

@@ -147,6 +147,10 @@ ENDIF
 
 REM SETTINGS
 
+IF(PLAYER0,DUNGEON_DESTROYED== 1)
+  CHANGE_SLAB_TYPE(25,60,PATH,MATCH)
+ENDIF
+
 IF(PLAYER0,TIMER4 >= 20)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl4spe01.ogg")
 	QUICK_OBJECTIVE(32,"Lord Ludwig knows of your intentions, evil Keeper. But mark, he cowers in his castle locked away, behind what he supposes is the safety of the drawbridge now destroyed by his own hand. From here he has entrusted your destruction to his goodly warriors, whom he feels are more than equal to the task.  For our part, we must know that they and he will perish, slain by forces under your command.")

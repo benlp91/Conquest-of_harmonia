@@ -34,6 +34,12 @@ function MyHeroParties()
         AddToParty("YELLOW", "BARBARIAN", 1, 250, "ATTACK_DUNGEON_HEART", 0)
         AddToParty("YELLOW", "WIZARD"   , 1, 250, "ATTACK_DUNGEON_HEART", 0)
 
+    CreateParty("KNIGHT")
+        AddToParty("KNIGHT", "KNIGHT"     , 4, 500, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("KNIGHT", "GIANT"     , 3, 500, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("KNIGHT", "GIANT" , 3, 500, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("KNIGHT", "BARBARIAN" , 2, 250, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("KNIGHT", "BARBARIAN"    , 2, 250, "ATTACK_DUNGEON_HEART", 0)
 
 -- Parties that will defend rooms
 
@@ -81,10 +87,19 @@ function SpawnPatrols()
         southside[1]  =      { stl_x = 10, stl_y = 211 }
         southside[2]  =      { stl_x = 57, stl_y = 242 }
 
+    local KnightRoute = {}
+        KnightRoute[1]  =      { stl_x = 58, stl_y = 31 }
+        KnightRoute[2]  =      { stl_x = 96, stl_y = 31 }
+
+
+
+
     -- Patrolling parties and individual heroes added to level.
     local PatrolPartyRed    =  AddPartyToLevel(PLAYER_GOOD       ,"RED"                , 6)
     local PatrolPartyGreen  =  AddPartyToLevel(PLAYER_GOOD       ,"GREEN"              , 3)
     local PatrolPartyYellow =  AddPartyToLevel(PLAYER_GOOD       ,"YELLOW"             , 7)
+    local PatrolPartyKnight =  AddPartyToLevel(PLAYER_GOOD       ,"KNIGHT"             , 8
+)
     local PatrolHeroBlue1 =    AddCreatureToLevel(PLAYER_GOOD    ,"BARBARIAN"          , 5, 3, 200)
     local PatrolHeroBlue2 =    AddCreatureToLevel(PLAYER_GOOD    ,"BARBARIAN"          , 5, 2, 200)
     local PatrolHeroBlue3 =    AddCreatureToLevel(PLAYER_GOOD    ,"WIZARD"             , 5, 1, 200)
@@ -93,6 +108,7 @@ function SpawnPatrols()
     RegisterPatrol(PatrolPartyRed[1]    , northernroute , 1, "Red Patrol")
     RegisterPatrol(PatrolPartyGreen[1]  , westwaterway  , 1, "Green Patrol")
     RegisterPatrol(PatrolPartyYellow[1] , southside     , 1, "Yellow Patrol")
+    RegisterPatrol(PatrolPartyKnight[1] , KnightRoute   , 1, "KnightPatrol")
 
     RegisterPatrol(PatrolHeroBlue1      , guardbridge, 1, "Blue Patrol 1")
     RegisterPatrol(PatrolHeroBlue2      , guardbridge, 2, "Blue Patrol 2")

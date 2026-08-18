@@ -69,26 +69,23 @@ end
 function PrinceTookDamage(princeNumber)
     if not Game.IsFleeing then
         if princeNumber == 1 then
-
             StopPatrol()
-            UseSpellOnCreature(Game.PG1[1], "SPELL_SPEED",0)
-            UseSpellOnCreature(Game.PG2[1], "SPELL_SPEED",0)
-            UseSpellOnCreature(Game.PG3[1], "SPELL_SPEED",0)
+            RegisterTimerEvent(UseSpell, 10, false)
         elseif princeNumber == 2 then
-
+            RegisterTimerEvent(UseSpell, 10, false)
             StopPatrol()
-            UseSpellOnCreature(Game.PG1[1], "SPELL_SPEED",0)
-            UseSpellOnCreature(Game.PG2[1], "SPELL_SPEED",0)
-            UseSpellOnCreature(Game.PG3[1], "SPELL_SPEED",0)
         elseif princeNumber == 3 then
-
+            RegisterTimerEvent(UseSpell, 10, false)
             StopPatrol()
-            UseSpellOnCreature(Game.PG1[1], "SPELL_SPEED",0)
-            UseSpellOnCreature(Game.PG2[1], "SPELL_SPEED",0)
-            UseSpellOnCreature(Game.PG3[1], "SPELL_SPEED",0)
         end
         Game.IsFleeing = true
     end
+end
+
+function UseSpell ()
+            UseSpellOnCreature(Game.PG1[1], "SPELL_FEAR",0)
+            UseSpellOnCreature(Game.PG2[1], "SPELL_FEAR",0)
+            UseSpellOnCreature(Game.PG3[1], "SPELL_FEAR",0)
 end
 
 function StopPatrol()
@@ -165,8 +162,3 @@ function SpawnPatrols()
     RegisterPatrol(Game.PG2 [1]      , RouteP2, 2, "Blue Patrol 2")
     RegisterPatrol(Game.PG3 [1]      , RouteP3, 4, "Blue Patrol 3")
 end
-
-
-
-
-
