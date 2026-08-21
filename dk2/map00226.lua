@@ -17,21 +17,21 @@ function MyHeroParties()
 -- Parties that will patrol the map
     CreateParty("RED")
         AddToParty("RED", "GIANT"       , 4, 500, "ATTACK_DUNGEON_HEART", 0)
-        AddToParty("RED", "BARBARIAN"   , 3, 500, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("RED", "SAMURAI"   , 3, 500, "ATTACK_DUNGEON_HEART", 0)
         AddToParty("RED", "MONK"        , 2, 250, "ATTACK_DUNGEON_HEART", 0)
         AddToParty("RED", "WIZARD"      , 1, 250, "ATTACK_DUNGEON_HEART", 0)
 
     CreateParty("GREEN")
         AddToParty("GREEN", "THIEF"     , 1, 500, "ATTACK_DUNGEON_HEART", 0)
         AddToParty("GREEN", "THIEF"     , 1, 500, "ATTACK_DUNGEON_HEART", 0)
-        AddToParty("GREEN", "BARBARIAN" , 1, 500, "ATTACK_DUNGEON_HEART", 0)
-        AddToParty("GREEN", "BARBARIAN" , 1, 250, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("GREEN", "SAMURAI" , 1, 500, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("GREEN", "SAMURAI" , 1, 250, "ATTACK_DUNGEON_HEART", 0)
         AddToParty("GREEN", "WIZARD"    , 1, 250, "ATTACK_DUNGEON_HEART", 0)
 
     CreateParty("YELLOW")
         AddToParty("YELLOW", "THIEF"    , 1, 500, "ATTACK_DUNGEON_HEART", 0)
-        AddToParty("YELLOW", "BARBARIAN", 1, 500, "ATTACK_DUNGEON_HEART", 0)
-        AddToParty("YELLOW", "BARBARIAN", 1, 250, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("YELLOW", "SAMURAI", 1, 500, "ATTACK_DUNGEON_HEART", 0)
+        AddToParty("YELLOW", "SAMURAI", 1, 250, "ATTACK_DUNGEON_HEART", 0)
         AddToParty("YELLOW", "WIZARD"   , 1, 250, "ATTACK_DUNGEON_HEART", 0)
 
     CreateParty("KNIGHT")
@@ -42,11 +42,6 @@ function MyHeroParties()
         AddToParty("KNIGHT", "BARBARIAN"    , 2, 250, "ATTACK_DUNGEON_HEART", 0)
 
 -- Parties that will defend rooms
-
-    CreateParty("DEFEND")
-        AddToParty("DEFEND", "WIZARD"   , 4, 500, "DEFEND_ROOMS", 0)
-        AddToParty("DEFEND", "BARBARIAN", 3, 500, "DEFEND_ROOMS", 0)
-        AddToParty("DEFEND", "BARBARIAN", 2, 250, "DEFEND_ROOMS", 0)
 
     CreateParty("DEFEND2")
         AddToParty("DEFEND2", "THIEF"   , 4, 500, "DEFEND_ROOMS", 0)
@@ -100,8 +95,8 @@ function SpawnPatrols()
     local PatrolPartyYellow =  AddPartyToLevel(PLAYER_GOOD       ,"YELLOW"             , 7)
     local PatrolPartyKnight =  AddPartyToLevel(PLAYER_GOOD       ,"KNIGHT"             , 8
 )
-    local PatrolHeroBlue1 =    AddCreatureToLevel(PLAYER_GOOD    ,"BARBARIAN"          , 5, 3, 200)
-    local PatrolHeroBlue2 =    AddCreatureToLevel(PLAYER_GOOD    ,"BARBARIAN"          , 5, 2, 200)
+    local PatrolHeroBlue1 =    AddCreatureToLevel(PLAYER_GOOD    ,"SAMURAI"          , 5, 3, 200)
+    local PatrolHeroBlue2 =    AddCreatureToLevel(PLAYER_GOOD    ,"SAMURAI"          , 5, 2, 200)
     local PatrolHeroBlue3 =    AddCreatureToLevel(PLAYER_GOOD    ,"WIZARD"             , 5, 1, 200)
 
     -- Calling Library function to activate patrols
@@ -117,7 +112,6 @@ end
 
 -- Spawn some hero parties at the start of the map that will defend rooms near their starting locations
 function SpawnGuards()
-    AddPartyToLevel(PLAYER_GOOD    ,"DEFEND"            , 1)
     AddPartyToLevel(PLAYER_GOOD    ,"DEFEND2"           , 2)
     AddPartyToLevel(PLAYER_GOOD    ,"DEFEND3"           , 3)
     AddPartyToLevel(PLAYER_GOOD    ,"DEFEND4"           , 4)
