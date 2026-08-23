@@ -31,6 +31,14 @@ function UpdateFunctionFAKE_GEM(gem)
     return 0
 end
 
+function Reset_Trap_Orientation(trap)
+    local DEFAULT = 0
+    if trap.orientation ~= DEFAULT then
+        trap.orientation = DEFAULT
+    end
+    return 1
+end
+
 function SpawnHorny(location)
     Game.Horny = AddCreatureToLevel(PLAYER6,"EVILLORD",location,10,0,0)
     Game.Horny.party_objective = 5
