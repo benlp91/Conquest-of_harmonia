@@ -121,11 +121,13 @@ IF(PLAYER3,FLAG5 != 4)
     NEXT_COMMAND_REUSABLE
     SET_TIMER(PLAYER3,TIMER7)
 ENDIF
+
 IF(PLAYER0,ACTIVE_BATTLES == 0)
-    REM Time battle has been going on
-    NEXT_COMMAND_REUSABLE
-    SET_TIMER(PLAYER3,TIMER6)
+	REM Time battle has been going on
+	NEXT_COMMAND_REUSABLE
+	SET_TIMER(PLAYER3,TIMER6)
 ENDIF
+
 IF(PLAYER0,ACTIVE_BATTLES > 0)
     REM Time no battle has been going on
     NEXT_COMMAND_REUSABLE
@@ -135,11 +137,23 @@ ENDIF
 REM Start battle music if battle has been going on for at least 60 gameturns (3 seconds) and is not already playing
 IF(PLAYER3,TIMER6 > 60)
     IF(PLAYER3,FLAG5 != 4)
-        NEXT_COMMAND_REUSABLE
-        SET_MUSIC("battle02.mp3")
-        NEXT_COMMAND_REUSABLE
-        SET_FLAG(PLAYER3,FLAG5,4)
+		IF(PLAYER6,TIMER2 >=1200)
+			NEXT_COMMAND_REUSABLE
+			SET_MUSIC("battle02.mp3")
+			NEXT_COMMAND_REUSABLE
+			SET_FLAG(PLAYER3,FLAG5,4)
+		ENDIF
     ENDIF
+ENDIF
+
+REM Start only Battle Music if it hasn't been played for 1min
+
+SET_TIMER(PLAYER6,TIMER2)
+ADD_TO_TIMER(PLAYER6,TIMER2,1100)
+
+IF(PLAYER3,FLAG5 == 4)
+	NEXT_COMMAND_REUSABLE
+	SET_TIMER(PLAYER6,TIMER2)
 ENDIF
 
 REM Start regular music if battle music lasted at least 15 seconds and no fighting has occured for at least 5 seconds
@@ -153,6 +167,7 @@ IF(PLAYER3,TIMER7 > 300)
         ENDIF
     ENDIF
 ENDIF
+
 SET_TIMER(PLAYER0,TIMER2)
 
 IF(PLAYER0,TIMER2 >= 250)
