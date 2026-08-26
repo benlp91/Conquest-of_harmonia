@@ -205,6 +205,11 @@ IF(PLAYER0,TIMER0 >= 2000)
     QUICK_OBJECTIVE(141,"The King's upon you, as is his final guard. Fight, win, prevail!")
 ENDIF
 
+IF_ACTION_POINT(3,PLAYER0)
+    PLAY_MESSAGE(PLAYER0,SPEECH,"lvl20spe07.ogg")
+    QUICK_OBJECTIVE(151,"Behold the King. The ruler and his realm are intertwined like lovers - see he draws new life from his domain. Now ponder this, and solve its implication.")
+ENDIF
+
 REM SETTINGS
 
 IF_SLAB_TYPE(28,41,TEMPLE_POOL)
@@ -644,7 +649,12 @@ ENDIF
 
 REM ending
 
+SET_CREATURE_STRENGTH(REAPER,1000)
+SET_CREATURE_HEALTH(REAPER,20000)
+
+SET_CREATURE_PROPERTY(REAPER,NO_CORPSE_ROTTING,1)
 SET_CREATURE_PROPERTY(AVATAR,NO_IMPRISONMENT,1)
+SET_CREATURE_PROPERTY(KNIGHT,LORD,0)
 
 IF(PLAYER_GOOD, AVATAR == 0)
     PLAY_MESSAGE(PLAYER0,SPEECH,"lvl20spe03.ogg")
@@ -671,6 +681,7 @@ IF(PLAYER_GOOD, FLAG4 == 1)
    		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl20spe04.ogg")
    		QUICK_OBJECTIVE(143,"The Stone Knights are the last defenders of the gateway. There's no force within this realm to beat them. Are we doomed? Or is there yet another way?")
 		MAGIC_AVAILABLE(PLAYER0,POWER_REAPER,1,1)
+		TUTORIAL_FLASH_BUTTON(POWER_REAPER,-1)
 	ENDIF
 ENDIF
 
@@ -692,8 +703,6 @@ IF(PLAYER0, REAPER == 0)
 		SET_FLAG(PLAYER_GOOD, FLAG5, 1)
 	ENDIF
 ENDIF
-
-
 
 REM PL3,FLAG5 active music track
 rem value 2: dk2track02.mp3
@@ -759,9 +768,9 @@ IF(PLAYER_GOOD,GEMSTONE_KNIGHT == 0)
   	COMPUTER_PLAYER(PLAYER5,0)
   	SET_TIMER(PLAYER6,TIMER6) 
 	KILL_CREATURE(PLAYER0,REAPER,ANYWHERE,1)
+	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl20spe06.ogg")
+   	QUICK_OBJECTIVE(153,"The King is dead, long live your minions and your ways. But hark, what's this? It's rays of sunlight. Sunlight in all its glory. And for you to bask in and to spread your evil power under its bright, bright rays.")
 ENDIF
-
-SET_CREATURE_PROPERTY(REAPER,NO_CORPSE_ROTTING,1)
 
 REM OUTRO
 
