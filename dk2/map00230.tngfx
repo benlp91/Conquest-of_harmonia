@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 608
+ThingsCount = 610
 
 [thing0]
 ThingType = "Door"
@@ -6115,6 +6115,7 @@ SubtypeStringID = "CANDLESTCK"
 Subtype = 28
 Ownership = 4
 ParentTile = 6783
+CustomBox = -1
 Orientation = 0
 SubtileX = [205, 102]
 SubtileY = [238, 128]
@@ -6126,6 +6127,7 @@ SubtypeStringID = "TORCH"
 Subtype = 2
 Ownership = 4
 ParentTile = 6783
+CustomBox = -1
 Orientation = 0
 SubtileX = [206, 128]
 SubtileY = [239, 128]
@@ -6137,6 +6139,7 @@ SubtypeStringID = "CANDLESTCK"
 Subtype = 28
 Ownership = 4
 ParentTile = 6782
+CustomBox = -1
 Orientation = 0
 SubtileX = [202, 102]
 SubtileY = [238, 128]
@@ -6148,6 +6151,7 @@ SubtypeStringID = "TORCH"
 Subtype = 2
 Ownership = 4
 ParentTile = 6782
+CustomBox = -1
 Orientation = 0
 SubtileX = [201, 128]
 SubtileY = [239, 128]
@@ -7155,6 +7159,32 @@ SubtileY = [205, 128]
 SubtileZ = [1, 0]
 
 [thing590]
+ThingType = "Creature"
+SubtypeStringID = "FIREFLY"
+Subtype = 38
+Ownership = 0
+Index = 95
+CreatureLevel = 10
+CreatureGold = 0
+CreatureInitialHealth = 100
+SubtileX = [142, 128]
+SubtileY = [216, 128]
+SubtileZ = [1, 0]
+
+[thing591]
+ThingType = "Creature"
+SubtypeStringID = "FIREFLY"
+Subtype = 38
+Ownership = 0
+Index = 96
+CreatureLevel = 10
+CreatureGold = 0
+CreatureInitialHealth = 100
+SubtileX = [143, 128]
+SubtileY = [216, 128]
+SubtileZ = [1, 0]
+
+[thing592]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -7166,7 +7196,7 @@ SubtileX = [132, 128]
 SubtileY = [113, 128]
 SubtileZ = [0, 0]
 
-[thing591]
+[thing593]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_LAVA"
 Subtype = 1
@@ -7178,7 +7208,7 @@ SubtileX = [225, 128]
 SubtileY = [135, 128]
 SubtileZ = [0, 0]
 
-[thing592]
+[thing594]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_LAVA"
 Subtype = 1
@@ -7190,7 +7220,7 @@ SubtileX = [230, 128]
 SubtileY = [168, 128]
 SubtileZ = [0, 0]
 
-[thing593]
+[thing595]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_LAVA"
 Subtype = 1
@@ -7202,7 +7232,7 @@ SubtileX = [222, 128]
 SubtileY = [172, 128]
 SubtileZ = [0, 0]
 
-[thing594]
+[thing596]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_LAVA"
 Subtype = 1
@@ -7214,7 +7244,7 @@ SubtileX = [224, 128]
 SubtileY = [178, 128]
 SubtileZ = [0, 0]
 
-[thing595]
+[thing597]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_LAVA"
 Subtype = 1
@@ -7226,7 +7256,7 @@ SubtileX = [217, 128]
 SubtileY = [183, 128]
 SubtileZ = [0, 0]
 
-[thing596]
+[thing598]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_LAVA"
 Subtype = 1
@@ -7238,7 +7268,7 @@ SubtileX = [225, 128]
 SubtileY = [192, 128]
 SubtileZ = [0, 0]
 
-[thing597]
+[thing599]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_LAVA"
 Subtype = 1
@@ -7250,7 +7280,7 @@ SubtileX = [219, 128]
 SubtileY = [206, 128]
 SubtileZ = [0, 0]
 
-[thing598]
+[thing600]
 ThingType = "Trap"
 SubtypeStringID = "EVIL_SENTRY"
 Subtype = 1037
@@ -7261,7 +7291,7 @@ SubtileX = [7, 128]
 SubtileY = [88, 128]
 SubtileZ = [1, 0]
 
-[thing599]
+[thing601]
 ThingType = "Trap"
 SubtypeStringID = "EVIL_SENTRY"
 Subtype = 1037
@@ -7272,7 +7302,7 @@ SubtileX = [22, 128]
 SubtileY = [88, 128]
 SubtileZ = [1, 0]
 
-[thing600]
+[thing602]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_EVIL"
 Subtype = 1001
@@ -7283,7 +7313,7 @@ SubtileX = [7, 128]
 SubtileY = [91, 128]
 SubtileZ = [1, 0]
 
-[thing601]
+[thing603]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_EVIL"
 Subtype = 1001
@@ -7294,7 +7324,7 @@ SubtileX = [10, 128]
 SubtileY = [91, 128]
 SubtileZ = [1, 0]
 
-[thing602]
+[thing604]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_EVIL"
 Subtype = 1001
@@ -7305,7 +7335,7 @@ SubtileX = [10, 128]
 SubtileY = [88, 128]
 SubtileZ = [1, 0]
 
-[thing603]
+[thing605]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_HERO"
 Subtype = 1002
@@ -7316,7 +7346,7 @@ SubtileX = [19, 128]
 SubtileY = [88, 128]
 SubtileZ = [1, 0]
 
-[thing604]
+[thing606]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_HERO"
 Subtype = 1002
@@ -7327,7 +7357,7 @@ SubtileX = [19, 128]
 SubtileY = [91, 128]
 SubtileZ = [1, 0]
 
-[thing605]
+[thing607]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_HERO"
 Subtype = 1002
@@ -7338,7 +7368,7 @@ SubtileX = [22, 128]
 SubtileY = [91, 128]
 SubtileZ = [1, 0]
 
-[thing606]
+[thing608]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -7349,7 +7379,7 @@ SubtileX = [70, 128]
 SubtileY = [109, 128]
 SubtileZ = [1, 0]
 
-[thing607]
+[thing609]
 ThingType = "Trap"
 SubtypeStringID = "FEAR_TRAP"
 Subtype = 1010

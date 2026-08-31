@@ -71,12 +71,18 @@ function PrinceTookDamage(princeNumber)
         if princeNumber == 1 then
             StopPatrol()
             RegisterTimerEvent(UseSpell, 10, false)
+            PlayMessage(PLAYER0,"SPEECH","lvl18spe09.ogg")
+	        QuickObjective("I am wounded by the minions of evil. Run, my brothers! Escape my doom and save the Portal Gem.", PLAYER_GOOD)
         elseif princeNumber == 2 then
-            RegisterTimerEvent(UseSpell, 10, false)
             StopPatrol()
+            RegisterTimerEvent(UseSpell, 10, false)
+            PlayMessage(PLAYER0,"SPEECH","lvl18spe09.ogg")
+	        QuickObjective("I am wounded by the minions of evil. Run, my brothers! Escape my doom and save the Portal Gem.", PLAYER_GOOD)
         elseif princeNumber == 3 then
+            StopPatrol()            
             RegisterTimerEvent(UseSpell, 10, false)
-            StopPatrol()
+            PlayMessage(PLAYER0,"SPEECH","lvl18spe09.ogg")
+	        QuickObjective("I am wounded by the minions of evil. Run, my brothers! Escape my doom and save the Portal Gem.", PLAYER_GOOD)
         end
         Game.IsFleeing = true
     end

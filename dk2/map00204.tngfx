@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 256
+ThingsCount = 260
 
 [thing0]
 ThingType = "Door"
@@ -2980,6 +2980,54 @@ SubtileY = [64, 128]
 SubtileZ = [0, 0]
 
 [thing247]
+ThingType = "EffectGen"
+SubtypeStringID = "EFFECTGENERATOR_DRY_ICE"
+Subtype = 5
+Ownership = 4
+EffectRange = [5, 0]
+ParentTile = 1096
+Orientation = 256
+SubtileX = [10, 128]
+SubtileY = [64, 128]
+SubtileZ = [2, 0]
+
+[thing248]
+ThingType = "EffectGen"
+SubtypeStringID = "EFFECTGENERATOR_DRY_ICE"
+Subtype = 5
+Ownership = 4
+EffectRange = [5, 0]
+ParentTile = 766
+Orientation = 256
+SubtileX = [116, 128]
+SubtileY = [42, 128]
+SubtileZ = [1, 0]
+
+[thing249]
+ThingType = "EffectGen"
+SubtypeStringID = "EFFECTGENERATOR_DRY_ICE"
+Subtype = 5
+Ownership = 4
+EffectRange = [5, 0]
+ParentTile = 1752
+Orientation = 256
+SubtileX = [109, 128]
+SubtileY = [100, 128]
+SubtileZ = [2, 0]
+
+[thing250]
+ThingType = "EffectGen"
+SubtypeStringID = "EFFECTGENERATOR_DRY_ICE"
+Subtype = 5
+Ownership = 4
+EffectRange = [5, 0]
+ParentTile = 2268
+Orientation = 256
+SubtileX = [97, 128]
+SubtileY = [130, 128]
+SubtileZ = [2, 0]
+
+[thing251]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -2990,18 +3038,7 @@ SubtileX = [49, 128]
 SubtileY = [127, 128]
 SubtileZ = [1, 0]
 
-[thing248]
-ThingType = "Trap"
-SubtypeStringID = "LIGHTNING"
-Subtype = 4
-Ownership = 4
-Index = 21
-Orientation = 0
-SubtileX = [55, 128]
-SubtileY = [133, 128]
-SubtileZ = [1, 0]
-
-[thing249]
+[thing252]
 ThingType = "Trap"
 SubtypeStringID = "POISON_GAS"
 Subtype = 3
@@ -3012,7 +3049,7 @@ SubtileX = [52, 128]
 SubtileY = [124, 128]
 SubtileZ = [1, 0]
 
-[thing250]
+[thing253]
 ThingType = "Trap"
 SubtypeStringID = "FEAR_TRAP"
 Subtype = 1010
@@ -3023,7 +3060,7 @@ SubtileX = [94, 128]
 SubtileY = [37, 128]
 SubtileZ = [1, 0]
 
-[thing251]
+[thing254]
 ThingType = "Trap"
 SubtypeStringID = "FEAR_TRAP"
 Subtype = 1010
@@ -3034,7 +3071,7 @@ SubtileX = [94, 128]
 SubtileY = [46, 128]
 SubtileZ = [1, 0]
 
-[thing252]
+[thing255]
 ThingType = "Trap"
 SubtypeStringID = "FEAR_TRAP"
 Subtype = 1010
@@ -3045,7 +3082,7 @@ SubtileX = [97, 128]
 SubtileY = [37, 128]
 SubtileZ = [1, 0]
 
-[thing253]
+[thing256]
 ThingType = "Trap"
 SubtypeStringID = "FEAR_TRAP"
 Subtype = 1010
@@ -3056,7 +3093,7 @@ SubtileX = [97, 128]
 SubtileY = [46, 128]
 SubtileZ = [1, 0]
 
-[thing254]
+[thing257]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -3067,7 +3104,7 @@ SubtileX = [106, 128]
 SubtileY = [37, 128]
 SubtileZ = [1, 0]
 
-[thing255]
+[thing258]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -3076,4 +3113,15 @@ Index = 14
 Orientation = 0
 SubtileX = [106, 128]
 SubtileY = [46, 128]
+SubtileZ = [1, 0]
+
+[thing259]
+ThingType = "Trap"
+SubtypeStringID = "LIGHTNINGTRAP"
+Subtype = 1006
+Ownership = 4
+Index = 3
+Orientation = 0
+SubtileX = [55, 128]
+SubtileY = [133, 128]
 SubtileZ = [1, 0]
