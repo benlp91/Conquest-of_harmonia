@@ -138,17 +138,14 @@ function SpawnLord()
 end
 
     -- only keeper creatures (spawning in later because otherwise they fight and disturb the intro)
-    -- TODO they are patrouling but it makes no sense
 
 
 function SpawnCRTRS()
-
     AddCreatureToLevel(PLAYER0    ,"SALAMANDER"          , 21, 1, 200)
     AddCreatureToLevel(PLAYER0    ,"SALAMANDER"          , 21, 1, 200)
     AddCreatureToLevel(PLAYER0    ,"SALAMANDER"          , 21, 2, 200)
     AddCreatureToLevel(PLAYER0    ,"MISTRESS"            , 21, 1, 200)
     AddCreatureToLevel(PLAYER0    ,"MISTRESS"            , 21, 2, 200)
     AddCreatureToLevel(PLAYER0    ,"TROLL"               , 21, 1, 200)
-
 end
 
