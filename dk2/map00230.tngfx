@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 616
+ThingsCount = 617
 
 [thing0]
 ThingType = "Door"
@@ -7294,6 +7294,18 @@ SubtileY = [206, 128]
 SubtileZ = [0, 0]
 
 [thing601]
+ThingType = "EffectGen"
+SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
+Subtype = 2
+Ownership = 5
+EffectRange = [5, 0]
+ParentTile = 3134
+Orientation = 0
+SubtileX = [223, 128]
+SubtileY = [110, 128]
+SubtileZ = [0, 0]
+
+[thing602]
 ThingType = "Trap"
 SubtypeStringID = "EVIL_SENTRY"
 Subtype = 1037
@@ -7304,7 +7316,7 @@ SubtileX = [7, 128]
 SubtileY = [88, 128]
 SubtileZ = [1, 0]
 
-[thing602]
+[thing603]
 ThingType = "Trap"
 SubtypeStringID = "EVIL_SENTRY"
 Subtype = 1037
@@ -7315,7 +7327,7 @@ SubtileX = [22, 128]
 SubtileY = [88, 128]
 SubtileZ = [1, 0]
 
-[thing603]
+[thing604]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_EVIL"
 Subtype = 1001
@@ -7326,7 +7338,7 @@ SubtileX = [7, 128]
 SubtileY = [91, 128]
 SubtileZ = [1, 0]
 
-[thing604]
+[thing605]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_EVIL"
 Subtype = 1001
@@ -7337,7 +7349,7 @@ SubtileX = [10, 128]
 SubtileY = [91, 128]
 SubtileZ = [1, 0]
 
-[thing605]
+[thing606]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_EVIL"
 Subtype = 1001
@@ -7348,7 +7360,7 @@ SubtileX = [10, 128]
 SubtileY = [88, 128]
 SubtileZ = [1, 0]
 
-[thing606]
+[thing607]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_HERO"
 Subtype = 1002
@@ -7359,7 +7371,7 @@ SubtileX = [19, 128]
 SubtileY = [88, 128]
 SubtileZ = [1, 0]
 
-[thing607]
+[thing608]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_HERO"
 Subtype = 1002
@@ -7370,7 +7382,7 @@ SubtileX = [19, 128]
 SubtileY = [91, 128]
 SubtileZ = [1, 0]
 
-[thing608]
+[thing609]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_HERO"
 Subtype = 1002
@@ -7381,7 +7393,7 @@ SubtileX = [22, 128]
 SubtileY = [91, 128]
 SubtileZ = [1, 0]
 
-[thing609]
+[thing610]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -7392,7 +7404,7 @@ SubtileX = [70, 128]
 SubtileY = [109, 128]
 SubtileZ = [1, 0]
 
-[thing610]
+[thing611]
 ThingType = "Trap"
 SubtypeStringID = "FEAR_TRAP"
 Subtype = 1010
@@ -7403,7 +7415,7 @@ SubtileX = [97, 128]
 SubtileY = [220, 128]
 SubtileZ = [1, 0]
 
-[thing611]
+[thing612]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -7414,7 +7426,7 @@ SubtileX = [37, 128]
 SubtileY = [181, 128]
 SubtileZ = [1, 0]
 
-[thing612]
+[thing613]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_EVIL"
 Subtype = 1001
@@ -7425,7 +7437,7 @@ SubtileX = [34, 128]
 SubtileY = [181, 128]
 SubtileZ = [1, 0]
 
-[thing613]
+[thing614]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_HERO"
 Subtype = 1002
@@ -7436,7 +7448,7 @@ SubtileX = [40, 128]
 SubtileY = [181, 128]
 SubtileZ = [1, 0]
 
-[thing614]
+[thing615]
 ThingType = "Trap"
 SubtypeStringID = "EVIL_SENTRY"
 Subtype = 1037
@@ -7447,7 +7459,7 @@ SubtileX = [31, 128]
 SubtileY = [181, 128]
 SubtileZ = [1, 0]
 
-[thing615]
+[thing616]
 ThingType = "Trap"
 SubtypeStringID = "LIGHTNINGTRAP"
 Subtype = 1006

@@ -150,18 +150,6 @@ ThingType = "Door"
 SubtypeStringID = "BRACED"
 Subtype = 2
 Ownership = 4
-Index = 28
-DoorOrientation = 0
-DoorLocked = 1
-SubtileX = [88, 128]
-SubtileY = [61, 128]
-SubtileZ = [5, 0]
-
-[thing13]
-ThingType = "Door"
-SubtypeStringID = "BRACED"
-Subtype = 2
-Ownership = 4
 Index = 49
 DoorOrientation = 1
 DoorLocked = 1
@@ -169,7 +157,7 @@ SubtileX = [64, 128]
 SubtileY = [97, 128]
 SubtileZ = [5, 0]
 
-[thing14]
+[thing13]
 ThingType = "Door"
 SubtypeStringID = "BRACED"
 Subtype = 2
@@ -181,7 +169,7 @@ SubtileX = [97, 128]
 SubtileY = [97, 128]
 SubtileZ = [5, 0]
 
-[thing15]
+[thing14]
 ThingType = "Door"
 SubtypeStringID = "BRACED"
 Subtype = 2
@@ -193,7 +181,7 @@ SubtileX = [106, 128]
 SubtileY = [88, 128]
 SubtileZ = [5, 0]
 
-[thing16]
+[thing15]
 ThingType = "Door"
 SubtypeStringID = "WOOD"
 Subtype = 1
@@ -205,7 +193,7 @@ SubtileX = [76, 128]
 SubtileY = [40, 128]
 SubtileZ = [5, 0]
 
-[thing17]
+[thing16]
 ThingType = "Door"
 SubtypeStringID = "SECRET"
 Subtype = 5
@@ -217,7 +205,7 @@ SubtileX = [91, 128]
 SubtileY = [79, 128]
 SubtileZ = [5, 0]
 
-[thing18]
+[thing17]
 ThingType = "Door"
 SubtypeStringID = "SECRET"
 Subtype = 5
@@ -229,7 +217,7 @@ SubtileX = [133, 128]
 SubtileY = [64, 128]
 SubtileZ = [5, 0]
 
-[thing19]
+[thing18]
 ThingType = "Door"
 SubtypeStringID = "SECRET"
 Subtype = 5
@@ -239,6 +227,18 @@ DoorOrientation = 0
 DoorLocked = 0
 SubtileX = [97, 128]
 SubtileY = [121, 128]
+SubtileZ = [5, 0]
+
+[thing19]
+ThingType = "Door"
+SubtypeStringID = "BRACED"
+Subtype = 2
+Ownership = 4
+Index = 178
+DoorOrientation = 0
+DoorLocked = 1
+SubtileX = [88, 128]
+SubtileY = [61, 128]
 SubtileZ = [5, 0]
 
 [thing20]
@@ -5492,17 +5492,6 @@ SubtileZ = [0, 0]
 
 [thing449]
 ThingType = "Trap"
-SubtypeStringID = "GRAPPLEHOOKTRAP"
-Subtype = 1008
-Ownership = 4
-Index = 42
-Orientation = 0
-SubtileX = [25, 128]
-SubtileY = [88, 128]
-SubtileZ = [1, 0]
-
-[thing450]
-ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
 Ownership = 4
@@ -5512,7 +5501,7 @@ SubtileX = [61, 128]
 SubtileY = [85, 128]
 SubtileZ = [1, 0]
 
-[thing451]
+[thing450]
 ThingType = "Trap"
 SubtypeStringID = "ALARM"
 Subtype = 2
@@ -5523,7 +5512,7 @@ SubtileX = [49, 128]
 SubtileY = [79, 128]
 SubtileZ = [1, 0]
 
-[thing452]
+[thing451]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -5534,7 +5523,7 @@ SubtileX = [127, 128]
 SubtileY = [106, 128]
 SubtileZ = [1, 0]
 
-[thing453]
+[thing452]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -5545,7 +5534,7 @@ SubtileX = [124, 128]
 SubtileY = [115, 128]
 SubtileZ = [1, 0]
 
-[thing454]
+[thing453]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -5556,7 +5545,7 @@ SubtileX = [121, 128]
 SubtileY = [121, 128]
 SubtileZ = [1, 0]
 
-[thing455]
+[thing454]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -5567,7 +5556,7 @@ SubtileX = [118, 128]
 SubtileY = [127, 128]
 SubtileZ = [1, 0]
 
-[thing456]
+[thing455]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -5578,7 +5567,7 @@ SubtileX = [106, 128]
 SubtileY = [115, 128]
 SubtileZ = [1, 0]
 
-[thing457]
+[thing456]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -5589,7 +5578,7 @@ SubtileX = [103, 128]
 SubtileY = [121, 128]
 SubtileZ = [1, 0]
 
-[thing458]
+[thing457]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -5600,7 +5589,7 @@ SubtileX = [109, 128]
 SubtileY = [109, 128]
 SubtileZ = [1, 0]
 
-[thing459]
+[thing458]
 ThingType = "Trap"
 SubtypeStringID = "TNT"
 Subtype = 7
@@ -5611,7 +5600,7 @@ SubtileX = [103, 128]
 SubtileY = [142, 128]
 SubtileZ = [1, 0]
 
-[thing460]
+[thing459]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -5622,7 +5611,7 @@ SubtileX = [85, 128]
 SubtileY = [79, 128]
 SubtileZ = [1, 0]
 
-[thing461]
+[thing460]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -5633,7 +5622,7 @@ SubtileX = [88, 128]
 SubtileY = [79, 128]
 SubtileZ = [1, 0]
 
-[thing462]
+[thing461]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_EVIL"
 Subtype = 1001
@@ -5644,7 +5633,7 @@ SubtileX = [61, 128]
 SubtileY = [103, 128]
 SubtileZ = [1, 0]
 
-[thing463]
+[thing462]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -5655,7 +5644,7 @@ SubtileX = [97, 128]
 SubtileY = [130, 128]
 SubtileZ = [1, 0]
 
-[thing464]
+[thing463]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -5666,7 +5655,7 @@ SubtileX = [121, 128]
 SubtileY = [73, 128]
 SubtileZ = [1, 0]
 
-[thing465]
+[thing464]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -5677,7 +5666,7 @@ SubtileX = [43, 128]
 SubtileY = [58, 128]
 SubtileZ = [1, 0]
 
-[thing466]
+[thing465]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -5688,7 +5677,7 @@ SubtileX = [139, 128]
 SubtileY = [142, 128]
 SubtileZ = [1, 0]
 
-[thing467]
+[thing466]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_EVIL"
 Subtype = 1001
@@ -5699,7 +5688,7 @@ SubtileX = [97, 128]
 SubtileY = [43, 128]
 SubtileZ = [1, 0]
 
-[thing468]
+[thing467]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_EVIL"
 Subtype = 1001
@@ -5710,7 +5699,7 @@ SubtileX = [121, 128]
 SubtileY = [40, 128]
 SubtileZ = [1, 0]
 
-[thing469]
+[thing468]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_EVIL"
 Subtype = 1001
@@ -5721,7 +5710,7 @@ SubtileX = [115, 128]
 SubtileY = [58, 128]
 SubtileZ = [1, 0]
 
-[thing470]
+[thing469]
 ThingType = "Trap"
 SubtypeStringID = "BARRICADE_TRAP_EVIL"
 Subtype = 1001
@@ -5732,18 +5721,7 @@ SubtileX = [133, 128]
 SubtileY = [55, 128]
 SubtileZ = [1, 0]
 
-[thing471]
-ThingType = "Trap"
-SubtypeStringID = "WINDTRAP"
-Subtype = 1007
-Ownership = 4
-Index = 136
-Orientation = 0
-SubtileX = [121, 128]
-SubtileY = [61, 128]
-SubtileZ = [1, 0]
-
-[thing472]
+[thing470]
 ThingType = "Trap"
 SubtypeStringID = "SPEED_TRAP"
 Subtype = 1035
@@ -5754,7 +5732,7 @@ SubtileX = [100, 128]
 SubtileY = [109, 128]
 SubtileZ = [1, 0]
 
-[thing473]
+[thing471]
 ThingType = "Trap"
 SubtypeStringID = "SPEED_TRAP"
 Subtype = 1035
@@ -5765,7 +5743,7 @@ SubtileX = [133, 128]
 SubtileY = [133, 128]
 SubtileZ = [1, 0]
 
-[thing474]
+[thing472]
 ThingType = "Trap"
 SubtypeStringID = "TRIGGER_TRAP1"
 Subtype = 1012
@@ -5776,7 +5754,7 @@ SubtileX = [61, 128]
 SubtileY = [88, 128]
 SubtileZ = [1, 0]
 
-[thing475]
+[thing473]
 ThingType = "Trap"
 SubtypeStringID = "SPEED_TRAP"
 Subtype = 1035
@@ -5787,7 +5765,7 @@ SubtileX = [97, 128]
 SubtileY = [79, 128]
 SubtileZ = [1, 0]
 
-[thing476]
+[thing474]
 ThingType = "Trap"
 SubtypeStringID = "TRIGGER_TRAP2"
 Subtype = 1013
@@ -5798,7 +5776,7 @@ SubtileX = [94, 128]
 SubtileY = [79, 128]
 SubtileZ = [1, 0]
 
-[thing477]
+[thing475]
 ThingType = "Trap"
 SubtypeStringID = "TRIGGER_TRAP2"
 Subtype = 1013
@@ -5809,7 +5787,7 @@ SubtileX = [133, 128]
 SubtileY = [130, 128]
 SubtileZ = [1, 0]
 
-[thing478]
+[thing476]
 ThingType = "Trap"
 SubtypeStringID = "TRIGGER_TRAP2"
 Subtype = 1013
@@ -5820,7 +5798,7 @@ SubtileX = [100, 128]
 SubtileY = [85, 128]
 SubtileZ = [1, 0]
 
-[thing479]
+[thing477]
 ThingType = "Trap"
 SubtypeStringID = "SPEED_TRAP"
 Subtype = 1035
@@ -5831,7 +5809,7 @@ SubtileX = [61, 128]
 SubtileY = [28, 128]
 SubtileZ = [1, 0]
 
-[thing480]
+[thing478]
 ThingType = "Trap"
 SubtypeStringID = "SPEED_TRAP"
 Subtype = 1035
@@ -5842,7 +5820,7 @@ SubtileX = [64, 128]
 SubtileY = [112, 128]
 SubtileZ = [1, 0]
 
-[thing481]
+[thing479]
 ThingType = "Trap"
 SubtypeStringID = "TRIGGER_TRAP2"
 Subtype = 1013
@@ -5853,7 +5831,7 @@ SubtileX = [43, 128]
 SubtileY = [127, 128]
 SubtileZ = [1, 0]
 
-[thing482]
+[thing480]
 ThingType = "Trap"
 SubtypeStringID = "SPEED_TRAP"
 Subtype = 1035
@@ -5864,7 +5842,7 @@ SubtileX = [133, 128]
 SubtileY = [67, 128]
 SubtileZ = [1, 0]
 
-[thing483]
+[thing481]
 ThingType = "Trap"
 SubtypeStringID = "TRIGGER_TRAP2"
 Subtype = 1013
@@ -5875,7 +5853,7 @@ SubtileX = [136, 128]
 SubtileY = [67, 128]
 SubtileZ = [1, 0]
 
-[thing484]
+[thing482]
 ThingType = "Trap"
 SubtypeStringID = "POISON_GAS"
 Subtype = 3
@@ -5886,7 +5864,7 @@ SubtileX = [73, 128]
 SubtileY = [46, 128]
 SubtileZ = [1, 0]
 
-[thing485]
+[thing483]
 ThingType = "Trap"
 SubtypeStringID = "POISON_GAS"
 Subtype = 3
@@ -5897,7 +5875,7 @@ SubtileX = [79, 128]
 SubtileY = [46, 128]
 SubtileZ = [1, 0]
 
-[thing486]
+[thing484]
 ThingType = "Trap"
 SubtypeStringID = "SPEED_TRAP"
 Subtype = 1035
@@ -5908,7 +5886,7 @@ SubtileX = [28, 128]
 SubtileY = [85, 128]
 SubtileZ = [1, 0]
 
-[thing487]
+[thing485]
 ThingType = "Trap"
 SubtypeStringID = "SPEED_TRAP"
 Subtype = 1035
@@ -5919,7 +5897,7 @@ SubtileX = [40, 128]
 SubtileY = [145, 128]
 SubtileZ = [1, 0]
 
-[thing488]
+[thing486]
 ThingType = "Trap"
 SubtypeStringID = "SPEED_TRAP"
 Subtype = 1035
@@ -5930,7 +5908,7 @@ SubtileX = [91, 128]
 SubtileY = [142, 128]
 SubtileZ = [1, 0]
 
-[thing489]
+[thing487]
 ThingType = "Trap"
 SubtypeStringID = "TRIGGER_TRAP2"
 Subtype = 1013
@@ -5941,7 +5919,7 @@ SubtileX = [97, 128]
 SubtileY = [118, 128]
 SubtileZ = [1, 0]
 
-[thing490]
+[thing488]
 ThingType = "Trap"
 SubtypeStringID = "BOULDER"
 Subtype = 1
@@ -5952,7 +5930,7 @@ SubtileX = [115, 128]
 SubtileY = [55, 128]
 SubtileZ = [1, 0]
 
-[thing491]
+[thing489]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -5963,7 +5941,7 @@ SubtileX = [61, 128]
 SubtileY = [52, 128]
 SubtileZ = [1, 0]
 
-[thing492]
+[thing490]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -5974,7 +5952,7 @@ SubtileX = [61, 128]
 SubtileY = [58, 128]
 SubtileZ = [1, 0]
 
-[thing493]
+[thing491]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -5985,7 +5963,7 @@ SubtileX = [91, 128]
 SubtileY = [52, 128]
 SubtileZ = [1, 0]
 
-[thing494]
+[thing492]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -5996,7 +5974,7 @@ SubtileX = [91, 128]
 SubtileY = [58, 128]
 SubtileZ = [1, 0]
 
-[thing495]
+[thing493]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6007,7 +5985,7 @@ SubtileX = [64, 128]
 SubtileY = [79, 128]
 SubtileZ = [1, 0]
 
-[thing496]
+[thing494]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6018,7 +5996,7 @@ SubtileX = [55, 128]
 SubtileY = [79, 128]
 SubtileZ = [1, 0]
 
-[thing497]
+[thing495]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6029,7 +6007,7 @@ SubtileX = [34, 128]
 SubtileY = [67, 128]
 SubtileZ = [1, 0]
 
-[thing498]
+[thing496]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6040,7 +6018,7 @@ SubtileX = [10, 128]
 SubtileY = [64, 128]
 SubtileZ = [1, 0]
 
-[thing499]
+[thing497]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6051,7 +6029,7 @@ SubtileX = [10, 128]
 SubtileY = [79, 128]
 SubtileZ = [1, 0]
 
-[thing500]
+[thing498]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6062,7 +6040,7 @@ SubtileX = [19, 128]
 SubtileY = [46, 128]
 SubtileZ = [1, 0]
 
-[thing501]
+[thing499]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6073,7 +6051,7 @@ SubtileX = [40, 128]
 SubtileY = [49, 128]
 SubtileZ = [1, 0]
 
-[thing502]
+[thing500]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6084,7 +6062,7 @@ SubtileX = [16, 128]
 SubtileY = [100, 128]
 SubtileZ = [1, 0]
 
-[thing503]
+[thing501]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6095,7 +6073,7 @@ SubtileX = [37, 128]
 SubtileY = [109, 128]
 SubtileZ = [1, 0]
 
-[thing504]
+[thing502]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6106,7 +6084,7 @@ SubtileX = [91, 128]
 SubtileY = [109, 128]
 SubtileZ = [1, 0]
 
-[thing505]
+[thing503]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6117,7 +6095,7 @@ SubtileX = [91, 128]
 SubtileY = [88, 128]
 SubtileZ = [1, 0]
 
-[thing506]
+[thing504]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6128,7 +6106,7 @@ SubtileX = [103, 128]
 SubtileY = [130, 128]
 SubtileZ = [1, 0]
 
-[thing507]
+[thing505]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6139,7 +6117,7 @@ SubtileX = [106, 128]
 SubtileY = [130, 128]
 SubtileZ = [1, 0]
 
-[thing508]
+[thing506]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6150,7 +6128,7 @@ SubtileX = [109, 128]
 SubtileY = [130, 128]
 SubtileZ = [1, 0]
 
-[thing509]
+[thing507]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6161,7 +6139,7 @@ SubtileX = [112, 128]
 SubtileY = [130, 128]
 SubtileZ = [1, 0]
 
-[thing510]
+[thing508]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6172,7 +6150,7 @@ SubtileX = [115, 128]
 SubtileY = [130, 128]
 SubtileZ = [1, 0]
 
-[thing511]
+[thing509]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6183,7 +6161,7 @@ SubtileX = [91, 128]
 SubtileY = [136, 128]
 SubtileZ = [1, 0]
 
-[thing512]
+[thing510]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -6192,4 +6170,26 @@ Index = 13
 Orientation = 1024
 SubtileX = [91, 128]
 SubtileY = [121, 128]
+SubtileZ = [1, 0]
+
+[thing511]
+ThingType = "Trap"
+SubtypeStringID = "WINDTRAP_EASTER_EGG"
+Subtype = 1007
+Ownership = 4
+Index = 28
+Orientation = 0
+SubtileX = [121, 128]
+SubtileY = [61, 128]
+SubtileZ = [1, 0]
+
+[thing512]
+ThingType = "Trap"
+SubtypeStringID = "GRAPPLEHOOKTRAP_EASTER_EGG"
+Subtype = 1008
+Ownership = 4
+Index = 42
+Orientation = 0
+SubtileX = [25, 128]
+SubtileY = [88, 128]
 SubtileZ = [1, 0]
