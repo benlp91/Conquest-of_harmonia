@@ -1,8 +1,10 @@
 require "hatchery"
 require "patrols"
 require "helper"
+require "casino"
 
 function OnCampaignGameStart()
+    CasinoInit()                                                -- casino code 
     RegisterTimerEvent(CheckForStunDeaths, 1, true)             -- Repeat each frame
     Game.CoopRange = 2                                          -- Coop range in subtiles
 end

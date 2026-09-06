@@ -90,8 +90,8 @@ SET_PLAYER_COLOR(PLAYER6,RED)
 SET_TIMER(PLAYER0,TIMER4)
 
 IF(PLAYER0,TIMER4 >= 30)
-	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl6spe01.ogg")
-	QUICK_OBJECTIVE(43,"Hungry for battle and thirsty for blood, foul creatures await their Keepers command. Lord Ironhelms good Castle is under their siege, but the method is yours for the choosing.")
+	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl6Bspe01.ogg")
+	QUICK_OBJECTIVE(43,"Seek amongst these caverns and you'll find much useful tackle stowed here o'er the years by good Lord Ironhelm and his cronies. Help yourself - for just as 'finders keepers', Keepers finders be!")
 ENDIF
 
 IF(PLAYER0,TIMER4 >= 1200)
