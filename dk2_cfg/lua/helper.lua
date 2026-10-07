@@ -36,3 +36,4 @@ function SpawnHorny(location)
     Game.Horny.party_objective = 5
     Game.Horny.party_target_player = 7
 end
+

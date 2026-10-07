@@ -1,19 +1,7 @@
 [common]
-ThingsCount = 358
+ThingsCount = 385
 
 [thing0]
-ThingType = "Door"
-SubtypeStringID = "STEEL"
-Subtype = 3
-Ownership = 4
-Index = 26
-DoorOrientation = 1
-DoorLocked = 0
-SubtileX = [271, 128]
-SubtileY = [97, 128]
-SubtileZ = [5, 0]
-
-[thing1]
 ThingType = "Door"
 SubtypeStringID = "STEEL"
 Subtype = 3
@@ -25,7 +13,7 @@ SubtileX = [283, 128]
 SubtileY = [97, 128]
 SubtileZ = [5, 0]
 
-[thing2]
+[thing1]
 ThingType = "Door"
 SubtypeStringID = "WOOD"
 Subtype = 1
@@ -37,7 +25,7 @@ SubtileX = [229, 128]
 SubtileY = [91, 128]
 SubtileZ = [5, 0]
 
-[thing3]
+[thing2]
 ThingType = "Door"
 SubtypeStringID = "WOOD"
 Subtype = 1
@@ -49,19 +37,19 @@ SubtileX = [229, 128]
 SubtileY = [100, 128]
 SubtileZ = [5, 0]
 
-[thing4]
+[thing3]
 ThingType = "Door"
-SubtypeStringID = "WOOD"
-Subtype = 1
+SubtypeStringID = "STEEL"
+Subtype = 3
 Ownership = 4
-Index = 5
-DoorOrientation = 0
-DoorLocked = 1
-SubtileX = [85, 128]
-SubtileY = [103, 128]
+Index = 1
+DoorOrientation = 1
+DoorLocked = 0
+SubtileX = [271, 128]
+SubtileY = [97, 128]
 SubtileZ = [5, 0]
 
-[thing5]
+[thing4]
 ThingType = "Door"
 SubtypeStringID = "WOOD"
 Subtype = 1
@@ -71,6 +59,18 @@ DoorOrientation = 0
 DoorLocked = 1
 SubtileX = [85, 128]
 SubtileY = [91, 128]
+SubtileZ = [5, 0]
+
+[thing5]
+ThingType = "Door"
+SubtypeStringID = "WOOD"
+Subtype = 1
+Ownership = 4
+Index = 4
+DoorOrientation = 0
+DoorLocked = 1
+SubtileX = [85, 128]
+SubtileY = [103, 128]
 SubtileZ = [5, 0]
 
 [thing6]
@@ -513,8 +513,8 @@ Ownership = 4
 ParentTile = 65535
 CustomBox = -1
 Orientation = 512
-SubtileX = [275, 128]
-SubtileY = [93, 128]
+SubtileX = [273, 128]
+SubtileY = [94, 128]
 SubtileZ = [1, 0]
 
 [thing43]
@@ -537,8 +537,8 @@ Ownership = 4
 ParentTile = 65535
 CustomBox = -1
 Orientation = 512
-SubtileX = [275, 128]
-SubtileY = [94, 128]
+SubtileX = [273, 128]
+SubtileY = [95, 128]
 SubtileZ = [1, 0]
 
 [thing45]
@@ -1731,8 +1731,8 @@ ParentTile = 65535
 CustomBox = -1
 Orientation = 512
 GoldValue = 500
-SubtileX = [183, 128]
-SubtileY = [93, 128]
+SubtileX = [185, 128]
+SubtileY = [95, 128]
 SubtileZ = [1, 0]
 
 [thing144]
@@ -3156,54 +3156,6 @@ ThingType = "Object"
 SubtypeStringID = "TORCH"
 Subtype = 2
 Ownership = 4
-ParentTile = 5044
-CustomBox = -1
-Orientation = 512
-SubtileX = [251, 128]
-SubtileY = [126, 64]
-SubtileZ = [2, 224]
-
-[thing263]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 4
-ParentTile = 4925
-CustomBox = -1
-Orientation = 512
-SubtileX = [256, 128]
-SubtileY = [123, 64]
-SubtileZ = [2, 224]
-
-[thing264]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 4
-ParentTile = 5409
-CustomBox = -1
-Orientation = 512
-SubtileX = [256, 128]
-SubtileY = [131, 192]
-SubtileZ = [2, 224]
-
-[thing265]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 4
-ParentTile = 5169
-CustomBox = -1
-Orientation = 512
-SubtileX = [260, 192]
-SubtileY = [127, 128]
-SubtileZ = [2, 224]
-
-[thing266]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 4
 ParentTile = 3996
 CustomBox = -1
 Orientation = 0
@@ -3211,19 +3163,7 @@ SubtileX = [9, 128]
 SubtileY = [101, 128]
 SubtileZ = [3, 0]
 
-[thing267]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 4
-ParentTile = 4328
-CustomBox = -1
-Orientation = 0
-SubtileX = [278, 192]
-SubtileY = [106, 128]
-SubtileZ = [2, 224]
-
-[thing268]
+[thing263]
 ThingType = "Object"
 SubtypeStringID = "TORCH"
 Subtype = 2
@@ -3235,7 +3175,7 @@ SubtileX = [352, 128]
 SubtileY = [98, 128]
 SubtileZ = [2, 224]
 
-[thing269]
+[thing264]
 ThingType = "Object"
 SubtypeStringID = "SOUL_CONTAINER"
 Subtype = 5
@@ -3247,7 +3187,7 @@ SubtileX = [229, 128]
 SubtileY = [115, 128]
 SubtileZ = [0, 0]
 
-[thing270]
+[thing265]
 ThingType = "Object"
 SubtypeStringID = "TORCH"
 Subtype = 2
@@ -3259,7 +3199,7 @@ SubtileX = [222, 128]
 SubtileY = [126, 128]
 SubtileZ = [3, 0]
 
-[thing271]
+[thing266]
 ThingType = "Object"
 SubtypeStringID = "COOP"
 Subtype = 1053
@@ -3271,7 +3211,7 @@ SubtileX = [226, 128]
 SubtileY = [130, 128]
 SubtileZ = [0, 0]
 
-[thing272]
+[thing267]
 ThingType = "Object"
 SubtypeStringID = "TORCH"
 Subtype = 2
@@ -3283,7 +3223,7 @@ SubtileX = [236, 128]
 SubtileY = [126, 128]
 SubtileZ = [3, 0]
 
-[thing273]
+[thing268]
 ThingType = "Object"
 SubtypeStringID = "COOP"
 Subtype = 1053
@@ -3295,7 +3235,7 @@ SubtileX = [232, 128]
 SubtileY = [130, 128]
 SubtileZ = [0, 0]
 
-[thing274]
+[thing269]
 ThingType = "Object"
 SubtypeStringID = "COOP"
 Subtype = 1053
@@ -3307,7 +3247,7 @@ SubtileX = [229, 128]
 SubtileY = [130, 128]
 SubtileZ = [0, 0]
 
-[thing275]
+[thing270]
 ThingType = "Object"
 SubtypeStringID = "TORCH"
 Subtype = 2
@@ -3319,7 +3259,7 @@ SubtileX = [236, 128]
 SubtileY = [140, 128]
 SubtileZ = [3, 0]
 
-[thing276]
+[thing271]
 ThingType = "Object"
 SubtypeStringID = "COOP"
 Subtype = 1053
@@ -3331,7 +3271,7 @@ SubtileX = [232, 128]
 SubtileY = [136, 128]
 SubtileZ = [0, 0]
 
-[thing277]
+[thing272]
 ThingType = "Object"
 SubtypeStringID = "COOP"
 Subtype = 1053
@@ -3343,7 +3283,7 @@ SubtileX = [232, 128]
 SubtileY = [133, 128]
 SubtileZ = [0, 0]
 
-[thing278]
+[thing273]
 ThingType = "Object"
 SubtypeStringID = "COOP"
 Subtype = 1053
@@ -3355,7 +3295,7 @@ SubtileX = [226, 128]
 SubtileY = [136, 128]
 SubtileZ = [0, 0]
 
-[thing279]
+[thing274]
 ThingType = "Object"
 SubtypeStringID = "COOP"
 Subtype = 1053
@@ -3367,7 +3307,7 @@ SubtileX = [229, 128]
 SubtileY = [136, 128]
 SubtileZ = [0, 0]
 
-[thing280]
+[thing275]
 ThingType = "Object"
 SubtypeStringID = "COOP"
 Subtype = 1053
@@ -3379,7 +3319,7 @@ SubtileX = [226, 128]
 SubtileY = [133, 128]
 SubtileZ = [0, 0]
 
-[thing281]
+[thing276]
 ThingType = "Object"
 SubtypeStringID = "TORCH"
 Subtype = 2
@@ -3391,7 +3331,7 @@ SubtileX = [222, 128]
 SubtileY = [140, 128]
 SubtileZ = [3, 0]
 
-[thing282]
+[thing277]
 ThingType = "Object"
 SubtypeStringID = "COOP"
 Subtype = 1053
@@ -3403,7 +3343,7 @@ SubtileX = [229, 128]
 SubtileY = [133, 128]
 SubtileZ = [0, 0]
 
-[thing283]
+[thing278]
 ThingType = "Object"
 SubtypeStringID = "TORCH"
 Subtype = 2
@@ -3415,7 +3355,7 @@ SubtileX = [247, 0]
 SubtileY = [118, 0]
 SubtileZ = [4, 0]
 
-[thing284]
+[thing279]
 ThingType = "Object"
 SubtypeStringID = "TORCH"
 Subtype = 2
@@ -3427,7 +3367,7 @@ SubtileX = [242, 0]
 SubtileY = [113, 0]
 SubtileZ = [4, 0]
 
-[thing285]
+[thing280]
 ThingType = "Object"
 SubtypeStringID = "TORCH"
 Subtype = 2
@@ -3439,7 +3379,7 @@ SubtileX = [242, 0]
 SubtileY = [118, 0]
 SubtileZ = [4, 0]
 
-[thing286]
+[thing281]
 ThingType = "Object"
 SubtypeStringID = "TORCH"
 Subtype = 2
@@ -3451,103 +3391,7 @@ SubtileX = [247, 0]
 SubtileY = [113, 0]
 SubtileZ = [4, 0]
 
-[thing287]
-ThingType = "Object"
-SubtypeStringID = "CANDLESTCK_MINI"
-Subtype = 1021
-Ownership = 0
-ParentTile = 4796
-CustomBox = -1
-Orientation = 0
-SubtileX = [233, 128]
-SubtileY = [118, 128]
-SubtileZ = [2, 0]
-
-[thing288]
-ThingType = "Object"
-SubtypeStringID = "CANDLESTCK_MINI"
-Subtype = 1021
-Ownership = 0
-ParentTile = 4796
-CustomBox = -1
-Orientation = 0
-SubtileX = [232, 128]
-SubtileY = [119, 128]
-SubtileZ = [2, 0]
-
-[thing289]
-ThingType = "Object"
-SubtypeStringID = "CANDLESTCK_MINI"
-Subtype = 1021
-Ownership = 0
-ParentTile = 4552
-CustomBox = -1
-Orientation = 0
-SubtileX = [226, 128]
-SubtileY = [111, 128]
-SubtileZ = [2, 0]
-
-[thing290]
-ThingType = "Object"
-SubtypeStringID = "CANDLESTCK_MINI"
-Subtype = 1021
-Ownership = 0
-ParentTile = 4552
-CustomBox = -1
-Orientation = 0
-SubtileX = [225, 128]
-SubtileY = [112, 128]
-SubtileZ = [2, 0]
-
-[thing291]
-ThingType = "Object"
-SubtypeStringID = "CANDLESTCK_MINI"
-Subtype = 1021
-Ownership = 0
-ParentTile = 4794
-CustomBox = -1
-Orientation = 0
-SubtileX = [225, 128]
-SubtileY = [118, 128]
-SubtileZ = [2, 0]
-
-[thing292]
-ThingType = "Object"
-SubtypeStringID = "CANDLESTCK_MINI"
-Subtype = 1021
-Ownership = 0
-ParentTile = 4794
-CustomBox = -1
-Orientation = 0
-SubtileX = [226, 128]
-SubtileY = [119, 128]
-SubtileZ = [2, 0]
-
-[thing293]
-ThingType = "Object"
-SubtypeStringID = "CANDLESTCK_MINI"
-Subtype = 1021
-Ownership = 0
-ParentTile = 4554
-CustomBox = -1
-Orientation = 0
-SubtileX = [232, 128]
-SubtileY = [111, 128]
-SubtileZ = [2, 0]
-
-[thing294]
-ThingType = "Object"
-SubtypeStringID = "CANDLESTCK_MINI"
-Subtype = 1021
-Ownership = 0
-ParentTile = 4554
-CustomBox = -1
-Orientation = 0
-SubtileX = [233, 128]
-SubtileY = [112, 128]
-SubtileZ = [2, 0]
-
-[thing295]
+[thing282]
 ThingType = "Object"
 SubtypeStringID = "SPECBOX_GETGOLD"
 Subtype = 171
@@ -3559,7 +3403,7 @@ SubtileX = [271, 128]
 SubtileY = [43, 128]
 SubtileZ = [1, 0]
 
-[thing296]
+[thing283]
 ThingType = "Object"
 SubtypeStringID = "TORCH"
 Subtype = 2
@@ -3571,7 +3415,7 @@ SubtileX = [230, 192]
 SubtileY = [106, 128]
 SubtileZ = [2, 224]
 
-[thing297]
+[thing284]
 ThingType = "Object"
 SubtypeStringID = "TORCH"
 Subtype = 2
@@ -3583,7 +3427,7 @@ SubtileX = [228, 64]
 SubtileY = [92, 128]
 SubtileZ = [2, 224]
 
-[thing298]
+[thing285]
 ThingType = "Object"
 SubtypeStringID = "TORCH"
 Subtype = 2
@@ -3595,7 +3439,7 @@ SubtileX = [211, 128]
 SubtileY = [119, 192]
 SubtileZ = [2, 224]
 
-[thing299]
+[thing286]
 ThingType = "Object"
 SubtypeStringID = "SPECBOX_INCLEV"
 Subtype = 91
@@ -3607,7 +3451,7 @@ SubtileX = [115, 128]
 SubtileY = [40, 128]
 SubtileZ = [1, 0]
 
-[thing300]
+[thing287]
 ThingType = "Object"
 SubtypeStringID = "SPECBOX_MKSAFE"
 Subtype = 92
@@ -3619,7 +3463,7 @@ SubtileX = [217, 128]
 SubtileY = [46, 128]
 SubtileZ = [1, 0]
 
-[thing301]
+[thing288]
 ThingType = "Object"
 SubtypeStringID = "SPECBOX_HEALALL"
 Subtype = 170
@@ -3631,7 +3475,7 @@ SubtileX = [301, 128]
 SubtileY = [148, 128]
 SubtileZ = [1, 0]
 
-[thing302]
+[thing289]
 ThingType = "Object"
 SubtypeStringID = "SPECBOX_GETGOLD"
 Subtype = 171
@@ -3643,7 +3487,7 @@ SubtileX = [106, 128]
 SubtileY = [142, 128]
 SubtileZ = [1, 0]
 
-[thing303]
+[thing290]
 ThingType = "Object"
 SubtypeStringID = "TORCH"
 Subtype = 2
@@ -3655,79 +3499,7 @@ SubtileX = [180, 64]
 SubtileY = [91, 128]
 SubtileZ = [2, 224]
 
-[thing304]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 4
-ParentTile = 3781
-CustomBox = -1
-Orientation = 0
-SubtileX = [91, 128]
-SubtileY = [96, 64]
-SubtileZ = [2, 224]
-
-[thing305]
-ThingType = "Object"
-SubtypeStringID = "ANVIL"
-Subtype = 26
-Ownership = 0
-ParentTile = 5167
-CustomBox = -1
-Orientation = 0
-SubtileX = [256, 128]
-SubtileY = [127, 128]
-SubtileZ = [1, 0]
-
-[thing306]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 0
-ParentTile = 5289
-CustomBox = -1
-Orientation = 0
-SubtileX = [259, 0]
-SubtileY = [130, 0]
-SubtileZ = [3, 0]
-
-[thing307]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 0
-ParentTile = 5045
-CustomBox = -1
-Orientation = 0
-SubtileX = [254, 0]
-SubtileY = [125, 0]
-SubtileZ = [3, 0]
-
-[thing308]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 0
-ParentTile = 5287
-CustomBox = -1
-Orientation = 0
-SubtileX = [254, 0]
-SubtileY = [130, 0]
-SubtileZ = [3, 0]
-
-[thing309]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 0
-ParentTile = 5047
-CustomBox = -1
-Orientation = 0
-SubtileX = [259, 0]
-SubtileY = [125, 0]
-SubtileZ = [3, 0]
-
-[thing310]
+[thing291]
 ThingType = "Object"
 SubtypeStringID = "FAKEHEROPORTAL"
 Subtype = 1030
@@ -3739,7 +3511,551 @@ SubtileX = [7, 128]
 SubtileY = [97, 128]
 SubtileZ = [2, 0]
 
+[thing292]
+ThingType = "Object"
+SubtypeStringID = "SWORD"
+Subtype = 1063
+Ownership = 4
+ParentTile = 4054
+CustomBox = -1
+Orientation = 0
+SubtileX = [183, 128]
+SubtileY = [101, 128]
+SubtileZ = [1, 0]
+
+[thing293]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK"
+Subtype = 28
+Ownership = 4
+ParentTile = 4054
+CustomBox = -1
+Orientation = 0
+SubtileX = [185, 128]
+SubtileY = [101, 128]
+SubtileZ = [1, 0]
+
+[thing294]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK"
+Subtype = 28
+Ownership = 4
+ParentTile = 3810
+CustomBox = -1
+Orientation = 0
+SubtileX = [177, 128]
+SubtileY = [93, 128]
+SubtileZ = [1, 0]
+
+[thing295]
+ThingType = "Object"
+SubtypeStringID = "SWORD"
+Subtype = 1063
+Ownership = 4
+ParentTile = 3810
+CustomBox = -1
+Orientation = 0
+SubtileX = [179, 128]
+SubtileY = [93, 128]
+SubtileZ = [1, 0]
+
+[thing296]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK"
+Subtype = 28
+Ownership = 4
+ParentTile = 4052
+CustomBox = -1
+Orientation = 0
+SubtileX = [177, 128]
+SubtileY = [101, 128]
+SubtileZ = [1, 0]
+
+[thing297]
+ThingType = "Object"
+SubtypeStringID = "SWORD"
+Subtype = 1063
+Ownership = 4
+ParentTile = 4052
+CustomBox = -1
+Orientation = 0
+SubtileX = [179, 128]
+SubtileY = [101, 128]
+SubtileZ = [1, 0]
+
+[thing298]
+ThingType = "Object"
+SubtypeStringID = "SWORD"
+Subtype = 1063
+Ownership = 4
+ParentTile = 3812
+CustomBox = -1
+Orientation = 0
+SubtileX = [183, 128]
+SubtileY = [93, 128]
+SubtileZ = [1, 0]
+
+[thing299]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK"
+Subtype = 28
+Ownership = 4
+ParentTile = 3812
+CustomBox = -1
+Orientation = 0
+SubtileX = [185, 128]
+SubtileY = [93, 128]
+SubtileZ = [1, 0]
+
+[thing300]
+ThingType = "Object"
+SubtypeStringID = "SWORD"
+Subtype = 1063
+Ownership = 4
+ParentTile = 4022
+CustomBox = -1
+Orientation = 0
+SubtileX = [87, 128]
+SubtileY = [101, 128]
+SubtileZ = [1, 0]
+
+[thing301]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK"
+Subtype = 28
+Ownership = 4
+ParentTile = 4022
+CustomBox = -1
+Orientation = 0
+SubtileX = [89, 128]
+SubtileY = [101, 128]
+SubtileZ = [1, 0]
+
+[thing302]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK"
+Subtype = 28
+Ownership = 4
+ParentTile = 3778
+CustomBox = -1
+Orientation = 0
+SubtileX = [81, 128]
+SubtileY = [93, 128]
+SubtileZ = [1, 0]
+
+[thing303]
+ThingType = "Object"
+SubtypeStringID = "SWORD"
+Subtype = 1063
+Ownership = 4
+ParentTile = 3778
+CustomBox = -1
+Orientation = 0
+SubtileX = [83, 128]
+SubtileY = [93, 128]
+SubtileZ = [1, 0]
+
+[thing304]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK"
+Subtype = 28
+Ownership = 4
+ParentTile = 4020
+CustomBox = -1
+Orientation = 0
+SubtileX = [81, 128]
+SubtileY = [101, 128]
+SubtileZ = [1, 0]
+
+[thing305]
+ThingType = "Object"
+SubtypeStringID = "SWORD"
+Subtype = 1063
+Ownership = 4
+ParentTile = 4020
+CustomBox = -1
+Orientation = 0
+SubtileX = [83, 128]
+SubtileY = [101, 128]
+SubtileZ = [1, 0]
+
+[thing306]
+ThingType = "Object"
+SubtypeStringID = "SWORD"
+Subtype = 1063
+Ownership = 4
+ParentTile = 3780
+CustomBox = -1
+Orientation = 0
+SubtileX = [87, 128]
+SubtileY = [93, 128]
+SubtileZ = [1, 0]
+
+[thing307]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK"
+Subtype = 28
+Ownership = 4
+ParentTile = 3780
+CustomBox = -1
+Orientation = 0
+SubtileX = [89, 128]
+SubtileY = [93, 128]
+SubtileZ = [1, 0]
+
+[thing308]
+ThingType = "Object"
+SubtypeStringID = "SWORD"
+Subtype = 1063
+Ownership = 4
+ParentTile = 3844
+CustomBox = -1
+Orientation = 0
+SubtileX = [279, 128]
+SubtileY = [93, 128]
+SubtileZ = [1, 0]
+
+[thing309]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK"
+Subtype = 28
+Ownership = 4
+ParentTile = 3844
+CustomBox = -1
+Orientation = 0
+SubtileX = [281, 128]
+SubtileY = [93, 128]
+SubtileZ = [1, 0]
+
+[thing310]
+ThingType = "Object"
+SubtypeStringID = "TORCH"
+Subtype = 2
+Ownership = 4
+ParentTile = 4328
+CustomBox = -1
+Orientation = 0
+SubtileX = [278, 192]
+SubtileY = [106, 128]
+SubtileZ = [2, 224]
+
 [thing311]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK"
+Subtype = 28
+Ownership = 4
+ParentTile = 4084
+CustomBox = -1
+Orientation = 0
+SubtileX = [273, 128]
+SubtileY = [101, 128]
+SubtileZ = [1, 0]
+
+[thing312]
+ThingType = "Object"
+SubtypeStringID = "SWORD"
+Subtype = 1063
+Ownership = 4
+ParentTile = 4084
+CustomBox = -1
+Orientation = 0
+SubtileX = [275, 128]
+SubtileY = [101, 128]
+SubtileZ = [1, 0]
+
+[thing313]
+ThingType = "Object"
+SubtypeStringID = "TORCH"
+Subtype = 2
+Ownership = 4
+ParentTile = 4326
+CustomBox = -1
+Orientation = 0
+SubtileX = [276, 64]
+SubtileY = [106, 128]
+SubtileZ = [2, 224]
+
+[thing314]
+ThingType = "Object"
+SubtypeStringID = "SWORD"
+Subtype = 1063
+Ownership = 4
+ParentTile = 4086
+CustomBox = -1
+Orientation = 0
+SubtileX = [279, 128]
+SubtileY = [101, 128]
+SubtileZ = [1, 0]
+
+[thing315]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK"
+Subtype = 28
+Ownership = 4
+ParentTile = 4086
+CustomBox = -1
+Orientation = 0
+SubtileX = [281, 128]
+SubtileY = [101, 128]
+SubtileZ = [1, 0]
+
+[thing316]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK"
+Subtype = 28
+Ownership = 4
+ParentTile = 3842
+CustomBox = -1
+Orientation = 0
+SubtileX = [273, 128]
+SubtileY = [93, 128]
+SubtileZ = [1, 0]
+
+[thing317]
+ThingType = "Object"
+SubtypeStringID = "SWORD"
+Subtype = 1063
+Ownership = 4
+ParentTile = 3842
+CustomBox = -1
+Orientation = 0
+SubtileX = [275, 128]
+SubtileY = [93, 128]
+SubtileZ = [1, 0]
+
+[thing318]
+ThingType = "Object"
+SubtypeStringID = "TORCH"
+Subtype = 2
+Ownership = 4
+ParentTile = 3781
+CustomBox = -1
+Orientation = 0
+SubtileX = [91, 128]
+SubtileY = [96, 64]
+SubtileZ = [2, 224]
+
+[thing319]
+ThingType = "Object"
+SubtypeStringID = "TORCH"
+Subtype = 2
+Ownership = 4
+ParentTile = 4023
+CustomBox = -1
+Orientation = 0
+SubtileX = [91, 128]
+SubtileY = [98, 192]
+SubtileZ = [2, 224]
+
+[thing320]
+ThingType = "Object"
+SubtypeStringID = "TORCH"
+Subtype = 2
+Ownership = 4
+ParentTile = 4023
+CustomBox = -1
+Orientation = 0
+SubtileX = [93, 64]
+SubtileY = [100, 128]
+SubtileZ = [2, 224]
+
+[thing321]
+ThingType = "Object"
+SubtypeStringID = "TORCH"
+Subtype = 2
+Ownership = 4
+ParentTile = 3655
+CustomBox = -1
+Orientation = 0
+SubtileX = [76, 128]
+SubtileY = [93, 64]
+SubtileZ = [2, 224]
+
+[thing322]
+ThingType = "Object"
+SubtypeStringID = "TORCH"
+Subtype = 2
+Ownership = 4
+ParentTile = 4139
+CustomBox = -1
+Orientation = 0
+SubtileX = [76, 128]
+SubtileY = [105, 64]
+SubtileZ = [2, 224]
+
+[thing323]
+ThingType = "Object"
+SubtypeStringID = "TORCH"
+Subtype = 2
+Ownership = 4
+ParentTile = 4265
+CustomBox = -1
+Orientation = 0
+SubtileX = [93, 64]
+SubtileY = [106, 128]
+SubtileZ = [2, 224]
+
+[thing324]
+ThingType = "Object"
+SubtypeStringID = "TORCH"
+Subtype = 2
+Ownership = 4
+ParentTile = 4261
+CustomBox = -1
+Orientation = 0
+SubtileX = [81, 64]
+SubtileY = [106, 128]
+SubtileZ = [2, 224]
+
+[thing325]
+ThingType = "Object"
+SubtypeStringID = "TORCH"
+Subtype = 2
+Ownership = 0
+ParentTile = 5045
+CustomBox = -1
+Orientation = 0
+SubtileX = [254, 0]
+SubtileY = [125, 0]
+SubtileZ = [3, 0]
+
+[thing326]
+ThingType = "Object"
+SubtypeStringID = "TORCH"
+Subtype = 2
+Ownership = 0
+ParentTile = 5047
+CustomBox = -1
+Orientation = 0
+SubtileX = [259, 0]
+SubtileY = [125, 0]
+SubtileZ = [3, 0]
+
+[thing327]
+ThingType = "Object"
+SubtypeStringID = "ANVIL"
+Subtype = 26
+Ownership = 0
+ParentTile = 5167
+CustomBox = -1
+Orientation = 0
+SubtileX = [256, 128]
+SubtileY = [127, 128]
+SubtileZ = [1, 0]
+
+[thing328]
+ThingType = "Object"
+SubtypeStringID = "TORCH"
+Subtype = 2
+Ownership = 0
+ParentTile = 5287
+CustomBox = -1
+Orientation = 0
+SubtileX = [254, 0]
+SubtileY = [130, 0]
+SubtileZ = [3, 0]
+
+[thing329]
+ThingType = "Object"
+SubtypeStringID = "TORCH"
+Subtype = 2
+Ownership = 0
+ParentTile = 5289
+CustomBox = -1
+Orientation = 0
+SubtileX = [259, 0]
+SubtileY = [130, 0]
+SubtileZ = [3, 0]
+
+[thing330]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK_MINI"
+Subtype = 1021
+Ownership = 0
+ParentTile = 4796
+Orientation = 0
+SubtileX = [233, 128]
+SubtileY = [118, 128]
+SubtileZ = [2, 0]
+
+[thing331]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK_MINI"
+Subtype = 1021
+Ownership = 0
+ParentTile = 4796
+Orientation = 0
+SubtileX = [232, 128]
+SubtileY = [119, 128]
+SubtileZ = [2, 0]
+
+[thing332]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK_MINI"
+Subtype = 1021
+Ownership = 0
+ParentTile = 4552
+Orientation = 0
+SubtileX = [226, 128]
+SubtileY = [111, 128]
+SubtileZ = [2, 0]
+
+[thing333]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK_MINI"
+Subtype = 1021
+Ownership = 0
+ParentTile = 4552
+Orientation = 0
+SubtileX = [225, 128]
+SubtileY = [112, 128]
+SubtileZ = [2, 0]
+
+[thing334]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK_MINI"
+Subtype = 1021
+Ownership = 0
+ParentTile = 4794
+Orientation = 0
+SubtileX = [225, 128]
+SubtileY = [118, 128]
+SubtileZ = [2, 0]
+
+[thing335]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK_MINI"
+Subtype = 1021
+Ownership = 0
+ParentTile = 4794
+Orientation = 0
+SubtileX = [226, 128]
+SubtileY = [119, 128]
+SubtileZ = [2, 0]
+
+[thing336]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK_MINI"
+Subtype = 1021
+Ownership = 0
+ParentTile = 4554
+Orientation = 0
+SubtileX = [232, 128]
+SubtileY = [111, 128]
+SubtileZ = [2, 0]
+
+[thing337]
+ThingType = "Object"
+SubtypeStringID = "CANDLESTCK_MINI"
+Subtype = 1021
+Ownership = 0
+ParentTile = 4554
+Orientation = 0
+SubtileX = [233, 128]
+SubtileY = [112, 128]
+SubtileZ = [2, 0]
+
+[thing338]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3752,7 +4068,7 @@ SubtileX = [75, 128]
 SubtileY = [97, 128]
 SubtileZ = [1, 0]
 
-[thing312]
+[thing339]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3765,7 +4081,7 @@ SubtileX = [83, 128]
 SubtileY = [95, 128]
 SubtileZ = [1, 0]
 
-[thing313]
+[thing340]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3778,7 +4094,7 @@ SubtileX = [87, 128]
 SubtileY = [95, 128]
 SubtileZ = [1, 0]
 
-[thing314]
+[thing341]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3791,7 +4107,7 @@ SubtileX = [94, 128]
 SubtileY = [97, 128]
 SubtileZ = [1, 0]
 
-[thing315]
+[thing342]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3804,7 +4120,7 @@ SubtileX = [179, 128]
 SubtileY = [94, 128]
 SubtileZ = [1, 0]
 
-[thing316]
+[thing343]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3817,7 +4133,7 @@ SubtileX = [184, 128]
 SubtileY = [95, 128]
 SubtileZ = [1, 0]
 
-[thing317]
+[thing344]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3830,7 +4146,7 @@ SubtileX = [85, 128]
 SubtileY = [89, 128]
 SubtileZ = [1, 0]
 
-[thing318]
+[thing345]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3843,7 +4159,7 @@ SubtileX = [83, 128]
 SubtileY = [99, 128]
 SubtileZ = [1, 0]
 
-[thing319]
+[thing346]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3856,7 +4172,7 @@ SubtileX = [87, 128]
 SubtileY = [99, 128]
 SubtileZ = [1, 0]
 
-[thing320]
+[thing347]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3869,7 +4185,7 @@ SubtileX = [177, 128]
 SubtileY = [99, 128]
 SubtileZ = [1, 0]
 
-[thing321]
+[thing348]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3882,7 +4198,7 @@ SubtileX = [184, 128]
 SubtileY = [100, 128]
 SubtileZ = [1, 0]
 
-[thing322]
+[thing349]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3895,7 +4211,7 @@ SubtileX = [85, 128]
 SubtileY = [105, 128]
 SubtileZ = [1, 0]
 
-[thing323]
+[thing350]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3908,7 +4224,7 @@ SubtileX = [179, 128]
 SubtileY = [97, 128]
 SubtileZ = [1, 0]
 
-[thing324]
+[thing351]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3921,7 +4237,7 @@ SubtileX = [275, 128]
 SubtileY = [95, 128]
 SubtileZ = [1, 0]
 
-[thing325]
+[thing352]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3934,7 +4250,7 @@ SubtileX = [279, 128]
 SubtileY = [95, 128]
 SubtileZ = [1, 0]
 
-[thing326]
+[thing353]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3947,7 +4263,7 @@ SubtileX = [275, 128]
 SubtileY = [98, 128]
 SubtileZ = [1, 0]
 
-[thing327]
+[thing354]
 ThingType = "Creature"
 SubtypeStringID = "BARBARIAN"
 Subtype = 2
@@ -3960,7 +4276,7 @@ SubtileX = [279, 128]
 SubtileY = [98, 128]
 SubtileZ = [1, 0]
 
-[thing328]
+[thing355]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -3973,7 +4289,7 @@ SubtileX = [229, 128]
 SubtileY = [109, 128]
 SubtileZ = [1, 0]
 
-[thing329]
+[thing356]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -3986,7 +4302,7 @@ SubtileX = [229, 128]
 SubtileY = [121, 128]
 SubtileZ = [1, 0]
 
-[thing330]
+[thing357]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -3999,7 +4315,7 @@ SubtileX = [256, 128]
 SubtileY = [126, 128]
 SubtileZ = [1, 0]
 
-[thing331]
+[thing358]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -4012,7 +4328,7 @@ SubtileX = [238, 128]
 SubtileY = [133, 128]
 SubtileZ = [1, 0]
 
-[thing332]
+[thing359]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -4025,7 +4341,7 @@ SubtileX = [229, 128]
 SubtileY = [79, 128]
 SubtileZ = [1, 0]
 
-[thing333]
+[thing360]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -4038,7 +4354,7 @@ SubtileX = [214, 128]
 SubtileY = [115, 128]
 SubtileZ = [1, 0]
 
-[thing334]
+[thing361]
 ThingType = "Creature"
 SubtypeStringID = "DARK_MISTRESS"
 Subtype = 20
@@ -4051,7 +4367,7 @@ SubtileX = [336, 128]
 SubtileY = [141, 128]
 SubtileZ = [1, 0]
 
-[thing335]
+[thing362]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -4063,7 +4379,7 @@ SubtileX = [53, 128]
 SubtileY = [42, 128]
 SubtileZ = [0, 0]
 
-[thing336]
+[thing363]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -4075,7 +4391,7 @@ SubtileX = [245, 128]
 SubtileY = [43, 128]
 SubtileZ = [0, 0]
 
-[thing337]
+[thing364]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -4087,7 +4403,7 @@ SubtileX = [256, 128]
 SubtileY = [87, 128]
 SubtileZ = [0, 0]
 
-[thing338]
+[thing365]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -4099,7 +4415,7 @@ SubtileX = [262, 128]
 SubtileY = [91, 128]
 SubtileZ = [0, 0]
 
-[thing339]
+[thing366]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -4111,7 +4427,7 @@ SubtileX = [308, 128]
 SubtileY = [91, 128]
 SubtileZ = [0, 0]
 
-[thing340]
+[thing367]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -4123,7 +4439,7 @@ SubtileX = [43, 128]
 SubtileY = [96, 128]
 SubtileZ = [0, 0]
 
-[thing341]
+[thing368]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -4135,7 +4451,7 @@ SubtileX = [72, 128]
 SubtileY = [105, 128]
 SubtileZ = [0, 0]
 
-[thing342]
+[thing369]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -4147,7 +4463,7 @@ SubtileX = [117, 128]
 SubtileY = [107, 128]
 SubtileZ = [0, 0]
 
-[thing343]
+[thing370]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -4159,7 +4475,7 @@ SubtileX = [165, 128]
 SubtileY = [105, 128]
 SubtileZ = [0, 0]
 
-[thing344]
+[thing371]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -4171,7 +4487,7 @@ SubtileX = [72, 128]
 SubtileY = [110, 128]
 SubtileZ = [0, 0]
 
-[thing345]
+[thing372]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -4183,7 +4499,7 @@ SubtileX = [171, 128]
 SubtileY = [109, 128]
 SubtileZ = [0, 0]
 
-[thing346]
+[thing373]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -4195,7 +4511,7 @@ SubtileX = [91, 128]
 SubtileY = [111, 128]
 SubtileZ = [0, 0]
 
-[thing347]
+[thing374]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -4207,7 +4523,7 @@ SubtileX = [176, 128]
 SubtileY = [111, 128]
 SubtileZ = [0, 0]
 
-[thing348]
+[thing375]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
@@ -4219,7 +4535,7 @@ SubtileX = [193, 128]
 SubtileY = [111, 128]
 SubtileZ = [0, 0]
 
-[thing349]
+[thing376]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_ENTRANCE_ICE"
 Subtype = 4
@@ -4231,7 +4547,7 @@ SubtileX = [244, 128]
 SubtileY = [115, 128]
 SubtileZ = [0, 0]
 
-[thing350]
+[thing377]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -4242,7 +4558,7 @@ SubtileX = [268, 128]
 SubtileY = [94, 128]
 SubtileZ = [1, 0]
 
-[thing351]
+[thing378]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -4253,7 +4569,7 @@ SubtileX = [268, 128]
 SubtileY = [100, 128]
 SubtileZ = [1, 0]
 
-[thing352]
+[thing379]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -4264,7 +4580,7 @@ SubtileX = [286, 128]
 SubtileY = [94, 128]
 SubtileZ = [1, 0]
 
-[thing353]
+[thing380]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -4275,7 +4591,7 @@ SubtileX = [286, 128]
 SubtileY = [100, 128]
 SubtileZ = [1, 0]
 
-[thing354]
+[thing381]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -4286,7 +4602,7 @@ SubtileX = [277, 128]
 SubtileY = [106, 128]
 SubtileZ = [1, 0]
 
-[thing355]
+[thing382]
 ThingType = "Trap"
 SubtypeStringID = "HERO_SENTRY"
 Subtype = 1036
@@ -4297,7 +4613,7 @@ SubtileX = [277, 128]
 SubtileY = [88, 128]
 SubtileZ = [1, 0]
 
-[thing356]
+[thing383]
 ThingType = "Trap"
 SubtypeStringID = "ALARM"
 Subtype = 2
@@ -4308,7 +4624,7 @@ SubtileX = [190, 128]
 SubtileY = [97, 128]
 SubtileZ = [1, 0]
 
-[thing357]
+[thing384]
 ThingType = "Trap"
 SubtypeStringID = "ALARM"
 Subtype = 2

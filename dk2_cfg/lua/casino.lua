@@ -717,10 +717,11 @@ function CasinoJackpot(room)
     -- zooms to the casino when clicked. DisplayInformation itself is no use here
     -- because it only takes a message id from gtext_***.dat - the Quick* variants
     -- are the free-text ones.
-    QuickPlayerInformationWithPos(CASINO_MSG_SLOT, room.owner,
-        "Jackpot! The casino pays out "
-        .. (CASINO_JACKPOT_PILES * CASINO_JACKPOT_GOLD) .. " gold.", cx, cy)
 
+    -- "Jackpot Winner!"
+    RunDKScriptCommand("DISPLAY_INFORMATION(832,CASINO,CASINO_DROP_DOWN)")
+    --SetMusic("Jackpot.mp3")
+    
     for _, cr in ipairs(CasinoCreaturesInRoom(room)) do
         cr:set_annoyance("OTHER", math.max(0, (cr:get_annoyance("OTHER") or 0) - CASINO_JACKPOT_MOOD))
         CasinoEmote(cr, "DANCE")
