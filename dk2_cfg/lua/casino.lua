@@ -113,8 +113,8 @@ CASINO_DEFAULT_MODE      = "HAPPY"   -- mode a freshly built casino starts in
 -- purse neither stops a creature from playing nor sends it home.
 CASINO_NO_CREATURE_LOSS  = false
 
-CASINO_BOX_HAPPY         = 1     -- box_kind, what RegisterSpecialActivatedEvent filters on
-CASINO_BOX_PROFIT        = 2
+CASINO_BOX_HAPPY         = 50     -- box_kind, what RegisterSpecialActivatedEvent filters on
+CASINO_BOX_PROFIT        = 51
 
 -- Own object models (map00013.objects.cfg), so the casino never collides with
 -- other users of the shared SPECBOX_CUSTOM. The lever on show is always the one
