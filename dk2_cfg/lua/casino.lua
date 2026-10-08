@@ -1177,7 +1177,6 @@ end
 -- one definition can exist per level. The level script owns it and calls this.
 function CasinoInit()
     ---@diagnostic disable-next-line: param-type-mismatch
-    RoomAvailable(PLAYER0, "CASINO", 1, true)
     -- The visible lever is always the mode you would switch TO.
     SetBoxTooltip(CASINO_BOX_HAPPY,  "Casino lever: switch to keeping creatures happy")
     SetBoxTooltip(CASINO_BOX_PROFIT, "Casino lever: switch to making money")
