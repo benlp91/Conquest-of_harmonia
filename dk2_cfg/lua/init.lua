@@ -34,13 +34,14 @@ function BridgeRot(eventData, triggerData)
     local slab = triggerData.Slab
     ChangeSlabType(slab.slb_x, slab.slb_y, "BRIDGE_FRAME_BURNED")
     PlayMessage(PLAYER0, "SOUND", 78)
-    CreateEffectAtPos("EFFECTELEMENT_RED_SMOKE_PUFF", slab.slb_x* 3 + 1, slab.slb_y* 3 + 1, 1)
+    CreateEffectAtPos("EFFECT_BRIDGEBURN", slab.slb_x* 3 + 1, slab.slb_y* 3 + 1, 1)
+    CreateEffectAtPos("EFFECT_SPANGLE_RED", slab.slb_x* 3 + 1, slab.slb_y* 3 + 1, 1)
 end
 
 function BridgeBurn(eventData, triggerData)
 
     local slab = triggerData.Slab
     ChangeSlabType(slab.slb_x, slab.slb_y, "LAVA")
-    PlayMessage(PLAYER0, "SOUND", 948)
-    CreateEffectAtPos("EFFECTELEMENT_RED_SMOKE_PUFF", slab.slb_x* 3 + 1, slab.slb_y* 3 + 1, 1)
+    CreateEffectAtPos("EFFECT_BRIDGEBURN", slab.slb_x* 3 + 1, slab.slb_y* 3 + 1, 1)
+    CreateEffectAtPos("EFFECT_SPANGLE_RED", slab.slb_x* 3 + 1, slab.slb_y* 3 + 1, 1)
 end
