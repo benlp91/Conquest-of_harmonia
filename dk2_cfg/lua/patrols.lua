@@ -13,13 +13,10 @@ local function UpdatePatrol(patrol)
     -- Reassign leader if the current one is knocked out, nil or invalid
     local reassignLeader = patrol.leader == nil or (not patrol.leader:isValid()) or patrol.leader.state == "CreatureUnconscious" or patrol.leader.continue_state == "CreatureInPrison"
     if (reassignLeader) then
-        print("Reassigning leader")
         local newLeader = GetNextPotentialLeader(patrol.party)
 
         -- No new leader candidate could be found. Prevent further updates to this patrol
         if (newLeader == nil) then
-            print("NoNewLeaderFound")
-            print(patrol.patrolId)
             patrol.stopPatrol = true
             return
         end
@@ -27,16 +24,11 @@ local function UpdatePatrol(patrol)
         -- Check if the new leader candidate is the same as the existing leader to ensure the same creature doesn't get multiple death events
         if (NewLeaderIsDifferentCreature(patrol.leader, newLeader)) then
             -- No new leader could be found
-            print("OnlyLeaderCandidateIsOldLeader")
             patrol.stopPatrol = true
             return
         end
 
         patrol.leader = newLeader
-
-        print("SetNewLeader")
-        print(patrol.leader.name)
-        print(patrol.leader.model)
 
         local trigger = RegisterCreatureDeathEvent(ChangeLeader, patrol.leader)
         trigger.triggerData.patrol_idx = patrol.patrolId
@@ -44,20 +36,22 @@ local function UpdatePatrol(patrol)
         return
     end
 
+    -- Leader is engaged in combat, do not update
+    if (patrol.leader.combat_type ~= nil) then
+        return
+    end
+
     -- Correct the state of the leader if necessary
     if (patrol.leader.state == "CreatureFollowLeader") then
         local creatureIsDigger = patrol.leader.model == "TUNNELLER" or patrol.leader.model == "IMP"
         if (creatureIsDigger) then
-            print("SettingLeaderStateToTunnelling")
             patrol.leader.state = "Tunnelling"
         else
-            print("SettingLeaderStateToMoveToPosition")
             patrol.leader.state = "MoveToPosition"
         end
     end
 
     if patrol.leader.state ~= "MoveToPosition" and patrol.leader.state ~= "GoodDoingNothing" and patrol.leader.state ~= "CreatureDoingNothing" then
-        print("LeaderInUnknownState:" .. patrol.leader.state)
         return
     end
 
@@ -70,10 +64,9 @@ local function UpdatePatrol(patrol)
     if (patrol.leader.moveto_pos.stl_x ~= target.stl_x or patrol.leader.moveto_pos.stl_y ~= target.stl_y) then
         patrol.leader:walk_to(target.stl_x,target.stl_y)
         patrol.leader.state = "MoveToPosition"
-        patrol.leader.continue_state = "GoodDoingNothing"  
+        patrol.leader.continue_state = "GoodDoingNothing"
     end
 end
-
 
 function NewLeaderIsDifferentCreature(oldLeader, newLeader)
     if (oldLeader ~= nil and oldLeader:isValid() and newLeader ~= nil and newLeader:isValid()) then
@@ -107,7 +100,6 @@ function GetNextPotentialLeader(party)
 
         -- if creature in actionable state, set that one and set variable
         if (CreatureStateIsActionable(partyMember.state)) then
-            print("StateIsActionable")
             nextLeader = partyMember
             leaderFound = true
             return partyMember
@@ -122,9 +114,6 @@ end
 
 -- Determines if the creature's state allows the creature to become party leader
 function CreatureStateIsActionable(creatureState)
-
-    print("CheckingState: " .. creatureState)
-
     -- States considered definitely valid
     if creatureState == "MoveToPosition" then return true end
     if creatureState == "GoodDoingNothing" then return true end
@@ -156,9 +145,6 @@ local function InitializePatrols()
 end
 
 function ChangeLeader(_,triggerData)
-
-    print("TriggeredChangeLeader")
-
     local patrol = Game.patrols[triggerData.patrol_idx]
     if patrol == nil then
         return
