@@ -272,7 +272,7 @@ function CasinoShowResult(cr, amount, won)
         CreateEffectAtPos("EFFECTELEMENT_PRICE", cr.pos.stl_x, cr.pos.stl_y, amount)
     end
     if won then
-        CasinoSpangle(cr, "EFFECT_SPANGLE_GREEN")
+        CasinoSpangle(cr, "EFFECT_COIN_DROP_MINI")
     else
         CasinoSpangle(cr, "EFFECT_SPANGLE_RED")
     end
@@ -710,7 +710,7 @@ function CasinoJackpot(room)
         AddObjectToLevelAtPos("GOLD", x, y, CASINO_JACKPOT_GOLD, room.owner)
         CasinoDropCoins(x, y, room.owner)
     end
-    CreateEffectAtPos("EFFECT_COIN_FOUNTAIN", cx, cy, 0)
+    CreateEffectAtPos("EFFECT_COIN_DROP", cx, cy, 0)
     CasinoShowGoldAt(cx, cy, CASINO_JACKPOT_PILES * CASINO_JACKPOT_GOLD)
     PlayMessage(room.owner, "SOUND", CASINO_JACKPOT_SOUND)
     -- Information box rather than a chat line: only the owner gets it, and it
@@ -980,7 +980,7 @@ function CasinoResolveDrops()
             local room = CasinoRoomAt(cr.pos.stl_x, cr.pos.stl_y)
             if room and CasinoRoomIsRun(room) then
                 if CasinoAttitude(cr) == "HATE" then
-                    CasinoSpangle(cr, "EFFECT_SPANGLE_RED")
+                    CasinoSpangle(cr, "EFFECT_COIN_DROP_MINI")
                     CasinoEmote(cr, "SAD")
                     CasinoSendAway(cr, CASINO_HATE_ANNOY)
                 elseif CasinoHasSettledIn(cr) and not CasinoIsFurious(cr)

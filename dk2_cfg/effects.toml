@@ -91,6 +91,49 @@ LightFlags = 0
 ElementsCount = 3
 AlwaysGenerate = 0
 
+[effect87]
+Name = "EFFECT_COIN_DROP"
+Health = 3
+GenerationType = 1
+GenerationAccelXYRange = [64,64]
+GenerationAccelZRange = [-56,256]
+GenerationKindRange = [126,126]
+AreaAffectType = 0
+HitType = 0
+SpellEffect = 0
+Sound = 88
+AffectedByWind = 1
+LightRadius = 0
+LightIntensity = 0
+LightFlags = 0
+ElementsCount = 5
+AlwaysGenerate = 0
+
+[effect88]
+Name = "EFFECT_COIN_DROP_MINI"
+Health = 3
+GenerationType = 1
+GenerationAccelXYRange = [64,64]
+GenerationAccelZRange = [50,200]
+GenerationKindRange = [127,127]
+AreaAffectType = 0
+HitType = 0
+SpellEffect = 0
+Sound = 88
+AffectedByWind = 1
+LightRadius = 0
+LightIntensity = 0
+LightFlags = 0
+ElementsCount = 2
+AlwaysGenerate = 0
+
+
+
+
+
+
+
+
 [effectElement124]
 Name = "EFFECTELEMENT_CHICKENS"
 DrawClass = 2
@@ -156,5 +199,73 @@ LavaDestroyOnImpact = true
 TransformModel = 0
 LightRadius = 5
 LightIntensity = 52
+LightFlags = 0
+AffectedByWind = 1
+
+[effectElement126]
+Name = "EFFECTELEMENT_SPINNING_COINS"
+DrawClass = 2
+MoveType = 1
+Unanimated = 0
+Lifespan = [15,30]
+AnimationId = "SPINNING_COIN"
+SpriteSize = [200,300]
+AnimateOnce = 0
+SpriteSpeed = [50,200]
+AnimateOnFloor = true
+Unshaded = true
+Transparent = 0
+ThroughWalls = 0
+SizeChange = 0
+FallAcceleration = 8
+InertiaFloor = 102
+InertiaAir = 0
+SubeffectModel = 0
+SubeffectDelay = 0
+Movable = true
+Impacts = false
+TransformModel = 0
+LightRadius = 0
+LightIntensity = 0
+LightFlags = 0
+AffectedByWind = 1
+
+[effectElement127]
+Name = "EFFECTELEMENT_GOLD_COIN_BIGGER"
+DrawClass = 2
+MoveType = 1
+Unanimated = 0
+Lifespan = [10,30]
+AnimationId = 780
+SpriteSize = [250,350]
+AnimateOnce = 0
+SpriteSpeed = [192,256]
+AnimateOnFloor = false
+Unshaded = false
+Transparent = 0
+ThroughWalls = 0
+SizeChange = 0
+FallAcceleration = 20
+InertiaFloor = 102
+InertiaAir = 0
+SubeffectModel = 0
+SubeffectDelay = 0
+Movable = true
+Impacts = false
+SolidGroundEffmodel = 0
+SolidGroundSoundId = 0
+SolidGroundLoudness = 256
+SolidGroundDestroyOnImpact = true
+WaterEffmodel = 19
+WaterSoundId = 36
+WaterLoudness = 80
+WaterDestroyOnImpact = false
+LavaEffmodel = 0
+LavaSoundId = 0
+LavaLoudness = 256
+LavaDestroyOnImpact = true
+TransformModel = 0
+LightRadius = 0
+LightIntensity = 0
 LightFlags = 0
 AffectedByWind = 1
