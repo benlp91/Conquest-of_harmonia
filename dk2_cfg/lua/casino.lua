@@ -745,7 +745,6 @@ function CasinoDropCoins(stl_x, stl_y, owner)
         end
     end
 end
-
 function CasinoJackpot(room)
     local cx, cy = room.centerpos.stl_x, room.centerpos.stl_y
     for _ = 1, CASINO_JACKPOT_PILES do
@@ -753,9 +752,23 @@ function CasinoJackpot(room)
         AddObjectToLevelAtPos("GOLD", x, y, CASINO_JACKPOT_GOLD, room.owner)
         CasinoDropCoins(x, y, room.owner)
     end
+
     CreateEffectAtPos("EFFECT_COIN_FOUNTAIN", cx, cy, 0)
     CasinoShowGoldAt(cx, cy, CASINO_JACKPOT_PILES * CASINO_JACKPOT_GOLD)
-    PlayMessage(room.owner, "SOUND", CASINO_JACKPOT_SOUND)
+
+    local jackpotSounds = {
+        "casin001.mp3",
+        "casin002.mp3",
+        "casin003.mp3",
+        "casin004.mp3",
+        "casin005.mp3",
+        "casin006.mp3",
+        "casin007.mp3"
+    }
+
+    local randomSound = jackpotSounds[math.random(#jackpotSounds)]
+    PlayMessage(room.owner, "SOUND", randomSound)
+
     -- Information box rather than a chat line: only the owner gets it, and it
     -- zooms to the casino when clicked. DisplayInformation itself is no use here
     -- because it only takes a message id from gtext_***.dat - the Quick* variants
@@ -769,9 +782,9 @@ function CasinoJackpot(room)
         cr:set_annoyance("OTHER", math.max(0, (cr:get_annoyance("OTHER") or 0) - CASINO_JACKPOT_MOOD))
         CasinoEmote(cr, "DANCE")
     end
+
     CasinoLog("JACKPOT in room " .. room.room_idx)
 end
-
 
 -- =====================================================================
 --  MODE BOXES
