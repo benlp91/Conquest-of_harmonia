@@ -7,6 +7,8 @@ function OnCampaignGameStart()
     CasinoInit()                                                -- casino code 
     RegisterTimerEvent(CheckForStunDeaths, 1, true)             -- Repeat each frame
     Game.CoopRange = 2                                          -- Coop range in subtiles
+    Game.CasinoBarrelRange = 2                                  -- Barrel range in subtiles
+    Game.CasinoTableRange = 2                                   -- Table range in subtiles
     RegisterSlabKindChangeEvent(LavaBecomesBridge, "LAVA", "BRIDGE_FRAME")
 end
 

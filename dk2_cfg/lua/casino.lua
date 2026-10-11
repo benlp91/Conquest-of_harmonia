@@ -49,10 +49,12 @@
 --   * There is no OnDrop event in the engine, so a creature is flagged while it
 --     is in the hand and the landing is resolved on the next tick. Reacting to
 --     mere presence in the room instead would also grab passers-by.
---   * Room capacity is counted here, not by the engine: room.used_capacity is
---     read-only from Lua and add_creature_to_work_room() is only ever called
---     from hardcoded C states, so a creature in a custom state is never counted.
---   * Cheer/moan poses are not reachable from Lua yet - see CasinoEmote().
+--   * Room capacity is counted here, not by the engine: add_creature_to_work_room()
+--     is only ever called from hardcoded C states, so a creature in a custom
+--     state is never counted. The result is handed to the engine through the
+--     room's capacity functions - see Casino_Total_Capacity.
+--   * Cheering and moaning are real engine states, so the creature leaves
+--     CasinoGambling while they run - see CasinoEmote().
 -- ============================================================================
 
 
@@ -98,6 +100,8 @@ CASINO_JACKPOT_COINS     = 6     -- spinning coins raining down per gold pile
 CASINO_MSG_SLOT          = 200
 
 CASINO_EMOTE_CHANCE      = 25    -- % chance of an emote on a normal round
+CASINO_EMOTE_TICKS       = 50    -- ~2.5s of cheering or moaning when it happens
+CASINO_DANCE_TICKS       = 100   -- ~5s of cheering for everyone on a jackpot
 CASINO_LEAVE_COOLDOWN    = 600   -- ~30s before a creature may play again
 CASINO_RESERVE_TIMEOUT   = 600   -- ~30s, release a stuck walk reservation
 CASINO_MAX_DISTANCE      = 120   -- subtiles (~40 slabs) a creature will walk to gamble
@@ -228,26 +232,45 @@ end
 -- =====================================================================
 -- Every creature emote in this script goes through here, and nowhere else.
 --
--- The real poses (CrInst_CELEBRATE_SHORT, CrInst_MOAN) hang off cctrl->instance_id.
--- Only the CreatureBeHappy / CreatureMoan states start them, and both bail out
--- immediately while cctrl->countdown == 0. The engine always sets the pair
---     external_set_thing_state(creatng, CrSt_CreatureBeHappy);
---     cctrl->countdown = 50;
--- but Lua can only do the first line - countdown is not exposed (patrol.countdown
--- is a different struct member). Writing thing.anim_sprite does not help either,
--- because update_creature_graphic_anim() recomputes the animation every tick.
+-- HAPPY and SAD put the creature into CreatureBeHappy / CreatureMoan, the states
+-- the engine itself uses after payday or a refused job. They start the pose and
+-- play the mood sound on their own. DANCE is the jackpot version: the same
+-- cheer, longer, plus an effect. countdown has to be written too: changing
+-- state does not reset it, so the mood would otherwise last for whatever the
+-- previous state left in that field.
 --
--- HAPPY and SAD therefore draw nothing at all for now: every gambling round
--- already shows a coloured win/loss marker, and a second particle on top would
--- just read as noise. Only DANCE, which has no marker of its own, substitutes an
--- effect. Once countdown is exposed as a Lua field this whole body becomes
---     cr.state     = (kind == "SAD") and "CreatureMoan" or "CreatureBeHappy"
---     cr.countdown = (kind == "DANCE") and 100 or 50
--- and all three kinds turn into real poses, with no change anywhere else.
+-- A mood state is not CasinoGambling, and when its countdown runs out the engine
+-- sends the creature to its idle state rather than back to the table. So for a
+-- seated creature the seat is marked with emote_until, the countdown gets a
+-- little slack, and CasinoWatchdog puts the creature back to gambling once
+-- emote_until comes up.
+--
+-- A creature without a seat (just sent away, or a bystander on a jackpot) simply
+-- gets the mood and is left to the engine afterwards.
 function CasinoEmote(cr, kind)
-    if kind == "DANCE" then
+    local state = "CreatureBeHappy"
+    local ticks = CASINO_EMOTE_TICKS
+    if kind == "SAD" then
+        state = "CreatureMoan"
+    elseif kind == "DANCE" then
+        ticks = CASINO_DANCE_TICKS
         CasinoSpangle(cr, "EFFECT_SPANGLE_MULTICOLOURED")
     end
+
+    local idx  = cr.ThingIndex
+    local seat = Game.CASINO_SEAT[idx]
+    if seat then
+        seat.emote_until = PLAYER0.GAME_TURN + ticks
+        -- The watchdog only looks once per CASINO_TICK, so the state has to
+        -- outlive emote_until by at least that much.
+        ticks = ticks + CASINO_TICK + 5
+    elseif Game.CASINO_GOING[idx] or not CasinoCanInterrupt(cr) then
+        -- On its way to a table, or busy with something that must not be cut
+        -- short (asleep, fighting, in the hand): leave it alone.
+        return
+    end
+    cr.state = state
+    cr.countdown = ticks
 end
 
 function CasinoSpangle(cr, effect)
@@ -388,6 +411,24 @@ end
 
 function CasinoHasFreeSeat(room)
     return CasinoOccupancy(room.room_idx) < CasinoCapacity(room)
+end
+
+-- Capacity functions named in terrain.cfg (TotalCapacity / UsedCapacity of the
+-- CASINO room). The engine calls them with the room and expects them to write
+-- the result into it. They only mirror the script's own numbers, so the room
+-- shows real figures to the engine; who gets a seat is still decided from the
+-- seat tables, which are exact at any moment.
+--
+-- Like the state callbacks these are looked up by name while the cfg is parsed,
+-- so they have to be globals at the top level of this file.
+function Casino_Total_Capacity(room)
+    room.max_capacity = CasinoCapacity(room)
+end
+
+-- The engine only asks for this when the room itself changes, not when a
+-- creature sits down or leaves, so CasinoTick calls it as well.
+function Casino_Used_Capacity(room)
+    room.used_capacity = CasinoOccupancy(room.room_idx)
 end
 
 function CasinoMode(room_idx)
@@ -564,8 +605,8 @@ function CasinoRound(cr, seat)
     -- left for it, the value is at its ceiling.
     if CasinoIsFurious(cr) then
         CasinoSpangle(cr, "EFFECT_SPANGLE_RED")
-        CasinoEmote(cr, "SAD")
         CasinoSendAway(cr, 0)
+        CasinoEmote(cr, "SAD")
         return
     end
 
@@ -577,8 +618,8 @@ function CasinoRound(cr, seat)
     -- creature straight back out on its first round.
     if cr.gold_held <= 0 and not CASINO_NO_CREATURE_LOSS then
         CasinoSpangle(cr, "EFFECT_SPANGLE_RED")
-        CasinoEmote(cr, "SAD")
         CasinoSendAway(cr, CASINO_BROKE_ANNOY)
+        CasinoEmote(cr, "SAD")
         return
     end
 
@@ -603,12 +644,14 @@ function CasinoRound(cr, seat)
     if CasinoHouseIsBroke(room.owner) then
         CasinoCloseHouse(room.owner)
         CasinoSpangle(cr, "EFFECT_SPANGLE_RED")
-        CasinoEmote(cr, "SAD")
         CasinoSendAway(cr, CASINO_BROKE_ANNOY)
+        CasinoEmote(cr, "SAD")
         return
     end
 
-    if CasinoResolveBet(cr, seat, room) then
+    -- Not while cheering or moaning: walking would replace the mood state on the
+    -- spot. CasinoWatchdog sends the creature on once the mood is over.
+    if CasinoResolveBet(cr, seat, room) and not seat.emote_until then
         CasinoNextSpot(cr, room, seat)
     end
 end
@@ -710,7 +753,7 @@ function CasinoJackpot(room)
         AddObjectToLevelAtPos("GOLD", x, y, CASINO_JACKPOT_GOLD, room.owner)
         CasinoDropCoins(x, y, room.owner)
     end
-    CreateEffectAtPos("EFFECT_COIN_DROP", cx, cy, 0)
+    CreateEffectAtPos("EFFECT_COIN_FOUNTAIN", cx, cy, 0)
     CasinoShowGoldAt(cx, cy, CASINO_JACKPOT_PILES * CASINO_JACKPOT_GOLD)
     PlayMessage(room.owner, "SOUND", CASINO_JACKPOT_SOUND)
     -- Information box rather than a chat line: only the owner gets it, and it
@@ -934,6 +977,10 @@ function CasinoWatchdog()
             -- because seat.moving suppresses the cleanup path.
             local s = cr.state
             local busy_here = (s == "CasinoGambling") or (s == "MoveToPosition")
+            if seat.emote_until then
+                -- Cheering or moaning over the last round, see CasinoEmote.
+                busy_here = (s == "CreatureBeHappy") or (s == "CreatureMoan")
+            end
             if cr.picked_up or (not room) or (not busy_here) then
                 Game.CASINO_SEAT[idx] = nil
                 Game.CASINO_COOLDOWN[idx] = turn + CASINO_LEAVE_COOLDOWN
@@ -942,6 +989,13 @@ function CasinoWatchdog()
                 -- freeing one of the two structures, so the index a seat was
                 -- opened with can simply stop existing.
                 seat.room_idx = room.room_idx
+                if seat.emote_until and turn >= seat.emote_until then
+                    -- Mood is over: back to the table and on to the next spot,
+                    -- the way a round without an emote would have gone.
+                    seat.emote_until = nil
+                    cr.state = "CasinoGambling"
+                    CasinoNextSpot(cr, room, seat)
+                end
             end
         end
     end
@@ -980,9 +1034,9 @@ function CasinoResolveDrops()
             local room = CasinoRoomAt(cr.pos.stl_x, cr.pos.stl_y)
             if room and CasinoRoomIsRun(room) then
                 if CasinoAttitude(cr) == "HATE" then
-                    CasinoSpangle(cr, "EFFECT_COIN_DROP_MINI")
-                    CasinoEmote(cr, "SAD")
+                    CasinoSpangle(cr, "EFFECT_SPANGLE_RED")
                     CasinoSendAway(cr, CASINO_HATE_ANNOY)
+                    CasinoEmote(cr, "SAD")
                 elseif CasinoHasSettledIn(cr) and not CasinoIsFurious(cr)
                        and CasinoHouseIsOpen(room.owner)
                        and not CasinoHouseIsBroke(room.owner)
@@ -1142,6 +1196,11 @@ function CasinoTick()
     CasinoWatchdog()
     CasinoResolveDrops()
 
+    -- Seats change without the engine noticing, so report them once per tick.
+    for _, room in ipairs(CasinoRooms()) do
+        Casino_Used_Capacity(room)
+    end
+
     -- Recruiting walks every creature on the map, so it runs less often. A few
     -- seconds of delay before an idle creature wanders off to gamble is unnoticeable.
     if (Game.CASINO_TICKS % CASINO_RECRUIT_EVERY) == 0 then
@@ -1195,3 +1254,64 @@ function CasinoInit()
 
     CasinoLog("setup done, tick=" .. CASINO_TICK .. " round=" .. CASINO_ROUND_TICKS)
 end
+
+
+
+
+
+
+-- moving the objects in the Room
+-- Lists all existing Casino objects as tupel {Casino_Barrel, isInit}: 'Casino_Barrel' as thing object and 'isInit' as boolean
+
+Game.Casino_BarrelToInit = {}
+function UpdateFunctionBARREL(Casino_Barrel)
+    if Casino_Barrel.creation_turn == PLAYER0.GAME_TURN - 1 then
+        InitializeCasino_Barrel(Casino_Barrel)
+    end
+end
+
+function InitializeCasino_Barrel(Casino_Barrel)
+    -- Remove if not in pattern
+    if CheckForRemovalBarrel(Casino_Barrel) then
+        Casino_Barrel:delete()
+        return
+    end
+    -- Random offset
+    Casino_Barrel.pos = {val_x = Casino_Barrel.pos.val_x + (128 * math.random(-1, 1)),
+                val_y = Casino_Barrel.pos.val_y + (128 * math.random(-1, 1)),
+                val_z = Casino_Barrel.pos.val_z}
+end
+
+function CheckForRemovalBarrel(Casino_Barrel)
+    -- Checkerboard pattern
+    return (Casino_Barrel.pos.slb_x + Casino_Barrel.pos.slb_y) % 2 == 0
+end
+
+
+-- same for the table
+---------------------
+
+
+Game.Casino_TableToInit = {}
+
+function UpdateFunctionTABLE(Casino_Table)
+    if Casino_Table.creation_turn == PLAYER0.GAME_TURN - 1 then
+        InitializeCasino_Table(Casino_Table)
+    end
+end
+
+function InitializeCasino_Table(Casino_Table)
+    -- Remove if not in pattern
+    if CheckForRemovalTable(Casino_Table) then
+        Casino_Table:delete()
+        return
+    end
+end
+
+function CheckForRemovalTable(Casino_Table)
+    -- Checkerboard pattern
+    return (Casino_Table.pos.slb_x + Casino_Table.pos.slb_y) % 2 == 0
+end
+
+
+

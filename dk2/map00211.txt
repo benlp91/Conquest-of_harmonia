@@ -359,6 +359,7 @@ REM WIN CONDITION
 
 IF(PLAYER0, ALL_DUNGEONS_DESTROYED == 1)
 	WIN_GAME
+	SET_NEXT_LEVEL(212)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl12spe04.ogg")
 	QUICK_OBJECTIVE(80,"A lesson learnt: an army weaker in its number can prevail as long as those who battle fight with heart, or hold the knowledge to protect their master's Heart indeed.  And proud to see that yours remains intact.  Well done.")
 	ADD_OBJECT_TO_LEVEL(FAKE_GEM,6,1,PLAYER5)
