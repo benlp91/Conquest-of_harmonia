@@ -27,8 +27,8 @@ function SpawnPatrols()
 
     -- Define routes to be patrolled
     local northernroute = {}
-        northernroute[1] =     { stl_x = 97, stl_y = 26 }
-        northernroute[2] =     { stl_x = 67, stl_y = 26 }
+        northernroute[1] =     { stl_x = 67, stl_y = 28 }
+        northernroute[2] =     { stl_x = 97, stl_y = 28 }
 
 
     -- Patrolling parties and individual heroes added to level.

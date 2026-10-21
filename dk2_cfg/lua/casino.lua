@@ -71,8 +71,8 @@ CASINO_ROUND_TICKS       = 120   -- ~6s per gambling round
 
 CASINO_STAKE_MIN         = 20
 CASINO_STAKE_MAX         = 60 
-CASINO_WIN_CHANCE_HAPPY  = 80    -- % chance the creature wins in HAPPY mode
-CASINO_WIN_CHANCE_PROFIT = 20    -- % chance the creature wins in PROFIT mode
+CASINO_WIN_CHANCE_HAPPY  = 100    -- % chance the creature wins in HAPPY mode
+CASINO_WIN_CHANCE_PROFIT = 0      -- % chance the creature wins in PROFIT mode
 CASINO_SEED_GOLD         = 40    -- buy-in for a creature that enters with no gold
 
 CASINO_MOOD_STEP         = 500   -- annoyance moved per round
@@ -82,7 +82,7 @@ CASINO_BROKE_ANNOY       = 2000   -- annoyance when leaving without money
 -- goes home and no new visitor is recruited for this long, per player.
 CASINO_BANKRUPT_PAUSE    = 1200  -- ~60s
 
-CASINO_JACKPOT_CHANCE    = 0.8     -- % per round, fractions allowed (0.1 = one in a thousand)
+CASINO_JACKPOT_CHANCE    = 0.6     -- % per round, fractions allowed (0.1 = one in a thousand)
 CASINO_JACKPOT_PILES     = 6
 CASINO_JACKPOT_GOLD      = 250   -- gold per dropped pile
 CASINO_JACKPOT_MOOD      = 2000  -- annoyance removed from everyone in the room
@@ -1269,41 +1269,8 @@ function CasinoInit()
 end
 
 
-
-
-
-
 -- moving the objects in the Room
--- Lists all existing Casino objects as tupel {Casino_Barrel, isInit}: 'Casino_Barrel' as thing object and 'isInit' as boolean
-
-Game.Casino_BarrelToInit = {}
-function UpdateFunctionBARREL(Casino_Barrel)
-    if Casino_Barrel.creation_turn == PLAYER0.GAME_TURN - 1 then
-        InitializeCasino_Barrel(Casino_Barrel)
-    end
-end
-
-function InitializeCasino_Barrel(Casino_Barrel)
-    -- Remove if not in pattern
-    if CheckForRemovalBarrel(Casino_Barrel) then
-        Casino_Barrel:delete()
-        return
-    end
-    -- Random offset
-    Casino_Barrel.pos = {val_x = Casino_Barrel.pos.val_x + (128 * math.random(-1, 1)),
-                val_y = Casino_Barrel.pos.val_y + (128 * math.random(-1, 1)),
-                val_z = Casino_Barrel.pos.val_z}
-end
-
-function CheckForRemovalBarrel(Casino_Barrel)
-    -- Checkerboard pattern
-    return (Casino_Barrel.pos.slb_x + Casino_Barrel.pos.slb_y) % 2 == 0
-end
-
-
--- same for the table
----------------------
-
+-- Lists all existing Casino objects as tupel {Casino_Table, isInit}: 'Casino_Table' as thing object and 'isInit' as boolean
 
 Game.Casino_TableToInit = {}
 
