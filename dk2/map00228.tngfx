@@ -2204,6 +2204,7 @@ SubtypeStringID = "SWORD"
 Subtype = 1063
 Ownership = 6
 ParentTile = 1061
+CustomBox = -1
 Orientation = 0
 SubtileX = [213, 128]
 SubtileY = [35, 128]
@@ -2215,6 +2216,7 @@ SubtypeStringID = "CANDLESTCK"
 Subtype = 28
 Ownership = 6
 ParentTile = 1061
+CustomBox = -1
 Orientation = 0
 SubtileX = [215, 128]
 SubtileY = [35, 128]
@@ -2226,6 +2228,7 @@ SubtypeStringID = "CANDLESTCK"
 Subtype = 28
 Ownership = 6
 ParentTile = 879
+CustomBox = -1
 Orientation = 0
 SubtileX = [207, 128]
 SubtileY = [27, 128]
@@ -2237,6 +2240,7 @@ SubtypeStringID = "SWORD"
 Subtype = 1063
 Ownership = 6
 ParentTile = 879
+CustomBox = -1
 Orientation = 0
 SubtileX = [209, 128]
 SubtileY = [27, 128]
@@ -2248,6 +2252,7 @@ SubtypeStringID = "CANDLESTCK"
 Subtype = 28
 Ownership = 6
 ParentTile = 1059
+CustomBox = -1
 Orientation = 0
 SubtileX = [207, 128]
 SubtileY = [35, 128]
@@ -2259,6 +2264,7 @@ SubtypeStringID = "SWORD"
 Subtype = 1063
 Ownership = 6
 ParentTile = 1059
+CustomBox = -1
 Orientation = 0
 SubtileX = [209, 128]
 SubtileY = [35, 128]
@@ -2270,6 +2276,7 @@ SubtypeStringID = "SWORD"
 Subtype = 1063
 Ownership = 6
 ParentTile = 881
+CustomBox = -1
 Orientation = 0
 SubtileX = [213, 128]
 SubtileY = [27, 128]
@@ -2281,6 +2288,7 @@ SubtypeStringID = "CANDLESTCK"
 Subtype = 28
 Ownership = 6
 ParentTile = 881
+CustomBox = -1
 Orientation = 0
 SubtileX = [215, 128]
 SubtileY = [27, 128]
@@ -2483,14 +2491,14 @@ SubtileZ = [1, 0]
 
 [thing206]
 ThingType = "Creature"
-SubtypeStringID = "DARK_MISTRESS"
-Subtype = 20
+SubtypeStringID = "IMP"
+Subtype = 23
 Ownership = 0
 Index = 0
-CreatureLevel = 3
+CreatureLevel = 1
 CreatureGold = 0
 CreatureInitialHealth = 100
-SubtileX = [172, 128]
+SubtileX = [178, 128]
 SubtileY = [124, 128]
 SubtileZ = [1, 0]
 
@@ -2503,38 +2511,12 @@ Index = 0
 CreatureLevel = 1
 CreatureGold = 0
 CreatureInitialHealth = 100
-SubtileX = [178, 128]
-SubtileY = [124, 128]
+SubtileX = [166, 128]
+SubtileY = [136, 128]
 SubtileZ = [1, 0]
 
 [thing208]
 ThingType = "Creature"
-SubtypeStringID = "DARK_MISTRESS"
-Subtype = 20
-Ownership = 0
-Index = 0
-CreatureLevel = 2
-CreatureGold = 0
-CreatureInitialHealth = 100
-SubtileX = [166, 128]
-SubtileY = [127, 128]
-SubtileZ = [1, 0]
-
-[thing209]
-ThingType = "Creature"
-SubtypeStringID = "IMP"
-Subtype = 23
-Ownership = 0
-Index = 0
-CreatureLevel = 1
-CreatureGold = 0
-CreatureInitialHealth = 100
-SubtileX = [166, 128]
-SubtileY = [136, 128]
-SubtileZ = [1, 0]
-
-[thing210]
-ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
 Ownership = 0
@@ -2546,7 +2528,7 @@ SubtileX = [178, 128]
 SubtileY = [136, 128]
 SubtileZ = [1, 0]
 
-[thing211]
+[thing209]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -2559,7 +2541,7 @@ SubtileX = [178, 128]
 SubtileY = [76, 128]
 SubtileZ = [1, 0]
 
-[thing212]
+[thing210]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -2572,7 +2554,7 @@ SubtileX = [190, 128]
 SubtileY = [64, 128]
 SubtileZ = [1, 0]
 
-[thing213]
+[thing211]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -2585,7 +2567,7 @@ SubtileX = [178, 128]
 SubtileY = [64, 128]
 SubtileZ = [1, 0]
 
-[thing214]
+[thing212]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -2598,7 +2580,7 @@ SubtileX = [190, 128]
 SubtileY = [76, 128]
 SubtileZ = [1, 0]
 
-[thing215]
+[thing213]
 ThingType = "Creature"
 SubtypeStringID = "SALAMANDER"
 Subtype = 36
@@ -2611,7 +2593,7 @@ SubtileX = [243, 128]
 SubtileY = [58, 128]
 SubtileZ = [0, 0]
 
-[thing216]
+[thing214]
 ThingType = "Creature"
 SubtypeStringID = "SALAMANDER"
 Subtype = 36
@@ -2624,7 +2606,7 @@ SubtileX = [151, 128]
 SubtileY = [127, 128]
 SubtileZ = [1, 0]
 
-[thing217]
+[thing215]
 ThingType = "Creature"
 SubtypeStringID = "SALAMANDER"
 Subtype = 36
@@ -2637,7 +2619,7 @@ SubtileX = [148, 128]
 SubtileY = [130, 128]
 SubtileZ = [1, 0]
 
-[thing218]
+[thing216]
 ThingType = "Creature"
 SubtypeStringID = "SALAMANDER"
 Subtype = 36
@@ -2648,6 +2630,32 @@ CreatureGold = 0
 CreatureInitialHealth = 100
 SubtileX = [149, 128]
 SubtileY = [133, 128]
+SubtileZ = [1, 0]
+
+[thing217]
+ThingType = "Creature"
+SubtypeStringID = "MISTRESS"
+Subtype = 53
+Ownership = 0
+Index = 48
+CreatureLevel = 2
+CreatureGold = 0
+CreatureInitialHealth = 100
+SubtileX = [166, 128]
+SubtileY = [129, 128]
+SubtileZ = [1, 0]
+
+[thing218]
+ThingType = "Creature"
+SubtypeStringID = "MISTRESS"
+Subtype = 53
+Ownership = 0
+Index = 49
+CreatureLevel = 3
+CreatureGold = 0
+CreatureInitialHealth = 100
+SubtileX = [170, 128]
+SubtileY = [124, 128]
 SubtileZ = [1, 0]
 
 [thing219]
