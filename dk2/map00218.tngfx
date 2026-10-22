@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 339
+ThingsCount = 338
 
 [thing0]
 ThingType = "Door"
@@ -195,14 +195,14 @@ SubtileZ = [5, 0]
 
 [thing16]
 ThingType = "Door"
-SubtypeStringID = "STEEL"
-Subtype = 3
+SubtypeStringID = "BRACED"
+Subtype = 2
 Ownership = 4
-Index = 20
+Index = 18
 DoorOrientation = 1
 DoorLocked = 0
-SubtileX = [124, 128]
-SubtileY = [175, 128]
+SubtileX = [28, 128]
+SubtileY = [109, 128]
 SubtileZ = [5, 0]
 
 [thing17]
@@ -219,14 +219,14 @@ SubtileZ = [5, 0]
 
 [thing18]
 ThingType = "Door"
-SubtypeStringID = "BRACED"
-Subtype = 2
+SubtypeStringID = "STEEL"
+Subtype = 3
 Ownership = 4
-Index = 18
+Index = 20
 DoorOrientation = 1
 DoorLocked = 0
-SubtileX = [28, 128]
-SubtileY = [109, 128]
+SubtileX = [124, 128]
+SubtileY = [175, 128]
 SubtileZ = [5, 0]
 
 [thing19]
@@ -3610,6 +3610,7 @@ SubtypeStringID = "TORCH"
 Subtype = 2
 Ownership = 5
 ParentTile = 2804
+CustomBox = -1
 Orientation = 0
 SubtileX = [14, 0]
 SubtileY = [107, 0]
@@ -3621,6 +3622,7 @@ SubtypeStringID = "TORCH"
 Subtype = 2
 Ownership = 5
 ParentTile = 3044
+CustomBox = -1
 Orientation = 0
 SubtileX = [14, 0]
 SubtileY = [115, 0]
@@ -3632,6 +3634,7 @@ SubtypeStringID = "TORCH"
 Subtype = 2
 Ownership = 5
 ParentTile = 3047
+CustomBox = -1
 Orientation = 0
 SubtileX = [22, 0]
 SubtileY = [115, 0]
@@ -3643,6 +3646,7 @@ SubtypeStringID = "TORCH"
 Subtype = 2
 Ownership = 5
 ParentTile = 2807
+CustomBox = -1
 Orientation = 0
 SubtileX = [22, 0]
 SubtileY = [107, 0]
@@ -4077,16 +4081,4 @@ ParentTile = 1078
 Orientation = 0
 SubtileX = [114, 128]
 SubtileY = [40, 128]
-SubtileZ = [0, 0]
-
-[thing338]
-ThingType = "EffectGen"
-SubtypeStringID = "EFFECTGENERATOR_LAVA"
-Subtype = 1
-Ownership = 5
-EffectRange = [5, 0]
-ParentTile = 4604
-Orientation = 0
-SubtileX = [133, 128]
-SubtileY = [173, 128]
 SubtileZ = [0, 0]
