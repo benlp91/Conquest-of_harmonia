@@ -158,7 +158,7 @@ REM INTRO
 
 IF_ACTION_POINT(8,PLAYER0)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl15Aspe02.ogg")
-	QUICK_OBJECTIVE(91,"Assaulting from the front is fine, but limit not to that, attack from other angles too. It will reap benefit.")
+	QUICK_OBJECTIVE(99,"Assaulting from the front is fine, but limit not to that, attack from other angles too. It will reap benefit.")
 ENDIF
 
 IF(PLAYER0,TIMER4 >= 20)
@@ -166,7 +166,7 @@ IF(PLAYER0,TIMER4 >= 20)
 	QUICK_OBJECTIVE(90,"Let me put it plainly, Keeper. Bolster up your forces with creatures you entice, then train them to the highest level. Charge at last in glory to attack the Fairy Fortress and this land will then be yours.")
 ENDIF
 
-IF(PLAYER0, KNIGHT >= 1)
+IF(PLAYER0, BLACK_KNIGHT >= 1)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl15spe02.ogg")
 	QUICK_OBJECTIVE(91,"At last the Black Knight realises that honour, justice and piety are just plain boring. So he joins your evil cause, and that allows him plenty time for pillaging and killing: such pure sport becomes him.")
 ENDIF

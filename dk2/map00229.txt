@@ -123,7 +123,7 @@ IF(PLAYER0,TIMER4 >= 20)
 	QUICK_OBJECTIVE(90,"Listen well. There's talk of creatures being rallied for a Dark Crusade.")
 ENDIF
 
-IF(PLAYER0, KNIGHT >= 1)
+IF(PLAYER0, BLACK_KNIGHT >= 1)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl15spe02.ogg")
 	QUICK_OBJECTIVE(91,"At last the Black Knight realises that honour, justice and piety are just plain boring. So he joins your evil cause, and that allows him plenty time for pillaging and killing: such pure sport becomes him.")
 ENDIF
