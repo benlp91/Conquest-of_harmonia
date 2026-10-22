@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 40
+ThingsCount = 32
 
 [thing0]
 ThingType = "Object"
@@ -329,102 +329,6 @@ SubtileZ = [1, 0]
 
 [thing27]
 ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 4
-ParentTile = 65535
-CustomBox = -1
-Orientation = 1024
-SubtileX = [37, 128]
-SubtileY = [3, 64]
-SubtileZ = [2, 224]
-
-[thing28]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 4
-ParentTile = 65535
-CustomBox = -1
-Orientation = 1024
-SubtileX = [36, 64]
-SubtileY = [4, 128]
-SubtileZ = [2, 224]
-
-[thing29]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 4
-ParentTile = 65535
-CustomBox = -1
-Orientation = 1024
-SubtileX = [40, 128]
-SubtileY = [3, 64]
-SubtileZ = [2, 224]
-
-[thing30]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 4
-ParentTile = 65535
-CustomBox = -1
-Orientation = 1024
-SubtileX = [41, 192]
-SubtileY = [4, 128]
-SubtileZ = [2, 224]
-
-[thing31]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 4
-ParentTile = 65535
-CustomBox = -1
-Orientation = 1024
-SubtileX = [41, 192]
-SubtileY = [7, 128]
-SubtileZ = [2, 224]
-
-[thing32]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 4
-ParentTile = 65535
-CustomBox = -1
-Orientation = 1024
-SubtileX = [40, 128]
-SubtileY = [8, 128]
-SubtileZ = [2, 224]
-
-[thing33]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 4
-ParentTile = 65535
-CustomBox = -1
-Orientation = 1024
-SubtileX = [37, 128]
-SubtileY = [8, 128]
-SubtileZ = [2, 224]
-
-[thing34]
-ThingType = "Object"
-SubtypeStringID = "TORCH"
-Subtype = 2
-Ownership = 4
-ParentTile = 65535
-CustomBox = -1
-Orientation = 1024
-SubtileX = [36, 64]
-SubtileY = [7, 128]
-SubtileZ = [2, 224]
-
-[thing35]
-ThingType = "Object"
 SubtypeStringID = "TEMPLE_STATUE"
 Subtype = 4
 Ownership = 5
@@ -435,7 +339,7 @@ SubtileX = [34, 128]
 SubtileY = [10, 128]
 SubtileZ = [1, 0]
 
-[thing36]
+[thing28]
 ThingType = "Object"
 SubtypeStringID = "TEMPLE_STATUE"
 Subtype = 4
@@ -447,7 +351,7 @@ SubtileX = [43, 128]
 SubtileY = [10, 128]
 SubtileZ = [1, 0]
 
-[thing37]
+[thing29]
 ThingType = "Creature"
 SubtypeStringID = "ARCHER"
 Subtype = 3
@@ -460,7 +364,7 @@ SubtileX = [37, 128]
 SubtileY = [16, 128]
 SubtileZ = [1, 0]
 
-[thing38]
+[thing30]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_ENTRANCE_ICE"
 Subtype = 4
@@ -472,7 +376,7 @@ SubtileX = [58, 128]
 SubtileY = [70, 128]
 SubtileZ = [0, 0]
 
-[thing39]
+[thing31]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRY_ICE"
 Subtype = 5

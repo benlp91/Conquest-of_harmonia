@@ -32,7 +32,7 @@ function LavaBecomesBridge(eventData)
 end
 
 function BridgeRot(eventData, triggerData)
-
+    
     local slab = triggerData.Slab
     ChangeSlabType(slab.slb_x, slab.slb_y, "BRIDGE_FRAME_BURNED")
     PlayMessage(PLAYER0, "SOUND", 78)

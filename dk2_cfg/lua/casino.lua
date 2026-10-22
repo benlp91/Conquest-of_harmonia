@@ -775,9 +775,10 @@ function CasinoJackpot(room)
     -- are the free-text ones.
 
     -- "Jackpot Winner!"
+    if room.owner == PLAYER0 then
     RunDKScriptCommand("DISPLAY_INFORMATION(832,CASINO,CASINO_DROP_DOWN)")
     --SetMusic("Jackpot.mp3")
-    
+    end
     for _, cr in ipairs(CasinoCreaturesInRoom(room)) do
         cr:set_annoyance("OTHER", math.max(0, (cr:get_annoyance("OTHER") or 0) - CASINO_JACKPOT_MOOD))
         CasinoEmote(cr, "DANCE")
