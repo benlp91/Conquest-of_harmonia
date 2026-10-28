@@ -788,6 +788,10 @@ IF(PLAYER_GOOD,GEMSTONE_KNIGHT == 0)
 	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl20spe06.ogg")
    	QUICK_OBJECTIVE(153,"The King is dead, long live your minions and your ways. But hark, what's this? It's rays of sunlight. Sunlight in all its glory. And for you to bask in and to spread your evil power under its bright, bright rays.")
 	REVEAL_MAP_LOCATION(PLAYER0,PLAYER_GOOD,-1)
+	SHOW_BONUS_LEVEL(226)
+	SHOW_BONUS_LEVEL(227)
+	SHOW_BONUS_LEVEL(228)
+	SHOW_BONUS_LEVEL(229)
 ENDIF
 
 REM OUTRO
