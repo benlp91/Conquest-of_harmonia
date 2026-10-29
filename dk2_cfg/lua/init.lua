@@ -32,18 +32,21 @@ function LavaBecomesBridge(eventData)
 end
 
 function BridgeRot(eventData, triggerData)
-    
     local slab = triggerData.Slab
-    ChangeSlabType(slab.slb_x, slab.slb_y, "BRIDGE_FRAME_BURNED")
-    PlayMessage(PLAYER0, "SOUND", 78)
-    CreateEffectAtPos("EFFECT_BRIDGEBURN", slab.slb_x* 3 + 1, slab.slb_y* 3 + 1, 1)
-    CreateEffectAtPos("EFFECT_SPANGLE_RED", slab.slb_x* 3 + 1, slab.slb_y* 3 + 1, 1)
+    if slab.kind == "BRIDGE_FRAME" then
+        ChangeSlabType(slab.slb_x, slab.slb_y, "BRIDGE_FRAME_BURNED")
+        PlayMessage(PLAYER0, "SOUND", 78)
+        CreateEffectAtPos("EFFECT_BRIDGEBURN", slab.slb_x* 3 + 1, slab.slb_y* 3 + 1, 1)
+        CreateEffectAtPos("EFFECT_SPANGLE_RED", slab.slb_x* 3 + 1, slab.slb_y* 3 + 1, 1)
+    end
 end
 
 function BridgeBurn(eventData, triggerData)
 
     local slab = triggerData.Slab
-    ChangeSlabType(slab.slb_x, slab.slb_y, "LAVA")
-    CreateEffectAtPos("EFFECT_BRIDGEBURN", slab.slb_x* 3 + 1, slab.slb_y* 3 + 1, 1)
-    CreateEffectAtPos("EFFECT_SPANGLE_RED", slab.slb_x* 3 + 1, slab.slb_y* 3 + 1, 1)
+    if slab.kind == "BRIDGE_FRAME_BURNED" then
+        ChangeSlabType(slab.slb_x, slab.slb_y, "LAVA")
+        CreateEffectAtPos("EFFECT_BRIDGEBURN", slab.slb_x* 3 + 1, slab.slb_y* 3 + 1, 1)
+        CreateEffectAtPos("EFFECT_SPANGLE_RED", slab.slb_x* 3 + 1, slab.slb_y* 3 + 1, 1)
+    end
 end
