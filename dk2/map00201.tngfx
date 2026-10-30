@@ -1,5 +1,5 @@
 [common]
-ThingsCount = 81
+ThingsCount = 82
 
 [thing0]
 ThingType = "Object"
@@ -810,6 +810,17 @@ SubtileY = [47, 128]
 SubtileZ = [1, 0]
 
 [thing67]
+ThingType = "Object"
+SubtypeStringID = "SPECBOX_GETGOLD"
+Subtype = 171
+Ownership = 5
+ParentTile = 65535
+Orientation = 0
+SubtileX = [79, 128]
+SubtileY = [43, 128]
+SubtileZ = [1, 0]
+
+[thing68]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -822,7 +833,7 @@ SubtileX = [55, 128]
 SubtileY = [96, 128]
 SubtileZ = [1, 0]
 
-[thing68]
+[thing69]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -835,7 +846,7 @@ SubtileX = [59, 128]
 SubtileY = [97, 128]
 SubtileZ = [1, 0]
 
-[thing69]
+[thing70]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -848,7 +859,7 @@ SubtileX = [55, 128]
 SubtileY = [108, 128]
 SubtileZ = [1, 0]
 
-[thing70]
+[thing71]
 ThingType = "Creature"
 SubtypeStringID = "IMP"
 Subtype = 23
@@ -861,7 +872,7 @@ SubtileX = [59, 128]
 SubtileY = [108, 128]
 SubtileZ = [1, 0]
 
-[thing71]
+[thing72]
 ThingType = "Creature"
 SubtypeStringID = "DWARFA"
 Subtype = 5
@@ -874,7 +885,7 @@ SubtileX = [29, 128]
 SubtileY = [45, 128]
 SubtileZ = [1, 0]
 
-[thing72]
+[thing73]
 ThingType = "Creature"
 SubtypeStringID = "DWARFA"
 Subtype = 5
@@ -887,7 +898,7 @@ SubtileX = [32, 128]
 SubtileY = [45, 128]
 SubtileZ = [1, 0]
 
-[thing73]
+[thing74]
 ThingType = "Creature"
 SubtypeStringID = "DWARFA"
 Subtype = 5
@@ -900,7 +911,7 @@ SubtileX = [32, 128]
 SubtileY = [48, 128]
 SubtileZ = [1, 0]
 
-[thing74]
+[thing75]
 ThingType = "Creature"
 SubtypeStringID = "DWARFA"
 Subtype = 5
@@ -913,7 +924,7 @@ SubtileX = [29, 128]
 SubtileY = [48, 128]
 SubtileZ = [1, 0]
 
-[thing75]
+[thing76]
 ThingType = "Creature"
 SubtypeStringID = "DWARFA"
 Subtype = 5
@@ -926,7 +937,7 @@ SubtileX = [80, 128]
 SubtileY = [41, 128]
 SubtileZ = [1, 0]
 
-[thing76]
+[thing77]
 ThingType = "Creature"
 SubtypeStringID = "DWARFA"
 Subtype = 5
@@ -939,7 +950,7 @@ SubtileX = [77, 128]
 SubtileY = [45, 128]
 SubtileZ = [1, 0]
 
-[thing77]
+[thing78]
 ThingType = "Creature"
 SubtypeStringID = "DWARFA"
 Subtype = 5
@@ -952,7 +963,7 @@ SubtileX = [85, 128]
 SubtileY = [46, 128]
 SubtileZ = [1, 0]
 
-[thing78]
+[thing79]
 ThingType = "Creature"
 SubtypeStringID = "DWARFA"
 Subtype = 5
@@ -965,7 +976,7 @@ SubtileX = [82, 128]
 SubtileY = [44, 128]
 SubtileZ = [1, 0]
 
-[thing79]
+[thing80]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_ENTRANCE_ICE"
 Subtype = 4
@@ -977,7 +988,7 @@ SubtileX = [37, 128]
 SubtileY = [103, 128]
 SubtileZ = [0, 0]
 
-[thing80]
+[thing81]
 ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
 Subtype = 2
