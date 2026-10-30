@@ -6186,18 +6186,6 @@ SubtileZ = [1, 0]
 
 [thing513]
 ThingType = "EffectGen"
-SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
-Subtype = 2
-Ownership = 5
-EffectRange = [5, 0]
-ParentTile = 6698
-Orientation = 0
-SubtileX = [206, 128]
-SubtileY = [235, 128]
-SubtileZ = [0, 0]
-
-[thing514]
-ThingType = "EffectGen"
 SubtypeStringID = "EFFECTGENERATOR_LAVA"
 Subtype = 1
 Ownership = 5
@@ -6206,6 +6194,18 @@ ParentTile = 5677
 Orientation = 0
 SubtileX = [203, 128]
 SubtileY = [198, 128]
+SubtileZ = [0, 0]
+
+[thing514]
+ThingType = "EffectGen"
+SubtypeStringID = "EFFECTGENERATOR_DRIPPING_WATER"
+Subtype = 2
+Ownership = 5
+EffectRange = [5, 0]
+ParentTile = 6861
+Orientation = 0
+SubtileX = [183, 128]
+SubtileY = [241, 128]
 SubtileZ = [0, 0]
 
 [thing515]

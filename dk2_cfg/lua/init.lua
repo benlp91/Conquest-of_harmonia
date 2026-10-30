@@ -23,12 +23,24 @@ end
 
 function LavaBecomesBridge(eventData)
 
+    local AiTimer = RegisterTimerEvent(BridgeAi, 10, false)
+    AiTimer.triggerData.Slab = eventData.Slab
+
     local rotTimer = RegisterTimerEvent(BridgeRot, 300, false)
     rotTimer.triggerData.Slab = eventData.Slab
 
     local burnTimer = RegisterTimerEvent(BridgeBurn, 500, false)
     burnTimer.triggerData.Slab = eventData.Slab
 
+end
+
+
+function BridgeAi(eventData, triggerData)
+    
+    local slab = triggerData.Slab
+    if slab.owner ~= PLAYER0 then
+    ChangeSlabType(slab.slb_x, slab.slb_y, "BRIDGE_STONE")
+    end
 end
 
 function BridgeRot(eventData, triggerData)
