@@ -697,18 +697,24 @@ IF_SLAB_OWNER(51,94,PLAYER0)
 ENDIF
 
 IF(PLAYER0, TIMER5 >= 45000)
-	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl10spe04.ogg")
-	QUICK_OBJECTIVE(73,"All is lost - your speed and stealth were insufficient. Heroes now locate your Dungeon Heart and with their reinforcements soon will crush your forces. And there's nothing you can do.")
+	IF(PLAYER2,FLAG4 == 0)
+		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl10spe04.ogg")
+		QUICK_OBJECTIVE(73,"All is lost - your speed and stealth were insufficient. Heroes now locate your Dungeon Heart and with their reinforcements soon will crush your forces. And there's nothing you can do.")
+	ENDIF
 ENDIF
 
 IF(PLAYER0, TIMER5 >= 35000)
-	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl10spe05.ogg")
-	QUICK_OBJECTIVE(74,"Remember well your mission, Keeper: 'tis the Gem you seek. It lies not with the Sylvan Elves, but in Dungeon Heart of Asmodeus, this you must destroy. Though other foes distract you, focus single-minded on this task.")
+	IF(PLAYER2,FLAG4 == 0)
+		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl10spe05.ogg")
+		QUICK_OBJECTIVE(74,"Remember well your mission, Keeper: 'tis the Gem you seek. It lies not with the Sylvan Elves, but in Dungeon Heart of Asmodeus, this you must destroy. Though other foes distract you, focus single-minded on this task.")
+	ENDIF
 ENDIF
 
 IF(PLAYER0, TIMER5 >= 30000)
-	PLAY_MESSAGE(PLAYER0,SPEECH,"lvl10spe06.ogg")
-	QUICK_OBJECTIVE(75,"Time is running out, you must strike soon or risk disgrace.")
+	IF(PLAYER2,FLAG4 == 0)
+		PLAY_MESSAGE(PLAYER0,SPEECH,"lvl10spe06.ogg")
+		QUICK_OBJECTIVE(75,"Time is running out, you must strike soon or risk disgrace.")
+	ENDIF
 ENDIF
 
 REM PL3,FLAG5 active music track
@@ -773,10 +779,10 @@ SET_TIMER(PLAYER0,TIMER2)
 
 IF(PLAYER0,TIMER2 >= 250)
    		IF(PLAYER0,IMP <= 4)
-        		NEXT_COMMAND_REUSABLE
+        	NEXT_COMMAND_REUSABLE
 			ADD_CREATURE_TO_LEVEL(PLAYER0,IMP,PLAYER0,2,1,100)
-        		NEXT_COMMAND_REUSABLE
-        		SET_TIMER(PLAYER0,TIMER2)
+        	NEXT_COMMAND_REUSABLE
+        	SET_TIMER(PLAYER0,TIMER2)
 		ENDIF
 ENDIF 
 
@@ -787,6 +793,8 @@ IF(PLAYER_GOOD,KEEPERS_DESTROYED ==1)
 ENDIF
 
 REM WIN CONDITION
+
+SET_FLAG(PLAYER2,FLAG4,0)
 
 IF(PLAYER0,KEEPERS_DESTROYED ==1)
 	WIN_GAME
@@ -800,6 +808,7 @@ IF(PLAYER0,KEEPERS_DESTROYED ==1)
  	SET_TIMER(PLAYER6,TIMER6)
 	REVEAL_MAP_LOCATION(PLAYER0,PLAYER_GOOD,-1)
 	REVEAL_MAP_LOCATION(PLAYER0,PLAYER1,-1)
+	SET_FLAG(PLAYER2,FLAG4,1)
 ENDIF
 
 HIDE_HERO_GATE(11,1)
