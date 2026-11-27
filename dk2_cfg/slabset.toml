@@ -1343,64 +1343,36 @@ Objects = []
 [slab32]
 
 [slab32.S]
-Columns = [1358, 1358, 1358, 4126, 4126, 4126, 4126, 4126, 4126]
+Columns = [1340, 1340, 1340, 1174, 1177, 1177, 1175, 1175, 1175]
 Objects = []
 
 [slab32.W]
-Columns = [4126, 4126, 1358, 4126, 4126, 1358, 4126, 4126, 1358]
+Columns = [1179, 1177, 1340, 1179, 1177, 1340, 1179, 1177, 1340]
 Objects = []
 
 [slab32.N]
-Columns = [4126, 4126, 4126, 4126, 4126, 4126, 1358, 1358, 1358]
+Columns = [1180, 1180, 1180, 1178, 1177, 1177, 1340, 1340, 1340]
 Objects = []
 
 [slab32.E]
-Columns = [1358, 4126, 4126, 1358, 4126, 4126, 1358, 4126, 4126]
+Columns = [1340, 1174, 1181, 1340, 1177, 1181, 1340, 1177, 1181]
 Objects = []
 
 [slab32.SW]
-Columns = [4126, 4126, 306, 4126, 4126, 4126, 4126, 4126, 4126]
-
-[[slab32.SW_objects]]
-IsLight = 0
-Subtile = 4
-RelativePosition = [128, 128, 512]
-ThingType = 1
-Subtype = 4
-EffectRange = 0
+Columns = [1179, 1174, 1, 1179, 1177, 1174, 1182, 1175, 1175]
+Objects = []
 
 [slab32.NW]
-Columns = [4126, 4126, 4126, 4126, 4126, 4126, 4126, 4126, 306]
-
-[[slab32.NW_objects]]
-IsLight = 0
-Subtile = 4
-RelativePosition = [128, 128, 512]
-ThingType = 1
-Subtype = 4
-EffectRange = 0
+Columns = [1183, 1180, 1180, 1179, 1177, 1174, 1179, 1177, 1]
+Objects = []
 
 [slab32.NE]
-Columns = [4126, 4126, 4126, 4126, 4126, 4126, 306, 4126, 4126]
-
-[[slab32.NE_objects]]
-IsLight = 0
-Subtile = 4
-RelativePosition = [128, 128, 512]
-ThingType = 1
-Subtype = 4
-EffectRange = 0
+Columns = [1180, 1180, 1184, 1178, 1177, 1181, 1, 1174, 1181]
+Objects = []
 
 [slab32.SE]
-Columns = [306, 4126, 4126, 4126, 4126, 4126, 4126, 4126, 4126]
-
-[[slab32.SE_objects]]
-IsLight = 0
-Subtile = 4
-RelativePosition = [128, 128, 512]
-ThingType = 1
-Subtype = 4
-EffectRange = 0
+Columns = [1, 1178, 1181, 1177, 1177, 1181, 1175, 1175, 1185]
+Objects = []
 
 [slab32.SW_LAVA]
 Columns = [304, 879, 305, 304, 304, 879, 304, 304, 304]
@@ -1494,6 +1466,14 @@ ThingType = 7
 Subtype = 5
 EffectRange = 0
 
+[[slab32.CENTER_objects]]
+IsLight = 1
+Subtile = 4
+RelativePosition = [128, 128, 512]
+ThingType = 0
+Subtype = 46
+EffectRange = 6
+
 
 [slab33]
 
@@ -1516,6 +1496,50 @@ Objects = []
 [slab33.ALL]
 Columns = [31, 31, 31, 31, 817, 31, 31, 31, 31]
 Objects = []
+
+[slab33.S_LAVA]
+Columns = [2, 2, 2, 2, 817, 2, 241, 242, 243]
+
+[[slab33.S_LAVA_objects]]
+IsLight = 1
+Subtile = 7
+RelativePosition = [128, 512, 768]
+ThingType = 0
+Subtype = 32
+EffectRange = 16
+
+[slab33.W_LAVA]
+Columns = [241, 2, 2, 242, 817, 2, 243, 2, 2]
+
+[[slab33.W_LAVA_objects]]
+IsLight = 1
+Subtile = 3
+RelativePosition = [-256, 128, 768]
+ThingType = 0
+Subtype = 32
+EffectRange = 16
+
+[slab33.N_LAVA]
+Columns = [241, 242, 243, 2, 817, 2, 2, 2, 2]
+
+[[slab33.N_LAVA_objects]]
+IsLight = 1
+Subtile = 1
+RelativePosition = [128, -256, 768]
+ThingType = 0
+Subtype = 32
+EffectRange = 16
+
+[slab33.E_LAVA]
+Columns = [2, 2, 241, 2, 817, 242, 2, 2, 243]
+
+[[slab33.E_LAVA_objects]]
+IsLight = 1
+Subtile = 5
+RelativePosition = [512, 128, 768]
+ThingType = 0
+Subtype = 32
+EffectRange = 16
 
 [slab33.SW_LAVA]
 Columns = [311, 2, 2, 9, 817, 2, 4105, 6, 311]
@@ -1873,19 +1897,47 @@ Objects = []
 
 [slab40.SW]
 Columns = [249, 252, 4125, 249, 253, 251, 254, 250, 250]
-Objects = []
+
+[[slab40.SW_objects]]
+IsLight = 0
+Subtile = 6
+RelativePosition = [128, 128, 256]
+ThingType = 1
+Subtype = 1050
+EffectRange = 0
 
 [slab40.NW]
 Columns = [255, 251, 251, 249, 253, 250, 249, 252, 4125]
-Objects = []
+
+[[slab40.NW_objects]]
+IsLight = 0
+Subtile = 0
+RelativePosition = [128, 128, 256]
+ThingType = 1
+Subtype = 1050
+EffectRange = 0
 
 [slab40.NE]
 Columns = [251, 251, 256, 250, 253, 252, 4125, 249, 252]
-Objects = []
+
+[[slab40.NE_objects]]
+IsLight = 0
+Subtile = 2
+RelativePosition = [128, 128, 256]
+ThingType = 1
+Subtype = 1050
+EffectRange = 0
 
 [slab40.SE]
 Columns = [4125, 249, 252, 251, 253, 252, 250, 250, 257]
-Objects = []
+
+[[slab40.SE_objects]]
+IsLight = 0
+Subtile = 8
+RelativePosition = [128, 128, 256]
+ThingType = 1
+Subtype = 1050
+EffectRange = 0
 
 [slab40.ALL]
 Columns = [255, 251, 256, 249, 253, 252, 254, 250, 257]
